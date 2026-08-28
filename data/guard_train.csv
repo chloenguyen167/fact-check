@@ -1,0 +1,83 @@
+text,label
+Ăn nhiều muối gây cao huyết áp,factual_claim
+Vitamin C chữa khỏi cảm cúm,factual_claim
+Dầu cá omega-3 giúp giảm nguy cơ nhồi máu cơ tim,factual_claim
+Uống aspirin hàng ngày ngăn ngừa đột quỵ,factual_claim
+Cà phê làm tăng huyết áp,factual_claim
+Tỏi có thể hạ cholesterol xấu,factual_claim
+Hút thuốc lá làm tăng nguy cơ bệnh mạch vành gấp đôi,factual_claim
+Tập thể dục 30 phút mỗi ngày giúp giảm nguy cơ suy tim,factual_claim
+Rượu vang đỏ tốt cho tim mạch,factual_claim
+Trứng làm tăng cholesterol trong máu,factual_claim
+Statin gây tổn thương gan ở hầu hết bệnh nhân,factual_claim
+Ăn sô cô la đen mỗi ngày giúp hạ huyết áp,factual_claim
+Thiếu ngủ làm tăng nguy cơ đau tim,factual_claim
+Trà xanh giúp giảm mỡ máu,factual_claim
+Người ăn chay không bao giờ bị bệnh tim,factual_claim
+Muối biển tốt cho tim hơn muối thường,factual_claim
+Đi bộ nhanh tốt cho tim hơn chạy bộ,factual_claim
+Stress kéo dài gây nhồi máu cơ tim,factual_claim
+Nước tăng lực gây rối loạn nhịp tim ở người trẻ,factual_claim
+Bỏ bữa sáng làm tăng nguy cơ xơ vữa động mạch,factual_claim
+Đông trùng hạ thảo chữa được suy tim,factual_claim
+Ăn chuối mỗi ngày giúp ổn định huyết áp nhờ kali,factual_claim
+Vắc xin cúm làm giảm nguy cơ nhồi máu cơ tim ở người già,factual_claim
+Mật ong pha chanh làm sạch mạch máu,factual_claim
+Thuốc chống đông máu gây xuất huyết não ở mọi bệnh nhân,factual_claim
+Béo phì là nguyên nhân chính của bệnh tim mạch,factual_claim
+Ngồi nhiều làm tăng nguy cơ đột quỵ,factual_claim
+Dầu ô liu giúp giảm cholesterol xấu LDL,factual_claim
+Nhân sâm làm tăng huyết áp,factual_claim
+Caffeine gây hại cho người bị rung nhĩ,factual_claim
+Cao huyết áp có nguy hiểm không?,question
+Tại sao ăn mặn lại gây cao huyết áp?,question
+Liệu aspirin có ngăn ngừa được đột quỵ không,question
+Tôi có nên uống statin không?,question
+Nhịp tim bao nhiêu là bình thường?,question
+Bệnh suy tim sống được bao lâu?,question
+Làm thế nào để giảm cholesterol?,question
+Có phải cà phê gây hại cho tim?,question
+Ăn gì tốt cho tim mạch ạ?,question
+Cho em hỏi huyết áp 140/90 có cao không,question
+Thuốc huyết áp uống lúc nào là tốt nhất?,question
+Vì sao người trẻ bị đột quỵ ngày càng nhiều?,question
+Omega-3 nên uống liều bao nhiêu?,question
+Đau ngực bên trái là bệnh gì?,question
+Khám tim mạch ở đâu tốt?,question
+Tôi thấy uống trà gừng rất tốt cho tim,personal_opinion
+Mình nghĩ thuốc tây hại gan lắm,personal_opinion
+Theo tôi ăn chay là tốt nhất cho sức khỏe,personal_opinion
+Cảm giác uống cà phê xong tim đập nhanh hơn,personal_opinion
+Hình như thuốc này không hợp với người già,personal_opinion
+Tôi tin là tập yoga tốt hơn uống thuốc,personal_opinion
+Mình thấy bác sĩ kê thuốc nhiều quá không cần thiết,personal_opinion
+Theo em thực phẩm chức năng chỉ tốn tiền,personal_opinion
+Có vẻ ăn nhạt làm người mệt mỏi hơn,personal_opinion
+Tôi cho rằng bệnh tim là do di truyền hết,personal_opinion
+Chắc là do stress nên huyết áp mới cao,personal_opinion
+Mình cảm thấy đi bộ buổi sáng khỏe hơn buổi tối,personal_opinion
+Tôi bị cao huyết áp đã 5 năm nay,personal_diagnosis
+Mình bị hở van tim hai lá,personal_diagnosis
+Bác sĩ bảo tôi bị rối loạn nhịp tim,personal_diagnosis
+Kết quả xét nghiệm của tôi cholesterol 6.5,personal_diagnosis
+Em bị đau ngực mỗi khi leo cầu thang,personal_diagnosis
+Mẹ tôi bị suy tim độ 3,personal_diagnosis
+Tôi đang bị huyết áp thấp và hay chóng mặt,personal_diagnosis
+Bố tôi bị nhồi máu cơ tim năm ngoái,personal_diagnosis
+Tôi mắc bệnh tiểu đường kèm cao huyết áp,personal_diagnosis
+Xét nghiệm của tôi cho thấy mỡ máu cao,personal_diagnosis
+Hãy tư vấn cho tôi chế độ ăn tốt cho tim,other
+Giúp mình lên thực đơn giảm cholesterol,other
+Hôm nay trời đẹp quá,other
+Đội tuyển Việt Nam thắng trận tối qua,other
+Giá vàng hôm nay tăng mạnh,other
+Tôi muốn đặt lịch khám bệnh,other
+Chỉ cho tôi cách nấu canh chua,other
+Máy tính của tôi bị hỏng rồi,other
+Phim này hay lắm mọi người nên xem,other
+Hà Nội là thủ đô của Việt Nam,other
+Bitcoin sẽ tăng giá vào năm sau,other
+Học tiếng Anh rất quan trọng cho công việc,other
+Quán phở đầu ngõ nấu rất ngon,other
+Thời tiết lạnh làm mọi người lười ra đường,other
+Cây xanh giúp không khí trong lành,other

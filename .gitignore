@@ -1,0 +1,22 @@
+*.db
+data/scraper.db
+data/articles_scraped.csv
+data/articles_skds.csv
+chroma_db/*
+.venv/*
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+qdrant_db/*
+.env
+.idea/
+.DS_Store
+**/.DS_Store
+
+# Fine-tuned / local model weights (too large for GitHub)
+models/nli_finetuned_mdeberta/
+models/guard_phobert/
+evaluation/data/pubhealth_cache/
+*.safetensors
+*.pt
+*.pth

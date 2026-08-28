@@ -1,0 +1,740 @@
+{
+  "retrieval_metrics": {
+    "retrieval_only": {
+      "hit@5": 0.7,
+      "hit@10": 0.77,
+      "hit@20": 0.84,
+      "mrr": 0.5748032333163913,
+      "num_samples": 100
+    },
+    "with_reranker": {
+      "hit@5": 0.8,
+      "hit@10": 0.82,
+      "hit@20": 0.84,
+      "mrr": 0.7026488095238095,
+      "num_samples": 100
+    }
+  },
+  "rerank_hit_at_k": {
+    "retrieval_only": {
+      "hit@1": 0.47,
+      "hit@3": 0.63
+    },
+    "with_reranker": {
+      "hit@1": 0.63,
+      "hit@3": 0.76
+    }
+  },
+  "retrieval_k_values": [
+    5,
+    10,
+    20
+  ],
+  "rerank_k_values": [
+    1,
+    3
+  ],
+  "num_samples": 100,
+  "details": [
+    {
+      "claim": "Tăng cường vận động giúp giảm đau do viêm cột sống dính khớp",
+      "article_id": "skds_357",
+      "label": "ĐÚNG",
+      "retrieval_rank": 2,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Thực hành đúng tư thế khi đứng, ngồi có thể giúp giảm đau và tăng cường cơ lưng, nhưng không phải là biện pháp hiệu quả nhất để điều trị viêm cột sống dính khớp",
+      "article_id": "skds_357",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Ngăn ngừa căng thẳng mạn tính có thể giúp giảm viêm và cải thiện tình trạng bệnh viêm cột sống dính khớp, nhưng không phải là biện pháp thay thế cho các phương pháp điều trị y tế",
+      "article_id": "skds_357",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Emflaza được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên.",
+      "article_id": "skds_10010",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Emflaza có thể gây ra nhiều tác dụng phụ nghiêm trọng như hội chứng Cushing, tăng huyết áp và nguy cơ thủng đường tiêu hóa.",
+      "article_id": "skds_10010",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Emflaza chỉ được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên, không rõ liệu nó có hiệu quả trong trường hợp khác.",
+      "article_id": "skds_10010",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Viêm da cơ và viêm đa cơ là nhóm bệnh tự miễn với tình trạng viêm, thoái hóa các sợi cơ vân gây yếu cơ làm giảm hoặc mất khả năng vận động.",
+      "article_id": "skds_9233",
+      "label": "ĐÚNG",
+      "retrieval_rank": 2,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Nguyên nhân chính xác của bệnh viêm da cơ và viêm đa cơ chưa được xác định rõ ràng.",
+      "article_id": "skds_9233",
+      "label": "ĐÚNG",
+      "retrieval_rank": 5,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Bệnh viêm da cơ và viêm đa cơ có liên quan đến tăng nguy cơ ác tính, nhưng không phải là nguyên nhân trực tiếp gây ra tình trạng này.",
+      "article_id": "skds_9233",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 3,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Nước chanh, cần tây, xô thơm, cỏ lúa mì, cây mê điệt, giấm táo, dầu bạc hà và rau xà lách đều có tác dụng loại bỏ mùi hôi nách.",
+      "article_id": "skds_1650",
+      "label": "ĐÚNG",
+      "retrieval_rank": 2,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Không có thông tin cụ thể về cách sử dụng dầu cây trà để loại bỏ mùi hôi nách.",
+      "article_id": "skds_1650",
+      "label": "SAI",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Không có bằng chứng khoa học nào hỗ trợ cho việc sử dụng rau xà lách để loại bỏ mùi hôi nách.",
+      "article_id": "skds_1650",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 2
+    },
+    {
+      "claim": "Ngủ 7-8 tiếng mỗi đêm và tập luyện thường xuyên giúp giảm nguy cơ đột quỵ!",
+      "article_id": "skds_8618",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Ngủ nhiều không tăng nguy cơ đột quỵ, mà ngược lại làm giảm nguy cơ!",
+      "article_id": "skds_8618",
+      "label": "SAI",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Bài viết không nói rõ liệu ngủ ít hay nhiều có ảnh hưởng đến nguy cơ đột quỵ?",
+      "article_id": "skds_8618",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 2,
+      "rerank_rank": 2
+    },
+    {
+      "claim": "Bệnh vảy nến ở trẻ em đa số đáp ứng với điều trị tại chỗ.",
+      "article_id": "skds_2935",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Vảy nến ở trẻ em từ 4 tuổi trở lên có nhiều lựa chọn điều trị khác nhau, bao gồm thuốc ức chế miễn dịch và liệu pháp ánh sáng.",
+      "article_id": "skds_2935",
+      "label": "ĐÚNG",
+      "retrieval_rank": 2,
+      "rerank_rank": 2
+    },
+    {
+      "claim": "Quản lý vảy nến thông thường ở trẻ em từ 4 tuổi trở lên không chỉ dựa trên corticosteroid tại chỗ mà còn có nhiều lựa chọn khác.",
+      "article_id": "skds_2935",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 2
+    },
+    {
+      "claim": "Người loạn dưỡng mỡ cần xây dựng chế độ ăn uống khoa học, hợp lý để hạn chế chất béo và cung cấp đủ năng lượng cho cơ thể.",
+      "article_id": "skds_4303",
+      "label": "ĐÚNG",
+      "retrieval_rank": 2,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Ăn nhiều dầu thực vật không phải là một phần của chế độ ăn uống phù hợp với người loạn dưỡng mỡ.",
+      "article_id": "skds_4303",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Người loạn dưỡng mỡ nên ăn nhiều thịt đỏ và nội tạng động vật để cải thiện sức khỏe.",
+      "article_id": "skds_4303",
+      "label": "SAI",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Viêm gan C là bệnh truyền nhiễm do Hepatitis C virus (HCV) gây nên, có thể lây lan qua đường máu và tình dục.",
+      "article_id": "skds_13302",
+      "label": "ĐÚNG",
+      "retrieval_rank": 7,
+      "rerank_rank": 7
+    },
+    {
+      "claim": "Viêm gan C không phải là bệnh nguy hiểm nếu người bệnh bị nhiễm thêm viêm gan B.",
+      "article_id": "skds_13302",
+      "label": "SAI",
+      "retrieval_rank": 6,
+      "rerank_rank": 16
+    },
+    {
+      "claim": "Không có vaccine phòng bệnh viêm gan C, vì vậy cách duy nhất để phòng ngừa lây nhiễm virus viêm gan C là không sử dụng chung kim tiêm.",
+      "article_id": "skds_13302",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 13,
+      "rerank_rank": 7
+    },
+    {
+      "claim": "Khi máy bay cất hay hạ cánh, sự chênh lệch áp suất không khí gây ù tai.",
+      "article_id": "skds_9801",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Sử dụng thuốc thông mũi và thuốc xịt mũi thường xuyên có thể dẫn đến nhờn thuốc và tăng sự tắc nghẽn hơn.",
+      "article_id": "skds_9801",
+      "label": "ĐÚNG",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Đừng ngủ trong lúc cất cánh hoặc hạ cánh để tránh bị ù tai, đau tai.",
+      "article_id": "skds_9801",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Chế độ ăn thiếu canxi có thể dẫn đến hạ canxi huyết ở trẻ em.",
+      "article_id": "skds_6554",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Hạ canxi huyết chỉ xảy ra khi cơ thể không có dự trữ canxi.",
+      "article_id": "skds_6554",
+      "label": "SAI",
+      "retrieval_rank": 11,
+      "rerank_rank": 4
+    },
+    {
+      "claim": "Cân bằng canxi trong máu phụ thuộc vào nhiều yếu tố và không đơn giản là thiếu canxi.",
+      "article_id": "skds_6554",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Uống cà phê quá nhiều có thể gây mất ngủ",
+      "article_id": "skds_3120",
+      "label": "ĐÚNG",
+      "retrieval_rank": 2,
+      "rerank_rank": 5
+    },
+    {
+      "claim": "Tập thiền, đi bộ không giúp cải thiện giấc ngủ ở người già",
+      "article_id": "skds_3120",
+      "label": "SAI",
+      "retrieval_rank": 19,
+      "rerank_rank": 5
+    },
+    {
+      "claim": "Chứng mất ngủ do nguyên nhân thực thể như bệnh tật, trầm cảm, lo lắng... cần giải quyết tận gốc các nguyên nhân này",
+      "article_id": "skds_3120",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Mụn cóc tái phát có thể do chưa hết chân sau đốt hoặc mụn cóc nhỏ gây lây lan.",
+      "article_id": "skds_13181",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Không có cách nào làm hết được mụn cóc, cần phải điều trị bằng phương pháp phá hủy gốc mụn như đốt điện, laze...",
+      "article_id": "skds_13181",
+      "label": "SAI",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Mụn cóc tái phát có thể do nhiều nguyên nhân khác nhau, không chỉ đơn giản là chưa hết chân sau đốt.",
+      "article_id": "skds_13181",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Mẹ nhiễm HIV nên nuôi con bằng sữa thay thế để giảm nguy cơ lây truyền HIV cho con.",
+      "article_id": "skds_8059",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Mẹ nhiễm HIV có thể sinh con âm tính với HIV nếu tiếp cận sớm với thuốc kháng virus và các dịch vụ hỗ trợ trong quá trình mang thai, sinh nở và cho con bú.",
+      "article_id": "skds_8059",
+      "label": "ĐÚNG",
+      "retrieval_rank": 4,
+      "rerank_rank": 2
+    },
+    {
+      "claim": "Sữa mẹ không phải là nguồn tiềm ẩn duy nhất của HIV, nên phụ nữ nhiễm HIV có thể cho con bú mà không cần thay thế bằng sữa công thức.",
+      "article_id": "skds_8059",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Sỏi túi mật có thể gây ra các biến chứng nguy hiểm như viêm và nhiễm khuẩn đường mật, túi mật cấp, hoại tử túi mật và thấm mật phúc mạc.",
+      "article_id": "skds_4785",
+      "label": "ĐÚNG",
+      "retrieval_rank": 9,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Sỏi túi mật chỉ ảnh hưởng đến phụ nữ ở Mỹ, không phải ở cả nam giới hay Việt Nam.",
+      "article_id": "skds_4785",
+      "label": "SAI",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Sỏi túi mật không thể gây ra biến chứng như rò túi mật đường mật vào ống tiêu hóa và ứ nước túi mật.",
+      "article_id": "skds_4785",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 6,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Bác sĩ đã phẫu thuật thành công cho 2 bệnh nhi mắc động kinh kháng thuốc và cả hai đều được phẫu thuật miễn phí.",
+      "article_id": "skds_9969",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Không có thông tin về việc bác sĩ đã thử nghiệm kỹ thuật mới trước khi áp dụng tại Bệnh viện Nhi Trung ương.",
+      "article_id": "skds_9969",
+      "label": "SAI",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Bài viết không cung cấp thông tin chi tiết về quy trình phẫu thuật và kết quả sau phẫu thuật cho cả 2 bệnh nhi.",
+      "article_id": "skds_9969",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Bệnh Basedow là bệnh tự miễn nhưng nguyên nhân chưa rõ ràng và thường gặp ở phụ nữ trẻ từ 20 - 50 tuổi.",
+      "article_id": "skds_9680",
+      "label": "ĐÚNG",
+      "retrieval_rank": 4,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Bệnh Basedow có thể khởi phát đột ngột hoặc tiến triển từ từ gây sút cân, mệt mỏi, khó nhận biết ngay.",
+      "article_id": "skds_9680",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Không có biện pháp hữu hiệu nào để phòng ngừa bệnh Basedow và không có phương pháp điều trị mạnh mẽ cho bệnh này.",
+      "article_id": "skds_9680",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 15,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Căng thẳng và mất ngủ có thể khiến cơn đau đầu trở nên tồi tệ hơn",
+      "article_id": "skds_8794",
+      "label": "ĐÚNG",
+      "retrieval_rank": 3,
+      "rerank_rank": 3
+    },
+    {
+      "claim": "Căng thẳng và mất ngủ không phải nguyên nhân gây ra cơn đau đầu",
+      "article_id": "skds_8794",
+      "label": "SAI",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Bài viết không cung cấp bằng chứng cụ thể về mối quan hệ giữa đau nửa đầu và đột quỵ",
+      "article_id": "skds_8794",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Táo bón có thể gây ra bởi nhiều yếu tố lối sống như thay đổi trong thói quen, chế độ ăn ít chất xơ, uống không đủ nước và ít vận động.",
+      "article_id": "skds_11084",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Táo bón là do mang thai",
+      "article_id": "skds_11084",
+      "label": "SAI",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Táo bón không phải là do uống rượu hoặc ăn quá nhiều đường",
+      "article_id": "skds_11084",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Phenytoin không nên dùng cho bệnh nhân rối loạn chuyển hóa porphyrin và quá mẫn với các dẫn chất hydantoin.",
+      "article_id": "skds_12281",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Phenytoin có thể gây tăng sản lợi khi ngừng thuốc đột ngột.",
+      "article_id": "skds_12281",
+      "label": "SAI",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Phenytoin không phải là loại thuốc cần vệ sinh miệng tốt khi dùng.",
+      "article_id": "skds_12281",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 5,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Chăm sóc trước và sau mổ ảnh hưởng trực tiếp tới kết quả điều trị phẫu thuật.",
+      "article_id": "skds_4035",
+      "label": "ĐÚNG",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Mở nắp sọ là một phần của phẫu thuật sọ não để lấy bỏ khối u, cục máu đông hoặc sửa chữa tổn thương gãy xương sọ.",
+      "article_id": "skds_4035",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Không được lái xe cho đến khi bạn được bác sĩ cho phép sau phẫu thuật sọ não.",
+      "article_id": "skds_4035",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 2,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "E6 chủng HPV làm tăng nguy cơ mắc ung thư vòm họng",
+      "article_id": "skds_9857",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "HPV không gây ung thư vòm họng",
+      "article_id": "skds_9857",
+      "label": "SAI",
+      "retrieval_rank": 4,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Ung thư vòm họng có thể do các yếu tố khác nhau gây ra, không chỉ HPV",
+      "article_id": "skds_9857",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 18,
+      "rerank_rank": 15
+    },
+    {
+      "claim": "Mang thai ngoài tử cung có thể gây ra biến chứng nghiêm trọng như vỡ ống dẫn trứng, gây xuất huyết trong và đe dọa tính mạng người phụ nữ.",
+      "article_id": "skds_7944",
+      "label": "ĐÚNG",
+      "retrieval_rank": 5,
+      "rerank_rank": 3
+    },
+    {
+      "claim": "Không có biện pháp phòng ngừa được cho mang thai ngoài tử cung",
+      "article_id": "skds_7944",
+      "label": "SAI",
+      "retrieval_rank": 2,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Mang thai ngoài tử cung là tình trạng nguy hiểm và cần được phát hiện, xử trí kịp thời để tránh những biến chứng nghiêm trọng.",
+      "article_id": "skds_7944",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Phụ nữ mang thai cần dùng kháng sinh khi bị viêm họng do vi khuẩn",
+      "article_id": "skds_10256",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 5
+    },
+    {
+      "claim": "Phụ nữ mang thai không được tự điều trị viêm họng bằng thuốc ngậm tại chỗ",
+      "article_id": "skds_10256",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 2
+    },
+    {
+      "claim": "Phụ nữ có thai có thể dùng paracetamol để hạ sốt và giảm đau họng",
+      "article_id": "skds_10256",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 8,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Ung thư tụy là căn bệnh ít gặp nhưng lại rất nguy hiểm bởi khó phát hiện, khó điều trị và tỉ lệ tử vong cực cao.",
+      "article_id": "skds_12961",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Bạn có thể ngăn ngừa ung thư tụy bằng cách không hút thuốc lá, hạn chế thức uống có nồng độ cồn cao, ăn nhiều trái cây tươi, rau xanh, ngũ cốc nguyên hạt...",
+      "article_id": "skds_12961",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Ung thư tụy chỉ sống được khoảng 2-3 năm sau khi điều trị bằng phẫu thuật",
+      "article_id": "skds_12961",
+      "label": "SAI",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Một bệnh nhân người dân tộc thiểu số được hỗ trợ kinh phí để phẫu thuật lấy thai sau khi bị tiền sản giật nguy kịch.",
+      "article_id": "skds_5183",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Không có thông tin cụ thể về việc bệnh nhân đã hoàn trả viện phí cho các khoản hỗ trợ từ người hảo tâm và bệnh viện.",
+      "article_id": "skds_5183",
+      "label": "SAI",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Bài viết không cung cấp đủ thông tin về tình trạng sức khỏe sau mổ của sản phụ để xác nhận hay bác bỏ.",
+      "article_id": "skds_5183",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Thuốc libtayo được phê duyệt để điều trị ung thư biểu mô tế bào vảy đã di căn (CSCC) và có thể giúp hệ thống miễn dịch của cơ thể chống lại các tế bào ung thư.",
+      "article_id": "skds_11848",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Libtayo chỉ điều trị ung thư da, không phải tất cả các loại ung thư.",
+      "article_id": "skds_11848",
+      "label": "SAI",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Thuốc libtayo có thể gây hại cho thai nhi đang phát triển và phụ nữ nên được tư vấn về nguy cơ tiềm ẩn cho thai nhi.",
+      "article_id": "skds_11848",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Chữa hen suyễn hiệu quả nhất là điều trị dự phòng.",
+      "article_id": "skds_3025",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Hen suyễn có thể khỏi hoàn toàn mà không cần điều trị dự phòng.",
+      "article_id": "skds_3025",
+      "label": "SAI",
+      "retrieval_rank": 5,
+      "rerank_rank": 2
+    },
+    {
+      "claim": "Thuốc Đông y chỉ là một lựa chọn thay thế cho thuốc tân dược trong điều trị hen suyễn.",
+      "article_id": "skds_3025",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 10,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "U xơ vòm mũi họng là một trong những bướu lành tính hay gặp nhất ở tuổi dậy thì",
+      "article_id": "skds_12840",
+      "label": "ĐÚNG",
+      "retrieval_rank": 2,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "U xơ vòm mũi họng có thể gây tử vong nếu không được điều trị đúng, kịp thời",
+      "article_id": "skds_12840",
+      "label": "ĐÚNG",
+      "retrieval_rank": 7,
+      "rerank_rank": 3
+    },
+    {
+      "claim": "Không có thông tin cụ thể về nguy hiểm của u xơ vòm mũi họng và cách điều trị hiệu quả",
+      "article_id": "skds_12840",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 3,
+      "rerank_rank": 2
+    },
+    {
+      "claim": "Bánh mì nguyên cám hoặc bánh mì ngũ cốc nguyên hạt là lựa chọn tốt nhất cho người bị trào ngược dạ dày - thực quản",
+      "article_id": "skds_1683",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Tất cả loại bánh mì đều khiến trào ngược acid",
+      "article_id": "skds_1683",
+      "label": "SAI",
+      "retrieval_rank": 2,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Không có loại bánh mì nào là hoàn toàn tốt cho người bị trào ngược dạ dày - thực quản",
+      "article_id": "skds_1683",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Sử dụng thuốc điều trị loãng xương như alendronate có thể giúp giảm nguy cơ mắc bệnh đái tháo đường loại 2",
+      "article_id": "skds_11710",
+      "label": "ĐÚNG",
+      "retrieval_rank": 2,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Nghiên cứu chỉ ra mối liên hệ giữa việc sử dụng thuốc điều trị loãng xương và giảm nguy cơ mắc bệnh đái tháo đường, nhưng chưa rõ cơ chế cụ thể",
+      "article_id": "skds_11710",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Sử dụng thuốc điều trị loãng xương không phải là nguyên nhân chính gây giảm nguy cơ mắc bệnh đái tháo đường loại 2",
+      "article_id": "skds_11710",
+      "label": "ĐÚNG",
+      "retrieval_rank": 2,
+      "rerank_rank": 2
+    },
+    {
+      "claim": "Ung thư tinh hoàn không thể chữa khỏi bằng đông y, chỉ có phương pháp y học hiện đại mới có thể điều trị hiệu quả.",
+      "article_id": "skds_3886",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Ung thư tinh hoàn có thể chữa khỏi bằng đông y và các phương pháp tự nhiên khác.",
+      "article_id": "skds_3886",
+      "label": "SAI",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Ung thư tinh hoàn là bệnh lý hiếm gặp, tỷ lệ chữa khỏi khá cao và cần được phát hiện sớm để điều trị hiệu quả.",
+      "article_id": "skds_3886",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Loét miệng thường do virut herpes (HSV) gây ra",
+      "article_id": "skds_5847",
+      "label": "SAI",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Bị nhiệt là nguyên nhân chính của loét miệng",
+      "article_id": "skds_5847",
+      "label": "SAI",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Thiếu vitamin PP hoặc vitamin C cũng có thể gây ra loét miệng",
+      "article_id": "skds_5847",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 13,
+      "rerank_rank": 2
+    },
+    {
+      "claim": "Bài viết có thể là một nguồn thông tin đáng tin cậy về các bài thuốc Đông y để phòng và trị bệnh sốt rét.",
+      "article_id": "skds_2616",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Bài viết không cung cấp bằng chứng khoa học cụ thể để hỗ trợ các bài thuốc Đông y được đề cập.",
+      "article_id": "skds_2616",
+      "label": "SAI",
+      "retrieval_rank": null,
+      "rerank_rank": null
+    },
+    {
+      "claim": "Bài viết có thể là một nguồn thông tin hữu ích về bệnh sốt rét và cách phòng chống nó, nhưng cần thêm nghiên cứu khoa học để xác nhận hiệu quả của các bài thuốc Đông y.",
+      "article_id": "skds_2616",
+      "label": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "retrieval_rank": 18,
+      "rerank_rank": 1
+    },
+    {
+      "claim": "Bệnh Acanthosis nigricans là tình trạng da nhiễm sắc tố đen, dày lên",
+      "article_id": "skds_884",
+      "label": "ĐÚNG",
+      "retrieval_rank": 1,
+      "rerank_rank": 1
+    }
+  ]
+}

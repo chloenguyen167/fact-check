@@ -1,0 +1,120 @@
+# Triệu chứng / chỉ số đo lường / thủ thuật y khoa
+huyết áp
+nhịp tim
+nhịp thở spo2
+spo2
+đường huyết
+chỉ số khối cơ thể
+bmi
+mỡ máu
+cholesterol ldl
+cholesterol hdl
+đau ngực
+đau đầu
+đau lưng
+đau bụng
+đau khớp
+chóng mặt
+khó thở
+sốt
+ho
+ho khan
+ho có đờm
+buồn nôn
+nôn
+tiêu chảy
+táo bón
+mệt mỏi
+sụt cân
+phù
+phù chân
+tê tay
+tê chân
+ngứa
+phát ban
+mẩn ngứa
+đau họng
+nghẹt mũi
+chảy mũi
+ù tai
+mất ngủ
+giấc ngủ
+ngủ ngon
+stress
+căng thẳng
+lo âu
+trầm cảm
+suy giảm trí nhớ
+run tay
+yếu liệt
+liệt nửa người
+mất ý thức
+ngất
+xuất huyết
+chảy máu
+xuất huyết não
+đau bụng kinh
+kinh nguyệt không đều
+siêu âm
+siêu âm tuyến vú
+nội soi
+nội soi đại tràng
+chụp mri
+mri
+chụp ct
+ct scan
+xquang
+xét nghiệm máu
+tầm soát
+khám sức khỏe
+mổ lấy thai
+sinh ngả âm đạo
+tiêm chủng
+tiêm vaccine
+phẫu thuật
+đốt điện
+cấy ghép
+thở máy
+oxy liệu pháp
+vật lý trị liệu
+tập thể dục
+đi bộ
+chạy bộ
+yoga
+ngồi nhiều
+thiếu ngủ
+béo phì
+thừa cân
+hút thuốc
+uống rượu
+ăn mặn
+ăn nhạt
+ăn chay
+chế độ ăn
+dinh dưỡng
+miễn dịch
+kháng thể
+vi khuẩn
+virus
+nấm
+ký sinh trùng
+gen
+di truyền
+hormone
+insulin máu
+hba1c
+creatinine
+alt
+ast
+bilirubin
+egfr
+crp
+bạch cầu
+hồng cầu
+tiểu cầu
+hemoglobin
+huyết sắc tố
+spo2
+nhịp tim nghỉ
+huyết áp tâm thu
+huyết áp tâm trương

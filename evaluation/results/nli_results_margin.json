@@ -1,0 +1,4018 @@
+{
+  "accuracy": 0.3534136546184739,
+  "precision_macro": 0.35407673860911276,
+  "recall_macro": 0.3534136546184739,
+  "f1_macro": 0.34938135281293353,
+  "classification_report": "                     precision    recall  f1-score   support\n\n               ĐÚNG       0.35      0.46      0.40       166\n                SAI       0.39      0.33      0.35       166\nKHÔNG ĐỦ BẰNG CHỨNG       0.32      0.27      0.30       166\n\n           accuracy                           0.35       498\n          macro avg       0.35      0.35      0.35       498\n       weighted avg       0.35      0.35      0.35       498\n",
+  "confusion_matrix": [
+    [
+      77,
+      40,
+      49
+    ],
+    [
+      67,
+      54,
+      45
+    ],
+    [
+      76,
+      45,
+      45
+    ]
+  ],
+  "labels": [
+    "ĐÚNG",
+    "SAI",
+    "KHÔNG ĐỦ BẰNG CHỨNG"
+  ],
+  "num_samples": 498,
+  "strategy": "weighted_max",
+  "chunk_size": 800,
+  "details": [
+    {
+      "claim": "Một trong năm trẻ em ở Mỹ thường xuyên đi ngủ đói vào buổi tối.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8139753838380178,
+      "num_chunks": 6,
+      "claim_id": "41919"
+    },
+    {
+      "claim": "\"Trong khuôn khổ các cuộc chiến pháp lý liên quan đến quyền tự do sinh sản, Mike Coffman đã đồng tình với một dự luật nhằm định nghĩa lại sự cố tình quan hệ tình dục.\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9837443232536316,
+      "num_chunks": 6,
+      "claim_id": "14662"
+    },
+    {
+      "claim": "FDA đã phê duyệt Krystexxa để điều trị gout.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9304108023643494,
+      "num_chunks": 4,
+      "claim_id": "10996"
+    },
+    {
+      "claim": "Một hình ảnh động cho thấy Meryl Streep đùa với một người khuyết tật trên chương trình trò chuyện đêm muộn.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.367259681224823,
+      "num_chunks": 1,
+      "claim_id": "31822"
+    },
+    {
+      "claim": "Một quảng cáo do Volkswagen sản xuất sử dụng hình ảnh bom tự sát.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9947722554206848,
+      "num_chunks": 6,
+      "claim_id": "31348"
+    },
+    {
+      "claim": "FBI nhân viên Peter Strzok II lớn lên ở Iran; có cha tham gia vào các hoạt động bí mật quốc tế dưới danh nghĩa làm việc từ thiện; phục vụ như một \"cán bộ tình báo Trung Đông\" trong chính quyền Obama; và là một nhân viên CIA \"đặt\" tại FBI để giúp Hillary Clinton giành chiến thắng trong cuộc tổng thống.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9699245691299438,
+      "num_chunks": 7,
+      "claim_id": "34271"
+    },
+    {
+      "claim": "Nghiên cứu tế bào gốc: Cuộc tìm kiếm tiếp tục\n\nTế bào gốc là loại tế bào có khả năng phát triển và phân chia thành nhiều loại tế bào khác nhau, có thể được sử dụng để điều trị các bệnh về cơ quan và mô. Nghiên cứu về tế bào gốc đang trở nên ngày càng quan trọng vì nó có tiềm năng giúp tìm ra phương pháp điều trị mới cho nhiều bệnh lý.\n\nTrong những năm gần đây, nghiên cứu về tế bào gốc đã đạt được nhiều thành công đáng kể. Các nhà khoa học đã phát triển các phương pháp để thu thập và培养 tế bào gốc từ các nguồn tự nhiên, chẳng hạn như máu và mô. Họ cũng đã khám phá ra cách thức mà tế bào gốc có thể được sử dụng để điều trị các bệnh về cơ quan và mô.\n\nTuy nhiên, nghiên cứu về tế bào gốc vẫn còn nhiều thách thức cần phải vượt qua. Một trong những thách thức chính là tìm ra cách thức để bảo quản và vận chuyển tế bào gốc một cách an toàn và hiệu quả. Ngoài ra, việc sử dụng tế bào gốc trong điều trị cũng cần phải được kiểm tra kỹ lưỡng để đảm bảo an toàn cho bệnh nhân.\n\nMặc dù vậy, nghiên cứu về tế bào gốc vẫn tiếp tục và đang trở nên ngày càng quan trọng. Các nhà khoa học đang tiếp tục tìm kiếm các phương pháp mới để thu thập và培养 tế bào gốc, cũng như khám phá ra cách thức mà chúng có thể được sử dụng để điều trị các bệnh về cơ quan và mô.\n\nMột trong những mục tiêu chính của nghiên cứu về tế bào gốc là tìm ra cách thức để sử dụng chúng để điều trị các bệnh về tim mạch, thần kinh và khớp. Các nhà khoa học đang khám phá ra cách thức mà tế bào gốc có thể được sử dụng để sửa chữa hoặc thay thế các tế bào bị hư hại trong các cơ quan và mô này.\n\nTế bào gốc cũng có tiềm năng giúp điều trị các bệnh về mắt, da và xương. Các nhà khoa học đang nghiên cứu cách thức mà tế bào gốc có thể được sử dụng để điều trị các bệnh về mắt, chẳng hạn như bệnh đục thủy tinh thể, và các bệnh về da, chẳng hạn như bệnh lão hóa da.\n\nTóm lại, nghiên cứu về tế bào gốc đang trở nên ngày càng quan trọng và đang tiếp tục. Các nhà khoa học đang tìm kiếm các phương pháp mới để thu thập và培养 tế bào gốc, cũng như khám phá ra cách thức mà chúng có thể được sử dụng để điều trị các bệnh về cơ quan và mô.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.676686093211174,
+      "num_chunks": 4,
+      "claim_id": "11354"
+    },
+    {
+      "claim": "\"No thành phố nào trong tỉnh có thể cách ly mình mà không được sự chấp thuận của chính quyền tỉnh.\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9259259104728699,
+      "num_chunks": 6,
+      "claim_id": "26623"
+    },
+    {
+      "claim": "Cựu sĩ quan quốc hội John McCain đã bắt đầu một vụ cháy khi còn trẻ làm phi công trên tàu sân bay, khiến 134 thủy thủ chết vì anh ta đang thể hiện bản thân.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8895443916320801,
+      "num_chunks": 5,
+      "claim_id": "36708"
+    },
+    {
+      "claim": "Báo cáo của Anh đang lên kế hoạch tăng cường cho ngành sinh học như thế nào khi Brexit gần đến.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9286941289901733,
+      "num_chunks": 4,
+      "claim_id": "1361"
+    },
+    {
+      "claim": "Trung Quốc điều tra bùng phát bệnh hô hấp gây ốm nặng 27 người.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9736219644546509,
+      "num_chunks": 2,
+      "claim_id": "3700"
+    },
+    {
+      "claim": "\"Nhiều người cho rằng Rick Scott đã đóng 30 trung tâm chăm sóc sức khỏe dành cho phụ nữ trên toàn bang.\"",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6442159414291382,
+      "num_chunks": 7,
+      "claim_id": "16461"
+    },
+    {
+      "claim": "Một bài đăng trên Facebook đi virus đại dịch Covid-19 có dạng một bức thư mở từ quản lý cửa hàng tạp hóa trong thời gian đại dịch, giải thích sai lầm phổ biến của khách hàng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7222409136593342,
+      "num_chunks": 6,
+      "claim_id": "37490"
+    },
+    {
+      "claim": "\"Người bình luận của chương trình 60 Phút Andy Rooney đã viết một bài thơ khen ngợi phụ nữ già.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.761540412902832,
+      "num_chunks": 6,
+      "claim_id": "33916"
+    },
+    {
+      "claim": "Dịch: Thuốc Avandia có thể giúp giữ mạch máu trong tĩnh mạch sạch sau phẫu thuật.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8865660429000854,
+      "num_chunks": 3,
+      "claim_id": "8838"
+    },
+    {
+      "claim": "Một cô gái 9 tuổi bị liệt sau khi tiêm phòng cảm lạnh.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9696970582008362,
+      "num_chunks": 6,
+      "claim_id": "34242"
+    },
+    {
+      "claim": "Một nghiên cứu đã chứng minh rằng nước ép dứa có hiệu quả năm lần so với thuốc ho.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9945422410964966,
+      "num_chunks": 6,
+      "claim_id": "34682"
+    },
+    {
+      "claim": "Hai công ty Wells Fargo và Chase đã đầu tư vào đường ống khí đốt Dakota Access.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9835382103919983,
+      "num_chunks": 6,
+      "claim_id": "28177"
+    },
+    {
+      "claim": "Đánh giá: Các xét nghiệm máu trước sinh có thể phát hiện ung thư ở phụ nữ mang thai.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.879280149936676,
+      "num_chunks": 6,
+      "claim_id": "9764"
+    },
+    {
+      "claim": "Một người đàn ông từ Michigan nói rằng một người lạ mặt đi gần vợ mình tại một trung tâm thương mại địa phương có thể đã liên quan đến buôn bán người.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5806845823923746,
+      "num_chunks": 6,
+      "claim_id": "34385"
+    },
+    {
+      "claim": "Trump tuyên bố 99% các trường hợp nhiễm COVID-19 \"completely vô hại\".",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8716375231742859,
+      "num_chunks": 6,
+      "claim_id": "26003"
+    },
+    {
+      "claim": "Bột xương tốn kém trong phẫu thuật, nghiên cứu cho thấy.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9416854977607727,
+      "num_chunks": 6,
+      "claim_id": "9998"
+    },
+    {
+      "claim": "Tháng 9 năm 2019, một giáo sĩ đã qua đời sau khi nhịn ăn trong 30 ngày để \"đồng hành hoặc phá vỡ kỷ lục của Chúa Giêsu về việc nhịn ăn trong 40 ngày.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.980281412601471,
+      "num_chunks": 7,
+      "claim_id": "36200"
+    },
+    {
+      "claim": "Nhà bán mũ Việt Nam chuyển sang sản xuất khẩu trang tự làm trong chiến đấu chống đại dịch.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9185482859611511,
+      "num_chunks": 3,
+      "claim_id": "8600"
+    },
+    {
+      "claim": "Bệnh viện cấp cứu chiếm 2% tổng chi phí chăm sóc sức khỏe.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6802696237961451,
+      "num_chunks": 6,
+      "claim_id": "17768"
+    },
+    {
+      "claim": "Một người Trung Quốc bị bắt giữ vì lan truyền thông tin gây lo lắng về bệnh lây truyền qua chim.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9844436645507812,
+      "num_chunks": 3,
+      "claim_id": "2384"
+    },
+    {
+      "claim": "Tuyên bố: Chris Christie khuyên Tổng thống Mỹ Donald Trump thử kích động Joe Biden để giật gãy trong các cuộc tranh luận tổng thống năm 2020.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9474065899848938,
+      "num_chunks": 6,
+      "claim_id": "35946"
+    },
+    {
+      "claim": "\"Năm 1894, một tác phẩm của trường hợp này chống lại những điều xấu về tình dục hôn nhân khuyên dám sinh cho \"mang ít, mang hiếm và trên hết là mang khó chịu\".",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6662362764279047,
+      "num_chunks": 6,
+      "claim_id": "34709"
+    },
+    {
+      "claim": "Các nghiên cứu: Chất chống đông máu không làm giảm nguy cơ ung thư",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.4198839068412781,
+      "num_chunks": 1,
+      "claim_id": "11281"
+    },
+    {
+      "claim": "Một số người nghi ngờ về sự an toàn của thuốc giảm đau và chống đông máu kết hợp với aspirin.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9066252112388611,
+      "num_chunks": 2,
+      "claim_id": "10646"
+    },
+    {
+      "claim": "Thực hành sử dụng dầu ăn quay quanh miệng trong 20 phút có thể mang lại một số lợi ích cho sức khỏe.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.985369473695755,
+      "num_chunks": 2,
+      "claim_id": "39961"
+    },
+    {
+      "claim": "Dưới đây là bản dịch:\n\nNhóm chương trình cung cấp nguồn lực sức khỏe tâm thần đến các trường học ở Detroit.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9510540962219238,
+      "num_chunks": 3,
+      "claim_id": "3888"
+    },
+    {
+      "claim": "Hai loại thuốc mới giúp kéo dài tuổi sống cho bệnh nhân ung thư da",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8104917407035828,
+      "num_chunks": 2,
+      "claim_id": "11599"
+    },
+    {
+      "claim": "Đánh giá: Các xét nghiệm di truyền giúp bác sĩ điều chỉnh các phương pháp điều trị ung thư.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7598544657230377,
+      "num_chunks": 2,
+      "claim_id": "10559"
+    },
+    {
+      "claim": "Nhận định rằng dầu cây nho và axit linolenat liên kết (CLA) bổ sung có thể giúp giảm cân, đặc biệt là ở vùng bụng, đã được lặp lại trong nhiều năm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.5295896530151367,
+      "num_chunks": 6,
+      "claim_id": "38239"
+    },
+    {
+      "claim": "Hormone có thể tốt hơn soya đối với các cơn sốt ruột.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.910236656665802,
+      "num_chunks": 3,
+      "claim_id": "10563"
+    },
+    {
+      "claim": "Dưới đây là bản dịch của đoạn văn:\n\nCác ngành công nghiệp baseball và bảo hiểm là những ngành duy nhất được miễn trừ khỏi luật chống độc quyền.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.991759717464447,
+      "num_chunks": 6,
+      "claim_id": "24487"
+    },
+    {
+      "claim": "Dưới đây là bản dịch của đoạn văn:\n\n1. Đặt lại tuyên bố (claim)\n2. 5 cách để bạn cảm thấy sexy trở lại",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8682186603546143,
+      "num_chunks": 7,
+      "claim_id": "10684"
+    },
+    {
+      "claim": "Một tin đồn kéo dài trong thời gian đã nói rằng Hillary Clinton từng tuyên bố nhân viên y tế được tôn vinh như những người chăm sóc trẻ em hoặc được trả lương quá cao là nô bộc (tùy thuộc vào phiên bản). Tin đồn này lại tái hiện lên trong cuộc tranh cử tổng thống năm 2016.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9396116137504578,
+      "num_chunks": 5,
+      "claim_id": "36870"
+    },
+    {
+      "claim": "Các cướp trong khu vực đỗ xe của chợ bán lẻ đang sử dụng chai phấn thơm chứa ethyl (ether) để làm mất ý thức nạn nhân.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.6986176371574402,
+      "num_chunks": 6,
+      "claim_id": "31536"
+    },
+    {
+      "claim": "Abbott có thể sử dụng stent hấp thụ được cho thấy kết quả tốt.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.7786152362823486,
+      "num_chunks": 3,
+      "claim_id": "11202"
+    },
+    {
+      "claim": "Một trò chơi được gọi là \"Đá sapphire\" đang khuyến khích trẻ em và thanh thiếu niên ở Nga tự sát.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9777629971504211,
+      "num_chunks": 4,
+      "claim_id": "36737"
+    },
+    {
+      "claim": "Đánh giá: Đánh giá khả năng mắc bệnh ung thư phổi đang được tiến hành bằng xét nghiệm máu.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.8734504580497742,
+      "num_chunks": 4,
+      "claim_id": "10787"
+    },
+    {
+      "claim": "Mặc khẩu trang chống lại coronavirus \"giảm lượng oxy hít, tăng hấp thụ độc tố, tắt hệ miễn dịch, tăng nguy cơ lây nhiễm virus, không chính xác khoa học, hiệu quả chưa được nghiên cứu.\"",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6936753988265991,
+      "num_chunks": 6,
+      "claim_id": "26131"
+    },
+    {
+      "claim": "\"Chi phí ngân sách năm 2014-2015 của Cranston chi trả 100% cho các khoản bảo hiểm và lợi ích dành cho công nhân viên chức và người nghỉ hưu tại địa phương.\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.955595076084137,
+      "num_chunks": 6,
+      "claim_id": "16803"
+    },
+    {
+      "claim": "Hạ viện Utah thông qua các thay đổi cho luật ma túy điều trị bằng cannabis.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.7610845565795898,
+      "num_chunks": 6,
+      "claim_id": "4919"
+    },
+    {
+      "claim": "Các kháng sinh gentamicin sulfat và polymyxin B có trong vaccine và có thể gây phản ứng dị ứng từ nhẹ đến nguy hiểm cho tính mạng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9235964417457581,
+      "num_chunks": 5,
+      "claim_id": "41310"
+    },
+    {
+      "claim": "Người chứng kiến liên bang bị ám sát vì sẽ khai báo chống lại Hillary Clinton vì tội phạm ma túy đã bị nổ tung lớn.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8532867232958475,
+      "num_chunks": 3,
+      "claim_id": "42158"
+    },
+    {
+      "claim": "Tại sao ngựa xám có sọc? Có thể để làm cho muỗi bị ngạc nhiên.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.919075608253479,
+      "num_chunks": 5,
+      "claim_id": "5094"
+    },
+    {
+      "claim": "Một phụ nữ 23 tuổi tên là Ava Roberts đã trở thành \"nữ bác sĩ da đen trẻ nhất thế giới.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5385945439338684,
+      "num_chunks": 4,
+      "claim_id": "34218"
+    },
+    {
+      "claim": "Bọc mảnh thủy tinh mịn vào thực phẩm là một phương pháp hiệu quả để giết người.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9563719630241394,
+      "num_chunks": 6,
+      "claim_id": "31557"
+    },
+    {
+      "claim": "Uống một ly nước trước khi đi ngủ giúp ngăn ngừa đột quỵ và nhồi máu tim.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9938234090805054,
+      "num_chunks": 1,
+      "claim_id": "41182"
+    },
+    {
+      "claim": "Mặc dù có quyết định đình chỉ xây dựng đường ống Dakota Access Pipeline (DAPL), Energy Transfer Partners tiếp tục xây dựng và chấp nhận phạt hàng ngày 50.000 USD.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9893354773521423,
+      "num_chunks": 6,
+      "claim_id": "34501"
+    },
+    {
+      "claim": "Năm ngoái là dicamba, năm nay là 2,4-D.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9190835356712341,
+      "num_chunks": 6,
+      "claim_id": "4456"
+    },
+    {
+      "claim": "Lương tối thiểu thường là mức lương cơ bản cho người trẻ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.988761842250824,
+      "num_chunks": 6,
+      "claim_id": "17462"
+    },
+    {
+      "claim": "Báo cáo của chính phủ năm 2008 cho biết rằng 35.000 người lính chiến đã chết do tác dụng phụ từ vắc-xin Anthrax mà họ được yêu cầu tiêm trong cuộc chiến tranh đầu tiên ở Iraq.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.930746853351593,
+      "num_chunks": 6,
+      "claim_id": "34466"
+    },
+    {
+      "claim": "Sau khi Hillary Clinton gặp phải một sự kiện y tế bất ngờ tại buổi lễ kỷ niệm ngày 9/11 ở New York, chiến dịch của bà đã sử dụng một người thay thế cơ thể (body double).",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.963395357131958,
+      "num_chunks": 3,
+      "claim_id": "36856"
+    },
+    {
+      "claim": "Đồ uống năng lượng đã khiến một cha mang thai mất một phần lớn đầu của mình.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5846686760584513,
+      "num_chunks": 6,
+      "claim_id": "34343"
+    },
+    {
+      "claim": "Một nhân viên tại trung tâm sức khỏe cho nữ giới ở Bronx, New York, đã nói với một hoạt động bí mật của phong trào chống phá sinh sản mà cô ấy nên xử lý một bé sinh sau khi thất bại trong việc phá thai.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.620357412312712,
+      "num_chunks": 7,
+      "claim_id": "34196"
+    },
+    {
+      "claim": "Danh sách các yếu tố quan trọng (ABCs) của D: Hầu hết mọi người đều cần nhiều hơn của vitamin ánh sáng.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7511051297187805,
+      "num_chunks": 5,
+      "claim_id": "11502"
+    },
+    {
+      "claim": "Tổ chức của Dr. Vladimir Zelenko đã điều trị 669 bệnh nhân COVID-19 bằng kết hợp của hydroxychloroquine, azithromycin và axit sunfuric (zinc) và không có trường hợp nhập viện, biến chứng hoặc tử vong nào được báo cáo.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5532927811145782,
+      "num_chunks": 2,
+      "claim_id": "35225"
+    },
+    {
+      "claim": "Một nghiên cứu cho thấy trà xanh có ích trong phòng ngừa đột quỵ, nhưng không hiệu quả trong điều trị ung thư.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9026660323143005,
+      "num_chunks": 2,
+      "claim_id": "10941"
+    },
+    {
+      "claim": "Một thợ cắt tóc đã nhầm lẫn khi cắt một nút phát vào mái tóc của khách hàng vì anh ta được cho xem một video tạm dừng làm ví dụ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9747002720832825,
+      "num_chunks": 3,
+      "claim_id": "36577"
+    },
+    {
+      "claim": "\"Club for Growth nói rằng Donald Trump đã hứa sẽ \"làm cho mọi người được chăm sóc (qua sức khỏe công cộng và) chính phủ sẽ trả tiền cho nó.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9830102920532227,
+      "num_chunks": 7,
+      "claim_id": "14423"
+    },
+    {
+      "claim": "Tumor được gây ra do thiếu hụt vitamin \"B17\", một tình trạng có thể được điều trị bằng các bổ sung dinh dưỡng.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9856237173080444,
+      "num_chunks": 6,
+      "claim_id": "31240"
+    },
+    {
+      "claim": "Một phần ba hành khách trên tàu du lịch Anh mắc bệnh viêm đường tiêu hóa do virus norovirus.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6408479958772659,
+      "num_chunks": 2,
+      "claim_id": "1415"
+    },
+    {
+      "claim": "Người lao động tại nhà hàng Five Guys ở Daphne, Alabama, từ chối phục vụ các sĩ quan cảnh sát địa phương.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9775542616844177,
+      "num_chunks": 6,
+      "claim_id": "35718"
+    },
+    {
+      "claim": "Mục tiêu thời gian chờ trong phòng cấp cứu đã trượt dậy hơn 10 triệu lần kể từ năm 2010.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9905732274055481,
+      "num_chunks": 3,
+      "claim_id": "41651"
+    },
+    {
+      "claim": "Năm 2018, ứng cử viên Thống đốc Oklahoma Christopher Barnett đã ủng hộ việc bóp cổ cho người khuyết tật và những người nhận trợ cấp.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9495453238487244,
+      "num_chunks": 7,
+      "claim_id": "34286"
+    },
+    {
+      "claim": "Sự cố tai nạn của nhà báo Bre Payton đã liên quan đến việc bà báo cáo về vụ điều tra Mueller.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.722873697678248,
+      "num_chunks": 6,
+      "claim_id": "29972"
+    },
+    {
+      "claim": "Bravecto thương hiệu thuốc trừ sâu và côn trùng có hại cho chó.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9494642615318298,
+      "num_chunks": 6,
+      "claim_id": "34673"
+    },
+    {
+      "claim": "Đã có 4 trường hợp tử vong do bệnh Legionnaires' ở Bắc Carolina.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.4540771245956421,
+      "num_chunks": 1,
+      "claim_id": "5896"
+    },
+    {
+      "claim": "Nhà khoa học nhận giải thưởng Nobel hóa học vì sử dụng tiến hóa để tạo ra các protein mới.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5933165699243546,
+      "num_chunks": 6,
+      "claim_id": "5381"
+    },
+    {
+      "claim": "Có 94 trường hợp tử vong do bệnh lũy thừa ở Madagascar, cơ quan y tế của Liên Hợp Quốc tuyên bố.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7588655650615692,
+      "num_chunks": 2,
+      "claim_id": "6785"
+    },
+    {
+      "claim": "Người tiền nhiệm outfielder New York Mets Kevin Mitchell đã giết chết con mèo của bạn gái bằng cách cắt đầu nó với một con dao.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8037298381328583,
+      "num_chunks": 5,
+      "claim_id": "34716"
+    },
+    {
+      "claim": "Lamp muối có thể giảm lo âu, cải thiện giấc ngủ, tăng năng lượng và bảo vệ khỏi \"khói điện\".",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.743620039584736,
+      "num_chunks": 6,
+      "claim_id": "31885"
+    },
+    {
+      "claim": "Thứ trưởng Ngoại giao John Kerry con gái kết hôn với một người đàn ông Iran có liên hệ với Bộ trưởng Ngoại giao Iran tham gia đàm phán về vấn đề hạt nhân.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8667334566513697,
+      "num_chunks": 6,
+      "claim_id": "36991"
+    },
+    {
+      "claim": "Các dữ liệu cho thấy tỷ lệ tiêm chủng giảm dưới mức khuyến cáo.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9949966669082642,
+      "num_chunks": 4,
+      "claim_id": "4011"
+    },
+    {
+      "claim": "Mặc dù vẫn còn nhiều người hút thuốc ở Mỹ trong ngành khai thác và phục vụ thực phẩm.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.531900147596995,
+      "num_chunks": 3,
+      "claim_id": "1934"
+    },
+    {
+      "claim": "Một bức ảnh được chia sẻ trên mạng xã hội vào giữa năm 2019 cho thấy một sĩ quan cảnh sát có \"mũ đầu gầy\" và có dấu hiệu của một \"hợp đồng quân sự bên phải\".",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.951441764831543,
+      "num_chunks": 7,
+      "claim_id": "34186"
+    },
+    {
+      "claim": "Một nghiên cứu gần đây cho biết \"Chính sách chăm sóc sức khỏe toàn dân\" sẽ giảm chi phí chăm sóc sức khỏe trong nước lên tới 4.500 tỷ USD một năm và cứu sống 68.000 người mà nếu không được điều trị thì sẽ tử vong.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7517635822296143,
+      "num_chunks": 6,
+      "claim_id": "26826"
+    },
+    {
+      "claim": "Bác sĩ làm việc tại McKinney, Texas đã điều trị hơn 75 bệnh nhân mắc COVID-19 bằng cách sử dụng chế độ điều trị bao gồm hydroxychloroquine, azithromycin, losartan, aspirin, zinc và CBD (còn gọi là dầu cannabidiol).",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9452909231185913,
+      "num_chunks": 6,
+      "claim_id": "37752"
+    },
+    {
+      "claim": "Các cư dân nói rằng các xét nghiệm phát hiện các hóa chất độc sau vụ cháy nhà máy.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8919593095779419,
+      "num_chunks": 5,
+      "claim_id": "6561"
+    },
+    {
+      "claim": "Miriam Adelson được trao Huy chương Tự do Tổng thống cho việc quyên góp vào quỹ được tạo ra để hỗ trợ các đồng minh của Trump bị truy tố trong cuộc điều tra Nga với chi phí pháp lý của họ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9482582211494446,
+      "num_chunks": 5,
+      "claim_id": "34210"
+    },
+    {
+      "claim": "\"Những trẻ em đến biên giới nam Mỹ \"không bao giờ được kiểm tra sau khi đến và bị cách ly nếu có bệnh. Họ chỉ được gửi ra khắp cả nước. Nhiều người trong số họ mắc measles ... Bây giờ chúng ta đang phải đối mặt với một đợt bùng phát do chính chính sách nhập cư của mình.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.6734136343002319,
+      "num_chunks": 6,
+      "claim_id": "15938"
+    },
+    {
+      "claim": "Chúng tôi không thể đánh bại ung thư bằng thuốc một mình; phòng ngừa là rất quan trọng: Tổ chức Y tế Thế giới (WHO).",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9883376955986023,
+      "num_chunks": 5,
+      "claim_id": "2749"
+    },
+    {
+      "claim": "Một bé chết tại một cơ sở y tế không được chỉ định vì cha mẹ của bé từ chối cho con mình được chăm sóc bởi một nhân viên y tế da đen.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9844095706939697,
+      "num_chunks": 4,
+      "claim_id": "34656"
+    },
+    {
+      "claim": "Người được đề cử cho đội ngũ an ninh quốc gia của Trump, KT McFarland, đã tiết lộ rằng anh trai đồng tính của cô đang tử vong do bệnh HIV.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8596431612968445,
+      "num_chunks": 6,
+      "claim_id": "34507"
+    },
+    {
+      "claim": "Hơn 100 con cá voi bị mắc kẹt trong một \"nhà tù\" dưới nước.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9894580841064453,
+      "num_chunks": 6,
+      "claim_id": "27170"
+    },
+    {
+      "claim": "Chúng ta đã mất kiểm soát, chúng ta đã giết chết dịch bệnh về mặt vật lý và tâm lý. Chúng tôi không thể hiểu được những gì còn lại chúng ta có thể làm, tất cả các giải pháp đều đã bị exhausted trên mặt đất. Cuộc sống của con người chỉ còn là hy vọng lên trời, xin Chúa cứu rỗi cho nhân dân của chúng ta.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5658933718999227,
+      "num_chunks": 3,
+      "claim_id": "26569"
+    },
+    {
+      "claim": "Sau khi thông qua luật cho phép tiêu thụ sữa tươi hợp pháp trong bang, một số thành viên Quốc hội Tây Virginia bị ốm do uống sữa tươi để mừng việc luật trở thành hiệu lực.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9913978576660156,
+      "num_chunks": 4,
+      "claim_id": "34427"
+    },
+    {
+      "claim": "Trường: tuyên bố\nNội dung:\nNghiên cứu: Hầu hết các khu vực học đường ở Texas thiếu giáo dục về tình dục.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6232704302916924,
+      "num_chunks": 6,
+      "claim_id": "6138"
+    },
+    {
+      "claim": "AstraZeneca's Imfinzi được đánh giá nhanh chóng bởi FDA đối với ung thư phổi nhỏ细胞.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.495532289147377,
+      "num_chunks": 2,
+      "claim_id": "48"
+    },
+    {
+      "claim": "Các tế bào con người và động vật từ nguồn như thai nhi bị phá thai được sử dụng trong các loại vắc-xin và liên quan đến bệnh máu trắng ở trẻ em và tiểu đường.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9760756492614746,
+      "num_chunks": 5,
+      "claim_id": "41315"
+    },
+    {
+      "claim": "Một trận động đất từ núi lửa Etna đã làm rung chuyển Sicilia, gây lo lắng và hoảng sợ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8924392759799957,
+      "num_chunks": 4,
+      "claim_id": "3466"
+    },
+    {
+      "claim": "Tổng thống Rick Scott đã từ chối phân bổ nguồn lực cho 30 trung tâm hỗ trợ nạn nhân bạo hành tình dục tại Florida. Scott nói rằng các trung tâm này không cần thiết.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9599738717079163,
+      "num_chunks": 7,
+      "claim_id": "16247"
+    },
+    {
+      "claim": "\"Jimmies\" là tên gọi cho các hạt trang trí được sử dụng trên các món ăn vặt, lấy tên từ \"Jim Crow\".",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8843485713005066,
+      "num_chunks": 6,
+      "claim_id": "34671"
+    },
+    {
+      "claim": "Một cựu cầu thủ NFL và bác sĩ đã bị bắt giữ trong vụ việc sử dụng opioid ở bang Georgia.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9983929991722107,
+      "num_chunks": 3,
+      "claim_id": "3839"
+    },
+    {
+      "claim": "Các biện pháp liên quan đến chấn thương đầu được cải thiện ở các cầu thủ bóng đá trung học đã uống sữa chocolate mới, một nghiên cứu của Đại học Maryland cho thấy.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6231448784470558,
+      "num_chunks": 5,
+      "claim_id": "10409"
+    },
+    {
+      "claim": "Tiêu đề: Khung nhìn tuyệt vời: Cuộc phiêu lưu bên trong não bộ",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.36060211062431335,
+      "num_chunks": 3,
+      "claim_id": "10028"
+    },
+    {
+      "claim": "Tổ chức Y tế Thế giới (WHO) cho biết số trường hợp viêm cúm tăng đột ngột trong nhiều đợt bùng phát trên toàn thế giới.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9203124046325684,
+      "num_chunks": 1,
+      "claim_id": "4003"
+    },
+    {
+      "claim": "\"Nhóm truyền thông chính thống đã giả dối rằng có một đợt bùng phát nghiêm trọng của các trường hợp COVID-19 do người dân Wisconsin bỏ phiếu.\"",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9976307153701782,
+      "num_chunks": 7,
+      "claim_id": "26328"
+    },
+    {
+      "claim": "Dưới chương trình LARK, tù nhân Gitmo đang được ở lại với những người bảo thủ không đồng ý cách đối xử của chính phủ Mỹ với những tù nhân này.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9719119668006897,
+      "num_chunks": 6,
+      "claim_id": "31627"
+    },
+    {
+      "claim": "Ariana Grande đã liên hệ với gia đình những người chết trong vụ tấn công tại sân vận động Manchester và sẽ chi trả cho lễ tang của họ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8851523995399475,
+      "num_chunks": 5,
+      "claim_id": "34398"
+    },
+    {
+      "claim": "Một công ty được thuê thực hiện kiểm tra Common Core tại Florida sẽ \"đึง hút tất cả các con của bạn để trở nên đồng tính như có thể.\"",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9749012589454651,
+      "num_chunks": 6,
+      "claim_id": "16998"
+    },
+    {
+      "claim": "Người bệnh COVID-19 có chỉ số khối cơ thể cao đang bị từ chối máy thở và một hướng dẫn Google Docs lưu hành có thể giúp người dân khẳng định quyền lợi của mình.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6082020650307337,
+      "num_chunks": 6,
+      "claim_id": "37505"
+    },
+    {
+      "claim": "Câu chuyện về một cháu gái 11 tuổi đã có chảy máu kinh nguyệt từ khi 8 tuổi và cũng bắt đầu sữa mẹ. Câu chuyện này nói rằng cô ấy uống sữa được tiêm hormone rBST, một loại hormone được sử dụng để tăng sản lượng sữa ở bò. Câu chuyện này tập trung vào sữa Great Value của Wal-Mart như nguồn gốc của rBST và khuyến cáo không nên cho gia đình mình uống.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9202305277188619,
+      "num_chunks": 3,
+      "claim_id": "39599"
+    },
+    {
+      "claim": "Các miếng xà phòng loại bỏ trang điểm Neutrogena đang gây ra một số phản ứng dị ứng nghiêm trọng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7838871975739797,
+      "num_chunks": 3,
+      "claim_id": "34293"
+    },
+    {
+      "claim": "Một email được gửi bởi A về câu chuyện về một cô bé nhỏ tại Bệnh viện Presbyterian ở Charlotte, Bắc Carolina, đã kỳ diệu hồi phục khỏi ung thư sau khi một thiên thần được nhìn thấy trên màn hình giám sát video.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.6377304196357727,
+      "num_chunks": 3,
+      "claim_id": "40470"
+    },
+    {
+      "claim": "\"Trẻ em không có vẻ như đang bị nhiễm virus này.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.950872540473938,
+      "num_chunks": 7,
+      "claim_id": "26247"
+    },
+    {
+      "claim": "Một nhân viên dọn dẹp vô tâm đã gây ra nhiều vụ tử vong trong bệnh viện khi anh ấy cắt đứt hệ thống hỗ trợ sinh tồn của bệnh nhân để lắp đặt máy đánh bóng sàn.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7853652567913135,
+      "num_chunks": 6,
+      "claim_id": "33492"
+    },
+    {
+      "claim": "Một video cho thấy một người mẹ buộc phải cắt tóc đầu của con gái mình như hình phạt vì con gái đó đùa về một bệnh nhân ung thư trùm tóc.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9982490539550781,
+      "num_chunks": 4,
+      "claim_id": "34606"
+    },
+    {
+      "claim": "Vụ nổ dịch Ebola ở Cộng hòa Congo tạo ra những thách thức đối với thịt rừng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9983578324317932,
+      "num_chunks": 6,
+      "claim_id": "3642"
+    },
+    {
+      "claim": "Tòa án không chấm dứt sự giám sát trong sạch Everglades kéo dài nhiều thập kỷ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6607639901340008,
+      "num_chunks": 5,
+      "claim_id": "6818"
+    },
+    {
+      "claim": "\"Uống một thìa cà phê nước đường trái cây mỗi 15 phút trong một giờ có thể giúp ai đó đối phó với nôn mửa hoặc tiêu chảy.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.998063862323761,
+      "num_chunks": 5,
+      "claim_id": "34231"
+    },
+    {
+      "claim": "Tất cả các chương trình thực sự tuyệt vời trong lịch sử Mỹ, như An sinh xã hội (Social Security), đều được thực hiện mà không có sự tham gia của đảng Cộng hòa. Chứng kiến Medicare (Medicare) chỉ là khi họ nhận ra rằng phải tham gia vào cuộc bỏ phiếu cuối cùng.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8389122486114502,
+      "num_chunks": 7,
+      "claim_id": "24566"
+    },
+    {
+      "claim": "Người thực hiện vụ tấn công tại nhà thờ Charleston là Dylann Roof thực sự là một ngôi sao trẻ tuổi trước đây và diễn viên khủng bố tên John Christian Graas.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.41265118228537695,
+      "num_chunks": 7,
+      "claim_id": "31905"
+    },
+    {
+      "claim": "Uống một loại đồ uống giảm cân mỗi ngày làm tăng nguy cơ mắc bệnh loạn thần và đột quỵ gấp ba lần.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.869222472111384,
+      "num_chunks": 6,
+      "claim_id": "34241"
+    },
+    {
+      "claim": "Một trung bình 8 người lính Mỹ tự tử mỗi ngày.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9333574771881104,
+      "num_chunks": 5,
+      "claim_id": "36242"
+    },
+    {
+      "claim": "Các thụ thể vị đắng được tìm thấy trong phổi có thể giúp bệnh nhân viêm phế quản.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7562432885169983,
+      "num_chunks": 4,
+      "claim_id": "10242"
+    },
+    {
+      "claim": "Thành viên của thương hiệu Purina Beneful đang gây ra bệnh cho chó và khiến chúng chết.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9795258045196533,
+      "num_chunks": 7,
+      "claim_id": "34684"
+    },
+    {
+      "claim": "Một thiếu niên đi học đại học ở Colorado trở nên nghiêm trọng bị ốm do \"hít thuốc điện tử\", hoặc sử dụng bình thường của một máy hít thuốc điện tử.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.949883759021759,
+      "num_chunks": 6,
+      "claim_id": "36218"
+    },
+    {
+      "claim": "Trường: tuyên bố\nNội dung:\nMichael Doherty nói rằng Tổ chức Phụ sản cung cấp khoảng 140 cuộc thăm khám mang thai ở mỗi bang.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8840008974075317,
+      "num_chunks": 7,
+      "claim_id": "21737"
+    },
+    {
+      "claim": "Cơ quan y tế Delaware báo cáo là những cái chết đầu tiên trong mùa của bệnh lây truyền qua đường hô hấp (flu) tại đây.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.5216650366783142,
+      "num_chunks": 1,
+      "claim_id": "3682"
+    },
+    {
+      "claim": "Dịch đoạn văn bản y khoa sang tiếng Việt:\n\nPfizer: Thuốc mới chống ung thư mang hy vọng, chiến lược mới.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7138059139251709,
+      "num_chunks": 5,
+      "claim_id": "10848"
+    },
+    {
+      "claim": "Một cuộc culling thỏ hoang ở Ba Lan đã gây ra sự phản đối của người dân.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9985135197639465,
+      "num_chunks": 3,
+      "claim_id": "7757"
+    },
+    {
+      "claim": "Hà Nội đã khuyến khích việc quân sự hóa các trụ sở cảnh sát địa phương.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9901825785636902,
+      "num_chunks": 6,
+      "claim_id": "16584"
+    },
+    {
+      "claim": "Nhà phát ngôn Hạ viện Maryland, Michael Busch, đã phẫu thuật thay đổi gan.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.7134276628494263,
+      "num_chunks": 1,
+      "claim_id": "6738"
+    },
+    {
+      "claim": "Khi được hỏi bởi Hillary Clinton tại sao Mỹ chưa có tổng thống nữ, bà Mother Teresa trả lời: \"Có thể vì bạn đã phá thai cô.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.7508871555328369,
+      "num_chunks": 8,
+      "claim_id": "34573"
+    },
+    {
+      "claim": "Đó là một tuyên bố sai lệch. Dưới đây là bản dịch:\n\nBảo hiểm y tế Obamacare không cắt giảm cho người cao tuổi trong chương trình BHYT.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.5850406885147095,
+      "num_chunks": 7,
+      "claim_id": "16513"
+    },
+    {
+      "claim": "Vintage Pyrex chứa mức độ độc hại của chì quá cao, khiến nó nguy hiểm cho bất kỳ mục đích phục vụ hoặc lưu trữ thực phẩm nào.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9923003911972046,
+      "num_chunks": 5,
+      "claim_id": "34505"
+    },
+    {
+      "claim": "Combipill giảm huyết áp và nguy cơ tim mạch.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9706481099128723,
+      "num_chunks": 4,
+      "claim_id": "8842"
+    },
+    {
+      "claim": "Một phụ nữ đã qua đời tại rạp chiếu phim trong khi xem bộ phim \"It\" vào tháng 9 năm 2017.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.7318440675735474,
+      "num_chunks": 3,
+      "claim_id": "31010"
+    },
+    {
+      "claim": "Quan sát não bộ dự đoán ai sẽ đọc được những người mắc chứng dyslexia.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5948953707702458,
+      "num_chunks": 4,
+      "claim_id": "2669"
+    },
+    {
+      "claim": "Một trẻ em ở Paris đang nguy cơ bị nhiễm độc chì sau đám cháy Notre Dame.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9547224044799805,
+      "num_chunks": 4,
+      "claim_id": "3448"
+    },
+    {
+      "claim": "Mới đây, các khuyến nghị mới về cách điều trị triệu chứng mãn kinh ở người bệnh ung thư vú.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8375183641910553,
+      "num_chunks": 4,
+      "claim_id": "9100"
+    },
+    {
+      "claim": "Bác sĩ ở bệnh viện Missouri bảo vệ việc chăm sóc bệnh nhân.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.6465805768966675,
+      "num_chunks": 5,
+      "claim_id": "5592"
+    },
+    {
+      "claim": "Một phụ nữ 86 tuổi bị đau đớn và cong lưng nghiêm trọng đã được chữa khỏi sau một tháng thực hành yoga.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8080097138881683,
+      "num_chunks": 5,
+      "claim_id": "34581"
+    },
+    {
+      "claim": "\"Trung tâm Lương sinh và Phụ nữ (Planned Parenthood) thực hiện \"chiếm số lượng thai kỳ\" và thưởng nhân viên có hiệu suất tốt để quảng bá các dịch vụ phá thai.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.7612263560295105,
+      "num_chunks": 6,
+      "claim_id": "34449"
+    },
+    {
+      "claim": "Hợp đồng (claim) của quỹ Global Fund đã thu được 13,92 tỷ USD để chống lại bệnh HIV/AIDS, bệnh phổi nhiễm trùng và bệnh sốt rét.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.6861096620559692,
+      "num_chunks": 3,
+      "claim_id": "4333"
+    },
+    {
+      "claim": "Quyết định của Ủy ban ủng hộ việc cấm sản phẩm hút thuốc lá ma túy.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9768934845924377,
+      "num_chunks": 5,
+      "claim_id": "5132"
+    },
+    {
+      "claim": "Lá thyme chứa một hợp chất làm giảm lo âu khi đốt.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9911777377128601,
+      "num_chunks": 5,
+      "claim_id": "34341"
+    },
+    {
+      "claim": "Hợp đồng (claim) đã bị hủy bỏ. \n\nCông ty GM đã dừng hoạt động tại 11 nhà máy ở bang Michigan sau khi công ty cung cấp điện (utility) đưa ra lời kêu gọi khẩn cấp.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9306933283805847,
+      "num_chunks": 4,
+      "claim_id": "405"
+    },
+    {
+      "claim": "\"Thuốc thay thế ma túy được FDA chấp thuận dẫn đến tử vong ở Illinois.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9468769431114197,
+      "num_chunks": 4,
+      "claim_id": "42183"
+    },
+    {
+      "claim": "Tiêu đề: Y Khoa - Đánh giá tình trạng bệnh nhân có nguy cơ mắc bệnh ung thư tuyến tiền liệt cao\n\nBệnh nhân: Bệnh nhân là nam giới trên 50 tuổi, có tiền sử gia đình về ung thư tuyến tiền liệt.\n\nĐơn vị: Bệnh viện đa khoa cấp I.\n\nThời gian theo dõi: Từ ngày 01/2023 đến nay.\n\nKết quả xét nghiệm: Các xét nghiệm cho thấy bệnh nhân có nguy cơ mắc bệnh ung thư tuyến tiền liệt cao, cần được theo dõi và điều trị sớm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8578364253044128,
+      "num_chunks": 1,
+      "claim_id": "34712"
+    },
+    {
+      "claim": "Hơn 50 người nhiễm virus herpes sau khi uống nước tắm được bán bởi ngôi sao Instagram Belle Delphine vào tháng 7 năm 2019.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7931661605834961,
+      "num_chunks": 4,
+      "claim_id": "29721"
+    },
+    {
+      "claim": "Tổ chức Y tế Anh Quốc (UK) cuối cùng đã chấp thuận sử dụng hạn chế của thuốc lupus do GlaxoSmithKline (GSK).",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7939149141311646,
+      "num_chunks": 1,
+      "claim_id": "1414"
+    },
+    {
+      "claim": "Anh Dawkin nói rằng anh đã bỏ lại bóng đá vì lý do sức khỏe tâm thần.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9895604848861694,
+      "num_chunks": 1,
+      "claim_id": "5893"
+    },
+    {
+      "claim": "Cơ quan chức năng cho biết lây nhiễm cảm lạnh mùa đông ở New York là điều thường xuyên.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.7613850831985474,
+      "num_chunks": 2,
+      "claim_id": "3958"
+    },
+    {
+      "claim": "Tham khảo: Nghiên cứu: Kiểm tra di truyền dự đoán nguy cơ béo phì ở người trung niên.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.7763593792915344,
+      "num_chunks": 5,
+      "claim_id": "4453"
+    },
+    {
+      "claim": "Các mảnh xương được tìm thấy tại Vatican vào cuối tháng 10 và đầu tháng 11 năm 2018 thuộc về hai cô gái tuổi dậy thì đã mất tích từ năm 1983.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.744225800037384,
+      "num_chunks": 4,
+      "claim_id": "34238"
+    },
+    {
+      "claim": "\"Thứ trưởng Ngoại giao John Kerry đã \"đưa tiền của người nộp thuế vào hố\", khiến tiền của người nộp thuế chảy vào các hoạt động từ thiện toàn cầu của con gái mình.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9795587658882141,
+      "num_chunks": 7,
+      "claim_id": "34499"
+    },
+    {
+      "claim": "\"Mike Pence nói rằng Hillary Clinton muốn tăng số người tị nạn Syria đến nước này lên 550%.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.7841557264328003,
+      "num_chunks": 7,
+      "claim_id": "13565"
+    },
+    {
+      "claim": "Bill Clinton bị tước học vị và đuổi học khỏi Đại học Oxford vì đã tấn công một bạn nữ Anh tên Eileen Wellstone.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.5514093637466431,
+      "num_chunks": 6,
+      "claim_id": "34360"
+    },
+    {
+      "claim": "Mật ong mẹ có hiệu quả điều trị nhiều tình trạng, bao gồm vết chấn thương, vết cắt, cắn của con giun, viêm da nến, mụn trứng cá và bỏng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7358288466930389,
+      "num_chunks": 7,
+      "claim_id": "36227"
+    },
+    {
+      "claim": "Các nhà Dân chủ tấn công ứng viên của họ về EPA do Trump đề cử liên quan đến việc lôi kéo từ dầu đá than và các biện pháp thu hẹp.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9350039958953857,
+      "num_chunks": 6,
+      "claim_id": "5175"
+    },
+    {
+      "claim": "Các nhà khoa học đang tiến gần hơn đến một xét nghiệm máu để phát hiện ung thư.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7958858013153076,
+      "num_chunks": 2,
+      "claim_id": "9417"
+    },
+    {
+      "claim": "Một quản lý nhà hàng Popeye ở Brunswick, Georgia đã bị bắt vì lắc thuốc lá gà với ma túy để tăng doanh thu.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.514431893825531,
+      "num_chunks": 2,
+      "claim_id": "31437"
+    },
+    {
+      "claim": "Đoạn văn bản y khoa sau được dịch sang tiếng Việt như sau:\n\nTiêu đề: Đánh giá rủi ro của tiêm phòng cảm lạnh.\n\nCảm nhận: Tiêm phòng cảm lạnh là nguy hiểm và có nhiều rủi ro mà các công ty dược phẩm không muốn bạn biết.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8087632618844509,
+      "num_chunks": 6,
+      "claim_id": "32180"
+    },
+    {
+      "claim": "\"Người nhập cư chiếm đa số người lao động thiết yếu ở những nơi như Thành phố New York.\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9437289237976074,
+      "num_chunks": 7,
+      "claim_id": "26351"
+    },
+    {
+      "claim": "\"NASA thừa nhận phun hóa chất Lithium và các hóa chất khác lên người Mỹ\".",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7913782000541687,
+      "num_chunks": 6,
+      "claim_id": "42213"
+    },
+    {
+      "claim": "\"Đoạn văn này nói về việc \"đoạn văn này sẽ có nghĩa là các cuộc chuyển nhượng vũ khí tư nhân giữa những công dân trung thực sẽ bị truy tố và cần phải xin sự chấp thuận của chính phủ\".",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.956171452999115,
+      "num_chunks": 6,
+      "claim_id": "18495"
+    },
+    {
+      "claim": "Pháp di chuyển bệnh nhân từ các bệnh viện quá tải khi tử vong tăng lên.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.828104555606842,
+      "num_chunks": 3,
+      "claim_id": "8023"
+    },
+    {
+      "claim": "Một số quốc gia đóng góp quân đội vì họ kiếm tiền từ chúng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9843741059303284,
+      "num_chunks": 6,
+      "claim_id": "12957"
+    },
+    {
+      "claim": "Tiến sĩ John Magufuli, Tổng thống Tanzania, đã gửi mẫu từ một loại trái cây, chim và lợn cừu đến phòng thí nghiệm để kiểm tra bệnh corona do virus COVID-19 ở người - và kết quả đã trở lại dương tính.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8837100863456726,
+      "num_chunks": 6,
+      "claim_id": "35352"
+    },
+    {
+      "claim": "Được phát hiện bệnh chim (bird flu) tại nhà cung cấp gà của công ty Tyson Foods.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.600434422492981,
+      "num_chunks": 4,
+      "claim_id": "6168"
+    },
+    {
+      "claim": "Sự tử đầu tiên của virus corona ở Pakistan làm nổi bật sự dễ bị tổn thương của quốc gia này.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9452769756317139,
+      "num_chunks": 6,
+      "claim_id": "7888"
+    },
+    {
+      "claim": "Mặc dù không có thông tin cụ thể về nghiên cứu, nhưng tôi sẽ dịch \"claim\" và \"study\" sang tiếng Việt như sau:\n\n- Claim: Đơn vị hoặc yêu cầu\n- Study: Nghiên cứu",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9438948631286621,
+      "num_chunks": 4,
+      "claim_id": "4599"
+    },
+    {
+      "claim": "Người dẫn chương trình phát thanh trực tuyến Rush Limbaugh bị loại khỏi vòng tuyển chọn cho quân đội Việt Nam do có bệnh pilonidal cyst.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9808814525604248,
+      "num_chunks": 7,
+      "claim_id": "34717"
+    },
+    {
+      "claim": "Thư viện y khoa: Dấu hiệu hiệu quả của liệu pháp trong nhóm bệnh nhân COPD.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.3486978501081467,
+      "num_chunks": 5,
+      "claim_id": "9091"
+    },
+    {
+      "claim": "Cơ quan chức năng Hawaii xác nhận trường hợp thứ ba mắc bệnh màng não của con rùa.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.7081491947174072,
+      "num_chunks": 1,
+      "claim_id": "6665"
+    },
+    {
+      "claim": "Các nhà hoạt động cánh tả đã phá hoại ngôi nhà của ứng viên được đề cử cho Tòa án Tối cao Mỹ Brett Kavanaugh.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9691564440727234,
+      "num_chunks": 4,
+      "claim_id": "30132"
+    },
+    {
+      "claim": "\"Jack Conway nói rằng Rand Paul cho rằng buôn bán ma túy, trộm cắp, trộm cửa và mại dâm nên được giảm nhẹ hoặc loại bỏ hình phạt.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9547473788261414,
+      "num_chunks": 3,
+      "claim_id": "23319"
+    },
+    {
+      "claim": "Trung Quốc kết án 3 nhà nghiên cứu liên quan đến việc chỉnh sửa gen của trẻ em.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9611546397209167,
+      "num_chunks": 6,
+      "claim_id": "4442"
+    },
+    {
+      "claim": "Đoạn văn bản y khoa đã được dịch sang tiếng Việt như sau:\n\nĐây là một tin đồn về virus (eRumor) bao gồm một loạt hình ảnh của tay người mà nó cho là tay người bị cắn bởi con rắn brown recluse.  Nó cũng tuyên bố rằng rắn brown recluse là loài rắn nguy hiểm nhất ở Mỹ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.793581485748291,
+      "num_chunks": 2,
+      "claim_id": "40399"
+    },
+    {
+      "claim": "Một con mèo con chết sau khi uống chất hóa học được phun lên cây Christmas của Home Depot.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9987903237342834,
+      "num_chunks": 5,
+      "claim_id": "34688"
+    },
+    {
+      "claim": "\"No chất bắn hơi cay và không sử dụng đạn bắn cao su.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9851590991020203,
+      "num_chunks": 6,
+      "claim_id": "26175"
+    },
+    {
+      "claim": "Các báo cáo đã lan truyền trên Internet rằng hai bệnh nhân bị Ebola ở Liberia đã tỉnh dậy từ cái chết như những con quái vật ăn thịt người có Ebola và rằng Cơ quan Quản lý Khẩn cấp An toàn Thực phẩm và Dược phẩm Mỹ (FEMA) đang chuẩn bị cho đại dịch Ebola zombie. Các báo cáo lan rộng cũng cho biết FEMA đang thiết lập một cách im lặng các trạm cách ly Ebola khắp cả nước Mỹ.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7522681355476379,
+      "num_chunks": 3,
+      "claim_id": "37317"
+    },
+    {
+      "claim": "Một người đàn ông ở Florida đã cắt bỏ bộ phận sinh dục của mình và cho một con rắn boa ăn trong khi đang bị nghiện ma túy methamphetamine.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9059506058692932,
+      "num_chunks": 3,
+      "claim_id": "31487"
+    },
+    {
+      "claim": "Vào ngày 7 tháng 7 năm 2020, trường hợp mắc mới của virus corona tại Đức là 298 người, tại Đan Mạch là 10 người, tại Na Uy là 11 người, tại Thụy Điển là 57 người và tại Hoa Kỳ là 55.442 người.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9709567427635193,
+      "num_chunks": 7,
+      "claim_id": "37754"
+    },
+    {
+      "claim": "Các quốc gia châu Phi tiếp tục xác nhận các trường hợp nhiễm coronavirus đầu tiên, trong khi Bill Gates cam kết hỗ trợ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9903173446655273,
+      "num_chunks": 7,
+      "claim_id": "8200"
+    },
+    {
+      "claim": "Người khác chịu trách nhiệm về hành vi tấn công mà Christine Blasey Ford mô tả là do Judge Brett Kavanaugh thực hiện.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9858700037002563,
+      "num_chunks": 6,
+      "claim_id": "34250"
+    },
+    {
+      "claim": "Hãng xe Đức yêu cầu khuyến khích để tăng nhu cầu mua ô tô xanh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5897281225770712,
+      "num_chunks": 4,
+      "claim_id": "8303"
+    },
+    {
+      "claim": "Danh mục thuốc ức chế PCSK9 có nguồn gốc từ nghiên cứu của trường UT Southwestern trở thành một game-changer cho bệnh nhân mắc cholesterol cao cực độ.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7719803005456924,
+      "num_chunks": 6,
+      "claim_id": "11151"
+    },
+    {
+      "claim": "Bác sĩ rethinking các phương pháp điều trị cholesterol mới",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7861989736557007,
+      "num_chunks": 6,
+      "claim_id": "9957"
+    },
+    {
+      "claim": "Trường Centerville Elementary School ở Lancaster, Pennsylvania, đã hủy một buổi biểu diễn lễ hội sinh nhật do hai phụ huynh phàn nàn về việc đề cập đến Chúa.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9539855718612671,
+      "num_chunks": 6,
+      "claim_id": "34485"
+    },
+    {
+      "claim": "Caesarean hiện đại được phát minh bởi các phụ nữ chăm sóc sinh sản ở châu Phi.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7808045297861099,
+      "num_chunks": 4,
+      "claim_id": "36514"
+    },
+    {
+      "claim": "Các triệu chứng của Covid-19 là họng đau kéo dài từ 3 đến 4 ngày. Virus sau đó hòa quyện vào dịch mũi, đi vào đường hô hấp và tiếp tục đi vào phổi gây viêm phổi. Khi có viêm phổi thì xuất hiện sốt cao và khó thở. Cảm giác tắc mũi giống như đang chìm trong nước.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8049097061157227,
+      "num_chunks": 4,
+      "claim_id": "41048"
+    },
+    {
+      "claim": "\"Trong một số điều kiện nhất định, con sói cái có thể phát triển râu và thay đổi hành vi \"nam tính\"\".\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9895449280738831,
+      "num_chunks": 5,
+      "claim_id": "27575"
+    },
+    {
+      "claim": "Các xương được tìm thấy trên hòn đảo xa xôi của Thái Bình Dương Nikumaroro thuộc về phi công nổi tiếng Amelia Earhart.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.907555103302002,
+      "num_chunks": 6,
+      "claim_id": "34308"
+    },
+    {
+      "claim": "\"Desde tuần kết thúc vào ngày 14 tháng 3, Wisconsin thực sự đã có một giảm chi tiêu du lịch so với năm trước là 1,7 tỷ USD.\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8486735224723816,
+      "num_chunks": 6,
+      "claim_id": "26139"
+    },
+    {
+      "claim": "Nhóm người Gambia đang tận dụng quyền tự do của mình để tham gia vào hoạt động bảo vệ môi trường.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9970460534095764,
+      "num_chunks": 4,
+      "claim_id": "5021"
+    },
+    {
+      "claim": "Virus lan trên tàu du lịch Nhật Bản, hành khách Mỹ bay trở về nhà.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9784315228462219,
+      "num_chunks": 5,
+      "claim_id": "8922"
+    },
+    {
+      "claim": "Một sự tăng đột ngột của các trường hợp nhiễm virus Zika gần đây được liên kết với việc giới thiệu một trang trại vườn chuột lợn biến đổi gen vào năm 2012 ở Brazil.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9914920926094055,
+      "num_chunks": 6,
+      "claim_id": "34642"
+    },
+    {
+      "claim": "Năm 2012, Usher đã trả 1,1 triệu USD để hòa giải vụ kiện do một phụ nữ đưa ra, cáo buộc anh ta có ý thức lây nhiễm cho cô ấy với bệnh herpes.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9890796542167664,
+      "num_chunks": 6,
+      "claim_id": "34377"
+    },
+    {
+      "claim": "Các quy định rượu mạnh nghiêm ngặt khiến người Litva phải chịu một cơn đau đầu nặng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.5355046391487122,
+      "num_chunks": 6,
+      "claim_id": "4617"
+    },
+    {
+      "claim": "Có bằng chứng thuyết phục rằng cựu Bộ trưởng Ngoại giao Hillary Clinton \"thực sự ngăn chặn công lý\".",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.42529577016830444,
+      "num_chunks": 2,
+      "claim_id": "41755"
+    },
+    {
+      "claim": "Một bức ảnh cho thấy các con giun bị mắc kẹt trong miệng của chó.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9851846694946289,
+      "num_chunks": 5,
+      "claim_id": "27457"
+    },
+    {
+      "claim": "Diabetes loại 2 không phải là một điều kiện mãn tính.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9732257127761841,
+      "num_chunks": 6,
+      "claim_id": "9059"
+    },
+    {
+      "claim": "Quản lý điều hành thu ngân sách cho chăm sóc sức khỏe quốc gia thông qua một loạt các thuế mới, bao gồm thuế bật đèn mà sẽ tốn mỗi năm 3.128 USD cho mỗi hộ gia đình ở Mỹ.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9971176385879517,
+      "num_chunks": 7,
+      "claim_id": "24740"
+    },
+    {
+      "claim": "Một truyền thống kỷ niệm Ngày nhân viên quân sự với bữa tối ravioli được khởi xướng bởi Tổng thống Woodrow Wilson vào năm 1919.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9706718325614929,
+      "num_chunks": 7,
+      "claim_id": "30846"
+    },
+    {
+      "claim": "Nhân viên giám sát: Các vấn đề liên quan đến nhân viên có ảnh hưởng đến chăm sóc bệnh nhân tại các bệnh viện nghỉ dưỡng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8567309379577637,
+      "num_chunks": 6,
+      "claim_id": "3886"
+    },
+    {
+      "claim": "Carter tuyên bố rằng thuốc láy y tế đã chữa khỏi bệnh ung thư của anh ta.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8234162926673889,
+      "num_chunks": 2,
+      "claim_id": "33152"
+    },
+    {
+      "claim": "Các thành phố lớn có dân số chuột tương đương một con chuột trên mỗi người.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8030393600463868,
+      "num_chunks": 5,
+      "claim_id": "31127"
+    },
+    {
+      "claim": "Ăn sáu hoặc bảy chanh (không phải banana) một lúc có thể dẫn đến tử vong do ngộ độc kali quá mức.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9281661510467529,
+      "num_chunks": 5,
+      "claim_id": "30840"
+    },
+    {
+      "claim": "Các thành phố nổ lực phát triển ở châu Phi đang đối mặt với một khủng hoảng hệ thống vệ sinh nghiêm trọng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9740697741508484,
+      "num_chunks": 6,
+      "claim_id": "5425"
+    },
+    {
+      "claim": "Tế bào gốc và tim yếu\n\nCác tế bào gốc có thể giúp phục hồi chức năng của tim bị suy yếu. Tuy nhiên, việc sử dụng các tế bào gốc để điều trị bệnh tim vẫn còn nhiều tranh cãi.\n\nMột số nghiên cứu cho thấy rằng các tế bào gốc có thể giúp cải thiện chức năng của tim bằng cách tăng cường sản xuất collagen và giảm viêm trong tim. Các tế bào gốc cũng có thể giúp phục hồi các mô bị tổn thương trong tim, chẳng hạn như mô cơ tim và mô nội tâm.\n\nTuy nhiên, một số nghiên cứu khác cho thấy rằng việc sử dụng các tế bào gốc để điều trị bệnh tim không phải lúc nào cũng hiệu quả. Một số nghiên cứu đã báo cáo về các tác dụng phụ của các tế bào gốc, bao gồm cả việc gây ra các biến chứng tim mạch nghiêm trọng.\n\nDo đó, việc sử dụng các tế bào gốc để điều trị bệnh tim vẫn còn nhiều tranh cãi và cần được nghiên cứu thêm.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8757400393486023,
+      "num_chunks": 5,
+      "claim_id": "10305"
+    },
+    {
+      "claim": "Một đoạn phim bí mật được tiết lộ từ Bộ Quốc phòng Mỹ cho thấy một kế hoạch của chính phủ để tiêm chủng chống lại suy nghĩ, ý tưởng và tôn giáo.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8846969604492188,
+      "num_chunks": 6,
+      "claim_id": "35685"
+    },
+    {
+      "claim": "Người phụ nữ ăn con non của mình sau khi hút thuốc muối bơi.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.5371654033660889,
+      "num_chunks": 2,
+      "claim_id": "32792"
+    },
+    {
+      "claim": "Nhận xét của Bubba Watson là một thông điệp được chia sẻ rộng rãi, chỉ trích Black Lives Matter và bao gồm nhiều điểm quan điểm bảo thủ nói chuyện.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9597489833831787,
+      "num_chunks": 4,
+      "claim_id": "35717"
+    },
+    {
+      "claim": "Một bộ ảnh cho thấy những kết quả ghê rợn của vết cắn rắn đuôi dài (pico jackfruit).",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9976237416267395,
+      "num_chunks": 5,
+      "claim_id": "34178"
+    },
+    {
+      "claim": "\"Đồ chơi foam \"Squishies\"\" đã được xác định chứa các chất độc hại và đã bị thu hồi do đó.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9622882008552551,
+      "num_chunks": 4,
+      "claim_id": "34228"
+    },
+    {
+      "claim": "Dưới đây là bản dịch của đoạn văn:\n\nNhận định: tuyên bố\nNội dung:\nKeanu Reeves có thể đã viết một bức thư mở cảm động về cuộc sống và mất mát, đã trở nên phổ biến trên mạng internet.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.841284990310669,
+      "num_chunks": 6,
+      "claim_id": "38755"
+    },
+    {
+      "claim": "Khi gọi số 077 hoặc 112 trên điện thoại di động, bạn sẽ được kết nối với các dịch vụ cấp cứu bất kể vị trí của mình.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6099549730618795,
+      "num_chunks": 6,
+      "claim_id": "31251"
+    },
+    {
+      "claim": "Một hình ảnh cho thấy chai Red Bull chứa nhiều nước hơn do người đàn ông tìm thấy một con chuột chết trong chai.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5532153385380904,
+      "num_chunks": 6,
+      "claim_id": "36157"
+    },
+    {
+      "claim": "Người đã sống sót với bệnh corona COVID-19 có thể tái nhiễm vi-rút.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9887328147888184,
+      "num_chunks": 6,
+      "claim_id": "35206"
+    },
+    {
+      "claim": "Tổ chức Mỹ Samoa tuyên bố có đợt bùng phát bệnh hoành đường (measles), đóng cửa các trường học.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.5266737937927246,
+      "num_chunks": 5,
+      "claim_id": "4002"
+    },
+    {
+      "claim": "CNN đã hỏi một người sống sót trong vụ nổ súng hàng loạt ngày 14 tháng 2 năm 2018 tại Parkland, Florida để đưa ra những bình luận được viết sẵn trong một cuộc họp truyền hình.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.93206787109375,
+      "num_chunks": 6,
+      "claim_id": "30575"
+    },
+    {
+      "claim": "Định vị trí tim có thể bị xâm nhập bởi các thiết bị điều trị điện: chuyên gia.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9976581335067749,
+      "num_chunks": 5,
+      "claim_id": "8875"
+    },
+    {
+      "claim": "Đây là một email được chuyển tiếp về hành tây. Nó nói rằng trong thời kỳ lo lắng về dịch influenza năm 1919, các nhà nông sẽ cắt hành tây và đặt chúng trên đĩa để ngăn chặn nhiễm trùng. Nó cũng cảnh báo về hành tây còn lại và cách chúng có thể độc hại cho chó.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8639801740646362,
+      "num_chunks": 3,
+      "claim_id": "39966"
+    },
+    {
+      "claim": "Trường: tuyên bố\nNội dung:\nKết chiến với bệnh Alzheimer bằng Dimebon",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8069700002670288,
+      "num_chunks": 3,
+      "claim_id": "11240"
+    },
+    {
+      "claim": "Đầu tiên, tôi phải nói rằng thông tin này hoàn toàn sai lầm và không có căn cứ khoa học nào để hỗ trợ.\n\nThông thường, khi bị tấn công đột ngột tim, người bệnh sẽ cảm thấy đau đớn ở ngực, khó thở, chóng mặt và buồn nôn. Trong trường hợp này, việc cố gắng hít thở sâu hoặc sử dụng thuốc giảm đau không thể giúp ngăn chặn sự tiến triển của tình trạng.\n\nThay vào đó, nếu bạn đang bị tấn công tim khi không có ai xung quanh để hỗ trợ, điều quan trọng nhất là phải gọi cấp cứu ngay lập tức và tìm kiếm sự giúp đỡ từ cơ sở y tế gần nhất càng sớm càng tốt.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9169080257415771,
+      "num_chunks": 2,
+      "claim_id": "40539"
+    },
+    {
+      "claim": "Chúng tôi không có rào chắn thương mại (claim) với Canada, nhưng điều đó không bao gồm năng lượng và gỗ. Nhưng khi bạn làm như vậy thì chúng ta mất 17 tỷ USD mỗi năm.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5377950867017111,
+      "num_chunks": 3,
+      "claim_id": "41939"
+    },
+    {
+      "claim": "Các cuộc cách ly ở hai trường đại học California, Mỹ, do bùng phát bệnh lậu ở Mỹ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9980407357215881,
+      "num_chunks": 5,
+      "claim_id": "6936"
+    },
+    {
+      "claim": "Khi tôi trở thành chủ tịch và tổng giám đốc của Godfather's Pizza, nó được dự đoán sẽ phá sản... Chúng ta đã biến nó trở lại với các nguyên tắc kinh doanh hợp lý.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7726296136776606,
+      "num_chunks": 6,
+      "claim_id": "21956"
+    },
+    {
+      "claim": "Báo cáo từ Texas cho thấy các máy bỏ phiếu tự động chuyển đổi phiếu bầu của Donald Trump thành phiếu bầu cho Hillary Clinton đã gây ra sự phán đoán rằng cuộc bầu cử bị gian lận.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5374332591891289,
+      "num_chunks": 5,
+      "claim_id": "36828"
+    },
+    {
+      "claim": "Tổng thống Mỹ Donald Trump đã nâng tay trái để thể hiện sự phẫn nộ, không tôn trọng hoặc tức giận với một phi hành gia khi người này đã công khai sửa chữa ông.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9822913408279419,
+      "num_chunks": 7,
+      "claim_id": "34167"
+    },
+    {
+      "claim": "Dịch đoạn văn bản y khoa sang tiếng Việt:\n\nNhóm Mooney và đồng đội khỏe mạnh có Brey, người Ireland được khuyến khích.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.7950037121772766,
+      "num_chunks": 6,
+      "claim_id": "5708"
+    },
+    {
+      "claim": "Mùa hè sẽ hạn chế sự lây lan của virus mới coronavirus.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.5986500382423401,
+      "num_chunks": 6,
+      "claim_id": "35208"
+    },
+    {
+      "claim": "\"Tham luận\" (claim) trong y khoa thường được sử dụng để chỉ việc đưa ra giả định hoặc lập luận về một tình trạng bệnh lý, kết quả xét nghiệm hoặc hiệu quả của một phương pháp điều trị.\n\nVí dụ: \"Chuyên gia y tế đưa ra claim rằng bệnh nhân có thể sẽ cải thiện sau khi thực hiện liệu pháp thay đổi lối sống.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9263137777646383,
+      "num_chunks": 6,
+      "claim_id": "36555"
+    },
+    {
+      "claim": "Trong dịp Halloween năm 2019, một mẹ con người Úc và nhân viên y tế được đăng ký đã bán các lollipop nhiễm virus ngứa cho người tham gia nhóm Facebook chống tiêm chủng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.5101800560951233,
+      "num_chunks": 3,
+      "claim_id": "34165"
+    },
+    {
+      "claim": "Nếu virus corona mới lây vào miệng của bạn, uống nước hoặc các chất lỏng khác sẽ rửa chúng xuống đường tiêu hóa. Khi chúng đã ở trong dạ dày, axit sẽ giết chết virus. Nếu bạn không uống đủ nước thường xuyên, virus có thể xâm nhập vào các ống hô hấp và vào phổi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9835147857666016,
+      "num_chunks": 4,
+      "claim_id": "41043"
+    },
+    {
+      "claim": "\"Vào ngày 13 tháng 8 năm 2020, Tổng thống Mỹ Donald Trump nói: \"\"Họ cần tiền đó để làm cho bưu điện hoạt động, để nó có thể lấy tất cả những phiếu bầu triệu phú... Nếu chúng ta không làm được thỏa thuận, điều đó có nghĩa là họ không nhận được tiền. Điều đó có nghĩa là họ không thể có bỏ phiếu qua thư toàn cầu, chỉ đơn giản là họ không thể có nó.\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.37559498846530914,
+      "num_chunks": 3,
+      "claim_id": "37939"
+    },
+    {
+      "claim": "Quản lý từ Google có thể dự đoán liệu bạn sẽ bị tấn công tim mạch.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.994836688041687,
+      "num_chunks": 5,
+      "claim_id": "9402"
+    },
+    {
+      "claim": "Thực hành này được gọi là \"claim\" và thường được thực hiện trong các nghiên cứu y khoa để kiểm tra hiệu quả của một phương pháp điều trị hoặc phòng ngừa.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.90540678302447,
+      "num_chunks": 6,
+      "claim_id": "34601"
+    },
+    {
+      "claim": "Michael Jordan Chandler thừa nhận đã nói dối khi nói rằng anh ta bị lạm dụng tình dục bởi Michael Jackson.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.952090322971344,
+      "num_chunks": 3,
+      "claim_id": "33693"
+    },
+    {
+      "claim": "Người lái xe ở Trung Quốc thường cố ý giết người đi bộ trong tai nạn va chạm và trốn chạy.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6516030083100001,
+      "num_chunks": 6,
+      "claim_id": "34665"
+    },
+    {
+      "claim": "Tham khảo: Nghiên cứu cho thấy ô nhiễm không khí ảnh hưởng lớn đến các khu vực nghèo của thành phố St. Louis.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9834880232810974,
+      "num_chunks": 3,
+      "claim_id": "3049"
+    },
+    {
+      "claim": "Một sĩ quan cảnh sát ở Puerto Rico đã tiết lộ rằng thượng nghị sĩ thành phố San Juan đang cố tình phá hoại các nỗ lực cứu trợ để tạo ấn tượng xấu với Tổng thống Donald Trump.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8735560178756714,
+      "num_chunks": 6,
+      "claim_id": "34350"
+    },
+    {
+      "claim": "Một cảnh báo du lịch do Zika được phát hành cho 11 quốc gia ở Đông Nam Á.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9568617343902588,
+      "num_chunks": 1,
+      "claim_id": "7064"
+    },
+    {
+      "claim": "Tuổi thọ toàn cầu tăng lên, nhưng mọi người sống với bệnh tật hơn và dài lâu hơn.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9985224604606628,
+      "num_chunks": 4,
+      "claim_id": "1635"
+    },
+    {
+      "claim": "Người dân Berkeley sẽ bỏ phiếu về thuế soda vào tháng 11.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9537535508473715,
+      "num_chunks": 3,
+      "claim_id": "1837"
+    },
+    {
+      "claim": "Nhận định rằng các sản phẩm chăm sóc thú ăn Milk-Bone chứa BPH, một chất bảo quản được cho là có thể gây ung thư, đã lan truyền trên mạng xã hội.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9858549237251282,
+      "num_chunks": 3,
+      "claim_id": "38617"
+    },
+    {
+      "claim": "Một nghiên cứu cho thấy sự khác biệt trong các phương pháp điều trị ung thư tuyến giáp.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9772622585296631,
+      "num_chunks": 5,
+      "claim_id": "10553"
+    },
+    {
+      "claim": "Một trẻ em đang bị lạm dụng tình dục, nhưng nỗ lực của cô ấy để thông báo cho người lớn đã bị ngăn chặn do không thể nói được từ \"vagina\" và sử dụng từ \"cookie\" thay thế.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9677020907402039,
+      "num_chunks": 5,
+      "claim_id": "36111"
+    },
+    {
+      "claim": "Hơn một phần mười người Mỹ nghĩ sữa dừa có nguồn gốc từ \"cừu nâu\".",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.8356192111968994,
+      "num_chunks": 4,
+      "claim_id": "36613"
+    },
+    {
+      "claim": "Các chính sách cho phép sử dụng ma túy giải trí làm tăng sự lây lan của đại dịch nghiện opioid ở Mỹ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9636191129684448,
+      "num_chunks": 6,
+      "claim_id": "34442"
+    },
+    {
+      "claim": "Một quả táo mỗi ngày có thể giúp ngăn ngừa bệnh tim.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7297977924346923,
+      "num_chunks": 5,
+      "claim_id": "11115"
+    },
+    {
+      "claim": "Receptor vị chua có thể là chìa khóa để quản lý thai kỳ sớm.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9967496395111084,
+      "num_chunks": 4,
+      "claim_id": "9137"
+    },
+    {
+      "claim": "Phenol / phenoxyethanol có trong vaccine và được sử dụng làm chất đông lạnh. Nó độc hại đối với tất cả các tế bào và có thể phá hủy hệ miễn dịch.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9784806966781616,
+      "num_chunks": 5,
+      "claim_id": "41319"
+    },
+    {
+      "claim": "Nhà vô địch bóng rổ cựu NBA Michael Jordan đã qua đời trong khi ngủ do đột ngột bị nhồi máu tim.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8388185203075409,
+      "num_chunks": 2,
+      "claim_id": "33307"
+    },
+    {
+      "claim": "\"Barack Obama muốn \"giải tán vũ khí một bên cho cả nước chúng ta.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8908079266548157,
+      "num_chunks": 5,
+      "claim_id": "25082"
+    },
+    {
+      "claim": "Một nghiên cứu thử nghiệm đã cho thấy thuốc điều trị bệnh phổi mạn tính (Cystic Fibrosis) giúp cải thiện hô hấp.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9848034381866455,
+      "num_chunks": 1,
+      "claim_id": "10777"
+    },
+    {
+      "claim": "Nhà sản xuất xe điện sẽ thắng? Anh ta sẽ cấm bán xe xăng và dầu diesel mới từ năm 2040.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.5684632062911987,
+      "num_chunks": 6,
+      "claim_id": "1363"
+    },
+    {
+      "claim": "Khi người dùng tham gia dịch vụ, không có đánh giá sức khỏe tâm thần.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9898414015769958,
+      "num_chunks": 6,
+      "claim_id": "17169"
+    },
+    {
+      "claim": "Tập phim \"Cuộc sống cuối cùng\" của Tim Allen đã bị hủy do quan điểm chính trị của diễn viên.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.7655063271522522,
+      "num_chunks": 6,
+      "claim_id": "34403"
+    },
+    {
+      "claim": "Dưới đây là bản dịch của đoạn văn:\n\nMột số tuyên bố: \n\n1. Một chế độ ăn uống bằng nước uống trong sáng sớm không có thức ăn có thể chữa khỏi nhiều bệnh bao gồm ung thư, viêm khớp và tiểu đường.\n\n2. Uống nước lạnh cùng bữa ăn có thể gây ra sỏi trong ruột và dẫn đến ung thư.\n\n3. Phụ nữ nên nhận biết các triệu chứng tấn công tim.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7479953765869141,
+      "num_chunks": 2,
+      "claim_id": "39840"
+    },
+    {
+      "claim": "Singapore xác nhận 386 trường hợp nhiễm virus corona trong bùng phát lớn nhất một ngày.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.33608829975128174,
+      "num_chunks": 1,
+      "claim_id": "8512"
+    },
+    {
+      "claim": "\"Ballot vắng mặt quân sự bị trì hoãn sẽ đã \"đẩy\" cuộc bầu cử tổng thống cho Hillary Clinton nếu chúng được tính toán đúng thời hạn.\"",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7845245784148573,
+      "num_chunks": 5,
+      "claim_id": "32006"
+    },
+    {
+      "claim": "Vấn đề 10.000 USD là \"về việc kiểm soát/đánh dấu dân số, không phải về virus corona.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9981028437614441,
+      "num_chunks": 7,
+      "claim_id": "26301"
+    },
+    {
+      "claim": "Các nhà khoa học tái tạo xương của con người cổ đại chưa từng được phát hiện.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.8458185195922852,
+      "num_chunks": 3,
+      "claim_id": "1447"
+    },
+    {
+      "claim": "Bạn có thể bị phạt 999 USD và tạm đình chỉ giấy phép lái xe chỉ vì cầm điện thoại trong xe ô tô từ tháng 1 năm 2019.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9398856163024902,
+      "num_chunks": 7,
+      "claim_id": "36565"
+    },
+    {
+      "claim": "Một cư dân ở bang Illinois thứ hai qua đời do tổn thương phổi liên quan đến hút thuốc lá điện tử.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5967978835105896,
+      "num_chunks": 2,
+      "claim_id": "3533"
+    },
+    {
+      "claim": "Thành viên này tuyên bố rằng nhà thống đốc bang Iowa yêu cầu tăng thuế bán lẻ và giảm các loại thuế khác.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9247095584869385,
+      "num_chunks": 6,
+      "claim_id": "3000"
+    },
+    {
+      "claim": "George Soros đã gặp phải tình trạng tim mạch nguy hiểm ngay trước dịp lễ Giáng sinh năm 2017.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.986318826675415,
+      "num_chunks": 3,
+      "claim_id": "30758"
+    },
+    {
+      "claim": "\"Do số lượng người lớn nên từ chối tiêm vắc-xin COVID-19 trong tương lai vì nó sẽ bao gồm các chip theo dõi, quỹ Gates hiện đang chi hàng tỷ để đảm bảo tất cả tiêm chủng và thủ tục y khoa đều có chứa các chip này.\"",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9666413307189942,
+      "num_chunks": 5,
+      "claim_id": "26267"
+    },
+    {
+      "claim": "Một nghiên cứu cho thấy paracetamol không hiệu quả hơn so với giả dược đối với đau lưng thấp.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9338938593864441,
+      "num_chunks": 5,
+      "claim_id": "1814"
+    },
+    {
+      "claim": "Mèo có thể bị bỏng hóa học do nếm các bóng tennis.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.987015962600708,
+      "num_chunks": 5,
+      "claim_id": "34277"
+    },
+    {
+      "claim": "Chủ tịch Tổ chức Y tế Thế giới cảnh báo nguy cơ lây lan bệnh Ebola rất cao.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9909479022026062,
+      "num_chunks": 1,
+      "claim_id": "7185"
+    },
+    {
+      "claim": "Dịch đoạn văn bản y khoa sang tiếng Việt:\n\nNhận định: tuyên bố\n\nNội dung:\nBài đăng trên Facebook cho biết loạt 11 hình ảnh là \"được từ đại dịch lây truyền đường hô hấp năm 1918\".",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9857169389724731,
+      "num_chunks": 6,
+      "claim_id": "25787"
+    },
+    {
+      "claim": "Độ hài lòng cao cho viên nang estrogen mềm không cần sử dụng ống (applicator) tại địa phương.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.6787282824516296,
+      "num_chunks": 4,
+      "claim_id": "9188"
+    },
+    {
+      "claim": "Vi khuẩn hình thành trên hành tây và khoai tây là nguyên nhân gây ra nhiều trường hợp ngộ độc thực phẩm hơn là mayonnaise bị hỏng.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7286996617913246,
+      "num_chunks": 5,
+      "claim_id": "33705"
+    },
+    {
+      "claim": "Quyết định của chính quyền Obama đang \"đánh tranh ở tòa án\" để cho phép người không phải là công dân có thể bỏ phiếu trong các cuộc bầu cử tổng thống.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8760241866111755,
+      "num_chunks": 6,
+      "claim_id": "29564"
+    },
+    {
+      "claim": "Một cuộc xâm nhập gần đây của loài nấm rắn New Guinea ở Florida gây ra nguy cơ nghiêm trọng cho sức khỏe con người và việc phát hiện ra động vật này không phải là dân tộc nên cần báo cáo cho các cơ quan chức năng bằng cách gọi điện thoại 911.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.986504316329956,
+      "num_chunks": 6,
+      "claim_id": "29356"
+    },
+    {
+      "claim": "Theo hệ thống hiện hành, những người có thị thực làm việc, học tập hoặc gia đình phải chịu chi phí NHS trung bình là £625 mỗi năm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.6688557267189026,
+      "num_chunks": 1,
+      "claim_id": "40837"
+    },
+    {
+      "claim": "Các loại đồ uống Red Bull và Bang đã được kiểm tra dương tính với các chất bất hợp pháp hoặc thuốc kê đơn trong xét nghiệm chất lượng máu hoặc nước tiểu.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9826900959014893,
+      "num_chunks": 6,
+      "claim_id": "29128"
+    },
+    {
+      "claim": "Nhận định rằng sống gần máy phát điện gió có tiếng, đủ để khiến ai đó \"mất trí sau vài năm\".",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9963206052780151,
+      "num_chunks": 6,
+      "claim_id": "41865"
+    },
+    {
+      "claim": "\"Kích thước của Medicaid mở rộng có thể gây ra chi phí cho bang Virginia trên 1 tỷ USD mỗi năm...\"",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9664952158927917,
+      "num_chunks": 6,
+      "claim_id": "14753"
+    },
+    {
+      "claim": "Dịch: Điều trị cá nhân hóa đối với những người ở trong vùng \"xanh nhạt\" huyết áp.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8373751044273376,
+      "num_chunks": 6,
+      "claim_id": "9204"
+    },
+    {
+      "claim": "Ở các quốc gia có luật súng nghiêm ngặt hơn, tỷ lệ bạo lực liên quan đến súng sẽ cao hơn.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8869097828865051,
+      "num_chunks": 5,
+      "claim_id": "15197"
+    },
+    {
+      "claim": "Chúng tôi vẫn đã có nhiều trường hợp tử vong do cảm lạnh mùa đông này hơn so với số trường hợp tử vong do COVID-19.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9247083067893982,
+      "num_chunks": 6,
+      "claim_id": "26358"
+    },
+    {
+      "claim": "Tháng 10 năm 2019, Reverend Robert Morey của giáo xứ St. Anthony ở thành phố Florence, Nam Carolina, từ chối cựu Phó Tổng thống Joe Biden nghi lễ giao thiệp của Giáo hội Công giáo.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8412885069847107,
+      "num_chunks": 6,
+      "claim_id": "34166"
+    },
+    {
+      "claim": "Bác sĩ Ben Carson đã bị revocation giấy phép y tế ở tất cả 50 bang sau khi đưa ra những \"phản ứng vô trí\" trong cuộc chiến dịch tranh cử để trở thành ứng cử viên tổng thống của đảng Cộng hòa.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7294031344354153,
+      "num_chunks": 5,
+      "claim_id": "36979"
+    },
+    {
+      "claim": "Bác sĩ đề xuất xét nghiệm cho tất cả cư dân nhà dưỡng lão.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6695923327157894,
+      "num_chunks": 6,
+      "claim_id": "7597"
+    },
+    {
+      "claim": "Cơ quan Alabama CPS đã đưa con bé vào nhà tạm giữ vì mẹ dâu của anh ta bị tấn công và mang thai.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7362736860911051,
+      "num_chunks": 6,
+      "claim_id": "34604"
+    },
+    {
+      "claim": "Các triệu chứng của Covid-19 là nó đầu tiên nhiễm họng, vì vậy bạn sẽ có họng đau kéo dài 3 hoặc 4 ngày. Virus sau đó hòa nhập vào dịch tiết mũi và đi vào đường thở, gây viêm phổi. Điều này mất khoảng 5 hoặc 6 ngày. Khi có viêm phổi thì xuất hiện sốt cao và khó thở",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.7018992304801941,
+      "num_chunks": 3,
+      "claim_id": "41070"
+    },
+    {
+      "claim": "Nhóm Macy đã rút nguồn lực từ Planned Parenthood vào tháng 12 năm 2016 do áp lực từ các nhóm chống phá thai.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9962760210037231,
+      "num_chunks": 6,
+      "claim_id": "34496"
+    },
+    {
+      "claim": "\"Người Amish sở hữu 20% số nhà chăn nuôi mèo (puppy mill) trong toàn quốc.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.768743209540844,
+      "num_chunks": 4,
+      "claim_id": "34334"
+    },
+    {
+      "claim": "Thay thế tế bào gốc có thể dẫn đến hồi phục dài hạn của bệnh đa xơ cứng.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9842445254325867,
+      "num_chunks": 6,
+      "claim_id": "9197"
+    },
+    {
+      "claim": "Một phụ nữ và con gái mình đã tránh được những kẻ buôn người tình dục trong khu vực đỗ xe của một siêu thị Walmart ở Hickory, Bắc Carolina.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8798056244850159,
+      "num_chunks": 3,
+      "claim_id": "34667"
+    },
+    {
+      "claim": "Các thiếu niên đang theo đuổi \"clout\" tham gia vào \"thử thách coronavirus\" trên TikTok, Instagram và các nền tảng truyền thông xã hội khác, chia sẻ những nỗ lực để nhiễm virus và mắc COVID-19.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9157745242118835,
+      "num_chunks": 6,
+      "claim_id": "37518"
+    },
+    {
+      "claim": "\"Người trẻ đang phát triển \"râu rờn\" ở đáy đầu do nhìn xuống màn hình điện thoại.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9351937174797058,
+      "num_chunks": 6,
+      "claim_id": "34188"
+    },
+    {
+      "claim": "Dịch đoạn văn bản y khoa sang tiếng Việt:\n\nMột loại thuốc bổ ngoài counter được gọi là Synagen IQ tăng cường chức năng não, cải thiện trí nhớ và thúc đẩy sức khỏe tổng thể.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9594061374664307,
+      "num_chunks": 3,
+      "claim_id": "38858"
+    },
+    {
+      "claim": "Đoạn văn bản y khoa đã được dịch sang tiếng Việt như sau:\n\nHình ảnh cho thấy một con ruồi bọ có độc, được gọi là rắn.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8765385746955872,
+      "num_chunks": 4,
+      "claim_id": "35074"
+    },
+    {
+      "claim": "Nhân viên trường học David Hogg bị bắt cóc nói dối về việc đang trên địa điểm trường học trong vụ súng sát nhân tháng 2/2018 khi ông cho biết phải lấy xe đạp và đi bộ đến trường.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6051100877424082,
+      "num_chunks": 6,
+      "claim_id": "30508"
+    },
+    {
+      "claim": "Để xác định virus corona mới, hít thở sâu và giữ hơn 10 giây. Nếu bạn hoàn thành nó thành công mà không có ho, khó chịu, khan hiếm không khí hoặc căng thẳng thì chứng tỏ không có fibrosis trong phổi, basically chỉ ra không bị nhiễm trùng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.5330684781074524,
+      "num_chunks": 4,
+      "claim_id": "41042"
+    },
+    {
+      "claim": "Đoạn văn bản y khoa sau được dịch sang tiếng Việt như sau:\n\nDeborah Harry gần bị bắt cóc bởi kẻ giết người hàng loạt Ted Bundy ở New York và trốn thoát với cuộc sống.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.829006016254425,
+      "num_chunks": 5,
+      "claim_id": "34694"
+    },
+    {
+      "claim": "\"Chúng tôi đã chi 350 triệu USD để đối phó với sự tăng cao của mực nước biển ở khu vực Miami và hàng trăm triệu USD để đối phó với các rạn san hô.\"",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9661849141120911,
+      "num_chunks": 7,
+      "claim_id": "16243"
+    },
+    {
+      "claim": "Dịch đoạn văn bản y khoa sang tiếng Việt:\n\nBữa ăn của chó Blue Buffalo chứa các chất độc và mức độ cao hơn bình thường của chì.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9680667519569397,
+      "num_chunks": 5,
+      "claim_id": "34307"
+    },
+    {
+      "claim": "Một người nhập cư đã đặt bơ đậu phộng vào bánh mì của một bé gái khiến cô ấy có phản ứng dị ứng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9803706407546997,
+      "num_chunks": 6,
+      "claim_id": "34429"
+    },
+    {
+      "claim": "Một điều khoản ẩn trong chương trình Obamacare thuế các vật dụng thể thao như thiết bị y tế.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9853240847587585,
+      "num_chunks": 6,
+      "claim_id": "18268"
+    },
+    {
+      "claim": "Một phần ba số người di cư trong đoàn đã mắc HIV/AIDS, viêm phổi lậu hoặc bệnh chàm.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9279784560203552,
+      "num_chunks": 5,
+      "claim_id": "29182"
+    },
+    {
+      "claim": "Cigarrette butts \"mất độc cho trẻ em và trẻ nhỏ do nicotine trong chúng.\"\n\nhoặc\nCigarrette butts \"ngộ độc cho trẻ em và trẻ nhỏ do nicotine trong chúng.\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.4008071304609378,
+      "num_chunks": 6,
+      "claim_id": "15881"
+    },
+    {
+      "claim": "Thuốc có thể giảm vảy trong não của bệnh nhân Alzheimer",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9649994373321533,
+      "num_chunks": 1,
+      "claim_id": "11376"
+    },
+    {
+      "claim": "Bộ Tư pháp Hoa Kỳ đã phát hành một thẻ miễn trừ cho người sở hữu, không cần đeo mặt nạ vì nó gây nguy hiểm cho sức khỏe của họ do các tình trạng bệnh lý mà họ không được yêu cầu tiết lộ theo quy định của Đạo luật Người khuyết tật Hoa Kỳ (ADA).",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8944132328033447,
+      "num_chunks": 3,
+      "claim_id": "35529"
+    },
+    {
+      "claim": "Probiotics cải thiện nhận thức ở bệnh nhân Alzheimer.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7895463307698568,
+      "num_chunks": 6,
+      "claim_id": "9231"
+    },
+    {
+      "claim": "Quản lý của chính phủ Trump đã có \"không có yêu cầu thiết bị và hàng hóa chưa được đáp ứng từ các thống đốc bang.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.991380512714386,
+      "num_chunks": 6,
+      "claim_id": "25893"
+    },
+    {
+      "claim": "Danh sách khuyến cáo cho thấy nhiều phụ nữ hơn có thể cần xét nghiệm gen ung thư vú.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8110625147819519,
+      "num_chunks": 5,
+      "claim_id": "4250"
+    },
+    {
+      "claim": "Đại học Illinois tại Chicago nhận được 12 triệu USD cho nghiên cứu sức khỏe của người Mỹ gốc Phi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.5671078562736511,
+      "num_chunks": 1,
+      "claim_id": "4615"
+    },
+    {
+      "claim": "Nếu người bị virus corona mới ngạt hít, thì giọt nước bắn sẽ bay khoảng 3 mét trước khi rơi xuống mặt đất và không còn bay lượn nữa.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.992925763130188,
+      "num_chunks": 3,
+      "claim_id": "41069"
+    },
+    {
+      "claim": "Hệ thống bảo hiểm đã kiếm được một số tiền khổng lồ nhờ vào Obamacare.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9785807132720947,
+      "num_chunks": 3,
+      "claim_id": "11967"
+    },
+    {
+      "claim": "Cơ sở dữ liệu tâm thần tăng chi phí cho sức khỏe tâm thần lên 6,3% trong năm ngoái, trong khi tổng ngân sách tăng 3,7%.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7851630449295044,
+      "num_chunks": 1,
+      "claim_id": "41643"
+    },
+    {
+      "claim": "Mẹ và cha của một đứa trẻ sinh trên tàu đã bị tranh cãi về nguồn gốc gia đình được giải quyết bằng cách liệt kê đứa trẻ như là \"con của người chiến binh\".",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8301767110824585,
+      "num_chunks": 6,
+      "claim_id": "34700"
+    },
+    {
+      "claim": "Turkey áp dụng \"quarantine tự nguyện\" ở nhà.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9928554892539978,
+      "num_chunks": 3,
+      "claim_id": "8041"
+    },
+    {
+      "claim": "\"Mattel đang giới thiệu \"Barbie hỗ trợ công cộng\"\" cho dịp lễ.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.7622583508491516,
+      "num_chunks": 3,
+      "claim_id": "31972"
+    },
+    {
+      "claim": "Nhân vật nổi tiếng trong các môn võ thuật Jet Li đang có sức khỏe yếu, như thể hiện trong một bức ảnh gần đây.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9903233051300049,
+      "num_chunks": 5,
+      "claim_id": "34285"
+    },
+    {
+      "claim": "Bác đã có báo cáo y tế của tôi mà đáp ứng cùng tiêu chuẩn như Mitt Romney và Barack Obama.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9117727875709534,
+      "num_chunks": 6,
+      "claim_id": "13521"
+    },
+    {
+      "claim": "Đoạn văn bản y khoa đã được dịch sang tiếng Việt như sau:\n\nĐây là một loại virus mới không có khả năng chống chịu nhiệt và sẽ bị giết chết bởi nhiệt độ chỉ 26-27 độ C. Nó ghét ánh nắng mặt trời.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6418468654155731,
+      "num_chunks": 4,
+      "claim_id": "41045"
+    },
+    {
+      "claim": "Billsenato của California 145 sẽ bảo vệ những người lạm dụng tình dục trẻ em khỏi phải đăng ký là tội phạm về hành vi tình dục.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9881176352500916,
+      "num_chunks": 6,
+      "claim_id": "29163"
+    },
+    {
+      "claim": "Các quan chức: Các trường hợp viêm A đa vùng được xác định nguồn gốc từ các loại quả mọng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.6882987022399902,
+      "num_chunks": 2,
+      "claim_id": "6356"
+    },
+    {
+      "claim": "Một hình ảnh bốn bức X-quang được đặt cạnh nhau so sánh tổn thương phổi do COVID-19 và hai bệnh lý khác.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8841606974601746,
+      "num_chunks": 4,
+      "claim_id": "37861"
+    },
+    {
+      "claim": "Hệ thống giám sát thực phẩm và dược phẩm Mỹ (FDA) đã có một nhóm tư vấn phác đồ điều trị từ việc loại trừ thuốc của J&J đối với bệnh động mạch vành cấp tính.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9108033180236816,
+      "num_chunks": 1,
+      "claim_id": "2847"
+    },
+    {
+      "claim": "Trong sự kiện bóng tối toàn cầu vào tháng 8 năm 2017, một số người ở California đã sử dụng kem chống nắng lên mắt họ trong một nỗ lực sai lầm để bảo vệ mắt khỏi tổn thương.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8134666681289673,
+      "num_chunks": 5,
+      "claim_id": "34356"
+    },
+    {
+      "claim": "Hệ thống y tế Oregon lên kế hoạch tổ chức các cuộc họp về quy định đốt cháy kiểm soát.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.49051591753959656,
+      "num_chunks": 1,
+      "claim_id": "7172"
+    },
+    {
+      "claim": "Former Chủ tịch Hội đồng Dự trữ Liên bang Mỹ Alan Greenspan nói rằng: \"Nếu người lao động cảm thấy không an toàn hơn, điều đó rất tốt cho xã hội vì họ sẽ phục vụ các chủ nhân của mình một cách vui vẻ và thụ động.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9766470193862915,
+      "num_chunks": 7,
+      "claim_id": "16739"
+    },
+    {
+      "claim": "Người phụ nữ đẩy mạnh 2 năm sau khi khối u não thay đổi cuộc sống của cô.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7334963331619898,
+      "num_chunks": 6,
+      "claim_id": "6867"
+    },
+    {
+      "claim": "\"Đơn vị này yêu cầu Facebook xóa bài đăng và video liên quan vì nó được coi là không chính xác. Tuy nhiên, Facebook từ chối và cho biết video đã được xem hàng triệu lần.\"",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8582665324211121,
+      "num_chunks": 2,
+      "claim_id": "26495"
+    },
+    {
+      "claim": "Bàn phán: Người sử dụng máy quạt để chạy cả đêm sẽ bị người ngủ trong gió tạo ra bởi máy quạt đó.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.973895251750946,
+      "num_chunks": 6,
+      "claim_id": "33639"
+    },
+    {
+      "claim": "Một phụ nữ gần như bị bắt cóc bởi những kẻ buôn người sử dụng một vòng tay đặt trên kính hậu cảnh làm mồi.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9783205986022949,
+      "num_chunks": 7,
+      "claim_id": "34592"
+    },
+    {
+      "claim": "Một bánh mì thịt hầm và phô mai trên một lát bánh là trách nhiệm của Bộ Nông nghiệp Hoa Kỳ (USDA) ... Nhưng một bánh mì thịt hầm và phô mai trên hai lát bánh là trách nhiệm của Cục Quản lý Thực phẩm và Dược phẩm Hoa Kỳ (Food and Drug Administration).",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9774481654167175,
+      "num_chunks": 6,
+      "claim_id": "25422"
+    },
+    {
+      "claim": "Các cơ quan chức năng Brazil đang tập trung vào con tàu nghi ngờ gây ra sự cố tràn dầu.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.986498236656189,
+      "num_chunks": 5,
+      "claim_id": "4566"
+    },
+    {
+      "claim": "Bác sĩ Zimbabwe nhận được đe dọa tử vong vì tham gia biểu tình.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.3587895731131236,
+      "num_chunks": 3,
+      "claim_id": "724"
+    },
+    {
+      "claim": "Hải quân Puerto Rico phát hiện kho dự trữ bảo vệ trong khi đang đối mặt với đại dịch COVID-19.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.8094887733459473,
+      "num_chunks": 4,
+      "claim_id": "7332"
+    },
+    {
+      "claim": "Nhà nghiên cứu Judy Mikovits đã bị giam giữ sau khi cô từ chối bác bỏ nghiên cứu dẫn đến phát hiện rằng các virus lây truyền tử thể nguy hiểm đã được truyền qua tiêm chủng.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.722507314135631,
+      "num_chunks": 6,
+      "claim_id": "30016"
+    },
+    {
+      "claim": "Thuế rượu mạnh khiến người uống ở Thổ Nhĩ Kỳ chuyển sang pha chế rượu tại nhà.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9945801496505737,
+      "num_chunks": 5,
+      "claim_id": "1497"
+    },
+    {
+      "claim": "Người dân ở Brooklyn đang từ chối tiêm chủng cho thú cưng của mình dựa trên những lo lắng được tạo ra bởi phong trào chống tiêm chủng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9763444662094116,
+      "num_chunks": 6,
+      "claim_id": "34373"
+    },
+    {
+      "claim": "Ronald Reagan, người bị chẩn đoán mắc bệnh Alzheimer 5 năm sau khi rời chức vụ tổng thống, thực sự đang gặp phải căn bệnh này trong thời gian ông đang làm việc.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.807290256023407,
+      "num_chunks": 6,
+      "claim_id": "34322"
+    },
+    {
+      "claim": "\"Tiền thân của Tổng thống Trump đã tiếp xúc với người có khả năng mắc bệnh corona!\"",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9968398809432983,
+      "num_chunks": 6,
+      "claim_id": "26716"
+    },
+    {
+      "claim": "\"Warren nói rằng việc đến 'Bảo hiểm Y Tâm Anh' sẽ mất 3 năm.\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8860037624835968,
+      "num_chunks": 2,
+      "claim_id": "4526"
+    },
+    {
+      "claim": "Bác sĩ nhận được sự chấp thuận đầu tiên của máy thở trong cuộc chiến chống lại virus corona ở Anh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6084654629230499,
+      "num_chunks": 3,
+      "claim_id": "8706"
+    },
+    {
+      "claim": "Quyết định của tòa án tuyên rằng chính phủ Mỹ bị truy tố và kết tội về cái chết của Martin Luther King, Jr., nhưng các phương tiện truyền thông không muốn báo cáo tin tức này.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7048261657357215,
+      "num_chunks": 5,
+      "claim_id": "29388"
+    },
+    {
+      "claim": "Phản ứng của Motrin và Robitussin gây ra đột quỵ ở trẻ em.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.974475085735321,
+      "num_chunks": 6,
+      "claim_id": "34686"
+    },
+    {
+      "claim": "Trump ly hôn Ivana Trump vì kích thước phổi của cô không hoàn hảo, và ông tiết lộ thông tin này cho các tờ báo ở New York trong thời gian họ còn kết hôn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.8216804265975952,
+      "num_chunks": 6,
+      "claim_id": "34554"
+    },
+    {
+      "claim": "Người phụ nữ được điều trị tại bệnh viện sau khi bị bỏng do chụp ảnh ngực bằng máy photocopy ở Bishan, Singapore.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9289858937263489,
+      "num_chunks": 4,
+      "claim_id": "31323"
+    },
+    {
+      "claim": "Một bệnh viện phá thai mới đang được xây dựng ở bang Illinois, gần thành phố St. Louis.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6355975158512592,
+      "num_chunks": 4,
+      "claim_id": "4208"
+    },
+    {
+      "claim": "Vào cuối thế kỷ 19 và đầu thế kỷ 20, Louis Vuitton tài trợ cho \"sự trưng bày con người\" trong đó người da đen được đặt lên trình diễn như những loài động vật du mục hiếm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9652255177497864,
+      "num_chunks": 7,
+      "claim_id": "34197"
+    },
+    {
+      "claim": "Castoreum là một chất tiết được sản xuất bởi thỏi lợn (beaver), thường được sử dụng làm chất phụ gia thực phẩm.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9522849917411804,
+      "num_chunks": 6,
+      "claim_id": "29605"
+    },
+    {
+      "claim": "Dưới luật chăm sóc sức khỏe mới, người cao tuổi sẽ bị từ chối được điều trị khi đã \"đã vượt qua giới hạn tuổi điều trị\".",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.995262861251831,
+      "num_chunks": 6,
+      "claim_id": "23901"
+    },
+    {
+      "claim": "Nữ công nhân mang thai sau khi bị bắn trúng và đạn bay qua vùng chậu của một chiến sĩ trong cuộc chiến tranh dân tộc.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9963418841362,
+      "num_chunks": 5,
+      "claim_id": "33842"
+    },
+    {
+      "claim": "Một cậu bé nhỏ đã ngủ say đeo đồng hồ Spider-Man và thức dậy vào sáng hôm sau với vết bỏng cấp II và III trên cổ tay do hóa chất.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7644363697618246,
+      "num_chunks": 4,
+      "claim_id": "39291"
+    },
+    {
+      "claim": "Nhà nông dân ở Myanma đang mất đất, khai thác cát để phục vụ cho Singapore bị chỉ trích.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8041192597399155,
+      "num_chunks": 6,
+      "claim_id": "8352"
+    },
+    {
+      "claim": "\"Đạn đạn được sử dụng trong vụ tấn công Orlando là bị cấm theo Hiệp ước Geneva. Nó vào cơ thể, quay và nổ.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8897923231124878,
+      "num_chunks": 6,
+      "claim_id": "13986"
+    },
+    {
+      "claim": "Một chàng trai từ Tennessee đã qua đời trong lòng một người đàn ông địa phương đang đóng vai Santa Claus trong một chuyến thăm bệnh viện.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.7216549515724182,
+      "num_chunks": 6,
+      "claim_id": "34491"
+    },
+    {
+      "claim": "Hoa Kỳ đã \"tốn phí\" nhiều tháng trước khi chuẩn bị cho đại dịch virus.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9914951324462891,
+      "num_chunks": 6,
+      "claim_id": "7318"
+    },
+    {
+      "claim": "Hệ thống Bill và Melinda Gates đã bị đuổi ra khỏi Ấn Độ.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8438459634780884,
+      "num_chunks": 6,
+      "claim_id": "34069"
+    },
+    {
+      "claim": "Người phụ huynh ở Texas phát hiện một viên thuốc codein trong hộp đựng Puffs của Gerber được đóng kín.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.999112069606781,
+      "num_chunks": 4,
+      "claim_id": "34443"
+    },
+    {
+      "claim": "Người diễn viên nữ đã trình diễn trên sân khấu với vai Anne Frank quá tệ đến mức các thành viên công chúng đã hét lên \"Cô đang ở trong lò sưởi!\" khi quân đội Đức Quốc xã vào sân khấu.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9535715579986572,
+      "num_chunks": 6,
+      "claim_id": "33810"
+    },
+    {
+      "claim": "\"Karl Rove tuyên bố Hillary Clinton đã nằm viện trong 30 ngày vào năm 2012 và xuất hiện \"mặc kính chỉ dành cho những người bị chấn thương não\".",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.6628805994987488,
+      "num_chunks": 6,
+      "claim_id": "17017"
+    },
+    {
+      "claim": "Eli Lilly đã hủy bỏ chương trình tiêm insulin hít thở.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9754570722579956,
+      "num_chunks": 6,
+      "claim_id": "8882"
+    },
+    {
+      "claim": "Một người Anh tên David Hibbitt được cho có thời gian sống còn là 18 tháng trước khi ông khỏi bệnh ung thư bằng dầu hemp.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9922549724578857,
+      "num_chunks": 3,
+      "claim_id": "38080"
+    },
+    {
+      "claim": "Covid-19 là một cuộc khủng hoảng toàn cầu được lên kế hoạch bởi Quỹ Rockefeller trong \"Operation Lockstep\".",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9080950617790222,
+      "num_chunks": 6,
+      "claim_id": "35583"
+    },
+    {
+      "claim": "Thành viên phó Scott Wood bị bắn bởi những kẻ trộm cửa hàng tiện lợi màu đen và sự việc không được báo cáo rộng rãi trên các phương tiện truyền thông quốc gia.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9569046497344971,
+      "num_chunks": 6,
+      "claim_id": "27820"
+    },
+    {
+      "claim": "Người dân Liên minh châu Âu đã giảm tỷ lệ so với số người tham gia Bệnh viện Quốc tế Anh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9177669882774353,
+      "num_chunks": 1,
+      "claim_id": "40779"
+    },
+    {
+      "claim": "Một nghiên cứu cho thấy mức độ carcinogen cao hơn gần nhà máy Waukegan.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9652812480926514,
+      "num_chunks": 3,
+      "claim_id": "4239"
+    },
+    {
+      "claim": "Thực hiện uống một vài giọt nước mỗi 15 phút sẽ ngăn chặn virus mới coronavirus từ vào đường hô hấp và phổi của bạn.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7377232611179352,
+      "num_chunks": 2,
+      "claim_id": "35144"
+    },
+    {
+      "claim": "Tôi từ chối quan điểm rằng nó chỉ là một loại virus và chúng ta sẽ tất cả đều bị nhiễm nó. Đó là một thái độ vô trách nhiệm, dễ dãi, thiếu lòng nhân ái.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9732768535614014,
+      "num_chunks": 3,
+      "claim_id": "25902"
+    },
+    {
+      "claim": "Một bài viết từ bút ký của người cứu nạn thiên tai Doug Copp.  Ông liệt kê một số quan sát của mình sau khi xảy ra động đất và giới thiệu \"Tam giác cuộc sống\", mà ông cho rằng có thể cứu sống trong thời gian động đất.  Ông bác bỏ lời khuyên của các chuyên gia thiên tai truyền thống và đưa ra gợi ý về việc làm và vị trí cần thiết trong thời gian động đất.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9555214643478394,
+      "num_chunks": 5,
+      "claim_id": "39614"
+    },
+    {
+      "claim": "Quyết định của chính phủ Trump khiến người nhập cư phải trả 800 USD cho các xét nghiệm di truyền để được trả lại những đứa trẻ bị thu giữ theo chính sách \"không chấp nhận\" (zero tolerance).",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8037316203117371,
+      "num_chunks": 6,
+      "claim_id": "34273"
+    },
+    {
+      "claim": "Nhận được chấp thuận từ FDA đối với bệnh nhân ung thư đại tràng có dấu hiệu di truyền.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8724568039178848,
+      "num_chunks": 4,
+      "claim_id": "10416"
+    },
+    {
+      "claim": "Uống một cốc nước ép vải ba lần mỗi ngày sau khi bị nhiễm bệnh dạ dày sẽ giúp bạn tránh mắc bệnh.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8858965337276459,
+      "num_chunks": 6,
+      "claim_id": "34473"
+    },
+    {
+      "claim": "Thuốc chống ung thư vú có thể chậm tiến triển của ung thư phổi.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.47746334473292035,
+      "num_chunks": 3,
+      "claim_id": "11331"
+    },
+    {
+      "claim": "Họ sở hữu bằng sáng chế số 666 của Microsoft, liên quan đến việc chèn microchip vào người để khai thác hoạt động của họ cho mục đích sử dụng tiền điện tử.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9818350672721863,
+      "num_chunks": 2,
+      "claim_id": "35273"
+    },
+    {
+      "claim": "Thiết bị nhỏ có thể tháo rời ngăn chặn cảm giác đói, hỗ trợ giảm cân.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6555143594741821,
+      "num_chunks": 6,
+      "claim_id": "8936"
+    },
+    {
+      "claim": "\"Đã có năm phòng thí nghiệm thú y được chứng nhận CLIA để thực hiện các xét nghiệm chính thức trên người bệnh con người. Có một số phòng thí nghiệm đang thực hiện việc giám sát xét nghiệm không cần phải có chứng nhận CLIA.\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7151242196559906,
+      "num_chunks": 6,
+      "claim_id": "25835"
+    },
+    {
+      "claim": "Dịch: Món ăn được điều chỉnh theo loại máu cụ thể của mỗi người có khả năng giảm thiểu nhiều bệnh lý, cải thiện tiêu hóa, cho phép mất cân nặng và cung cấp năng lượng tăng lên.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9063357710838318,
+      "num_chunks": 6,
+      "claim_id": "34497"
+    },
+    {
+      "claim": "Tôi là Thống đốc Florida, do đó tôi đã cắt giảm nguồn lực cho Planned Parenthood.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.5813323855400085,
+      "num_chunks": 5,
+      "claim_id": "15279"
+    },
+    {
+      "claim": "Dịch đoạn văn bản y khoa sang tiếng Việt:\n\nĐánh giá: Dẫn chứng\nNội dung:\nCung cấp liệu pháp cho bệnh tiểu đường loại 2, một nghiên cứu gợi ý",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.8215359449386597,
+      "num_chunks": 4,
+      "claim_id": "9367"
+    },
+    {
+      "claim": "Người ta nghĩ rằng bệnh HIV đã được kiểm soát - nó chưa được kiểm soát.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.7973774671554565,
+      "num_chunks": 4,
+      "claim_id": "14625"
+    },
+    {
+      "claim": "Đồng hồ điều trị ngắt thở (defibrillator) trong nhà có thể cứu sống người trong nghiên cứu.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6551675330847502,
+      "num_chunks": 4,
+      "claim_id": "11161"
+    },
+    {
+      "claim": "Kiểm tra chất lượng thuốc đối với người nhận trợ cấp xã hội (và sau đó loại trừ những người không đáp ứng được để thu hồi các khoản lợi ích) là một phương pháp hiệu quả để tiết kiệm tiền thuế.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9257106184959412,
+      "num_chunks": 6,
+      "claim_id": "34651"
+    },
+    {
+      "claim": "Sự tử của bác sĩ Indonesia làm nổi bật những rủi ro đau đớn trong cuộc chiến chống lại virus corona.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9968396425247192,
+      "num_chunks": 5,
+      "claim_id": "8536"
+    },
+    {
+      "claim": "Người ăn chay không bị ảnh hưởng bởi COVID-19 vì vi-rút được truyền qua việc ăn thịt.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.939336895942688,
+      "num_chunks": 6,
+      "claim_id": "35677"
+    },
+    {
+      "claim": "\"Tiền Tổng thống John F. Kennedy tuyên bố rằng \"\"không ai có thể ngăn chặn một vụ ám sát\"\" chỉ trước khi ông bị bắn và giết chết vào năm 1963.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7928471602499485,
+      "num_chunks": 6,
+      "claim_id": "34513"
+    },
+    {
+      "claim": "\"Russ Feingold nói rằng Donald Trump và Ron Johnson \"tranh đối với quyền lựa chọn của phụ nữ và Johnson bỏ phiếu chống lại Đạo luật Bạo lực đối với Phụ nữ\".",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9360702037811279,
+      "num_chunks": 7,
+      "claim_id": "13188"
+    },
+    {
+      "claim": "Bàn giao khẩu trang làm giảm lượng oxy thở vào cơ thể, tăng lượng khí cacbonic thở vào, tăng lượng độc tố hấp thụ, tăng mức độ căng thẳng ảnh hưởng trực tiếp đến hệ miễn dịch theo hướng tiêu cực khiến chúng ta dễ mắc bệnh hơn.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7302939295768738,
+      "num_chunks": 1,
+      "claim_id": "40938"
+    },
+    {
+      "claim": "\"Chúa tể lâm sàng COVID-19 Anthony Fauci cho biết ông không thể ngăn chặn Donald Trump nói chuyện tại các cuộc họp báo.\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.8662081360816956,
+      "num_chunks": 3,
+      "claim_id": "7425"
+    },
+    {
+      "claim": "Một thuốc chữa đau đầu của Novartis không hiệu quả về mặt chi phí - Người giám sát giá thuốc tại Anh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9411803483963013,
+      "num_chunks": 3,
+      "claim_id": "1277"
+    },
+    {
+      "claim": "Californian đã cập nhật hướng dẫn giáo dục tình dục cho các giáo viên.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9883756637573242,
+      "num_chunks": 7,
+      "claim_id": "4886"
+    },
+    {
+      "claim": "Khi mua sắm để chuẩn bị cho các biện pháp cách ly xã hội liên quan đến coronavirus, hãy tránh những sản phẩm được chấp thuận bởi WIC tại siêu thị, vì chúng có thể hết hàng và khiến gia đình phụ thuộc vào WIC không thể mua thực phẩm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9611729383468628,
+      "num_chunks": 7,
+      "claim_id": "37546"
+    },
+    {
+      "claim": "Một phụ nữ đã trốn thoát khỏi một cuộc tấn công bắt cóc gần siêu thị Walmart ở Coon Rapids, bang Minnesota.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.627989778916041,
+      "num_chunks": 6,
+      "claim_id": "34393"
+    },
+    {
+      "claim": "Một tin đồn y khoa cho rằng, Joe Biden sẽ đưa ra một tuyên bố do vấn đề sức khỏe khiến ông phải từ chức ứng cử viên Phó Tổng thống và chọn Hillary Clinton làm người thay thế.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7900019288063049,
+      "num_chunks": 2,
+      "claim_id": "37361"
+    },
+    {
+      "claim": "Đoạn văn bản y khoa đã được dịch sang tiếng Việt như sau:\n\nTuyên bố: Trên internet, danh sách được liệt kê chính xác về các sự kiện lịch sử và con số chứng minh rằng những vụ diệt chủng lớn nhất đối với dân thường trong thế kỷ 20 là kết quả của các quy định kiểm soát súng.\n\nTính từ \"claim\" trong văn bản này không cần dịch.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9854810833930969,
+      "num_chunks": 6,
+      "claim_id": "29280"
+    },
+    {
+      "claim": "Zinc có thể ngăn ngừa và giảm thời gian mắc cảm.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.97906094789505,
+      "num_chunks": 6,
+      "claim_id": "10913"
+    },
+    {
+      "claim": "Bill Clinton đã bị tước học bổng khỏi Đại học Oxford năm 1969 sau khi bị cáo buộc tấn công một phụ nữ có tên Eileen Wellstone.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9852679967880249,
+      "num_chunks": 2,
+      "claim_id": "36825"
+    },
+    {
+      "claim": "Glutaraldehyde có trong vaccine và độc nếu uống, gây dị tật sinh sản ở động vật.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9781113862991333,
+      "num_chunks": 5,
+      "claim_id": "41312"
+    },
+    {
+      "claim": "Người ta tin rằng trí thông minh của một người được xác định bởi di truyền của mẹ một mình.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9642300009727478,
+      "num_chunks": 6,
+      "claim_id": "34553"
+    },
+    {
+      "claim": "Chúng tôi sẽ là bên đầu tiên bầu một người đàn ông trông rụt rè làm thống đốc.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9826279282569885,
+      "num_chunks": 6,
+      "claim_id": "23406"
+    },
+    {
+      "claim": "\"Carolina Bắc là nơi có hai con sông \"nước thải ô nhiễm hàng đầu năm\" ở Mỹ\".",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.898271381855011,
+      "num_chunks": 6,
+      "claim_id": "12085"
+    },
+    {
+      "claim": "\"Nhân viên y tế mới của Lực lượng vũ trang Hoa Kỳ sẽ điều trị chấn thương chiến trường bằng \"y học thay thế\" như dung dịch homeopat và hạt cầu nguyện.\"",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5152226239442825,
+      "num_chunks": 4,
+      "claim_id": "30691"
+    },
+    {
+      "claim": "\"Tweet này nói rằng uống một hỗn hợp chứa axit clohidric (bleach) sẽ giúp ngăn ngừa việc nhiễm nCoV.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9718545079231262,
+      "num_chunks": 4,
+      "claim_id": "26965"
+    },
+    {
+      "claim": "Đặt chân lên bảng điều khiển của xe có thể khiến gân đùi \"đi qua các lỗ mắt\" trong trường hợp khí nén được kích hoạt.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9984845519065857,
+      "num_chunks": 6,
+      "claim_id": "36611"
+    },
+    {
+      "claim": "\"Facebook post\" nói rằng Donald Trump đã giành được giải thưởng Ellis Island cho \"chiến sĩ dân tộc, sự chấp nhận, anh em đồng cảm và đa dạng\".",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.7849968075752258,
+      "num_chunks": 4,
+      "claim_id": "26153"
+    },
+    {
+      "claim": "Một người mẹ giận dữ đã đưa ra một phản ứng sôi nổi với các quan chức trường học sau khi con gái cô bị phạt vì đánh một bạn cùng lớp, người đó đã \"đánh trúng\" cô.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.797655388712883,
+      "num_chunks": 6,
+      "claim_id": "34683"
+    },
+    {
+      "claim": "Beta-Propiolactone có trong các loại vắc-xin và được biết đến là gây ung thư, nghi ngờ gây tổn thương dạ dày, gan, thần kinh, hô hấp, da và cơ quan cảm giác.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9799188375473022,
+      "num_chunks": 5,
+      "claim_id": "41309"
+    },
+    {
+      "claim": "\"Say 71% trong số các bác sĩ cho rằng lo ngại sức khỏe của Hillary là nghiêm trọng và có thể loại trừ.\"",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8364279866218567,
+      "num_chunks": 6,
+      "claim_id": "13534"
+    },
+    {
+      "claim": "Hai người đàn ông bị bắt vì tham gia vào cuộc đảo chính quân sự của Thổ Nhĩ Kỳ là các nhân viên tình báo CIA.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9703729152679443,
+      "num_chunks": 6,
+      "claim_id": "34591"
+    },
+    {
+      "claim": "Không có trường hợp tử vong do virus corona ở Hoa Kỳ.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.998420000076294,
+      "num_chunks": 2,
+      "claim_id": "26761"
+    },
+    {
+      "claim": "Người chăm sóc trẻ em Nora Jackson bị bắt giữ ở Florida vì buộc một bé vào máy hút gió trên trần nhà trong 26 giờ.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.6280831098556519,
+      "num_chunks": 2,
+      "claim_id": "30270"
+    },
+    {
+      "claim": "Người giàu nhất 80 người trên thế giới sở hữu nhiều tài sản hơn số lượng dân số dưới mười lăm triệu người trên toàn cầu.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.6701885461807251,
+      "num_chunks": 6,
+      "claim_id": "14583"
+    },
+    {
+      "claim": "Trường: tuyên bố\nNội dung:\nFlorence Nightingale trình bày về người tiên phong chăm sóc sức khỏe đang nói với chúng ta rằng rửa tay.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.6737428903579712,
+      "num_chunks": 4,
+      "claim_id": "8278"
+    },
+    {
+      "claim": "Thủ tướng: tuyên bố\n\nVice President Mike Pence nói rằng trợ lý White House Rob Porter bị cáo buộc hành vi lạm dụng gia đình được hỗ trợ bởi Kinh Thánh.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.5748302936553955,
+      "num_chunks": 3,
+      "claim_id": "30603"
+    },
+    {
+      "claim": "Nhân viên lãnh đạo Dead Kennedys, Jello Biafra bị đồng đội tố kiện vì không muốn một trong những bài hát của họ được sử dụng trong quảng cáo của Levi's.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9977703094482422,
+      "num_chunks": 6,
+      "claim_id": "34296"
+    },
+    {
+      "claim": "Hệ thống HUD đang cố gắng thông qua luật cấm việc xây dựng những căn nhà nhỏ và sinh sống trong xe ô tô.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7836870551109314,
+      "num_chunks": 6,
+      "claim_id": "32815"
+    },
+    {
+      "claim": "\"Chris Larson nói rằng Chris Abele \"chưa làm gì trong năm năm\" về đập Estabrook.\"",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9698008894920349,
+      "num_chunks": 6,
+      "claim_id": "14364"
+    },
+    {
+      "claim": "Có một cuộc chiến tranh trên than.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9824756383895874,
+      "num_chunks": 6,
+      "claim_id": "17906"
+    },
+    {
+      "claim": "Dưới đây là bản dịch của đoạn văn:\n\nVới một loại hình mới, giải Oscar hiện trở thành một cuộc thi theo xu hướng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9935512542724609,
+      "num_chunks": 1,
+      "claim_id": "5392"
+    },
+    {
+      "claim": "Các đợt bùng phát bệnh nhiễm trùng tại Seattle gây lo ngại.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9289268255233765,
+      "num_chunks": 1,
+      "claim_id": "5462"
+    },
+    {
+      "claim": "Californian rượu vang chứa mức độ độc hại của axit arsenic.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8815595507621765,
+      "num_chunks": 6,
+      "claim_id": "34680"
+    },
+    {
+      "claim": "Chủ tịch Hạ viện Ireland tuyên bố sẽ không bị ép buộc đưa ra quyết định về vấn đề phá thai.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9589781761169434,
+      "num_chunks": 2,
+      "claim_id": "7838"
+    },
+    {
+      "claim": "Formaldehyde có trong vaccine và gây ung thư ở người ngoài các vấn đề khác, và được cấm sử dụng trong vaccine ở hầu hết các quốc gia châu Âu.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.986559271812439,
+      "num_chunks": 5,
+      "claim_id": "41313"
+    },
+    {
+      "claim": "\"Hình ảnh cho thấy một \"tư liệu từ bộ phận nhân sự\"\" (bộ phận nhân sự), cơ bản đe dọa một nhân viên công ty phải mua một chiếc xe mới hoặc đối mặt với hình phạt tại nơi làm việc.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8509343862533569,
+      "num_chunks": 7,
+      "claim_id": "37380"
+    },
+    {
+      "claim": "Thành viên Hạ viện bang New York đã thông qua luật cho phép trẻ em tham gia đua xe máy tuyết, xin giấy phép săn bắn và không phải làm việc thu gom hoặc chọn rác, cành thuốc lá, xương hoặc các bộ phận khác.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9904692769050598,
+      "num_chunks": 6,
+      "claim_id": "12348"
+    },
+    {
+      "claim": "\"Các cá nhân trốn tránh nguy hiểm có thể yêu cầu được \"không liệt kê\" trong khách sạn để không ai tìm thấy họ.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9781641960144043,
+      "num_chunks": 6,
+      "claim_id": "34570"
+    },
+    {
+      "claim": "Nếu cử tri bị từ chối vào phiếu bầu trên ngày bầu cử, họ có thể yêu cầu phiếu bầu tạm thời.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9695232510566711,
+      "num_chunks": 7,
+      "claim_id": "27221"
+    },
+    {
+      "claim": "Hầu hết những kẻ giết người hàng loạt của bạn, hầu hết những người gây ra bạo lực gia đình, họ bắt đầu bằng cách ngược đãi động vật.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8020562579234441,
+      "num_chunks": 6,
+      "claim_id": "22022"
+    },
+    {
+      "claim": "Mây bụi (smog) che khuất ánh sáng của lễ hội ánh sáng ở Ấn Độ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9811508059501648,
+      "num_chunks": 4,
+      "claim_id": "1926"
+    },
+    {
+      "claim": "\"Trên vấn đề nhận quà tặng\", \"Bob McDonnell đã lấy một phần nhỏ so với (Tim) Kaine.\"",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.7938771843910217,
+      "num_chunks": 3,
+      "claim_id": "13812"
+    },
+    {
+      "claim": "Một bài đăng trên blog có tiêu đề \"Hai giọt\" kể về một người đàn ông ở Milwaukee đã bị bỏng hóa chất trên lưng tay do xà phòng dọn cặn dẫn đến một nỗi ám ảnh y tế kéo dài năm năm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9980581402778625,
+      "num_chunks": 6,
+      "claim_id": "38652"
+    },
+    {
+      "claim": "Một người đàn ông ở Texas phát hiện một con chuột chết trong một chai Dr Pepper đã được tiêu thụ một phần.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9756823778152466,
+      "num_chunks": 6,
+      "claim_id": "34611"
+    },
+    {
+      "claim": "Đoạn văn bản y khoa đã được dịch sang tiếng Việt như sau:\n\n 3D quàng vú máy tính được xem là bước tiến đột phá.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9485031366348267,
+      "num_chunks": 6,
+      "claim_id": "11517"
+    },
+    {
+      "claim": "Thousands giấy phép lái xe giả được buôn lậu từ Trung Quốc và Hồng Kông, bị bắt giữ tại sân bay O'Hare ở Chicago kể từ đầu năm 2020, đã liên kết với các hoạt động gian lận cử tri, và có thể tạo ra hàng triệu phiếu bầu bất hợp pháp trong cuộc bầu cử tổng thống Mỹ tháng 11/2020.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9678195714950562,
+      "num_chunks": 5,
+      "claim_id": "35844"
+    },
+    {
+      "claim": "Nhận định rằng Tổng thống Trump đang biểu hiện các dấu hiệu của bệnh loạn thần trong ngôn ngữ và hành động bắt đầu lan truyền trên mạng xã hội vào tháng 5 năm 2017.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6656954983870188,
+      "num_chunks": 6,
+      "claim_id": "36725"
+    },
+    {
+      "claim": "Anh Anh cảm thấy lo lắng ở nước Anh đang chiếm ưu thế tại hội thảo ý tưởng Hay.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9694814682006836,
+      "num_chunks": 6,
+      "claim_id": "5018"
+    },
+    {
+      "claim": "Nghe album Qabalista của Selki Girl có thể gây ra trải nghiệm thoát khỏi cơ thể.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9928780198097229,
+      "num_chunks": 7,
+      "claim_id": "37766"
+    },
+    {
+      "claim": "Khám phá những bí mật trong não bộ: Rối loạn chú ý (ADHD)",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.5104781985282898,
+      "num_chunks": 3,
+      "claim_id": "10565"
+    },
+    {
+      "claim": "\"Chủ trương của Gwen Moore nói rằng Thống đốc Wisconsin Scott Walker đã loại bỏ \"phẫu thuật kiểm tra ung thư cho phụ nữ không bảo hiểm y tế\" và đưa ra \"\"không giải pháp nào.\"",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8721547722816467,
+      "num_chunks": 6,
+      "claim_id": "20872"
+    },
+    {
+      "claim": "Nhà tâm lý học Hà Lan thừa nhận đã tạo ra dữ liệu nghiên cứu.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9452753663063049,
+      "num_chunks": 4,
+      "claim_id": "1917"
+    },
+    {
+      "claim": "Hillary Clinton đã có cuộc tấn công tim thứ ba - các bác sĩ nói rằng cô \"không thể sống sót\".",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.6915149688720703,
+      "num_chunks": 4,
+      "claim_id": "12232"
+    },
+    {
+      "claim": "Bãi chạy máy đi bộ có thể giúp người bệnh động mạch não hồi phục sau tai nạn động mạch não.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5813566446304321,
+      "num_chunks": 4,
+      "claim_id": "9942"
+    },
+    {
+      "claim": "Thuốc thủy ngân (thuốc thủy ngân hoặc thio thủy ngân) có trong các loại vắc-xin và có thể gây tổn thương não, ruột, gan, xương sườn, hệ thống thần kinh và thận, liên quan đến rối loạn miễn dịch, rối loạn tự kỷ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9750568270683289,
+      "num_chunks": 5,
+      "claim_id": "41316"
+    },
+    {
+      "claim": "\"Không có người da trắng vô vũ khí nào bị bắn bởi cảnh sát ở New York trong khoảng 45 năm.\"",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9155426025390625,
+      "num_chunks": 6,
+      "claim_id": "15745"
+    },
+    {
+      "claim": "Một xét nghiệm máu mới có thể loại bỏ các đột quỵ tim nhanh hơn.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9265162944793701,
+      "num_chunks": 5,
+      "claim_id": "9832"
+    },
+    {
+      "claim": "Nhân vật Kirk Cameron đã mắc một loại bệnh leprosy hiếm gặp.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9917380213737488,
+      "num_chunks": 3,
+      "claim_id": "31139"
+    },
+    {
+      "claim": "Một bé em nhỏ đã sống sót sau khi bị phá thai ở bệnh viện Ba Lan thì khóc trong một giờ mà không được chăm sóc.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9260746240615845,
+      "num_chunks": 5,
+      "claim_id": "34203"
+    },
+    {
+      "claim": "Người đã nghỉ hưu tham gia chạy bộ maraton nói về việc lạm dụng và phục hồi ở San Diego.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.8823624849319458,
+      "num_chunks": 3,
+      "claim_id": "6593"
+    },
+    {
+      "claim": "Các nhà khoa học đã chính thức tuyên bố rạn san hô vĩ đại là chết.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9987566471099854,
+      "num_chunks": 6,
+      "claim_id": "32152"
+    },
+    {
+      "claim": "\"Bộ An và nhân viên quân sự đã sử dụng ký hiệu \"\"Broomstick One\"\" cho máy bay mang tên Hillary Clinton.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.8748579025268555,
+      "num_chunks": 6,
+      "claim_id": "34538"
+    },
+    {
+      "claim": "\"Người viết blog nói rằng cựu tổng thống Jimmy Carter đã nói, \"\"Thuốc lá thuốc chữa bệnh ung thư cho tôi.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.6724305748939514,
+      "num_chunks": 4,
+      "claim_id": "12790"
+    },
+    {
+      "claim": "Trong một vụ án năm 2014 liên quan đến một người đàn ông bị kết án vì lạm dụng hai cô gái dưới tuổi trưởng thành, Tù trưởng Roy Moore không đồng ý và viết bản luận tội.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9981852173805237,
+      "num_chunks": 6,
+      "claim_id": "11818"
+    },
+    {
+      "claim": "Hợp đồng bảo hiểm y tế bị yêu cầu bồi thường.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.682646115620931,
+      "num_chunks": 3,
+      "claim_id": "4075"
+    },
+    {
+      "claim": "Người phụ nữ từng là Nữ hoàng Hoa hậu Arkansas Sally Miller, người tuyên bố rằng cô có mối quan hệ với Bill Clinton vào năm 1983, đã nói rằng Hillary Clinton có thói quen uống rượu coca, có nhiều lần phá thai và bí mật là một người đồng tính nữ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6723483502864838,
+      "num_chunks": 6,
+      "claim_id": "38564"
+    },
+    {
+      "claim": "Uganda đã coi việc \"chuyển giao tình dục có chủ ý\" là một tội ác liên quan đến HIV.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9656627774238586,
+      "num_chunks": 4,
+      "claim_id": "2337"
+    },
+    {
+      "claim": "Thực tế, voi nghĩ con người giống như \"dễ thương\", theo cùng cách mà con người nghĩ về con mèo hoặc chó.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.802982781614576,
+      "num_chunks": 7,
+      "claim_id": "34329"
+    },
+    {
+      "claim": "Đổ nước cùng một lần sẽ làm cho nước trở nên nguy hiểm để uống.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.5636541247367859,
+      "num_chunks": 6,
+      "claim_id": "29353"
+    },
+    {
+      "claim": "1.000 cơ sở khám bệnh, chữa bệnh đã đóng cửa kể từ năm 2010.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8138322035471598,
+      "num_chunks": 3,
+      "claim_id": "41650"
+    },
+    {
+      "claim": "Hormone béo phì có thể lừa cơ thể để giúp nó giữ lại cân nặng thừa.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9555909037590027,
+      "num_chunks": 2,
+      "claim_id": "11431"
+    },
+    {
+      "claim": "Bạn cũng nên xịt nước mũi để phòng ngừa. Một giải pháp đơn giản bằng muối trong nước ấm sẽ đủ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9179940968751907,
+      "num_chunks": 4,
+      "claim_id": "41047"
+    },
+    {
+      "claim": "Đoạn văn bản y khoa sau được dịch sang tiếng Việt như sau:\n\nHình ảnh cho thấy các thùng chứa con heo sữa bị khóa để giữ nguyên vị trí trong sáu tuần trước khi chúng bị giết mổ.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5858886380280767,
+      "num_chunks": 7,
+      "claim_id": "32834"
+    },
+    {
+      "claim": "\"Mỗi 28 giờ, một người da đen vô vũ khí sẽ bị cảnh sát bắn.\"",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7965205311775208,
+      "num_chunks": 6,
+      "claim_id": "16560"
+    },
+    {
+      "claim": "Dịch đoạn văn bản y khoa sang tiếng Việt:\n\nBảo tồn caffeine: Nông dân Colombia thay thế cây thuốc lá bằng cà phê để bảo vệ động vật hoang dã.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.849662721157074,
+      "num_chunks": 6,
+      "claim_id": "8548"
+    },
+    {
+      "claim": "Người chơi tiền đạo của đội bóng đá Detroit Lions, Matthew Stafford, đã bỏ lỡ buổi tập luyện vì vợ đang mắc bệnh ung thư não.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9951327443122864,
+      "num_chunks": 1,
+      "claim_id": "6868"
+    },
+    {
+      "claim": "Candle có mùi có thể gây ung thư (hoặc các vấn đề sức khỏe nghiêm trọng khác).",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8584907650947571,
+      "num_chunks": 5,
+      "claim_id": "34579"
+    },
+    {
+      "claim": "Hoa Kỳ chưa bao giờ đứng về và chứng kiến những người vô tội bị giết hại đến mức đang xảy ra ở Syria.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9187529683113098,
+      "num_chunks": 7,
+      "claim_id": "18255"
+    },
+    {
+      "claim": "Flu shot chứa độc tố và thành phần có thể phá hủy não bộ và gây bệnh Alzheimer.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8994336383683341,
+      "num_chunks": 7,
+      "claim_id": "38439"
+    },
+    {
+      "claim": "Bệnh nấm mộ Guinea đã được ngăn chặn việc lây lan ở Nam Sudan.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9104859828948975,
+      "num_chunks": 4,
+      "claim_id": "5988"
+    },
+    {
+      "claim": "Cựu Thị trưởng White có cổ phần lớn trong công ty sản xuất Barnett Shale.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9271916747093201,
+      "num_chunks": 6,
+      "claim_id": "24244"
+    },
+    {
+      "claim": "Một người Nga thứ tám có liên quan đến vụ việc Trump - Nga đã chết một cách bí ẩn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9521471858024597,
+      "num_chunks": 6,
+      "claim_id": "34439"
+    },
+    {
+      "claim": "Chúng tôi là quốc gia công nghiệp hóa duy nhất phụ thuộc nặng nề vào ngành bảo hiểm y tế lợi nhuận để cung cấp chăm sóc sức khỏe cơ bản.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9548004865646362,
+      "num_chunks": 6,
+      "claim_id": "24181"
+    },
+    {
+      "claim": "Tìm kiếm bất kỳ số ba chữ số sau \"bệnh mới\" trên Google cung cấp bằng chứng cho thấy dịch COVID-19 được sản xuất.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8342460989952087,
+      "num_chunks": 5,
+      "claim_id": "35578"
+    },
+    {
+      "claim": "Uống một ly nước 30 phút trước bữa ăn giúp tiêu hóa.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9960899949073792,
+      "num_chunks": 1,
+      "claim_id": "41180"
+    },
+    {
+      "claim": "Một nghiên cứu phòng thí nghiệm ở Wuhan, Trung Quốc, đã nhận được một khoản tiền 3,7 triệu USD từ chính phủ Mỹ vào năm 2017 mặc dù có lệnh cấm tài trợ cho các tổ chức như vậy.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9650622606277466,
+      "num_chunks": 4,
+      "claim_id": "35538"
+    },
+    {
+      "claim": "Câu nói trên được dịch là:\n\nCác nhà tổ chức của Đại hội Quốc dân Dân chủ đã đăng một bài quảng cáo trên trang web Craigslist để tìm kiếm diễn viên thay thế các đại biểu không có mặt hoặc bị đuổi.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.6739059090614319,
+      "num_chunks": 6,
+      "claim_id": "34586"
+    },
+    {
+      "claim": "Một con lửng đồng tính đã gây ra sự hoảng loạn trong một ngôi làng ở Nam Phi và cưỡng hiếp nhiều người đàn ông.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8870853185653687,
+      "num_chunks": 5,
+      "claim_id": "30360"
+    },
+    {
+      "claim": "Người phụ nữ gặp gỡ các nhà tuyển dụng trộm cướp tại cửa hàng Target ở Houston.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.8633397817611694,
+      "num_chunks": 7,
+      "claim_id": "34627"
+    },
+    {
+      "claim": "MSG là một thành phần trong các vaccine và được liên kết với các dị tật sinh sản, trì hoãn phát triển, vô sinh và bị cấm ở châu Âu.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.973352313041687,
+      "num_chunks": 5,
+      "claim_id": "41317"
+    },
+    {
+      "claim": "Tôi không thể cung cấp thông tin hoặc hỗ trợ cho các hoạt động bất hợp pháp hoặc có hại.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8728340268135071,
+      "num_chunks": 6,
+      "claim_id": "42173"
+    },
+    {
+      "claim": "Báo cáo về một cô gái 7 tuổi đã được phẫu thuật implant tạng tim có gây tranh cãi.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9898427128791809,
+      "num_chunks": 5,
+      "claim_id": "38349"
+    },
+    {
+      "claim": "Nhân viên Novartis có thể đã vi phạm quy trình thử nghiệm ở Nhật Bản.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9779257774353027,
+      "num_chunks": 2,
+      "claim_id": "2836"
+    },
+    {
+      "claim": "Bản dịch:\n\nVương tử William bắt đầu chiến dịch sức khỏe tâm thần cho người hâm mộ bóng đá.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.5150905847549438,
+      "num_chunks": 1,
+      "claim_id": "3121"
+    },
+    {
+      "claim": "Cristal Griner, người cảnh sát đã cứu Steve Scalise, là một phụ nữ đồng tính luyến ái (và thành viên Quốc hội không ủng hộ quyền của người đồng tính).",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5194812417030334,
+      "num_chunks": 6,
+      "claim_id": "28149"
+    },
+    {
+      "claim": "Thành phần có thể tồn tại trong khoảng 6-12 giờ trên vải và sẽ bị giết chết bởi tẩy rửa quần áo thông thường.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.876993715763092,
+      "num_chunks": 3,
+      "claim_id": "41037"
+    },
+    {
+      "claim": "\"Vài người cảnh sát đã chết do COVID-19 trong năm nay nhiều hơn là bị bắn khi tuần tra.\"",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9908682107925415,
+      "num_chunks": 6,
+      "claim_id": "25650"
+    },
+    {
+      "claim": "Athletes nữ tham gia Olympic đang mang thai chỉ để có thể phá thai và qua đó cải thiện hiệu suất của mình thông qua doping hormone.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9959228038787842,
+      "num_chunks": 6,
+      "claim_id": "34331"
+    },
+    {
+      "claim": "Cleveland Cavaliers' Love tổ chức sự kiện nâng cao nhận thức sức khỏe tâm thần thông qua \"talking\" trong phòng thay đồ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9705281853675842,
+      "num_chunks": 6,
+      "claim_id": "7587"
+    },
+    {
+      "claim": "Nhà hàng Gerrity's Supermarkets tuyên bố rằng một phụ nữ hắt hơi lên thức ăn tại cửa hàng của họ ở Pennsylvania, và sau đó họ bị buộc phải loại bỏ ước tính 35.000 món ăn như một biện pháp phòng ngừa.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9636849761009216,
+      "num_chunks": 6,
+      "claim_id": "37519"
+    },
+    {
+      "claim": "ISIS đang chạy qua biên giới đã bị làm mỏng bởi chính sách của Barack Obama.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9444180130958557,
+      "num_chunks": 6,
+      "claim_id": "14010"
+    },
+    {
+      "claim": "Một người đàn ông đã trải qua 6 ngày trong tình trạng mê hoặc chấn thương sau khi bị tấn công, sau đó tỉnh dậy nói tiếng Do Thái cổ đại và không có ký niệm về cuộc sống trước đây của mình.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9610698819160461,
+      "num_chunks": 4,
+      "claim_id": "38838"
+    },
+    {
+      "claim": "\"Boys Scouts của Mỹ mất 425.000 thành viên vào tháng 5 năm 2018, trong khi trả lời lại quyết định tích hợp thêm các cô gái vào tổ chức và đổi tên chương trình \"Boy Scouts\" thành một cái tên mới, không phân biệt giới tính.\"",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8460820913314819,
+      "num_chunks": 6,
+      "claim_id": "34290"
+    },
+    {
+      "claim": "Bản dịch là:\n\nHội thảo về khủng hoảng thuốc phiện sẽ diễn ra trong tuần này ở Tây Virginia.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9053157567977905,
+      "num_chunks": 1,
+      "claim_id": "3708"
+    },
+    {
+      "claim": "Walmart bán giày lót jelly chứa lượng chì không an toàn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9974837303161621,
+      "num_chunks": 4,
+      "claim_id": "34391"
+    },
+    {
+      "claim": "Năm 1999, Mike Pence viết một bài đăng quan điểm chỉ trích việc bao gồm phụ nữ trong quân đội, dựa trên bộ phim hoạt hình \"Mulan\".",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7075213134909669,
+      "num_chunks": 6,
+      "claim_id": "35986"
+    },
+    {
+      "claim": "Một viên thuốc có thể xóa đi những kỷ niệm đau đớn, một nghiên cứu cho thấy.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6524917682011923,
+      "num_chunks": 3,
+      "claim_id": "11067"
+    },
+    {
+      "claim": "Đánh giá gene có thể cung cấp những gợi ý sức khỏe - và lo lắng vô ích.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8202505434552828,
+      "num_chunks": 6,
+      "claim_id": "7397"
+    },
+    {
+      "claim": "CEO của J&J từ chối tham dự cuộc họp Quốc hội Mỹ về các chất gây ung thư trong sản phẩm bột đá (talc)",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8946837186813354,
+      "num_chunks": 5,
+      "claim_id": "36"
+    },
+    {
+      "claim": "Mẹo điều trị tai chi có thể giúp giảm triệu chứng fibromyalgia.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7175507346789042,
+      "num_chunks": 3,
+      "claim_id": "11484"
+    },
+    {
+      "claim": "Đây là bản dịch:\n\nMột câu chuyện trực tiếp từ người này (có một số phiên bản nói rằng đó là một phụ nữ) đã được bác sĩ khuyên nên sử dụng đồng xu đồng next time cô ấy bị cắn bởi ong. Cô ấy thử nó vài lần trên cả chính mình và một bạn bè đến thăm và khi đặt đồng xu, giảm đau và sưng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8575499653816223,
+      "num_chunks": 1,
+      "claim_id": "39698"
+    },
+    {
+      "claim": "Coca-Cola là một giải pháp hiệu quả để loại bỏ nấm đầu.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.6206438541412354,
+      "num_chunks": 5,
+      "claim_id": "34639"
+    },
+    {
+      "claim": "Lương ban đầu cho giáo viên tăng từ £21.600 vào năm 2010 lên £24.400 vào năm 2020.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9894102215766907,
+      "num_chunks": 2,
+      "claim_id": "41083"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+# Cấu hình pipeline fact-checking tim mạch
+
+guard:
+  # Classifier fine-tuned (PhoBERT). Nếu chưa train, để null -> dùng fallback rule+NER
+  classifier_path: models/guard_phobert
+  base_model: vinai/phobert-base-v2
+  threshold: 0.5
+  labels:
+    - factual_claim
+    - question
+    - personal_opinion
+    - personal_diagnosis
+    - other
+
+# Corpus tiếng Việt: build index từ các nguồn dưới. Chạy scripts/build_index.py.
+corpus:
+  sources:
+    - path: data/corpus/sources/articles_skds.csv
+      format: csv
+      text_field: content
+      title_field: title
+      source_field: source
+      url_field: link
+    - path: data/corpus/sources/vifactcheck_health.jsonl
+      format: jsonl
+      text_field: main_text
+      title_field: claim
+      source_field: author
+      url_field: url
+  chunk:
+    max_sentences: 4      # cửa sổ trượt ~4 câu / chunk
+    overlap_sentences: 1  # trùng 1 câu giữa 2 chunk liền kề
+    max_chars: 700        # cắt cứng nếu chunk quá dài
+    min_chars: 40         # bỏ chunk quá ngắn
+  filter:
+    enabled: false        # true = chỉ giữ chunk chứa >=1 term gazetteer tim mạch
+                          # (giảm số chunk + tăng độ chính xác cho domain tim mạch)
+
+retrieval:
+  # Bi-encoder tiếng Việt (PhoBERT-based). Input cần tách từ bằng ViTokenizer.
+  embedding_model: bkai-foundation-models/vietnamese-bi-encoder
+  index_path: data/index/corpus.faiss
+  metadata_path: data/index/corpus_meta.json
+  top_k: 8
+  min_score: 0.45   # bỏ evidence có cosine < ngưỡng (lọc tài liệu lạc đề trước NLI)
+  reranker: null    # cross-encoder/ms-marco-MiniLM-L-6-v2 (bật nếu muốn)
+
+nli:
+  models:
+    # NLI đa ngữ (có tiếng Việt): entailment/neutral/contradiction.
+    - MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mio7lang
+  max_length: 512
+
+aggregation:
+  # score = retrieval_score * nli_confidence, tổng theo nhãn
+  min_evidence: 2
+
+verdict:
+  # Neutral = "evidence không nói về claim" -> coi như bỏ phiếu trắng.
+  # Quyết định dựa trên tỉ lệ support/refute trong phần directional (support+refute).
+  decision_threshold: 0.6   # share của bên thắng trong directional để ra kết luận
+  min_directional: 0.15     # weight tuyệt đối của evidence directional mạnh nhất;
+                            # dưới mức này = claim không được đề cập = INSUFFICIENT
+
+explanation:
+  mode: template            # template | ollama
+  ollama_model: qwen2.5:7b
+
+# Azure OpenAI (contextual retrieval khi build index + HyDE khi truy vấn).
+# Auth = API key qua biến môi trường. chat_deployment = TÊN DEPLOYMENT trên Azure.
+azure:
+  endpoint_env: AZURE_OPENAI_ENDPOINT
+  api_key_env: AZURE_OPENAI_API_KEY
+  api_version: "2024-10-21"   # >= 2024-10-01-preview để có prompt caching
+  chat_deployment: gpt-4o-mini
+  max_retries: 4
+
+# Contextual Retrieval (Anthropic): LLM sinh 1-2 câu ngữ cảnh cho mỗi chunk,
+# prepend vào chunk trước khi embed. Bài viết đặt ở đầu prompt -> tái dùng cache.
+contextual:
+  enabled: true
+  workers: 8                  # song song theo TÀI LIỆU (chunk cùng bài chia sẻ cache)
+  max_doc_chars: 8000         # cắt bài quá dài khi đưa vào prompt
+  max_tokens: 120
+  cache_path: data/index/context_cache.jsonl   # resume được nếu chạy lại
+
+# HyDE (query-time): LLM sinh đoạn giả định cho claim, embed đoạn đó để retrieve.
+# NLI vẫn dùng claim gốc. Tắt/không có Azure -> fallback embed claim gốc.
+hyde:
+  enabled: true
+  max_tokens: 200

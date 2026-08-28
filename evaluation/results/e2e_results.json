@@ -1,0 +1,938 @@
+{
+  "accuracy": 0.5,
+  "precision_macro": 0.4489131634116738,
+  "recall_macro": 0.5039525691699605,
+  "f1_macro": 0.4395969643561328,
+  "classification_report": "                     precision    recall  f1-score   support\n\n               ĐÚNG       0.57      0.68      0.62        44\n                SAI       0.45      0.74      0.56        23\nKHÔNG ĐỦ BẰNG CHỨNG       0.33      0.09      0.14        33\n\n           accuracy                           0.50       100\n          macro avg       0.45      0.50      0.44       100\n       weighted avg       0.46      0.50      0.45       100\n",
+  "confusion_matrix": [
+    [
+      30,
+      9,
+      5
+    ],
+    [
+      5,
+      17,
+      1
+    ],
+    [
+      18,
+      12,
+      3
+    ]
+  ],
+  "labels": [
+    "ĐÚNG",
+    "SAI",
+    "KHÔNG ĐỦ BẰNG CHỨNG"
+  ],
+  "latency": {
+    "count": 100,
+    "mean_sec": 10.56199624999019,
+    "p50_sec": 8.264114916528342,
+    "p95_sec": 24.76588531247107
+  },
+  "with_explanation": false,
+  "details": [
+    {
+      "claim": "Tăng cường vận động giúp giảm đau do viêm cột sống dính khớp",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.988890528678894,
+      "article_id": "skds_357",
+      "latency_sec": 40.07345849997364,
+      "evidence_preview": "SKĐS - Viêm cột sống dính khớp là hiện tượng viêm xảy ra ở mối nối giữa các đốt của cột sống lưng hay giữa cột sống và xương chậu, dẫn đến đau, cứng và bất động khớp. Các triệu chứng của viêm cột sống dính khớp có thể từ nhẹ đến nặng. Triệu chứng sớm nhất có thể thấy là các cơn đau tại vùng lưng, cộ"
+    },
+    {
+      "claim": "Thực hành đúng tư thế khi đứng, ngồi có thể giúp giảm đau và tăng cường cơ lưng, nhưng không phải là biện pháp hiệu quả nhất để điều trị viêm cột sống dính khớp",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.9278840482234955,
+      "article_id": "skds_357",
+      "latency_sec": 16.3531543330173,
+      "evidence_preview": "đau. Nhưng thực ra, h oạt động thể chất có thể giúp cải thiện tính linh hoạt của khớp , giảm đau và cứng do viêm cột sống dính khớp. Người b ệ nh không cần phải thực hiện các hoạt động tác động mạnh mà nên cân nhắc thêm một số hình thức hoạt động thể chất cường độ vừa phải như bơi lội, đi bộ, đạp xe"
+    },
+    {
+      "claim": "Ngăn ngừa căng thẳng mạn tính có thể giúp giảm viêm và cải thiện tình trạng bệnh viêm cột sống dính khớp, nhưng không phải là biện pháp thay thế cho các phương pháp điều trị y tế",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9643332958221436,
+      "article_id": "skds_357",
+      "latency_sec": 8.785544790967833,
+      "evidence_preview": "làm trầm trọng thêm các triệu chứng của viêm cột sống dính khớp. Nguyên nhân do c ăng thẳng kích hoạt giải phóng các hormone gây căng thẳng như cortisol và adrenaline . Các h ormone căng thẳng kích thích hệ thống miễn dịch giải phóng các cytokine, là những protein gây viêm. Do đó, c ăng thẳng m ạ n "
+    },
+    {
+      "claim": "Emflaza được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9900172352790833,
+      "article_id": "skds_10010",
+      "latency_sec": 9.624803374987096,
+      "evidence_preview": "SKĐS - Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ 5 tuổi trở lên bị bệnh teo cơ Duchenne (DMD), Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ"
+    },
+    {
+      "claim": "Emflaza có thể gây ra nhiều tác dụng phụ nghiêm trọng như hội chứng Cushing, tăng huyết áp và nguy cơ thủng đường tiêu hóa.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.8985104560852051,
+      "article_id": "skds_10010",
+      "latency_sec": 25.345368042006157,
+      "evidence_preview": "mạng. Bệnh nhân thường không qua được độ tuổi 20 hoặc 30. Tuy nhiên, mức độ nặng và tuổi thọ ở từng trường hợp là khác nhau. Emflaza là một corticosteroid có tác dụng giảm viêm và ức chế miễn dịch. Corticosteroid được sử dụng phổ biến để điều trị DMD trên toàn thế giới, nhưng deflazacort là thuốc đầ"
+    },
+    {
+      "claim": "Emflaza chỉ được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên, không rõ liệu nó có hiệu quả trong trường hợp khác.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9598821401596069,
+      "article_id": "skds_10010",
+      "latency_sec": 23.59538633399643,
+      "evidence_preview": "SKĐS - Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ 5 tuổi trở lên bị bệnh teo cơ Duchenne (DMD), Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ"
+    },
+    {
+      "claim": "Viêm da cơ và viêm đa cơ là nhóm bệnh tự miễn với tình trạng viêm, thoái hóa các sợi cơ vân gây yếu cơ làm giảm hoặc mất khả năng vận động.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9700656533241272,
+      "article_id": "skds_9233",
+      "latency_sec": 25.16531637503067,
+      "evidence_preview": "SKĐS - Viêm da cơ và viêm đa cơ được xếp vào nhóm bệnh tự miễn với đặc trưng bởi tình trạng viêm, thoái hóa các sợi cơ vân, gây nên tình trạng yếu cơ làm giảm hoặc mất khả năng vận động. Thể tổn thương cơ đơn thuần được gọi là viêm đa cơ. Khi có tổn thương đặc hiệu ở da kèm theo gọi là viêm da cơ. T"
+    },
+    {
+      "claim": "Nguyên nhân chính xác của bệnh viêm da cơ và viêm đa cơ chưa được xác định rõ ràng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9952850937843323,
+      "article_id": "skds_9233",
+      "latency_sec": 25.374183041974902,
+      "evidence_preview": "SKĐS - Viêm da cơ và viêm đa cơ được xếp vào nhóm bệnh tự miễn với đặc trưng bởi tình trạng viêm, thoái hóa các sợi cơ vân, gây nên tình trạng yếu cơ làm giảm hoặc mất khả năng vận động. Thể tổn thương cơ đơn thuần được gọi là viêm đa cơ. Khi có tổn thương đặc hiệu ở da kèm theo gọi là viêm da cơ. T"
+    },
+    {
+      "claim": "Bệnh viêm da cơ và viêm đa cơ có liên quan đến tăng nguy cơ ác tính, nhưng không phải là nguyên nhân trực tiếp gây ra tình trạng này.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.8237466804683209,
+      "article_id": "skds_9233",
+      "latency_sec": 24.744862624967936,
+      "evidence_preview": "Lời khuyên thầy thuốc Viêm da cơ ảnh hưởng đến cả trẻ em và người lớn, các biến chứng có thể gặp là loét đường tiêu hóa có thể gây ra tiêu phân đen, ói máu. Nhồi máu ruột có thể xảy ra, đặc biệt là trong viêm da cơ... Cả viêm da cơ và viêm đa cơ đều có liên quan đến tăng nguy cơ ác tính. Có liên qua"
+    },
+    {
+      "claim": "Nước chanh, cần tây, xô thơm, cỏ lúa mì, cây mê điệt, giấm táo, dầu bạc hà và rau xà lách đều có tác dụng loại bỏ mùi hôi nách.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.5305396318435669,
+      "article_id": "skds_1650",
+      "latency_sec": 31.791118708031718,
+      "evidence_preview": "SKĐS - Mùi cơ thể, nhất là mùi hôi ở nách sẽ khiến bạn và người xung quanh vô cùng khó chịu. Những cách tự nhiên dưới đây sẽ giúp bạn loại bỏ mùi hôi nách. Nước chanh Axit citric có trong chanh sẽ tiêu diệt vi khuẩn, phục hồi cân bằng độ pH của da và làm sáng da. Cách làm: Trộn 1/2 cốc nước chanh vớ"
+    },
+    {
+      "claim": "Không có thông tin cụ thể về cách sử dụng dầu cây trà để loại bỏ mùi hôi nách.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9724091291427612,
+      "article_id": "skds_1650",
+      "latency_sec": 17.523551499994937,
+      "evidence_preview": "bạc hà sẽ trung hòa mùi cơ thể và loại bỏ mùi hôi nách. Cách làm: Nhỏ một vài giọt tinh dầu bạc hà hữu cơ trong lòng bàn tay và nhẹ nhàng chà xát vào nách của bạn. Tuy nhiên, nếu bị kích thích, rửa sạch ngay lập tức. Dầu cây trà Thuộc tính kháng khuẩn, sát trùng có trong dầu cây trà cùng với các chấ"
+    },
+    {
+      "claim": "Không có bằng chứng khoa học nào hỗ trợ cho việc sử dụng rau xà lách để loại bỏ mùi hôi nách.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9773484468460083,
+      "article_id": "skds_1650",
+      "latency_sec": 8.77518733398756,
+      "evidence_preview": "SKĐS - Bạn có thể trị hôi nách đơn giản nhờ những rau quả trong vườn nhà như mướp đắng, gừng tươi, chanh, hay thậm chí cả xà lách. Gừng tươi Gừng tươi đem giã nát, vắt lấy nước cốt bôi vào nách. Hoặc thường xuyên dùng gừng tươi xát vào hố nách để loại bỏ mùi hôi nách. Nước chanh Trộn 1/2 cốc nước ch"
+    },
+    {
+      "claim": "Ngủ 7-8 tiếng mỗi đêm và tập luyện thường xuyên giúp giảm nguy cơ đột quỵ!",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.9012043252587318,
+      "article_id": "skds_8618",
+      "latency_sec": 8.708972749998793,
+      "evidence_preview": "SKĐS - Bạn có thể không kiểm soát được một số yếu tố nguy cơ của đột quỵ, như độ tuổi hoặc giới tính, nhưng có nhiều yếu tố bạn có thể thay đổi hoặc kiểm soát. Một nghiên cứu mới chỉ ra rằng ngủ 7-8 tiếng mỗi đêm và tập luyện 30-60 phút, 3 tới 6 lần mỗi tuần giúp giảm nguy cơ đột quỵ. Các nhà nghiên"
+    },
+    {
+      "claim": "Ngủ nhiều không tăng nguy cơ đột quỵ, mà ngược lại làm giảm nguy cơ!",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.9982665181159973,
+      "article_id": "skds_8618",
+      "latency_sec": 9.21412570902612,
+      "evidence_preview": "SKĐS - Bạn có thể không kiểm soát được một số yếu tố nguy cơ của đột quỵ, như độ tuổi hoặc giới tính, nhưng có nhiều yếu tố bạn có thể thay đổi hoặc kiểm soát. Một nghiên cứu mới chỉ ra rằng ngủ 7-8 tiếng mỗi đêm và tập luyện 30-60 phút, 3 tới 6 lần mỗi tuần giúp giảm nguy cơ đột quỵ. Các nhà nghiên"
+    },
+    {
+      "claim": "Bài viết không nói rõ liệu ngủ ít hay nhiều có ảnh hưởng đến nguy cơ đột quỵ?",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9965131878852844,
+      "article_id": "skds_8618",
+      "latency_sec": 8.723062374978326,
+      "evidence_preview": "SKĐS - Các vấn đề về giấc ngủ (từ ngáy đến ngủ quá nhiều hoặc quá ít) đều có thể liên quan đến tăng nguy cơ đột quỵ. Đây là kết quả của một nghiên cứu mới đăng trên Tạp chí Neurology. Theo đó, khịt mũi khi ngủ, chất lượng giấc ngủ kém , ngủ quá ít hoặc ngủ quá nhiều và chứng ngừng thở khi ngủ cũng c"
+    },
+    {
+      "claim": "Bệnh vảy nến ở trẻ em đa số đáp ứng với điều trị tại chỗ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9791466593742371,
+      "article_id": "skds_2935",
+      "latency_sec": 9.919806167017668,
+      "evidence_preview": "SKĐS - Vảy nến là một bệnh da thường gặp ở người lớn và trẻ em, gây ảnh hưởng nhiều tới chất lượng cuộc sống. Bệnh vảy nến ở trẻ em đa số đáp ứng với điều trị tại chỗ. Tuy nhiên, một số trường hợp vảy nến mức độ trung bình đến nặng đòi hỏi điều trị bằng dùng thuốc toàn thân hoặc liệu pháp ánh sáng. "
+    },
+    {
+      "claim": "Vảy nến ở trẻ em từ 4 tuổi trở lên có nhiều lựa chọn điều trị khác nhau, bao gồm thuốc ức chế miễn dịch và liệu pháp ánh sáng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.991880476474762,
+      "article_id": "skds_2935",
+      "latency_sec": 10.995303915988188,
+      "evidence_preview": "có cách điều trị triệt để, nhưng một số phác đồ điều trị có thể được các bác sĩ sử dụng để kiểm soát bệnh , giúp trẻ sống chung với bệnh vảy nến. - V iệc xem xét các yếu tố cụ thể của bệnh nhân, chẳng hạn như tuổi, mức độ nặng của bệnh, bệnh đi kèm và khả năng chịu đựng các rủi ro và tác dụng phụ củ"
+    },
+    {
+      "claim": "Quản lý vảy nến thông thường ở trẻ em từ 4 tuổi trở lên không chỉ dựa trên corticosteroid tại chỗ mà còn có nhiều lựa chọn khác.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9950573444366455,
+      "article_id": "skds_2935",
+      "latency_sec": 11.441290042013861,
+      "evidence_preview": "có cách điều trị triệt để, nhưng một số phác đồ điều trị có thể được các bác sĩ sử dụng để kiểm soát bệnh , giúp trẻ sống chung với bệnh vảy nến. - V iệc xem xét các yếu tố cụ thể của bệnh nhân, chẳng hạn như tuổi, mức độ nặng của bệnh, bệnh đi kèm và khả năng chịu đựng các rủi ro và tác dụng phụ củ"
+    },
+    {
+      "claim": "Người loạn dưỡng mỡ cần xây dựng chế độ ăn uống khoa học, hợp lý để hạn chế chất béo và cung cấp đủ năng lượng cho cơ thể.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9944255352020264,
+      "article_id": "skds_4303",
+      "latency_sec": 19.87171808403218,
+      "evidence_preview": "SKĐS - Những bệnh nhân loạn dưỡng mỡ cần xây dựng chế độ ăn uống và sinh hoạt khoa học, hợp lý. Chế độ ăn cần hạn chế chất béo, tuy nhiên cần bổ sung các thành phần khác để đảm bảo cung cấp đủ năng lượng cho cơ thể. 1. Tầm quan trọng của chế độ ăn với người mắc loạn dưỡng mỡ Về bản chất, loạn dưỡng "
+    },
+    {
+      "claim": "Ăn nhiều dầu thực vật không phải là một phần của chế độ ăn uống phù hợp với người loạn dưỡng mỡ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9941554069519043,
+      "article_id": "skds_4303",
+      "latency_sec": 22.249527416017372,
+      "evidence_preview": "Chế độ ăn cho người loạn dưỡng mỡ\n\nSKĐS - Những bệnh nhân loạn dưỡng mỡ cần xây dựng chế độ ăn uống và sinh hoạt khoa học, hợp lý. Chế độ ăn cần hạn chế chất béo, tuy nhiên cần bổ sung các thành phần khác để đảm bảo cung cấp đủ năng lượng cho cơ thể. 1. Tầm quan trọng của chế độ ăn với người mắc loạ"
+    },
+    {
+      "claim": "Người loạn dưỡng mỡ nên ăn nhiều thịt đỏ và nội tạng động vật để cải thiện sức khỏe.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.9975513815879822,
+      "article_id": "skds_4303",
+      "latency_sec": 23.12678837502608,
+      "evidence_preview": "Chế độ ăn cho người loạn dưỡng mỡ\n\nnhiều lợi ích cho cơ thể. Mỗi tuần nên sử dụng ít nhất 2-3 bữa cá, và không nên sử dụng dầu cá dạng chiên nướng vì có thể làm biến đổi chất thành không tốt cho sức khoẻ. Các loại thịt trắng Không chỉ cần rau củ quả hay các loại ngũ cốc, người loạn dưỡng mỡ cũng cần"
+    },
+    {
+      "claim": "Viêm gan C là bệnh truyền nhiễm do Hepatitis C virus (HCV) gây nên, có thể lây lan qua đường máu và tình dục.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9786362051963806,
+      "article_id": "skds_13302",
+      "latency_sec": 23.90264537499752,
+      "evidence_preview": "Viêm gan C\nlà một bệnh lý về gan do virus viêm gan C (HCV) gây ra. Dù có thể diễn tiến âm thầm trong nhiều năm, nhưng nếu không được phát hiện và điều trị đúng cách, bệnh có thể dẫn đến những biến chứng nghiêm trọng như xơ gan, ung thư gan và thậm chí là tử vong. Vậy viêm gan C thực sự nguy hiểm như"
+    },
+    {
+      "claim": "Viêm gan C không phải là bệnh nguy hiểm nếu người bệnh bị nhiễm thêm viêm gan B.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.8908829092979431,
+      "article_id": "skds_13302",
+      "latency_sec": 19.694966624956578,
+      "evidence_preview": "Viêm gan C\nlà một bệnh lý về gan do virus viêm gan C (HCV) gây ra. Dù có thể diễn tiến âm thầm trong nhiều năm, nhưng nếu không được phát hiện và điều trị đúng cách, bệnh có thể dẫn đến những biến chứng nghiêm trọng như xơ gan, ung thư gan và thậm chí là tử vong. Vậy viêm gan C thực sự nguy hiểm như"
+    },
+    {
+      "claim": "Không có vaccine phòng bệnh viêm gan C, vì vậy cách duy nhất để phòng ngừa lây nhiễm virus viêm gan C là không sử dụng chung kim tiêm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.982823371887207,
+      "article_id": "skds_13302",
+      "latency_sec": 9.860038833983708,
+      "evidence_preview": "- Suy gan\n- Ung thư biểu mô tế bào gan (HCC)\n- Biểu hiện ngoài gan nặng\n- Tử vong\nNam giới trên 50 tuổi, uống rượu bia, bị bệnh gan nhiễm mỡ, viêm gan B, đồng nhiễm HIV hoặc đang điều trị bằng các thuốc ức chế miễn dịch có nguy cơ cao tiến triển thành xơ gan sau khi nhiễm HCV.\n8. Biện pháp phòng ngừ"
+    },
+    {
+      "claim": "Khi máy bay cất hay hạ cánh, sự chênh lệch áp suất không khí gây ù tai.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.6968425512313843,
+      "article_id": "skds_9801",
+      "latency_sec": 12.891326415992808,
+      "evidence_preview": "SKĐS - Có một số người gặp phải tình trạng tai ù đặc khi máy bay cất cánh hoặc hạ cánh. Điều này xảy ra khi áp suất không khí bên trong tai giữa mất cân bằng. Nếu sau đó tai trở lại bình thường thì không sao nhưng nếu tình trạng ù tai vẫn tiếp diễn thì thật phiền. Bài viết này sẽ giúp bạn đọc hiểu h"
+    },
+    {
+      "claim": "Sử dụng thuốc thông mũi và thuốc xịt mũi thường xuyên có thể dẫn đến nhờn thuốc và tăng sự tắc nghẽn hơn.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9880726337432861,
+      "article_id": "skds_9801",
+      "latency_sec": 17.190869542013388,
+      "evidence_preview": "thông mũi khác, nhưng một khi đã đạt được liều điều trị thì triệu chứng thường sẽ được cải thiện và có thể sẽ không cần phải sử dụng thuốc thông mũi nữa. Trong những thời điểm mà những yếu tố dị nguyên từ môi trường xuất hiện nhiều, sử dụng corticoid xịt mũi sớm có thể giúp ngăn ngừa viêm xoang và g"
+    },
+    {
+      "claim": "Đừng ngủ trong lúc cất cánh hoặc hạ cánh để tránh bị ù tai, đau tai.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9792322516441345,
+      "article_id": "skds_9801",
+      "latency_sec": 10.264807291037869,
+      "evidence_preview": "bay cất hoặc hạ cánh. Những người bị tăng huyết áp, bệnh tim, bệnh tuyến giáp, rối loạn nhịp tim hoặc hồi hộp quá mức nên tránh sử dụng thuốc thông mũi và thuốc xịt mũi. Nếu bạn đang mang thai, tham khảo ý kiến bác sĩ trước khi sử dụng bất kỳ thuốc gì. Lời khuyên của bác sĩ Đừng ngủ trong lúc cất cá"
+    },
+    {
+      "claim": "Chế độ ăn thiếu canxi có thể dẫn đến hạ canxi huyết ở trẻ em.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.999014139175415,
+      "article_id": "skds_6554",
+      "latency_sec": 10.34235783299664,
+      "evidence_preview": "Hạ canxi huyết ở trẻ em\n\nCanxi là một trong những chất khoáng có vai trò quan trọng trong cơ thể, tham gia vào cấu trúc xương và răng, co cơ, kích thích thần kinh, cơ chế đông máu, hoạt động của tim. Khi chế độ ăn thiếu canxi, cơ thể vẫn tiếp tục bài xuất canxi với số lượng lớn nhờ vào dự trữ. Nếu c"
+    },
+    {
+      "claim": "Hạ canxi huyết chỉ xảy ra khi cơ thể không có dự trữ canxi.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.9831023812294006,
+      "article_id": "skds_6554",
+      "latency_sec": 14.182934749987908,
+      "evidence_preview": "SKĐS - Hạ canxi máu xảy ra khi nồng độ canxi máu trong cơ thể thiếu hụt. Hạ canxi máu có thể gây những biến chứng nguy hiểm cho cơ thể nên cần được phát hiện và can thiệp kịp thời. Canxi có vai trò quan trọng đối với cơ thể. Không những canxi cần thiết cho sức khỏe và sự phát triển của xương, mà nó "
+    },
+    {
+      "claim": "Cân bằng canxi trong máu phụ thuộc vào nhiều yếu tố và không đơn giản là thiếu canxi.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.998874843120575,
+      "article_id": "skds_6554",
+      "latency_sec": 8.2699535410502,
+      "evidence_preview": "tâm thần. Phù gai thị và đục thể thủy tinh có thể xuất hiện khi bị hạ canxi máu kéo dài. Nhu cầu canxi của cơ thể Canxi trong cơ thể được duy trì ổn định phụ thuộc vào 3 yếu tố chính, đó là do thức ăn, nước uống đưa vào, hấp thu canxi từ ruột và đào thải qua thận. Nhu cầu hằng ngày một chế độ ăn đầy"
+    },
+    {
+      "claim": "Uống cà phê quá nhiều có thể gây mất ngủ",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9979956150054932,
+      "article_id": "skds_3120",
+      "latency_sec": 7.438913375022821,
+      "evidence_preview": "SKĐS - Phần lớn chúng ta đều uống cà phê vào buổi sáng để “nạp năng lượng” cho cơ thể, để cảm thấy tỉnh táo và để xua đi cơn ngái ngủ buổi sáng. Bên cạnh nhu cầu thực tế, uống cà phê, cũng trở thành một thú vui trong xã hội ngày nay. Chúng ta coi cà phê như một cái cớ để nghỉ ngơi và một cơ hội để m"
+    },
+    {
+      "claim": "Tập thiền, đi bộ không giúp cải thiện giấc ngủ ở người già",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.9868199229240417,
+      "article_id": "skds_3120",
+      "latency_sec": 6.257380000024568,
+      "evidence_preview": "Mất ngủ ở người cao tuổi\n\nMất ngủ khi về già\n\nKhắc phục chứng mất ngủ ở người cao tuổi\n\nKhắc phục chứng mất ngủ ở người cao tuổi\n\ncó thể do thay đổi nội tiết tuổi tiền mãn kinh nên việc tập thiền, đi bộ, tập thở bụng sẽ giúp cải thiện giấc ngủ. Trường hợp chứng mất ngủ nhiều ảnh hưởng tới sức khỏe v"
+    },
+    {
+      "claim": "Chứng mất ngủ do nguyên nhân thực thể như bệnh tật, trầm cảm, lo lắng... cần giải quyết tận gốc các nguyên nhân này",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9711819291114807,
+      "article_id": "skds_3120",
+      "latency_sec": 8.32160629198188,
+      "evidence_preview": "SKĐS - Tôi bị chứng mất ngủ gần 2 năm nay, đã dùng nhiều loại thuốc Tây y, Đông y và cả châm cứu cũng không ngủ được. Xin cho biết nguyên nhân của bệnh? Tôi nên điều trị thế nào để không hại sức khỏe? Bùi Ngọc Vĩnh (ngocvinh@gmail.com) Có nhiều nguyên nhân dẫn đến tình trạng mất ngủ. Nguyê"
+    },
+    {
+      "claim": "Mụn cóc tái phát có thể do chưa hết chân sau đốt hoặc mụn cóc nhỏ gây lây lan.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9946461319923401,
+      "article_id": "skds_13181",
+      "latency_sec": 8.407529541000258,
+      "evidence_preview": "Vì sao mụn cóc tái phát?\n\nTôi đã đi đốt mụn cóc nhưng lại thấy mọc lên. Vì sao mụn cóc lại mọc lại? Có cách nào làm hết được không? Xin quý báo tư vấn? Tôi đã đi đốt mụn cóc nhưng lại thấy mọc lên. Vì sao mụn cóc lại mọc lại? Có cách nào làm hết được không? Xin quý báo tư vấn? Trương Thu Hà (Thanh H"
+    },
+    {
+      "claim": "Không có cách nào làm hết được mụn cóc, cần phải điều trị bằng phương pháp phá hủy gốc mụn như đốt điện, laze...",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.9961532950401306,
+      "article_id": "skds_13181",
+      "latency_sec": 8.020564209029544,
+      "evidence_preview": "trên cơ thể. Mụn cóc ảnh hưởng đến yếu tố thẩm mỹ. Vì vậy điều trị mụn cóc là việc làm cần thiết. Tuy mụn cóc khó điều trị hơn so với các loại mụn khác nhưng không phải không có cách trị mụn cóc. Thậm chí, nếu bạn phát hiện bệnh sớm còn có thể tự điều trị tại nhà bằng một số cách dân gian như : Giã "
+    },
+    {
+      "claim": "Mụn cóc tái phát có thể do nhiều nguyên nhân khác nhau, không chỉ đơn giản là chưa hết chân sau đốt.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9931392073631287,
+      "article_id": "skds_13181",
+      "latency_sec": 8.258276292006485,
+      "evidence_preview": "Vì sao mụn cóc tái phát?\n\nTôi đã đi đốt mụn cóc nhưng lại thấy mọc lên. Vì sao mụn cóc lại mọc lại? Có cách nào làm hết được không? Xin quý báo tư vấn? Tôi đã đi đốt mụn cóc nhưng lại thấy mọc lên. Vì sao mụn cóc lại mọc lại? Có cách nào làm hết được không? Xin quý báo tư vấn? Trương Thu Hà (Thanh H"
+    },
+    {
+      "claim": "Mẹ nhiễm HIV nên nuôi con bằng sữa thay thế để giảm nguy cơ lây truyền HIV cho con.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9724146723747253,
+      "article_id": "skds_8059",
+      "latency_sec": 7.671943790977821,
+      "evidence_preview": "sữa mẹ có thể chứa virus HIV và trở thành nguồn tiềm ẩn của lây truyền HIV cho con. Theo ThS. Lương Quốc Bình, Phó trưởng khoa phòng chống HIV/AIDS, Trung tâm Kiểm soát Bệnh tật thành phố Hồ Chí Minh, không nên cho trẻ bú mẹ mà sử dụng hoàn toàn sữa thay thế trong 6 tháng đầu là phương pháp giảm lây"
+    },
+    {
+      "claim": "Mẹ nhiễm HIV có thể sinh con âm tính với HIV nếu tiếp cận sớm với thuốc kháng virus và các dịch vụ hỗ trợ trong quá trình mang thai, sinh nở và cho con bú.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9466177225112915,
+      "article_id": "skds_8059",
+      "latency_sec": 7.91538625000976,
+      "evidence_preview": "SKĐS - Mẹ nhiễm HIV vẫn có thể sinh con âm tính với HIV nếu tiếp cận sớm với thuốc kháng virus và các dịch vụ hỗ trợ trong quá trình mang thai, sinh nở và cho con bú... 1. Ngăn ngừa lây truyền HIV, bảo vệ sức khỏe bà mẹ và trẻ em Lây truyền HIV từ mẹ sang con là phương thức lây truyền HIV chính ở tr"
+    },
+    {
+      "claim": "Sữa mẹ không phải là nguồn tiềm ẩn duy nhất của HIV, nên phụ nữ nhiễm HIV có thể cho con bú mà không cần thay thế bằng sữa công thức.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.986491322517395,
+      "article_id": "skds_8059",
+      "latency_sec": 7.803389084001537,
+      "evidence_preview": "sữa mẹ có thể chứa virus HIV và trở thành nguồn tiềm ẩn của lây truyền HIV cho con. Theo ThS. Lương Quốc Bình, Phó trưởng khoa phòng chống HIV/AIDS, Trung tâm Kiểm soát Bệnh tật thành phố Hồ Chí Minh, không nên cho trẻ bú mẹ mà sử dụng hoàn toàn sữa thay thế trong 6 tháng đầu là phương pháp giảm lây"
+    },
+    {
+      "claim": "Sỏi túi mật có thể gây ra các biến chứng nguy hiểm như viêm và nhiễm khuẩn đường mật, túi mật cấp, hoại tử túi mật và thấm mật phúc mạc.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.899843156337738,
+      "article_id": "skds_4785",
+      "latency_sec": 9.056323042022996,
+      "evidence_preview": "SKĐS - Tôi khám sức khỏe định kỳ, sau khi siêu âm, kết quả túi mật có sỏi nhỏ. Xin được hỏi nếu để lâu có biến chứng gì? Lê Hoa (Lạng Sơn) Sỏi túi mật rất phổ biến ở phương Tây. Tỷ lệ dân số có sỏi túi mật tăng lên theo tuổi. Tại Mỹ, ở độ tuổi 60, khoảng 25% phụ nữ và 12% nam giới có sỏi túi mật. Tạ"
+    },
+    {
+      "claim": "Sỏi túi mật chỉ ảnh hưởng đến phụ nữ ở Mỹ, không phải ở cả nam giới hay Việt Nam.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.7327227592468262,
+      "article_id": "skds_4785",
+      "latency_sec": 8.73886791698169,
+      "evidence_preview": "SKĐS - Tôi khám sức khỏe định kỳ, sau khi siêu âm, kết quả túi mật có sỏi nhỏ. Xin được hỏi nếu để lâu có biến chứng gì? Lê Hoa (Lạng Sơn) Sỏi túi mật rất phổ biến ở phương Tây. Tỷ lệ dân số có sỏi túi mật tăng lên theo tuổi. Tại Mỹ, ở độ tuổi 60, khoảng 25% phụ nữ và 12% nam giới có sỏi túi mật. Tạ"
+    },
+    {
+      "claim": "Sỏi túi mật không thể gây ra biến chứng như rò túi mật đường mật vào ống tiêu hóa và ứ nước túi mật.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9951390027999878,
+      "article_id": "skds_4785",
+      "latency_sec": 8.918699540954549,
+      "evidence_preview": "SKĐS - Tôi khám sức khỏe định kỳ, sau khi siêu âm, kết quả túi mật có sỏi nhỏ. Xin được hỏi nếu để lâu có biến chứng gì? Lê Hoa (Lạng Sơn) Sỏi túi mật rất phổ biến ở phương Tây. Tỷ lệ dân số có sỏi túi mật tăng lên theo tuổi. Tại Mỹ, ở độ tuổi 60, khoảng 25% phụ nữ và 12% nam giới có sỏi túi mật. Tạ"
+    },
+    {
+      "claim": "Bác sĩ đã phẫu thuật thành công cho 2 bệnh nhi mắc động kinh kháng thuốc và cả hai đều được phẫu thuật miễn phí.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9617153406143188,
+      "article_id": "skds_9969",
+      "latency_sec": 7.981407042010687,
+      "evidence_preview": "Phẫu thuật miễn phí cứu 2 trẻ mắc động kinh kháng thuốc\n\nSKĐS - Các bác sĩ BV Nhi Trung ương vừa phẫu thuật thành công cho 2 bệnh nhi bị động kinh trong nhiều năm nhưng không có tiến triển, bệnh ngày càng nặng, chuyển sang giai đoạn kháng thuốc. Ngày 21/6, các bác sĩ khoa Thần kinh - Bệnh viện Nhi T"
+    },
+    {
+      "claim": "Không có thông tin về việc bác sĩ đã thử nghiệm kỹ thuật mới trước khi áp dụng tại Bệnh viện Nhi Trung ương.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.6847432851791382,
+      "article_id": "skds_9969",
+      "latency_sec": 7.899476042017341,
+      "evidence_preview": "thương của bé, ThS.BS Đào Trung Hiếu – phó giám đốc BV Nhi Đồng 1 cùng bác sĩ của các khoa Phỏng - Tạo hình, Hồi sức sơ sinh, Sơ sinh đã nhiều lần hội chẩn để tìm hướng xử trí. “Nhìn thấy con quá đáng thương. Đoạn chi là việc làm quá dễ đối với các bác sĩ. Nhưng cả phần đời của bệnh nhi sẽ sống với "
+    },
+    {
+      "claim": "Bài viết không cung cấp thông tin chi tiết về quy trình phẫu thuật và kết quả sau phẫu thuật cho cả 2 bệnh nhi.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9780134558677673,
+      "article_id": "skds_9969",
+      "latency_sec": 8.078474625013769,
+      "evidence_preview": "hồi sức. Đối với bệnh nhân người lớn đã phức tạp, nhưng đối với trẻ em còn khó khăn hơn nhiều. Bệnh nhi phải nằm sấp lâu gây ảnh hưởng đến hô hấp, tuần hoàn. Để khắc phục điều này, kíp gây mê hồi sức đã lên kế hoạch chi tiết, với  mục tiêu gây mê an toàn và sẵn sàng xử lý các tình huống xảy ra trong"
+    },
+    {
+      "claim": "Bệnh Basedow là bệnh tự miễn nhưng nguyên nhân chưa rõ ràng và thường gặp ở phụ nữ trẻ từ 20 - 50 tuổi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.901084840297699,
+      "article_id": "skds_9680",
+      "latency_sec": 7.880296957970131,
+      "evidence_preview": "SKĐS - Basedow là dạng cường giáp phổ biến nhất, chiếm hơn 90% các trường hợp cường giáp. Đây là bệnh tự miễn nhưng không rõ nguyên nhân và thường gặp ở phụ nữ trẻ từ 20 - 50 tuổi. Basedow có nguy hiểm không? Làm sao để cải thiện bệnh? Basedow là một trong những bệnh tuyến giáp phổ biến, gây không í"
+    },
+    {
+      "claim": "Bệnh Basedow có thể khởi phát đột ngột hoặc tiến triển từ từ gây sút cân, mệt mỏi, khó nhận biết ngay.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9353206157684326,
+      "article_id": "skds_9680",
+      "latency_sec": 8.017089917033445,
+      "evidence_preview": "cứu cho rằng nên điều trị Lithium, có lẽ do thuốc này làm thay đổi đáp ứng miễn dịch hoặc ai nhiễm vi khuẩn, virus , ngừng điều trị Corticoide… cũng sẽ có nguy cơ cao mắc bệnh Basedow. Theo thống kê, tỷ lệ mắc bệnh liên quan đến di truyền với 15% bệnh nhân có người thân mắc bệnh tương tự và khoảng 5"
+    },
+    {
+      "claim": "Không có biện pháp hữu hiệu nào để phòng ngừa bệnh Basedow và không có phương pháp điều trị mạnh mẽ cho bệnh này.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9987607002258301,
+      "article_id": "skds_9680",
+      "latency_sec": 7.311578374996316,
+      "evidence_preview": "siêu âm tuyến giáp, điện tim, siêu âm Doppler tim… cũng sẽ giúp hỗ trợ cho chẩn đoán và tiên lượng bệnh. Tùy từng trường hợp cụ thể, các bác sĩ sẽ chỉ định phù hợp. Có thể dùng thuốc nội khoa, uống iod phóng xạ hay phẫu thuật. Bên cạnh đó, người bệnh cũng cần biết những lưu ý về chế độ ă"
+    },
+    {
+      "claim": "Căng thẳng và mất ngủ có thể khiến cơn đau đầu trở nên tồi tệ hơn",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9987045526504517,
+      "article_id": "skds_8794",
+      "latency_sec": 7.545902708021458,
+      "evidence_preview": "trực tiếp đến đau đầu. Điều này là do khi cơn đau đầu, đau nửa đầu xuất hiện, mạch máu co lại dẫn đến giảm lưu lượng máu. Qúa trình này cũng có thể là nguyên nhân gây ra sự biến đổi trong máu, hình thành cục huyết khối gây tắc nghẽn mạch máu. Những đối tượng có nguy cơ cao như bị xơ vữa động mạch , "
+    },
+    {
+      "claim": "Căng thẳng và mất ngủ không phải nguyên nhân gây ra cơn đau đầu",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.9971207976341248,
+      "article_id": "skds_8794",
+      "latency_sec": 7.477028457971755,
+      "evidence_preview": "lý liên quan đến tuổi tác như tăng huyết áp , đái tháo đường, các vấn đề về mạch máu có thể gây đau đầu. Thiếu ngủ, mất ngủ: Mất ngủ hoặc ngủ không đủ giấc có thể gây đau đầu. Lạm dụng chất kích thích: Rượu, bia, cà phê, thuốc lá có thể làm tăng tần suất và cường độ của cơn đau đầu. Người thường xuy"
+    },
+    {
+      "claim": "Bài viết không cung cấp bằng chứng cụ thể về mối quan hệ giữa đau nửa đầu và đột quỵ",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.7922019362449646,
+      "article_id": "skds_8794",
+      "latency_sec": 6.267958750016987,
+      "evidence_preview": "nguyên nhân đau do cơn đau đầu dữ dội hay là đột quỵ. Thông thường, đau đầu của đột quỵ đột ngột và áp đảo dữ dội, trong khi đau nửa đầu Migraine thường là tăng dần dần. Đột quỵ thường gây liệt một bên mặt, tê một bên cơ thể, mất thị giác một phần, khó nói hoặc kết hợp các triệu chứng này. Đau nửa đ"
+    },
+    {
+      "claim": "Táo bón có thể gây ra bởi nhiều yếu tố lối sống như thay đổi trong thói quen, chế độ ăn ít chất xơ, uống không đủ nước và ít vận động.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9950403571128845,
+      "article_id": "skds_11084",
+      "latency_sec": 9.20874729094794,
+      "evidence_preview": "táo bón tại nhà? 2. Nguyên nhân gây táo bón 2.1 Nguyên nhân liên quan đến lối sống Táo bón có thể được gây ra bởi nhiều yếu tố lối sống khác nhau thường kết hợp với nhau, bao gồm: Sự thay đổi trong thói quen: Chuyển động bình thường của ruột phụ thuộc vào sự co bóp đều đặn và nhịp nhàng của ruột. Đâ"
+    },
+    {
+      "claim": "Táo bón là do mang thai",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.8665921092033386,
+      "article_id": "skds_11084",
+      "latency_sec": 2.998046417022124,
+      "evidence_preview": "Nguyên nhân và giải pháp hiệu quả cho táo bón khi mang thai\n\nTrị táo bón ở phụ nữ mang thai\n\nNguyên nhân gây táo bón ở phụ nữ sau sinh?\n\nKhắc phục táo bón khi mang thai\n\nĐi tìm nguyên nhân táo bón\n\nNhững nguyên nhân lạ gây táo bón\n\nNguyên nhân gây táo bón kéo dài\n\nTáo bón ở người già do đâu?\n\nTáo bó"
+    },
+    {
+      "claim": "Táo bón không phải là do uống rượu hoặc ăn quá nhiều đường",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9841522574424744,
+      "article_id": "skds_11084",
+      "latency_sec": 7.959417917008977,
+      "evidence_preview": "Những nguyên nhân lạ gây táo bón\n\nCó phải táo bón do đái tháo đường?\n\nĐi tìm nguyên nhân táo bón\n\nTrị táo bón không cần dùng thuốc\n\nTáo bón ở người già do đâu?\n\nSKĐS - Táo bón là trạng thái người bệnh nhân đại tiện 2 hay ít lần hơn mỗi tuần hoặc quá khó khăn và căng thẳng khi đại tiện. Theo y học c"
+    },
+    {
+      "claim": "Phenytoin không nên dùng cho bệnh nhân rối loạn chuyển hóa porphyrin và quá mẫn với các dẫn chất hydantoin.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.951483964920044,
+      "article_id": "skds_12281",
+      "latency_sec": 8.92015999997966,
+      "evidence_preview": "Phenytoin tôi là loại thuốc chống động kinh. Tôi được dùng điều trị các cơn động kinh cơn lớn, cơn động kinh cục bộ khác, động kinh tâm thần - vận động. Tuyệt đối không dùng tôi cho bệnh nhân rối loạn chuyển hóa porphyrin, bệnh nhân quá mẫn với các dẫn chất hydantoin. Phenytoin tôi là loại thuốc chố"
+    },
+    {
+      "claim": "Phenytoin có thể gây tăng sản lợi khi ngừng thuốc đột ngột.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9731926321983337,
+      "article_id": "skds_12281",
+      "latency_sec": 7.597486457962077,
+      "evidence_preview": "Phenytoin tôi là loại thuốc chống động kinh. Tôi được dùng điều trị các cơn động kinh cơn lớn, cơn động kinh cục bộ khác, động kinh tâm thần - vận động. Tuyệt đối không dùng tôi cho bệnh nhân rối loạn chuyển hóa porphyrin, bệnh nhân quá mẫn với các dẫn chất hydantoin. Phenytoin tôi là loại thuốc chố"
+    },
+    {
+      "claim": "Phenytoin không phải là loại thuốc cần vệ sinh miệng tốt khi dùng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9814286231994629,
+      "article_id": "skds_12281",
+      "latency_sec": 6.969988209020812,
+      "evidence_preview": "Phenytoin tôi là loại thuốc chống động kinh. Tôi được dùng điều trị các cơn động kinh cơn lớn, cơn động kinh cục bộ khác, động kinh tâm thần - vận động. Tuyệt đối không dùng tôi cho bệnh nhân rối loạn chuyển hóa porphyrin, bệnh nhân quá mẫn với các dẫn chất hydantoin. Phenytoin tôi là loại thuốc chố"
+    },
+    {
+      "claim": "Chăm sóc trước và sau mổ ảnh hưởng trực tiếp tới kết quả điều trị phẫu thuật.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.7769573473138734,
+      "article_id": "skds_4035",
+      "latency_sec": 7.327306375023909,
+      "evidence_preview": "SKĐS - Phẫu thuật mũi xoang là một trong những phẫu thuật khá phổ biến. Cũng như các phẫu thuật khác, việc tự chăm sóc sau mổ mũi xoang của người bệnh ảnh hưởng lớn tới thành công của phẫu thuật. Phẫu thuật mũi xoang cũng như các phẫu thuật nói chung đều có nguy cơ có tai biến ảnh hưởng tới sức khỏe"
+    },
+    {
+      "claim": "Mở nắp sọ là một phần của phẫu thuật sọ não để lấy bỏ khối u, cục máu đông hoặc sửa chữa tổn thương gãy xương sọ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9853826761245728,
+      "article_id": "skds_4035",
+      "latency_sec": 9.269584833004046,
+      "evidence_preview": "SKĐS -Phẫu thuật sọ não bao gồm những phẫu thuật bệnh lý và chấn thương như bệnh u não, dị dạng mạch não, chấn thương sọ não, vết thương sọ não… Giống như những ngành ngoại khoa khác, sự chăm sóc, chuẩn bị và theo dõi trước, trong và sau mổ rất quan trọng đối với bệnh nhân. Chăm sóc trước và sau mổ "
+    },
+    {
+      "claim": "Không được lái xe cho đến khi bạn được bác sĩ cho phép sau phẫu thuật sọ não.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.8695985049009323,
+      "article_id": "skds_4035",
+      "latency_sec": 8.3058500829502,
+      "evidence_preview": "Chăm sóc người bệnh sau phẫu thuật sọ não\n\npháp điều trị hiện có, và nếu được điều trị thích hợp, có người phục hồi và trở lại cuộc sống bình thường. Theo các chuyên gia ở ĐH y khoa John Hopkins, nhiều người dùng thuốc mang lại kết quả tốt, nhưng bệnh nhân SPS nên tránh lái xe trong khi đang điều tr"
+    },
+    {
+      "claim": "E6 chủng HPV làm tăng nguy cơ mắc ung thư vòm họng",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9934533834457397,
+      "article_id": "skds_9857",
+      "latency_sec": 7.996470624988433,
+      "evidence_preview": "Các nhà khoa học tại Trường đại học Oxford, Anh đã phát hiện E6, một chủng của HPV làm tăng đáng kể nguy cơ mắc ung thư vòm họng, nghiên cứu đăng tải trên tạp chí Ung thư học lâm sàng. Các nhà khoa học tại Trường đại học Oxford, Anh đã phát hiện E6, một chủng của HPV làm tăng đáng kể nguy cơ mắc ung"
+    },
+    {
+      "claim": "HPV không gây ung thư vòm họng",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.9975025057792664,
+      "article_id": "skds_9857",
+      "latency_sec": 6.6797304159845226,
+      "evidence_preview": "Các nhà khoa học tại Trường đại học Oxford, Anh đã phát hiện E6, một chủng của HPV làm tăng đáng kể nguy cơ mắc ung thư vòm họng, nghiên cứu đăng tải trên tạp chí Ung thư học lâm sàng. Các nhà khoa học tại Trường đại học Oxford, Anh đã phát hiện E6, một chủng của HPV làm tăng đáng kể nguy cơ mắc ung"
+    },
+    {
+      "claim": "Ung thư vòm họng có thể do các yếu tố khác nhau gây ra, không chỉ HPV",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9967929720878601,
+      "article_id": "skds_9857",
+      "latency_sec": 8.017457917041611,
+      "evidence_preview": "Ung thư vòm họng do đâu?\n\nNhững nguy cơ gây ung thư vòm họng\n\nthư vòm họng. 2. Ung thư vòm họng do rượu, bia: Lạm dụng rượu bia trong thời gian dài làm tổn thương các tế bào lót trong vòm họng, tế bào niêm mạc miệng và dạ dày. Các nghiên cứu cho thấy uống rượu bia làm tăng đáng kể nguy cơ ung thư vò"
+    },
+    {
+      "claim": "Mang thai ngoài tử cung có thể gây ra biến chứng nghiêm trọng như vỡ ống dẫn trứng, gây xuất huyết trong và đe dọa tính mạng người phụ nữ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9846549034118652,
+      "article_id": "skds_7944",
+      "latency_sec": 8.602530708012637,
+      "evidence_preview": "SKĐS - Thai ngoài tử cung là một trong những biến chứng nguy hiểm của thai kỳ, đe dọa đến sức khỏe sinh sản, thậm chí tính mạng của phụ nữ. Vì vậy, người phụ nữ cần nắm được những kiến thức cần thiết về mang thai ngoài tử cung để có biện pháp phòng ngừa và điều trị đúng cách. Thai ngoài tử cung là g"
+    },
+    {
+      "claim": "Không có biện pháp phòng ngừa được cho mang thai ngoài tử cung",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.99704509973526,
+      "article_id": "skds_7944",
+      "latency_sec": 7.630658916023094,
+      "evidence_preview": "phòng ngừa biến chứng từ mang thai ngoài tử cung, phụ nữ cần chú ý: - Kiểm tra sức khỏe định kỳ: Thực hiện các kiểm tra sức khỏe định kỳ, đặc biệt là kiểm tra phụ khoa để phát hiện sớm những bất thường. - Điều trị sớm các bệnh viêm nhiễm: Chữa trị kịp thời các bệnh viêm nhiễm vùng chậu, tránh để tìn"
+    },
+    {
+      "claim": "Mang thai ngoài tử cung là tình trạng nguy hiểm và cần được phát hiện, xử trí kịp thời để tránh những biến chứng nghiêm trọng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9866687059402466,
+      "article_id": "skds_7944",
+      "latency_sec": 8.54473537497688,
+      "evidence_preview": "SKĐS - Mang thai ngoài tử cung là tình trạng khi trứng đã thụ tinh không làm tổ trong tử cung mà làm tổ ở những vị trí khác, phổ biến nhất là ống dẫn trứng. Đây là một tình trạng nguy hiểm và cần được phát hiện, xử trí kịp thời để tránh những biến chứng nghiêm trọng. 1. Nguyên Nhân dẫn đến mang thai"
+    },
+    {
+      "claim": "Phụ nữ mang thai cần dùng kháng sinh khi bị viêm họng do vi khuẩn",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.997672975063324,
+      "article_id": "skds_10256",
+      "latency_sec": 6.763682041026186,
+      "evidence_preview": "Phụ nữ có thai bị viêm họng dùng thuốc thế nào?\n\nPhụ nữ có thai bị viêm họng dùng thuốc thế nào?\n\ncần chú ý: Điều trị tốt nhất là lấy dịch họng đem nuôi cấy xác định loại vi khuẩn gây bệnh và làm kháng sinh đồ. Nếu viêm họng do vi khuẩn phải điều trị bằng kháng sinh. Nhóm thuốc an toàn nhất cho phụ "
+    },
+    {
+      "claim": "Phụ nữ mang thai không được tự điều trị viêm họng bằng thuốc ngậm tại chỗ",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9867696762084961,
+      "article_id": "skds_10256",
+      "latency_sec": 6.981644999992568,
+      "evidence_preview": "dụng kháng sinh có thể dùng một số thuốc ngậm tại chỗ như lysopain, mekothrocine, benzoncain, papain… Với các thuốc ngậm này có thể có thêm kháng sinh hoặc giảm đau trong thành phần. Kháng sinh có mặt trong thành phần của thuốc sát khuẩn họng dạng ngậm thường là bacitracine. Ngoài ra, trong thuốc cò"
+    },
+    {
+      "claim": "Phụ nữ có thai có thể dùng paracetamol để hạ sốt và giảm đau họng",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9954684972763062,
+      "article_id": "skds_10256",
+      "latency_sec": 8.24674633302493,
+      "evidence_preview": "Viêm họng là một bệnh rất thường gặp ở mọi đối tượng trong đó có phụ nữ mang thai. Biểu hiện viêm họng ở đối tượng này cũng giống như viêm họng thông thường, đó là sốt, ho, đau rát họng… Viêm họng là một bệnh rất thường gặp ở mọi đối tượng trong đó có phụ nữ mang thai. Biểu hiện viêm họng ở đối tượn"
+    },
+    {
+      "claim": "Ung thư tụy là căn bệnh ít gặp nhưng lại rất nguy hiểm bởi khó phát hiện, khó điều trị và tỉ lệ tử vong cực cao.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9166740775108337,
+      "article_id": "skds_12961",
+      "latency_sec": 8.957431333954446,
+      "evidence_preview": "SKĐS - Ung thư tụy là một căn bệnh ít gặp nhưng lại rất nguy hiểm bởi khó phát hiện, khó điều trị và tỉ lệ tử vong cực cao. Hầu hết bệnh nhân ung thư tụy sau khi điều trị bằng phẫu thuật chỉ sống được khoảng 2-3 năm, tỉ lệ tái phát sau phẫu thuật cũng khá lớn. 1. Ung thư tụy là gì? Nội dung 1. Ung t"
+    },
+    {
+      "claim": "Bạn có thể ngăn ngừa ung thư tụy bằng cách không hút thuốc lá, hạn chế thức uống có nồng độ cồn cao, ăn nhiều trái cây tươi, rau xanh, ngũ cốc nguyên hạt...",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9826827049255371,
+      "article_id": "skds_12961",
+      "latency_sec": 8.635950499970932,
+      "evidence_preview": "Viện Ung thư quốc gia Mỹ, những người thuộc nhóm máu A và B có nguy cơ mắc ung thư tụy cao hơn. 4. Cách nào để phòng bệnh ung thư tụy? Bạn không thể ngăn ngừa ung thư tụy, nhưng có thể chủ động làm giảm các yếu tố nguy cơ gây bệnh ung thư tụy như: Không hút thuốc lá; Hạn chế thức uống có nồng độ cồn"
+    },
+    {
+      "claim": "Ung thư tụy chỉ sống được khoảng 2-3 năm sau khi điều trị bằng phẫu thuật",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.958544135093689,
+      "article_id": "skds_12961",
+      "latency_sec": 8.310283500002697,
+      "evidence_preview": "SKĐS - Ung thư tụy là một căn bệnh ít gặp nhưng lại rất nguy hiểm bởi khó phát hiện, khó điều trị và tỉ lệ tử vong cực cao. Hầu hết bệnh nhân ung thư tụy sau khi điều trị bằng phẫu thuật chỉ sống được khoảng 2-3 năm, tỉ lệ tái phát sau phẫu thuật cũng khá lớn. 1. Ung thư tụy là gì? Nội dung 1. Ung t"
+    },
+    {
+      "claim": "Một bệnh nhân người dân tộc thiểu số được hỗ trợ kinh phí để phẫu thuật lấy thai sau khi bị tiền sản giật nguy kịch.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9941180944442749,
+      "article_id": "skds_5183",
+      "latency_sec": 7.534067582979333,
+      "evidence_preview": "SKĐS - Sản phụ là người dân tộc Mông, có hoàn cảnh hết sức khó khăn, chồng mất việc làm nên không dám phẫu thuật lấy thai. Trước hoàn cảnh đó, một bệnh nhân đã giúp đỡ kinh phí cho sản phụ phẫu thuật thành công. Thông tin cho PV, đại diện Bệnh viện Phụ sản Hải Phòng cho biết, các bác sĩ của đơn vị t"
+    },
+    {
+      "claim": "Không có thông tin cụ thể về việc bệnh nhân đã hoàn trả viện phí cho các khoản hỗ trợ từ người hảo tâm và bệnh viện.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.940274178981781,
+      "article_id": "skds_5183",
+      "latency_sec": 7.356492916005664,
+      "evidence_preview": "vào. Chính vì vậy, gia đình rất mong nhận được sự giúp đỡ của cộng đồng, các nhà hảo tâm. Đại diện Phòng Công tác xã hội cho biết, tại BV Bạch Mai còn rất nhiều hoàn cảnh khó khăn, bệnh trọng cần được trợ giúp. Mọi sự quan tâm xin liên hệ về địa chỉ: Phòng Công tác xã hội - BV Bạch Mai - Tầng 4, Tòa"
+    },
+    {
+      "claim": "Bài viết không cung cấp đủ thông tin về tình trạng sức khỏe sau mổ của sản phụ để xác nhận hay bác bỏ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9965772032737732,
+      "article_id": "skds_5183",
+      "latency_sec": 7.4537211249698885,
+      "evidence_preview": "những bệnh nhân đẻ nhiều con, có tiền sử đẻ mổ, nạo hút thai nhiều lần. Hiện nay sức khỏe của sản phụ Trâm đã dần hồi phục, dự kiến sẽ được xuất viện trong 7 đến 10 ngày tới.\n\nCũng phải giải thích, tư vấn cho người thân của gia đình biết rõ tình trạng nguy kịch của sản phụ trước khi làm các thủ tục "
+    },
+    {
+      "claim": "Thuốc libtayo được phê duyệt để điều trị ung thư biểu mô tế bào vảy đã di căn (CSCC) và có thể giúp hệ thống miễn dịch của cơ thể chống lại các tế bào ung thư.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9905391931533813,
+      "article_id": "skds_11848",
+      "latency_sec": 8.665878625004552,
+      "evidence_preview": "SKĐS - Cục Quản lý Thực phẩm và Dược phẩm Mỹ (FDA) vừa phê chuẩn thuốc libtayo (cemiplimab-rwlc) để điều trị bệnh nhân ung thư biểu mô tế bào vảy đã di căn (CSCC) hoặc không thể phẫu thuật hoặc xạ trị. Đây là lần đầu tiên FDA chấp thuận một loại thuốc đặc biệt cho CSCC. Libtayo hoạt động bằng cách n"
+    },
+    {
+      "claim": "Libtayo chỉ điều trị ung thư da, không phải tất cả các loại ung thư.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.7301954627037048,
+      "article_id": "skds_11848",
+      "latency_sec": 7.36538841703441,
+      "evidence_preview": "SKĐS - Cục Quản lý Thực phẩm và Dược phẩm Mỹ (FDA) vừa phê chuẩn thuốc libtayo (cemiplimab-rwlc) để điều trị bệnh nhân ung thư biểu mô tế bào vảy đã di căn (CSCC) hoặc không thể phẫu thuật hoặc xạ trị. Đây là lần đầu tiên FDA chấp thuận một loại thuốc đặc biệt cho CSCC. Libtayo hoạt động bằng cách n"
+    },
+    {
+      "claim": "Thuốc libtayo có thể gây hại cho thai nhi đang phát triển và phụ nữ nên được tư vấn về nguy cơ tiềm ẩn cho thai nhi.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9772729277610779,
+      "article_id": "skds_11848",
+      "latency_sec": 7.4551479169749655,
+      "evidence_preview": "ban và tiêu chảy. Libtayo phải được dùng dưới sự hướng dẫn của bác sĩ cùng với những cảnh báo về những nguy cơ nghiêm trọng có thể xảy ra do thuốc. Libtayo có thể làm cho hệ thống miễn dịch tấn công các cơ quan và mô bình thường trong bất kỳ vùng nào của cơ thể và có thể ảnh hưởng đến cách chúng hoạ"
+    },
+    {
+      "claim": "Chữa hen suyễn hiệu quả nhất là điều trị dự phòng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9791624546051025,
+      "article_id": "skds_3025",
+      "latency_sec": 7.61683933401946,
+      "evidence_preview": "lại nếu không điều trị dự phòng tốt. Và dù không thể khỏi hoàn toàn nhưng có thể dễ dàng kiểm soát nếu ngườibệnh tuân thủ theo đúng hướng dẫn của bác sĩ điều trị. Chữa hen suyễn hiệu quả - cách nào? Cách chữa hen suyễn hiệu quả nhất là điều trị dự phòng. Vậy tại sao phải điều trị dự phòng? Phải điều"
+    },
+    {
+      "claim": "Hen suyễn có thể khỏi hoàn toàn mà không cần điều trị dự phòng.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.9985979199409485,
+      "article_id": "skds_3025",
+      "latency_sec": 7.609128415992018,
+      "evidence_preview": "ngày. Học sinh nội thành có gần 13% mắc hen. Mặc dù hen suyễn là bệnh lý rất phổ biến và gây ra nhiều hệ lụy nhưng người bệnh thiếu kiến thức về bệnh lý và cách phòng bệnh, đánh giá thấp biểu hiện và mức độ nguy hiểm của hen suyễn, còn thiếu những thông tin cập nhật cần thiết. Người bệnh chưa ý thức"
+    },
+    {
+      "claim": "Thuốc Đông y chỉ là một lựa chọn thay thế cho thuốc tân dược trong điều trị hen suyễn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9767897725105286,
+      "article_id": "skds_3025",
+      "latency_sec": 7.902973625052255,
+      "evidence_preview": "suyễn cần nắm kỹ về các phương pháp điều trị dự phòng, kiểm soát hen; biết cách xử lý khi lên cơn hen suyễn cấp tính để giảm thiểu nguy cơ dẫn đến các biến chứng như: viêm phế quản, khí phế thũng, tâm phế mạn tính, suy hô hấp, ngừng hô hấp kèm tổn thương não, xẹp phổi, tràn khí màng phổi,... Y học h"
+    },
+    {
+      "claim": "U xơ vòm mũi họng là một trong những bướu lành tính hay gặp nhất ở tuổi dậy thì",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9551509022712708,
+      "article_id": "skds_12840",
+      "latency_sec": 8.097354124998674,
+      "evidence_preview": "Thời gian gần đây, em hay bị ngạt tắc mũi một bên ngày càng tăng, chảy nước mũi liên tục, hai lỗ mũi ướt và đầy chất nhầy. Đi khám bác sĩ kết luận em bị u xơ vòm mũi họng (giai đoạn đầu), khiến em rất lo lắng. Xin bác sĩ cho biết bệnh của em có nguy hiểm không? Thời gian gần đây, em hay bị ngạt tắc "
+    },
+    {
+      "claim": "U xơ vòm mũi họng có thể gây tử vong nếu không được điều trị đúng, kịp thời",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9976353645324707,
+      "article_id": "skds_12840",
+      "latency_sec": 7.54945312498603,
+      "evidence_preview": "U xơ vòm mũi họng và nguy cơ tử vong\n\nU xơ vòm mũi họng có nguy hiểm?\n\nU xơ vòm mũi họng\n\ntương tự như u ác tính vì sự bào mòn xương vùng vòm hầu của u. Nếu không được phát hiện và điều trị đúng, kịp thời khối u sẽ phát triển tự nhiên lấp đầy hốc mũi, xoang hàm, xoang bướm, hốc mắt, phá vỡ hàm ếc"
+    },
+    {
+      "claim": "Không có thông tin cụ thể về nguy hiểm của u xơ vòm mũi họng và cách điều trị hiệu quả",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9838205575942993,
+      "article_id": "skds_12840",
+      "latency_sec": 7.844829541980289,
+      "evidence_preview": "U xơ vòm mũi họng có nguy hiểm?\n\ntương tự như u ác tính vì sự bào mòn xương vùng vòm hầu của u. Nếu không được phát hiện và điều trị đúng, kịp thời khối u sẽ phát triển tự nhiên lấp đầy hốc mũi, xoang hàm, xoang bướm, hốc mắt, phá vỡ hàm ếch, tiêu xương hàm trên và nổi phồng dưới da. Khối u chui vào"
+    },
+    {
+      "claim": "Bánh mì nguyên cám hoặc bánh mì ngũ cốc nguyên hạt là lựa chọn tốt nhất cho người bị trào ngược dạ dày - thực quản",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.978655219078064,
+      "article_id": "skds_1683",
+      "latency_sec": 8.009353499975987,
+      "evidence_preview": "Bánh mì nào tốt cho người bị trào ngược dạ dày - thực quản?\n\ngạo lứt, hạt kê, lúa mạch. Tuy nhiên, có rất nhiều loại bánh mì nguyên hạt khác nhau. Một số lựa chọn bánh mì lành mạnh cho người trào ngược dạ dày - thực quản: 2.1 Bánh mì nguyên cám 100% Bánh mì nguyên cám và các loại ngũ cốc nguyên hạt "
+    },
+    {
+      "claim": "Tất cả loại bánh mì đều khiến trào ngược acid",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.8707008823752403,
+      "article_id": "skds_1683",
+      "latency_sec": 7.877835166989826,
+      "evidence_preview": "SKĐS - Bánh mì là món ăn quen thuộc được làm từ bột mì được nhiều người trào ngược dạ dày - thực quản lựa chọn. Nhưng loại bánh mì nào thực sự giúp giảm trào ngược mới là điều quan trọng thì nhiều người chưa biết. Nội dung 1. Trào ngược dạ dày - thực quản có nên ăn bánh mì không? 2. Loại bánh mì nào"
+    },
+    {
+      "claim": "Không có loại bánh mì nào là hoàn toàn tốt cho người bị trào ngược dạ dày - thực quản",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9931324124336243,
+      "article_id": "skds_1683",
+      "latency_sec": 7.514441874984186,
+      "evidence_preview": "Bánh mì nào tốt cho người bị trào ngược dạ dày - thực quản?\n\nSKĐS - Bánh mì là món ăn quen thuộc được làm từ bột mì được nhiều người trào ngược dạ dày - thực quản lựa chọn. Nhưng loại bánh mì nào thực sự giúp giảm trào ngược mới là điều quan trọng thì nhiều người chưa biết. Nội dung 1. Trào ngược dạ"
+    },
+    {
+      "claim": "Sử dụng thuốc điều trị loãng xương như alendronate có thể giúp giảm nguy cơ mắc bệnh đái tháo đường loại 2",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9970918893814087,
+      "article_id": "skds_11710",
+      "latency_sec": 7.279245208017528,
+      "evidence_preview": "Thuốc điều trị loãng xương có thể làm giảm nguy cơ mắc bệnh đái tháo đường\n\nSKĐS - Một nghiên cứu đã tìm thấy mối liên hệ giữa những người dùng một loại thuốc điều trị loãng xương phổ biến là alendronate và giảm nguy cơ phát triển bệnh đái tháo đường loại 2. Một nghiên cứu mới phân tích hồ sơ sức kh"
+    },
+    {
+      "claim": "Nghiên cứu chỉ ra mối liên hệ giữa việc sử dụng thuốc điều trị loãng xương và giảm nguy cơ mắc bệnh đái tháo đường, nhưng chưa rõ cơ chế cụ thể",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9929654598236084,
+      "article_id": "skds_11710",
+      "latency_sec": 7.55349041701993,
+      "evidence_preview": "Thuốc điều trị loãng xương có thể làm giảm nguy cơ mắc bệnh đái tháo đường\n\nSKĐS - Một nghiên cứu đã tìm thấy mối liên hệ giữa những người dùng một loại thuốc điều trị loãng xương phổ biến là alendronate và giảm nguy cơ phát triển bệnh đái tháo đường loại 2. Một nghiên cứu mới phân tích hồ sơ sức kh"
+    },
+    {
+      "claim": "Sử dụng thuốc điều trị loãng xương không phải là nguyên nhân chính gây giảm nguy cơ mắc bệnh đái tháo đường loại 2",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.813247474655509,
+      "article_id": "skds_11710",
+      "latency_sec": 7.266331624996383,
+      "evidence_preview": "SKĐS - Theo một nghiên cứu các nhà khoa học Bệnh viện Đại học Aalborg ở Đan Mạch cho biết, alendronate - một loại thuốc được sử dụng rộng rãi để điều trị loãng xương có thể làm giảm nguy cơ mắc bệnh tiểu đường loại 2. Thuốc điều trị loãng xương, những lưu ý khi sử dụng SKĐS - Loãng xương là tình trạ"
+    },
+    {
+      "claim": "Ung thư tinh hoàn không thể chữa khỏi bằng đông y, chỉ có phương pháp y học hiện đại mới có thể điều trị hiệu quả.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.9078447222709656,
+      "article_id": "skds_3886",
+      "latency_sec": 8.438936833990738,
+      "evidence_preview": "SKĐS - Ung thư tinh hoàn là bệnh lý phát triển ở bộ phận sinh dục của nam giới nên đây là bệnh lý có thể gây ảnh hưởng tới sức khỏe sinh sản cũng như chất lượng phát triển đặc điểm giới tính nam. 1. Đông y có chữa được ung thư tinh hoàn không? Theo y học hiện đại, các bệnh ung thư nói chung cần được"
+    },
+    {
+      "claim": "Ung thư tinh hoàn có thể chữa khỏi bằng đông y và các phương pháp tự nhiên khác.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.981797456741333,
+      "article_id": "skds_3886",
+      "latency_sec": 8.754834249964915,
+      "evidence_preview": "SKĐS - Ung thư tinh hoàn là bệnh lý phát triển ở bộ phận sinh dục của nam giới nên đây là bệnh lý có thể gây ảnh hưởng tới sức khỏe sinh sản cũng như chất lượng phát triển đặc điểm giới tính nam. 1. Đông y có chữa được ung thư tinh hoàn không? Theo y học hiện đại, các bệnh ung thư nói chung cần được"
+    },
+    {
+      "claim": "Ung thư tinh hoàn là bệnh lý hiếm gặp, tỷ lệ chữa khỏi khá cao và cần được phát hiện sớm để điều trị hiệu quả.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9859237670898438,
+      "article_id": "skds_3886",
+      "latency_sec": 9.302833500027191,
+      "evidence_preview": "SKĐS - Ung thư tinh hoàn là bệnh lý hiếm gặp nhưng tỷ lệ chữa khỏi khá cao. Nam giới cần phát hiện ra những bất thường sớm ở tinh hoàn để thăm khám và điều trị. Ung thư tinh hoàn là một bệnh lý nguy hiểm nhưng ít gặp. Tỷ lệ chữa khỏi của căn bệnh này khá cao. Ung thư tinh hoàn là tình trạng tế bào u"
+    },
+    {
+      "claim": "Loét miệng thường do virut herpes (HSV) gây ra",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9958069324493408,
+      "article_id": "skds_5847",
+      "latency_sec": 8.108649833011441,
+      "evidence_preview": "Cháu bị loét miệng, có người nói rằng đây là nguyên nhân do loại virut herpes, có người lại bảo do bị nhiệt. Xin hỏi bác sĩ bệnh của cháu là gì, điều trị virut herpes thế nào? Cháu bị loét miệng, có người nói rằng đây là nguyên nhân do loại virut herpes, có người lại bảo do bị nhiệt. Xin hỏi bác sĩ "
+    },
+    {
+      "claim": "Bị nhiệt là nguyên nhân chính của loét miệng",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.978904664516449,
+      "article_id": "skds_5847",
+      "latency_sec": 7.9163938330020756,
+      "evidence_preview": "SKĐS: Nhiệt miệng là chứng bệnh thường phát về mùa hè với những vết viêm loét ở đầu lưỡi hoặc ở niêm mạc trong khoang miệng, kèm theo viêm lợi, ngứa lợi, lợi có màu đỏ, hơi sưng nề, dễ chảy máu, sốt, mất ngủ, tâm phiền... Có những cơn bốc hỏa toát mồ hôi, ăn uống kém, táo bón kéo dài, căng thẳng thầ"
+    },
+    {
+      "claim": "Thiếu vitamin PP hoặc vitamin C cũng có thể gây ra loét miệng",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9972680807113647,
+      "article_id": "skds_5847",
+      "latency_sec": 8.179940917005297,
+      "evidence_preview": "sao bị nhiệt miệng liên tục. Các loại thuốc dễ gây ra tình trạng viêm loét miệng bao gồm: Aspirin, thuốc ức chế miễn dịch, thuốc kháng sinh … 6. Chỉ mùa đông mới nhiệt miệng Với quan niệm do nóng, thiếu vitamin nên nhiều người cho rằng mùa đông mới nhiệt miệng. Đây là quan niệm sai lầm. Thực tế cho "
+    },
+    {
+      "claim": "Bài viết có thể là một nguồn thông tin đáng tin cậy về các bài thuốc Đông y để phòng và trị bệnh sốt rét.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.8330053657293319,
+      "article_id": "skds_2616",
+      "latency_sec": 9.095312167017255,
+      "evidence_preview": "Các bài thuốc phòng và trị bệnh sốt rét\n\nBài thuốc phòng và hỗ trợ trị sốt rét\n\nSKĐS - Sốt rét là bệnh truyền nhiễm thường thấy ở các nước vùng nhiệt đới. Bệnh gây ra do loại ký sinh trùng sống trong hồng cầu (Plasmodium), sống trong muỗi Anophen, truyền bệnh cho người theo đường hút máu. Đây là một"
+    },
+    {
+      "claim": "Bài viết không cung cấp bằng chứng khoa học cụ thể để hỗ trợ các bài thuốc Đông y được đề cập.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.7365941405296326,
+      "article_id": "skds_2616",
+      "latency_sec": 2.7226156250108033,
+      "evidence_preview": "phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.\n\nSản phẩm không phải là thuốc, không thay thế thuốc chữa bệnh.\n\nphẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh\n\nvấn hỗ trợ. (*Thực phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa b"
+    },
+    {
+      "claim": "Bài viết có thể là một nguồn thông tin hữu ích về bệnh sốt rét và cách phòng chống nó, nhưng cần thêm nghiên cứu khoa học để xác nhận hiệu quả của các bài thuốc Đông y.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.7339866787195206,
+      "article_id": "skds_2616",
+      "latency_sec": 10.283228999993298,
+      "evidence_preview": "đẻ non. Nếu không được điều trị kịp thời, bệnh có thể trở thành ác tính và gây tử vong. Theo Đông y, bệnh sốt rét nằm trong chứng bệnh Ngược tật , nghĩa là đúng thời gian lại phát chứng hàn nhiệt, thuộc chứng của Hàn ngược và Gián nhật ngược. Sau đây là một số bài thuốc trị bệnh. Bài thuốc chữa sốt "
+    },
+    {
+      "claim": "Bệnh Acanthosis nigricans là tình trạng da nhiễm sắc tố đen, dày lên",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9263315796852112,
+      "article_id": "skds_884",
+      "latency_sec": 8.250474040978588,
+      "evidence_preview": "SKĐS - Con tôi gần đây xuất hiện ở cổ, nách, bẹn, với mảng dày da, màu xạm đen, sờ vào thô ráp; đi khám bác sĩ chuyên khoa da liễu chẩn đoán là bệnh Acanthosis nigricans. Vậy tôi xin hỏi bệnh trên là bệnh gì, biểu hiện như thế nào, bệnh có nguy hiểm không? ( Thái Thụy L.C . - Bình Thuận) Bệnh Acanth"
+    }
+  ]
+}

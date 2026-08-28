@@ -1,0 +1,218 @@
+{
+  "accuracy": 0.55,
+  "precision_macro": 0.5216450216450216,
+  "recall_macro": 0.5216450216450216,
+  "f1_macro": 0.5216450216450216,
+  "classification_report": "                     precision    recall  f1-score   support\n\n               ĐÚNG       0.64      0.64      0.64        11\n                SAI       0.50      0.50      0.50         2\nKHÔNG ĐỦ BẰNG CHỨNG       0.43      0.43      0.43         7\n\n           accuracy                           0.55        20\n          macro avg       0.52      0.52      0.52        20\n       weighted avg       0.55      0.55      0.55        20\n",
+  "confusion_matrix": [
+    [
+      7,
+      0,
+      4
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      3,
+      1,
+      3
+    ]
+  ],
+  "labels": [
+    "ĐÚNG",
+    "SAI",
+    "KHÔNG ĐỦ BẰNG CHỨNG"
+  ],
+  "latency": {
+    "count": 20,
+    "mean_sec": 13.684531222938677,
+    "p50_sec": 12.433232353971107,
+    "p95_sec": 21.548359513076146
+  },
+  "with_explanation": false,
+  "details": [
+    {
+      "claim": "Tăng cường vận động giúp giảm đau do viêm cột sống dính khớp",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.975661039352417,
+      "article_id": "skds_357",
+      "latency_sec": 31.158161540981382,
+      "evidence_preview": "SKĐS - Viêm cột sống dính khớp là hiện tượng viêm xảy ra ở mối nối giữa các đốt của cột sống lưng hay giữa cột sống và xương chậu, dẫn đến đau, cứng và bất động khớp. Các triệu chứng của viêm cột sống dính khớp có thể từ nhẹ đến nặng. Triệu chứng sớm nhất có thể thấy là các cơn đau tại vùng lưng, cộ"
+    },
+    {
+      "claim": "Thực hành đúng tư thế khi đứng, ngồi có thể giúp giảm đau và tăng cường cơ lưng, nhưng không phải là biện pháp hiệu quả nhất để điều trị viêm cột sống dính khớp",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.9177809953689575,
+      "article_id": "skds_357",
+      "latency_sec": 21.042580458975863,
+      "evidence_preview": "đau. Nhưng thực ra, h oạt động thể chất có thể giúp cải thiện tính linh hoạt của khớp , giảm đau và cứng do viêm cột sống dính khớp. Người b ệ nh không cần phải thực hiện các hoạt động tác động mạnh mà nên cân nhắc thêm một số hình thức hoạt động thể chất cường độ vừa phải như bơi lội, đi bộ, đạp xe"
+    },
+    {
+      "claim": "Ngăn ngừa căng thẳng mạn tính có thể giúp giảm viêm và cải thiện tình trạng bệnh viêm cột sống dính khớp, nhưng không phải là biện pháp thay thế cho các phương pháp điều trị y tế",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.7367590765158335,
+      "article_id": "skds_357",
+      "latency_sec": 11.963427000038791,
+      "evidence_preview": "làm trầm trọng thêm các triệu chứng của viêm cột sống dính khớp. Nguyên nhân do c ăng thẳng kích hoạt giải phóng các hormone gây căng thẳng như cortisol và adrenaline . Các h ormone căng thẳng kích thích hệ thống miễn dịch giải phóng các cytokine, là những protein gây viêm. Do đó, c ăng thẳng m ạ n "
+    },
+    {
+      "claim": "Emflaza được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9899196624755859,
+      "article_id": "skds_10010",
+      "latency_sec": 10.682860624976456,
+      "evidence_preview": "SKĐS - Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ 5 tuổi trở lên bị bệnh teo cơ Duchenne (DMD), Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ"
+    },
+    {
+      "claim": "Emflaza có thể gây ra nhiều tác dụng phụ nghiêm trọng như hội chứng Cushing, tăng huyết áp và nguy cơ thủng đường tiêu hóa.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.897085964679718,
+      "article_id": "skds_10010",
+      "latency_sec": 10.384873666975182,
+      "evidence_preview": "mạng. Bệnh nhân thường không qua được độ tuổi 20 hoặc 30. Tuy nhiên, mức độ nặng và tuổi thọ ở từng trường hợp là khác nhau. Emflaza là một corticosteroid có tác dụng giảm viêm và ức chế miễn dịch. Corticosteroid được sử dụng phổ biến để điều trị DMD trên toàn thế giới, nhưng deflazacort là thuốc đầ"
+    },
+    {
+      "claim": "Emflaza chỉ được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên, không rõ liệu nó có hiệu quả trong trường hợp khác.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.7296422123908997,
+      "article_id": "skds_10010",
+      "latency_sec": 11.37594433297636,
+      "evidence_preview": "SKĐS - Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ 5 tuổi trở lên bị bệnh teo cơ Duchenne (DMD), Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ"
+    },
+    {
+      "claim": "Viêm da cơ và viêm đa cơ là nhóm bệnh tự miễn với tình trạng viêm, thoái hóa các sợi cơ vân gây yếu cơ làm giảm hoặc mất khả năng vận động.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9700648784637451,
+      "article_id": "skds_9233",
+      "latency_sec": 12.273636166006327,
+      "evidence_preview": "SKĐS - Viêm da cơ và viêm đa cơ được xếp vào nhóm bệnh tự miễn với đặc trưng bởi tình trạng viêm, thoái hóa các sợi cơ vân, gây nên tình trạng yếu cơ làm giảm hoặc mất khả năng vận động. Thể tổn thương cơ đơn thuần được gọi là viêm đa cơ. Khi có tổn thương đặc hiệu ở da kèm theo gọi là viêm da cơ. T"
+    },
+    {
+      "claim": "Nguyên nhân chính xác của bệnh viêm da cơ và viêm đa cơ chưa được xác định rõ ràng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.982772946357727,
+      "article_id": "skds_9233",
+      "latency_sec": 12.83449824998388,
+      "evidence_preview": "SKĐS - Viêm da cơ và viêm đa cơ được xếp vào nhóm bệnh tự miễn với đặc trưng bởi tình trạng viêm, thoái hóa các sợi cơ vân, gây nên tình trạng yếu cơ làm giảm hoặc mất khả năng vận động. Thể tổn thương cơ đơn thuần được gọi là viêm đa cơ. Khi có tổn thương đặc hiệu ở da kèm theo gọi là viêm da cơ. T"
+    },
+    {
+      "claim": "Bệnh viêm da cơ và viêm đa cơ có liên quan đến tăng nguy cơ ác tính, nhưng không phải là nguyên nhân trực tiếp gây ra tình trạng này.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.6452089895804723,
+      "article_id": "skds_9233",
+      "latency_sec": 13.17635079199681,
+      "evidence_preview": "Lời khuyên thầy thuốc Viêm da cơ ảnh hưởng đến cả trẻ em và người lớn, các biến chứng có thể gặp là loét đường tiêu hóa có thể gây ra tiêu phân đen, ói máu. Nhồi máu ruột có thể xảy ra, đặc biệt là trong viêm da cơ... Cả viêm da cơ và viêm đa cơ đều có liên quan đến tăng nguy cơ ác tính. Có liên qua"
+    },
+    {
+      "claim": "Nước chanh, cần tây, xô thơm, cỏ lúa mì, cây mê điệt, giấm táo, dầu bạc hà và rau xà lách đều có tác dụng loại bỏ mùi hôi nách.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.9084809819857279,
+      "article_id": "skds_1650",
+      "latency_sec": 14.58918095799163,
+      "evidence_preview": "SKĐS - Mùi cơ thể, nhất là mùi hôi ở nách sẽ khiến bạn và người xung quanh vô cùng khó chịu. Những cách tự nhiên dưới đây sẽ giúp bạn loại bỏ mùi hôi nách. Nước chanh Axit citric có trong chanh sẽ tiêu diệt vi khuẩn, phục hồi cân bằng độ pH của da và làm sáng da. Cách làm: Trộn 1/2 cốc nước chanh vớ"
+    },
+    {
+      "claim": "Không có thông tin cụ thể về cách sử dụng dầu cây trà để loại bỏ mùi hôi nách.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9721322655677795,
+      "article_id": "skds_1650",
+      "latency_sec": 12.474490499997046,
+      "evidence_preview": "bạc hà sẽ trung hòa mùi cơ thể và loại bỏ mùi hôi nách. Cách làm: Nhỏ một vài giọt tinh dầu bạc hà hữu cơ trong lòng bàn tay và nhẹ nhàng chà xát vào nách của bạn. Tuy nhiên, nếu bị kích thích, rửa sạch ngay lập tức. Dầu cây trà Thuộc tính kháng khuẩn, sát trùng có trong dầu cây trà cùng với các chấ"
+    },
+    {
+      "claim": "Không có bằng chứng khoa học nào hỗ trợ cho việc sử dụng rau xà lách để loại bỏ mùi hôi nách.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "verdict_score": 0.7261892557144165,
+      "article_id": "skds_1650",
+      "latency_sec": 12.391974207945168,
+      "evidence_preview": "SKĐS - Bạn có thể trị hôi nách đơn giản nhờ những rau quả trong vườn nhà như mướp đắng, gừng tươi, chanh, hay thậm chí cả xà lách. Gừng tươi Gừng tươi đem giã nát, vắt lấy nước cốt bôi vào nách. Hoặc thường xuyên dùng gừng tươi xát vào hố nách để loại bỏ mùi hôi nách. Nước chanh Trộn 1/2 cốc nước ch"
+    },
+    {
+      "claim": "Ngủ 7-8 tiếng mỗi đêm và tập luyện thường xuyên giúp giảm nguy cơ đột quỵ!",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.6019569337368011,
+      "article_id": "skds_8618",
+      "latency_sec": 10.842996250023134,
+      "evidence_preview": "SKĐS - Bạn có thể không kiểm soát được một số yếu tố nguy cơ của đột quỵ, như độ tuổi hoặc giới tính, nhưng có nhiều yếu tố bạn có thể thay đổi hoặc kiểm soát. Một nghiên cứu mới chỉ ra rằng ngủ 7-8 tiếng mỗi đêm và tập luyện 30-60 phút, 3 tới 6 lần mỗi tuần giúp giảm nguy cơ đột quỵ. Các nhà nghiên"
+    },
+    {
+      "claim": "Ngủ nhiều không tăng nguy cơ đột quỵ, mà ngược lại làm giảm nguy cơ!",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "verdict_score": 0.995067834854126,
+      "article_id": "skds_8618",
+      "latency_sec": 13.35005300003104,
+      "evidence_preview": "SKĐS - Bạn có thể không kiểm soát được một số yếu tố nguy cơ của đột quỵ, như độ tuổi hoặc giới tính, nhưng có nhiều yếu tố bạn có thể thay đổi hoặc kiểm soát. Một nghiên cứu mới chỉ ra rằng ngủ 7-8 tiếng mỗi đêm và tập luyện 30-60 phút, 3 tới 6 lần mỗi tuần giúp giảm nguy cơ đột quỵ. Các nhà nghiên"
+    },
+    {
+      "claim": "Bài viết không nói rõ liệu ngủ ít hay nhiều có ảnh hưởng đến nguy cơ đột quỵ?",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9387955069541931,
+      "article_id": "skds_8618",
+      "latency_sec": 12.158407041977625,
+      "evidence_preview": "SKĐS - Các vấn đề về giấc ngủ (từ ngáy đến ngủ quá nhiều hoặc quá ít) đều có thể liên quan đến tăng nguy cơ đột quỵ. Đây là kết quả của một nghiên cứu mới đăng trên Tạp chí Neurology. Theo đó, khịt mũi khi ngủ, chất lượng giấc ngủ kém , ngủ quá ít hoặc ngủ quá nhiều và chứng ngừng thở khi ngủ cũng c"
+    },
+    {
+      "claim": "Bệnh vảy nến ở trẻ em đa số đáp ứng với điều trị tại chỗ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9790816307067871,
+      "article_id": "skds_2935",
+      "latency_sec": 13.731247958960012,
+      "evidence_preview": "SKĐS - Vảy nến là một bệnh da thường gặp ở người lớn và trẻ em, gây ảnh hưởng nhiều tới chất lượng cuộc sống. Bệnh vảy nến ở trẻ em đa số đáp ứng với điều trị tại chỗ. Tuy nhiên, một số trường hợp vảy nến mức độ trung bình đến nặng đòi hỏi điều trị bằng dùng thuốc toàn thân hoặc liệu pháp ánh sáng. "
+    },
+    {
+      "claim": "Vảy nến ở trẻ em từ 4 tuổi trở lên có nhiều lựa chọn điều trị khác nhau, bao gồm thuốc ức chế miễn dịch và liệu pháp ánh sáng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9816345572471619,
+      "article_id": "skds_2935",
+      "latency_sec": 14.769002999993972,
+      "evidence_preview": "có cách điều trị triệt để, nhưng một số phác đồ điều trị có thể được các bác sĩ sử dụng để kiểm soát bệnh , giúp trẻ sống chung với bệnh vảy nến. - V iệc xem xét các yếu tố cụ thể của bệnh nhân, chẳng hạn như tuổi, mức độ nặng của bệnh, bệnh đi kèm và khả năng chịu đựng các rủi ro và tác dụng phụ củ"
+    },
+    {
+      "claim": "Quản lý vảy nến thông thường ở trẻ em từ 4 tuổi trở lên không chỉ dựa trên corticosteroid tại chỗ mà còn có nhiều lựa chọn khác.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.9926908612251282,
+      "article_id": "skds_2935",
+      "latency_sec": 12.72370587498881,
+      "evidence_preview": "có cách điều trị triệt để, nhưng một số phác đồ điều trị có thể được các bác sĩ sử dụng để kiểm soát bệnh , giúp trẻ sống chung với bệnh vảy nến. - V iệc xem xét các yếu tố cụ thể của bệnh nhân, chẳng hạn như tuổi, mức độ nặng của bệnh, bệnh đi kèm và khả năng chịu đựng các rủi ro và tác dụng phụ củ"
+    },
+    {
+      "claim": "Người loạn dưỡng mỡ cần xây dựng chế độ ăn uống khoa học, hợp lý để hạn chế chất béo và cung cấp đủ năng lượng cho cơ thể.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "verdict_score": 0.6716047177712122,
+      "article_id": "skds_4303",
+      "latency_sec": 10.704324124963023,
+      "evidence_preview": "SKĐS - Những bệnh nhân loạn dưỡng mỡ cần xây dựng chế độ ăn uống và sinh hoạt khoa học, hợp lý. Chế độ ăn cần hạn chế chất béo, tuy nhiên cần bổ sung các thành phần khác để đảm bảo cung cấp đủ năng lượng cho cơ thể. 1. Tầm quan trọng của chế độ ăn với người mắc loạn dưỡng mỡ Về bản chất, loạn dưỡng "
+    },
+    {
+      "claim": "Ăn nhiều dầu thực vật không phải là một phần của chế độ ăn uống phù hợp với người loạn dưỡng mỡ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "verdict_score": 0.8972346186637878,
+      "article_id": "skds_4303",
+      "latency_sec": 11.062908708991017,
+      "evidence_preview": "Chế độ ăn cho người loạn dưỡng mỡ\n\nSKĐS - Những bệnh nhân loạn dưỡng mỡ cần xây dựng chế độ ăn uống và sinh hoạt khoa học, hợp lý. Chế độ ăn cần hạn chế chất béo, tuy nhiên cần bổ sung các thành phần khác để đảm bảo cung cấp đủ năng lượng cho cơ thể. 1. Tầm quan trọng của chế độ ăn với người mắc loạ"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+# Bệnh / hội chứng
+cao huyết áp
+tăng huyết áp
+huyết áp thấp
+nhồi máu cơ tim
+đau tim
+bệnh mạch vành
+suy tim
+đột quỵ
+tai biến mạch máu não
+xơ vữa động mạch
+rối loạn nhịp tim
+rung nhĩ
+hở van tim
+hẹp van tim
+ung thư
+ung thư phổi
+ung thư vú
+ung thư dạ dày
+ung thư gan
+ung thư đại tràng
+ung thư tuyến giáp
+ung thư da
+ung thư cổ tử cung
+đái tháo đường
+tiểu đường
+cảm cúm
+cúm
+covid-19
+covid
+viêm phổi
+nấm phổi
+viêm phế quản
+hen suyễn
+copd
+bệnh phổi tắc nghẽn mạn tính
+lao
+viêm gan
+viêm gan b
+viêm gan c
+hiv
+aids
+vảy nến
+viêm da
+viêm khớp
+viêm cột sống dính khớp
+loãng xương
+xẹp đốt sống
+gout
+gút
+béo phì
+thiếu máu
+thiếu sắt
+suy thận
+sỏi thận
+sỏi túi mật
+viêm ruột thừa
+trào ngược dạ dày
+loét dạ dày
+hội chứng ruột kích thích
+lạc nội mạc tử cung
+viêm đường tiết niệu
+suy giãn tĩnh mạch
+giãn tĩnh mạch
+giãn tĩnh mạch thừng tinh
+giãn tĩnh mạch thực quản
+parkinson
+alzheimer
+động kinh
+đau nửa đầu
+migraine
+trầm cảm
+lo âu
+tự kỷ
+viêm mũi dị ứng
+viêm amidan
+viêm xoang
+viêm tai giữa
+sốt xuất huyết
+sốt rét
+thủy đậu
+sởi
+quai bị
+viêm màng não
+nhiễm trùng
+nhiễm khuẩn
+nhiễm nấm
+hội chứng buồng trứng đa nang
+suy giáp
+cường giáp
+bướu cổ
+xơ gan
+gan nhiễm mỡ
+mỡ máu cao
+rối loạn lipid máu
+hội chứng chuyển hóa
+hội chứng ehlers-danlos
+hội chứng horner
+viêm da cơ
+viêm đa cơ
+ung thư hắc tố
+u nguyên bào thần kinh
+hội chứng siêu nữ
+loạn dưỡng mỡ
+gai đen
+nhau cài răng lược
+bệnh trĩ
+trĩ
+táo bón
+tiêu chảy
+ngộ độc thực phẩm
+botulinum
+botulism
+đau thắt ngực
+đau thắt ngực ổn định
+bệnh lao
+lao phổi
+viêm tụy
+viêm túi mật
+viêm khớp dạng thấp
+lupus
+psoriasis
+eczema
+chàm
+zona
+giời leo
+hpv
+ung thư âm hộ
+viêm cột sống

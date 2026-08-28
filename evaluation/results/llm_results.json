@@ -1,0 +1,712 @@
+{
+  "rouge_l": 0.3281243085407985,
+  "bertscore": {
+    "precision": 0.6937204599380493,
+    "recall": 0.7647678256034851,
+    "f1": 0.7269169092178345,
+    "num_scored": 100
+  },
+  "num_samples": 100,
+  "details": [
+    {
+      "claim": "Chanh và mật ong kết hợp tạo ra chất axit hòa tan có lợi giúp tăng cường khả năng miễn dịch, thanh lọc cơ thể, cải thiện hệ tiêu hóa, đào thải độc tố tích tụ lâu ngày để đường tiết niệu sạch sẽ.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Kết luận \"không đủ bằng chứng\" vì các thông tin hiện có chỉ cho thấy chanh và mật ong có thể hỗ trợ giảm triệu chứng cảm cúm, đau họng, tăng cường miễn dịch, nhưng chưa đủ nghiên cứu khoa học chứng minh chúng giúp thanh lọc cơ thể, cải thiện tiêu hóa, đào thải độc tố hay làm sạch đường tiết niệu. Các lợi ích được đề cập chủ yếu dựa trên kinh nghiệm dân gian và một số nghiên cứu nhỏ, chưa có bằng chứng y học đầy đủ.",
+      "reference": "Chanh và mật ong kết hợp với nhau giúp tăng cường khả năng miễn dịch thanh lọc cơ thể, cải thiện hệ tiêu hóa, đào thải độc tố tích tụ lâu ngày để đường tiết niệu sạch sẽ",
+      "claim_id": "vifactcheck_19448851"
+    },
+    {
+      "claim": "Tại buổi lễ khẳng định tinh thần thi đua yêu nước và ý chí quyết tâm vượt lên chính mình của các nữ trí thức, các bác sĩ, dược sĩ, Phó Thủ tướng Trần Hồng Hà sinh năm 1980 nhấn mạnh.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng Phó Thủ tướng Trần Hồng Hà sinh năm 1980 đã nhấn mạnh về tinh thần thi đua của nữ trí thức ngành y. Tuy nhiên, verdict là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì văn bản không nêu rõ năm sinh của ông Trần Hồng Hà. Dù nội dung đề cập đến buổi lễ và phát biểu của ông, nhưng không có thông tin xác định năm sinh của ông, nên không thể xác nhận tính chính xác của claim.",
+      "reference": "Phó Thủ tướng Trần Hồng Hà nhấn mạnh, buổi lễ khẳng định tinh thần thi đua yêu nước và ý chí quyết tâm vượt lên chính mình của các nữ trí thức, các bác sĩ, dược sĩ.",
+      "claim_id": "vifactcheck_19624207"
+    },
+    {
+      "claim": "Làm chín bằng phương pháp lên men tự nhiên nên nem chua cũng còn chứa nhiều vi khuẩn chỉ bị tiêu diệt khi qua xử lý nhiệt, ảnh hưởng không tốt đến đường tiêu hóa.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin cho thấy nem chua được làm chín bằng lên men tự nhiên, không qua xử lý nhiệt, nên có nguy cơ chứa vi khuẩn gây bệnh như salmonella, e.coli... Tuy nhiên, kết luận \"ảnh hưởng không tốt đến đường tiêu hóa\" chưa đủ bằng chứng vì chưa có dữ liệu cụ thể về tỷ lệ nhiễm bệnh hoặc tác động thực tế đến sức khỏe người tiêu dùng. Do đó, verdict \"KHÔNG ĐỦ BẰNG CHỨNG\" là hợp lý.",
+      "reference": "Những vi khuẩn này có thể bị tiêu diệt khi đun, nấu chín song nem chua chỉ được làm chín bằng phương pháp lên men tự nhiên.",
+      "claim_id": "vifactcheck_18815575"
+    },
+    {
+      "claim": "Các em học sinh của Trường tiểu học Birkdale mừng rỡ khi nhìn thấy thầy giáo bị ngưng tim vài tháng trước quay trở lại lớp học.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin cho thấy thầy Nick Sheeran đã được cứu sống sau khi bị ngưng tim và quay lại trường dạy học. Tuy nhiên, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là do không có bằng chứng rõ ràng xác nhận thầy đã trở lại lớp học sau 7 tháng bị ngưng tim. Thông tin mô tả sự kiện thầy quay lại trường, nhưng không có tài liệu, hình ảnh hoặc nguồn tin chính thức xác nhận điều này. Do đó, chưa đủ cơ sở để khẳng định sự việc như trong claim.",
+      "reference": "Các em học sinh của Trường tiểu học Birkdale ở Southport (Úc) đã bật khóc và vỗ tay reo mừng khi vừa nhìn thấy thầy giáo bị ngừng tim vào 7 tháng trước, bất ngờ bước vào lớp học!",
+      "claim_id": "vifactcheck_18854146"
+    },
+    {
+      "claim": "Bác sĩ trực khoa Tai mũi họng sau khi thăm khám đã nhận định dị vật là pin điện tử nguy hiểm, cần lấy khỏi mũi từ từ, chậm rãi để ngăn dị vật làm tắt đường thở, đường ăn gây hoại tử.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin cho thấy pin điện tử đã gây hoại tử niêm mạc mũi và cần được lấy nhanh để tránh nguy hiểm. Tuy nhiên, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là do không có bằng chứng rõ ràng về việc bác sĩ đã hướng dẫn lấy pin từ từ, chậm rãi như claim. Thay vào đó, thông tin chỉ nêu việc bác sĩ đã nhanh chóng can thiệp bằng nội soi và gây mê để lấy pin. Do đó, không đủ dữ liệu để xác nhận phương pháp xử lý cụ thể như trong claim.",
+      "reference": "Bác sĩ trực khoa Tai mũi họng nhanh chóng thăm khám nhận định pin điện tử là dị vật nguy hiểm nhanh chóng lấy dị vật ra khỏi hốc mũi vì nguy cơ pin điện tử gây thủng vách ngăn, ăn mòn các cấu trúc quan trọng của hốc mũi. có thể gây ra dị vật đường thở hoặc đường ăn.",
+      "claim_id": "vifactcheck_18265759"
+    },
+    {
+      "claim": "Trẻ em dưới 5 tuổi dễ mắc bệnh lao nặng và phức tạp hơn.",
+      "verdict": "ĐÚNG",
+      "generated": "Trẻ em dưới 5 tuổi dễ mắc bệnh lao nặng vì hệ miễn dịch còn yếu, dễ bị vi khuẩn lao tấn công và diễn biến bệnh nhanh, nguy hiểm. Ngoài ra, trẻ dễ tiếp xúc với người bệnh trong gia đình, đặc biệt là bố mẹ, làm tăng nguy cơ lây nhiễm. Việc chẩn đoán và điều trị lao ở trẻ cũng khó hơn do triệu chứng mơ hồ, dễ nhầm lẫn với các bệnh thông thường. Vì vậy, trẻ em là nhóm đối tượng dễ bị ảnh hưởng nặng nề bởi bệnh lao.",
+      "reference": "Hầu hết các trường hợp nặng xảy ra ở trẻ nhỏ dưới 5 tuổi",
+      "claim_id": "vifactcheck_19021637"
+    },
+    {
+      "claim": "Các đối tượng mạo danh là giáo viên hoặc nhân viên BV làm giả giấy tờ chứng nhận tình trạng sức khỏe của người bệnh tại BV để làm hoang mang người thân của bệnh nhân rồi bắt đầu thu thập thông tin của mọi người trong lúc thiếu bình tĩnh.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin chỉ cho thấy Sở Y tế và một số bệnh viện đã cảnh báo về tình trạng lừa đảo, nhưng chưa có bằng chứng cụ thể về việc các đối tượng đã thực hiện hành vi mạo danh giáo viên hoặc nhân viên BV để lừa đảo. Các báo cáo chỉ đề cập đến việc phát hiện và cảnh báo, chứ chưa xác nhận rõ ràng các vụ việc đã xảy ra. Do đó, chưa đủ cơ sở để khẳng định claim là đúng.",
+      "reference": "Các đối tượng mạo danh là giáo viên hoặc nhân viên BV liên hệ trực tiếp với phụ huynh Chưa hết, các đối tượng còn làm giả giấy tờ chứng nhận tình trạng sức khỏe của người bệnh tại BV",
+      "claim_id": "vifactcheck_18569663"
+    },
+    {
+      "claim": "Ông Phạm Gia Hữu, Trưởng phòng GD&ĐT quận Thanh Xuân cho biết trong ngày đưa học sinh đi trải nghiệm, thực phẩm được bếp ăn nhà trường là cở sở bếp ăn Thiện Phước chuẩn bị cho các em.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin từ ông Phạm Gia Hữu chỉ khẳng định bếp ăn nhà trường chuẩn bị thực phẩm, nhưng không có bằng chứng cụ thể chứng minh nguyên nhân gây ngộ độc thực phẩm. Các học sinh nhập viện sau bữa ăn trưa tại trang trại, nên chưa thể xác định rõ nguồn gốc thực phẩm gây vấn đề. Do đó, chưa đủ cơ sở kết luận trách nhiệm của bếp ăn nhà trường.",
+      "reference": "ông Phạm Gia Hữu, Trưởng phòng GD&ĐT quận Thanh Xuân cho biết trong ngày đưa học sinh đi trải nghiệm, thực phẩm được bếp ăn nhà trường chuẩn bị cho các em",
+      "claim_id": "vifactcheck_19021700"
+    },
+    {
+      "claim": "Bị đau đầu, tê tay, chị Đ.T.T.P đi khám và được chẩn đoán là thoái hóa đốt sống cổ C5,C6.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là do thông tin chỉ mô tả triệu chứng và chẩn đoán của một bệnh nhân cụ thể, nhưng không cung cấp bằng chứng khoa học hoặc nghiên cứu y học chứng minh đau đầu, tê tay trực tiếp gây ra thoái hóa đốt sống cổ C5, C6. Các triệu chứng này có thể do nhiều nguyên nhân khác nhau, và chẩn đoán cần dựa trên kết quả xét nghiệm hình ảnh rõ ràng và đánh giá lâm sàng toàn diện. Do đó, không thể khẳng định mối liên hệ chắc chắn giữa các triệu chứng và bệnh lý được nêu.",
+      "reference": "Đau đầu, tê tay đi khám \"truy ra\" thoái hóa đốt sống Chị Đ.T.T.P (38 tuổi) thường xuyên gặp phải tình trạng đau đầu, đau nửa đầu vùng đỉnh kèm theo buồn nôn, nhức mắt, đau mỏi vai gáy. Sau khi khám lâm sàng với bác sĩ chuyên khoa Cơ xương khớp, chị được chỉ định thực hiện một số xét nghiệm, chụp chiếu. Kết quả chụp X-quang cho thấy chị P bị thoái hóa đốt sống cổ C5, C6 bên cạnh hội chứng đau đầu và một số bất thường khác.",
+      "claim_id": "vifactcheck_18418964"
+    },
+    {
+      "claim": "Các nhà khoa học Mỹ đang phát minh một loại thuốc là \"thần dược\" có thể giúp tránh tăng cân trong nghiên cứu mới nhất, được công bố trên tập san học thuật Cell Reports.",
+      "verdict": "SAI",
+      "generated": "Thông tin nói rằng loại thuốc \"thần dược\" có thể giúp tránh tăng cân là chưa chính xác. Nghiên cứu chỉ cho thấy thuốc có thể ngăn ngừa béo phì ở chuột, nhưng chưa chứng minh hiệu quả trên người. Hiện thuốc vẫn đang trong giai đoạn thử nghiệm và chưa được cấp phép sử dụng. Do đó, chưa thể coi đây là \"thần dược\" hay thuốc giảm cân thần kỳ.",
+      "reference": "Trong nghiên cứu mới nhất, được công bố trên tập san học thuật Cell Reports, các nhà khoa học Mỹ đang phát minh một loại thuốc là \"thần dược\" có thể giúp tránh tăng cân.",
+      "claim_id": "vifactcheck_19442448"
+    },
+    {
+      "claim": "Sau khi kiểm tra, chụp X-quang ngực kết quả cho ra không bình thường và cho thấy áp xe cạnh khí quản ở cổ.",
+      "verdict": "SAI",
+      "generated": "Kết luận \"SAI\" là do trong báo cáo nói rõ kết quả chụp X-quang ngực của bệnh nhân là bình thường, không có dấu hiệu bất thường. Tuy nhiên, kết quả chụp CT mới phát hiện áp xe cạnh khí quản. Do đó, thông tin \"chụp X-quang ngực kết quả không bình thường\" là sai. X-quang ngực bình thường không loại trừ khả năng có áp xe ở vùng cổ, vì X-quang không đủ nhạy để phát hiện các tổn thương nhỏ ở vùng này.",
+      "reference": "Sau khi kiểm tra, chụp X-quang ngực kết quả bình thường. Nhưng kết quả chụp CT cho thấy áp xe cạnh khí quản ở cổ.",
+      "claim_id": "vifactcheck_18323468"
+    },
+    {
+      "claim": "Chỉ có các khối u màng não kích thước lớn mới khiến người bệnh có thể tử vong, trong khi khối u nhỏ thì không có khả năng gây tử vong.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng chỉ có khối u màng não lớn mới gây tử vong, nhỏ thì không. Tuy nhiên, kết luận \"không đủ bằng chứng\" là đúng vì bài viết đưa ra ví dụ về khối u 5cm đã gây biến chứng nghiêm trọng nhưng không dẫn đến tử vong. Ngoài ra, bác sĩ cũng cảnh báo rằng cả khối u nhỏ cũng có thể gây nguy hiểm nếu không được phát hiện và điều trị kịp thời. Do đó, không thể khẳng định chỉ khối u lớn mới nguy hiểm.",
+      "reference": "các khối u màng não kích thước lớn, người bệnh cần được phẫu thuật lấy u càng sớm càng tốt vì khối u to sẽ gây chèn ép, tùy vào vị trí u mà gây nên các triệu chứng lâm sàng",
+      "claim_id": "vifactcheck_19157631"
+    },
+    {
+      "claim": "Bệnh viện Chợ Rẫy, TP.HCM đã cứu sống thành công bệnh nhân bị container cán qua người, đa chấn thương nặng sau 11 lần phẫu thuật.",
+      "verdict": "SAI",
+      "generated": "Thông tin nói rằng bệnh nhân được cứu sống sau 11 lần phẫu thuật là sai. Lý do là vì bài viết không cung cấp bằng chứng cụ thể về việc bệnh nhân đã qua 11 lần phẫu thuật hay được cứu sống. Thay vào đó, nội dung chỉ mô tả quá trình điều trị phức tạp và kết quả tích cực, nhưng không xác định rõ số lần phẫu thuật hay kết quả cuối cùng. Do đó, kết luận \"SAI\" là phù hợp.",
+      "reference": "Sau 11 lần phẫu thuật, Bệnh viện Chợ Rẫy, TP.HCM đã cứu sống thành công bệnh nhân bị container cán qua người, đa chấn thương nặng",
+      "claim_id": "vifactcheck_19623871"
+    },
+    {
+      "claim": "Để tháo gỡ ngay khó khăn, vướng mắc cho các bệnh viện, Phó Thủ tướng Trần Hồng Hà yêu cầu Bộ Y tế, Tài chính, KH&ĐT khẩn trương sửa đổi các thông tư, nghị định thuộc lĩnh vực quản lý.",
+      "verdict": "ĐÚNG",
+      "generated": "Phó Thủ tướng Trần Hồng Hà yêu cầu các bộ liên quan sửa đổi thông tư, nghị định để tháo gỡ khó khăn cho bệnh viện, như gia hạn giấy phép thiết bị y tế, thay đổi phương thức quản lý, và đơn giản hóa quy trình đấu thầu. Điều này giúp các bệnh viện nhanh chóng tiếp cận vật tư, thiết bị cần thiết, giải quyết tình trạng thiếu hụt. Vì vậy, kết luận là \"ĐÚNG\" vì thông tin phản ánh đúng nội dung chỉ đạo của Chính phủ nhằm hỗ trợ ngành y tế.",
+      "reference": "Phó Thủ tướng Trần Hồng Hà yêu cầu Bộ Y tế, Tài chính, KH&ĐT khẩn trương sửa đổi các thông tư, nghị định thuộc lĩnh vực quản lý để tháo gỡ ngay khó khăn, vướng mắc cho các bệnh viện.",
+      "claim_id": "vifactcheck_19028868"
+    },
+    {
+      "claim": "Phó Thủ tướng Trần Hồng Hà đã làm việc với lãnh đạo Bộ Y tế, Bộ Tài chính, Bộ KH&ĐT và một số bệnh viện trong ngày 25-2 liên quan đến những vướng mắc trong mua sắm trang thiết bị y tế, hoá chất xét nghiệm, sinh phẩm y tế...",
+      "verdict": "ĐÚNG",
+      "generated": "Phó Thủ tướng Trần Hồng Hà đã làm việc với các bộ, ngành và bệnh viện để giải quyết những vướng mắc trong mua sắm trang thiết bị y tế, hóa chất, sinh phẩm. Các biện pháp được đề ra bao gồm sửa đổi quy định, gia hạn giấy phép, và tháo gỡ khó khăn để đảm bảo đủ vật tư y tế cho bệnh viện. Kết luận là đúng vì có đầy đủ thông tin từ báo chí xác nhận sự kiện và nội dung thảo luận, cho thấy nỗ lực của Chính phủ trong việc giải quyết tình trạng thiếu hụt y tế.",
+      "reference": "Ngày 25-2, Phó Thủ tướng Trần Hồng Hà đã làm việc với lãnh đạo Bộ Y tế, Bộ Tài chính, Bộ KH&ĐT và một số bệnh viện liên quan đến những vướng mắc trong mua sắm trang thiết bị y tế, hoá chất xét nghiệm, sinh phẩm y tế...",
+      "claim_id": "vifactcheck_19028868"
+    },
+    {
+      "claim": "Khối bướu khoảng 4cm đã được lấy ra khỏi bệnh nhân sau khi thực hiện phẫu thuật nội soi cắt thận toàn phần.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng khối bướu 4cm đã được lấy ra trong phẫu thuật nội soi cắt thận toàn phần, nhưng Verdict là \"KHÔNG ĐỦ BẰNG CHỨNG\". Lý do là vì bài viết nói rõ bệnh nhân đã được phẫu thuật **nội soi cắt thận bán phần**, không phải cắt thận toàn phần. Do đó, không đủ bằng chứng để khẳng định khối bướu đã được lấy ra trong phẫu thuật toàn phần.",
+      "reference": "phẫu thuật nội soi cắt thận bán phần bác sĩ lấy ra khỏi cơ thể bệnh nhân khối bướu khoảng 4cm",
+      "claim_id": "vifactcheck_18604655"
+    },
+    {
+      "claim": "Chính phủ đã chủ trì nhiều cuộc họp với các bệnh viện về vấn đề đảm bảo đầy đủ thuốc và trang thiết bị cho việc chữa bệnh.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin cho thấy Chính phủ đã ban hành nhiều văn bản pháp lý và tổ chức họp để giải quyết khó khăn về thuốc và trang thiết bị y tế, giúp bệnh viện hoạt động trở lại. Tuy nhiên, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là do không có trực tiếp bằng chứng về việc Chính phủ **chủ trì họp với các bệnh viện** như trong claim, mà chỉ đề cập đến các cuộc họp với các bộ, ngành và địa phương. Do đó, thông tin chưa đủ rõ ràng để xác nhận claim một cách chính xác.",
+      "reference": "Đồng thời, lãnh đạo Chính phủ đã chủ trì nhiều cuộc họp với các bộ, ngành, địa phương để quán triệt, tìm giải pháp khắc phục nhanh nhất tình trạng trên. bảo đảm thuốc, trang thiết bị y tế để phục vụ công tác khám bệnh, chữa bệnh.",
+      "claim_id": "vifactcheck_18446899"
+    },
+    {
+      "claim": "Trưởng Khoa Cấp cứu, chống độc (Bệnh viện Nhi Trung ương) PGS T.S Trần Minh Điển cho biết rất nhiều bệnh nhân đến cấp cứu, có trường hợp không có người thân đi cùng bệnh nhân, không có giấy tờ tùy thân, không có tiền.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin trong claim cho rằng có trường hợp bệnh nhân cấp cứu không có người thân, giấy tờ hoặc tiền. Tuy nhiên, các chuyên gia y tế khẳng định bệnh viện luôn ưu tiên cứu chữa ngay lập tức, không yêu cầu tiền trước. Vì vậy, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là đúng, vì không có bằng chứng cho thấy bệnh viện yêu cầu tiền trước khi cấp cứu.",
+      "reference": "TS Lê Ngọc Duy, Trưởng Khoa Cấp cứu, chống độc (Bệnh viện Nhi Trung ương), cho biết hằng ngày tiếp nhận rất nhiều bệnh nhân đến cấp cứu, có trường hợp không có người thân đi cùng bệnh nhân, không có giấy tờ tùy thân, không có tiền",
+      "claim_id": "vifactcheck_19486876"
+    },
+    {
+      "claim": "Các bác sĩ nghĩ rằng ông bị nhiễm bệnh khi làm công việc nghiên cứu nấm học thực vật và đã làm việc với vật liệu thối rữa, nấm và nhiều loại nấm thực vật trong thời gian dài.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng bệnh nhân bị nhiễm nấm do làm việc nghiên cứu nấm học thực vật. Tuy nhiên, kết luận là \"không đủ bằng chứng\" vì báo cáo chỉ cho thấy bệnh nhân bị nhiễm nấm chondrostereum purpureum, nhưng không có bằng chứng rõ ràng cho thấy việc làm việc với nấm là nguyên nhân gây nhiễm. Các bác sĩ chỉ đưa ra giả thuyết, không có dữ liệu chứng minh mối liên hệ trực tiếp giữa công việc và bệnh. Do đó, chưa thể khẳng định việc làm nghiên cứu nấm là nguyên nhân gây nhiễm.",
+      "reference": "Các bác sĩ nghĩ rằng ông bị nhiễm bệnh khi làm công việc nghiên cứu với tư cách là nhà nấm học thực vật - làm việc trực tiếp với nấm mốc, nấm men và nấm. Theo các bác sĩ, bệnh nhân đã làm việc với \"vật liệu thối rữa, nấm và nhiều loại nấm thực vật trong thời gian dài\".",
+      "claim_id": "vifactcheck_18323468"
+    },
+    {
+      "claim": "Danh mục thuốc mở rộng bao gồm các thuốc điều trị bệnh thông thường và chuyên khoa như tim mạch, tiêu hóa, đái tháo đường, cơ xương khớp, hô hấp, truyền nhiễm, ung thư và thuốc kháng sinh, kháng viêm.",
+      "verdict": "ĐÚNG",
+      "generated": "Thông tin nói rằng danh mục thuốc mở rộng bao gồm cả thuốc điều trị bệnh thông thường và các bệnh chuyên khoa như tim mạch, tiểu đường, ung thư... là đúng. Vì Bộ Y tế đã chính thức gia hạn nhiều thuốc thuộc các lĩnh vực này đến năm 2024. Điều này cho thấy các loại thuốc này vẫn được sử dụng phổ biến và cần thiết trong điều trị. Do đó, kết luận \"ĐÚNG\" là phù hợp với thực tế.",
+      "reference": "Các thuốc, nguyên liệu làm thuốc được công bố gia hạn đợt này có cả thuốc điều trị bệnh lý thông thường đến điều trị bệnh lý chuyên khoa đặc trị như tim mạch, tiêu hoá, tiểu đường, cơ xương khớp, hô hấp, nhiễm khuẩn, ung thư... kháng sinh, kháng viêm.",
+      "claim_id": "vifactcheck_18808851"
+    },
+    {
+      "claim": "Bộ Y tế sẽ không áp dụng bất kỳ biện pháp nào để ngăn chặn sự bùng phát của các bệnh truyền nhiễm và sẽ chỉ dựa vào việc xử lý khi có dịch.",
+      "verdict": "SAI",
+      "generated": "Kết luận \"SAI\" là đúng vì Bộ Y tế và tỉnh Long An đã có nhiều biện pháp chủ động phòng chống dịch bệnh, như giám sát chặt chẽ, tiêm chủng, tăng cường năng lực y tế, và triển khai hệ thống báo cáo điện tử. Họ không chỉ phản ứng khi có dịch mà còn dự báo và chuẩn bị sẵn sàng từ trước. Điều này cho thấy việc chỉ dựa vào xử lý khi có dịch là không chính xác.",
+      "reference": "Ngành Y tế tăng cường chỉ đạo, giám sát, kiểm tra, đôn đốc và hỗ trợ tuyến dưới; tổ chức đào tạo về chuyên môn nghiệp vụ, thống kê báo cáo, mở rộng triển khai sử dụng hệ thống báo cáo điện tử cho tất cả các tuyến; thường xuyên giám sát các trường hợp mắc COVID-19, giám sát cộng đồng, thực hiện giám sát biến thể của virus SARS-CoV-2.",
+      "claim_id": "vifactcheck_19031874"
+    },
+    {
+      "claim": "Để phát hiện các bệnh lý di truyền từ sớm và chính xác sẽ hạn chế rất nhiều các trường hợp phải chọc ối không cần thiết đó là một trong những điểm nổi trội của xét nghiệm di truyền, Khoa Giải phẫu bệnh – Tế bào và Khoa Di truyền học, Bệnh viện Hùng Vương TP HCM đã đón nhận chứng chỉ ISO 15189:2012 vào ngày 15-3.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" vì bài viết không cung cấp đủ thông tin chứng minh rằng xét nghiệm di truyền tại Bệnh viện Hùng Vương giúp phát hiện bệnh lý di truyền sớm và giảm chọc ối. Chỉ có đề cập đến việc nhận chứng chỉ ISO 15189:2012, nhưng không liên kết rõ ràng giữa chứng chỉ này với khả năng phát hiện bệnh lý di truyền hoặc giảm chọc ối. Do đó, không đủ bằng chứng để xác nhận claim.",
+      "reference": "Một trong những điểm nổi trội của xét nghiệm di truyền là phát hiện các bệnh lý di truyền từ sớm và chính xác sẽ hạn chế rất nhiều các trường hợp phải chọc ối không cần thiết. 15-3, Khoa Giải phẫu bệnh – Tế bào và Khoa Di truyền học, Bệnh viện Hùng Vương TP HCM đã đón nhận chứng chỉ ISO 15189:2012.",
+      "claim_id": "vifactcheck_19488283"
+    },
+    {
+      "claim": "Tuy tạm thời không hoạt động nhưng nếu điều kiện như nhiệt độ, độ ẩm phù hợp thì những vi sinh vật gây hại sẽ được kích hoạt và sinh sôi.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng vi sinh vật gây hại có thể sinh sôi nếu điều kiện môi trường phù hợp, tuy nhiên kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là do thông tin chỉ đề cập đến khả năng sinh sôi mà không chứng minh rõ ràng rằng vi sinh vật này thực sự tồn tại và phát triển trong nem chua. Bài viết chỉ nêu nguy cơ tiềm ẩn chứ không có bằng chứng cụ thể về việc vi sinh vật gây hại đang hoạt động hay đã gây hại. Do đó, chưa đủ cơ sở để khẳng định claim là đúng.",
+      "reference": "Tuy bị ức chế không hoạt động được nhưng vi khuẩn, virus gây bệnh không chết mà sẽ sinh sôi nảy nở khi gặp điều kiện thuận lợi, gây nguy hiểm sức khỏe con người.",
+      "claim_id": "vifactcheck_18815575"
+    },
+    {
+      "claim": "Bệnh đang bùng phát ở Tanzania và được dự đoán sẽ lây lan nhanh chóng sang các tỉnh lân cận.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin chưa đủ để khẳng định bệnh đang bùng phát ở Tanzania và sẽ lây lan nhanh sang các tỉnh lân cận. Vì trong báo cáo của WHO chỉ đề cập đến việc bệnh đang bùng phát tại Tanzania, nhưng không có dữ liệu cụ thể về số ca bệnh, tốc độ lây lan hay tình hình tại các tỉnh lân cận. Do đó, chưa thể dự đoán sự lây lan nhanh chóng như claim.",
+      "reference": "Hiện bệnh cũng đang bùng phát tại Tanzania",
+      "claim_id": "vifactcheck_18605258"
+    },
+    {
+      "claim": "Bạn sẽ nhận thấy rằng khi uống nhiều nước dừa, trong dạ dày tích tụ nhiều nước, bụng sẽ căng lên và khiến bạn cảm thấy ậm ạch khó chịu, số lần đi tiểu tiện sẽ tăng lên với tần suất lớn hơn.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng uống nhiều nước dừa sẽ làm bụng căng, đi tiểu nhiều hơn. Tuy nhiên, kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin trong Evidence không đủ rõ ràng và thiếu bằng chứng khoa học cụ thể để xác nhận mối liên hệ giữa việc uống nhiều nước dừa và các triệu chứng như đầy bụng, đi tiểu nhiều. Thay vào đó, Evidence chỉ nêu ra một số tác dụng phụ có thể xảy ra khi uống quá nhiều nước dừa, nhưng không chứng minh rõ ràng rằng những triệu chứng trong Claim là do uống nước dừa gây ra. Do đó, cần thêm nghiên cứu để xác minh.",
+      "reference": "nạp lượng lớn nước dừa cùng một lúc, bạn sẽ rất khó tránh khỏi nguy cơ bị chứng đầy hơi chướng bụng. Lúc này, trong dạ dày tích tụ nhiều nước, bụng sẽ căng lên và khiến bạn cảm thấy ậm ạch khó chịu Bạn sẽ nhận thấy rằng khi uống nhiều nước dừa, số lần đi tiểu tiện sẽ tăng lên với tần suất lớn hơn.",
+      "claim_id": "vifactcheck_18759066"
+    },
+    {
+      "claim": "Bệnh nhân có thể tự đến bệnh viện trước khi phẫu thuật.",
+      "verdict": "SAI",
+      "generated": "Claim nói rằng bệnh nhân có thể tự đến bệnh viện trước khi phẫu thuật, nhưng kết luận là \"SAI\". Lý do là vì bệnh nhân bị thương rất nặng, sốc, mất máu nhiều, tri giác lơ mơ, và ruột lòi ra ngoài – tình trạng nguy hiểm đe dọa tính mạng, không thể tự di chuyển đến bệnh viện. Bệnh nhân phải được chuyển đến viện cấp cứu ngay lập tức bằng phương tiện y tế, không thể tự đến.",
+      "reference": "Bệnh nhân được chuyển vào cấp cứu trong trạng thái sốc nặng, tri giác lơ mơ với 5 vết thương vùng thành ngực trái, bụng phải do dao đâm, ruột lòi ra ngoài.",
+      "claim_id": "vifactcheck_19732291"
+    },
+    {
+      "claim": "Cô bắt đầu có dấu hiệu mờ mắt và tê bì chân tay chỉ sau 4 năm khi phát bệnh, nhiều lúc có những buổi sáng thức dậy mà tay chân không có cảm giác, phải xoa bóp mới có thể xuống giường được.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là do thông tin trong claim không có dữ liệu khoa học hoặc bằng chứng cụ thể từ nghiên cứu y học để chứng minh rằng sản phẩm Diabetna có hiệu quả trong việc điều trị tiểu đường hoặc ngăn ngừa biến chứng. Thông tin đưa ra chủ yếu là trải nghiệm cá nhân của người bệnh, không đủ để xác nhận tính hiệu quả của sản phẩm.",
+      "reference": ". Chỉ 4 năm sau khi phát hiện bệnh, cô bắt đầu có dấu hiệu mờ mắt và tê bì tay chân. Nhiều sáng thức dậy mà tay chân không có cảm giác, phải xoa bóp hồi lâu mới có thể xuống giường",
+      "claim_id": "vifactcheck_19655115"
+    },
+    {
+      "claim": "Bác sĩ nhận định pin điện tử không quá nguy hiểm tuy nhiên cũng cần nhanh chóng lấy dị vật ra khỏi hốc mũi để tránh những nguy hiểm nghiêm trọng cho cơ thể.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim cho rằng pin điện tử không quá nguy hiểm, nhưng cần nhanh chóng lấy dị vật ra. Tuy nhiên, kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin cho thấy pin đã gây hoại tử niêm mạc và nguy cơ thủng hốc mũi, đường thở. Bác sĩ cũng cảnh báo về tính nguy hiểm của pin điện tử và khuyến cáo cần can thiệp nhanh. Do đó, claim không phản ánh đầy đủ mức độ nguy hiểm thực tế của pin điện tử.",
+      "reference": "Bác sĩ nhận định pin điện tử là dị vật nguy hiểm Do đó, cần phải nhanh chóng lấy dị vật ra khỏi hốc mũi vì nguy cơ pin điện tử gây thủng vách ngăn, ăn mòn các cấu trúc quan trọng của hốc mũi",
+      "claim_id": "vifactcheck_18195555"
+    },
+    {
+      "claim": "Sở Công Thương TP.HCM cần phối hợp chặt chẽ với lực lượng Công an và ngành nông nghiệp tăng cường kiểm tra, kiểm soát hoạt động buôn bán, vận chuyển gia cầm, không để gia cầm không rõ nguồn gốc lưu thông trên địa bàn Thành phố.",
+      "verdict": "SAI",
+      "generated": "Kết luận \"SAI\" là do claim nói về Sở Công Thương TP.HCM cần phối hợp kiểm tra buôn bán gia cầm, nhưng trong evidence lại đề cập đến Hà Nội, không phải TP.HCM. Vì vậy, thông tin trong verdict không phù hợp với claim.",
+      "reference": "Sở Công Thương Hà Nội cần phối hợp chặt chẽ với lực lượng Công an và ngành nông nghiệp để tăng cường kiểm tra, kiểm soát hoạt động buôn bán, vận chuyển gia cầm đặc biệt tại các chợ đầu mối, không để gia cầm không rõ nguồn gốc lưu thông trên địa bàn Thành phố.",
+      "claim_id": "vifactcheck_19434752"
+    },
+    {
+      "claim": "Bệnh viện Quốc tế City vừa tiếp nhận và phẫu thuật thành công cho một trường hợp khối u khổng lồ như người mang bầu sắp sinh.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin đưa ra mô tả một trường hợp khối u tử cung nặng 11kg được phẫu thuật thành công. Tuy nhiên, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là do không có bằng chứng xác thực từ nguồn tin uy tín hoặc tài liệu y khoa chính thức xác nhận sự kiện này. Thông tin được chia sẻ qua báo chí, nhưng chưa có dữ liệu y tế cụ thể, hình ảnh chẩn đoán hay kết quả kiểm tra độc lập để xác minh. Do đó, chưa thể khẳng định sự việc xảy ra như mô tả.",
+      "reference": "Bệnh viện Quốc tế City cho biết, tại đây vừa tiếp nhận và phẫu thuật thành công cho một trường hợp khối u khổng lồ như người mang bầu sắp sinh.",
+      "claim_id": "vifactcheck_19465997"
+    },
+    {
+      "claim": "Ngày xảy ra vụ việc không được tiết lộ trong báo cáo vì cho đến nay, không có bằng chứng cho thấy có loại nấm nào có thể lây bệnh sang người và ngược lại.",
+      "verdict": "ĐÚNG",
+      "generated": "Claim nói rằng ngày xảy ra vụ việc không được tiết lộ vì chưa có bằng chứng nấm có thể lây sang người là đúng. Lý do là vì báo cáo chỉ ghi nhận trường hợp nhiễm nấm ở người đầu tiên, nhưng chưa có bằng chứng cho thấy nấm này lây từ người sang người. Vụ việc xảy ra do bệnh nhân tiếp xúc với nấm trong công việc, không phải do lây nhiễm từ người khác. Do đó, việc không công bố ngày xảy ra vụ việc là hợp lý để tránh hiểu lầm.",
+      "reference": "Ngày xảy ra vụ việc không được tiết lộ trong báo cáo. cho đến nay, không có bằng chứng nào cho thấy có loại nấm nào có thể lây nhiễm sang người.",
+      "claim_id": "vifactcheck_18500132"
+    },
+    {
+      "claim": "Thực phẩm bảo vệ sức khỏe Cà gai leo giải độc gan MB và La Hán Quả Tana có nội dung quảng cáo vi phạm quy định của pháp luật về quảng cáo.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" có nghĩa là chưa có đủ tài liệu pháp lý chứng minh quảng cáo của sản phẩm vi phạm luật. Cục An toàn thực phẩm chỉ cảnh báo và yêu cầu kiểm tra, chưa đưa ra kết luận cuối cùng. Người tiêu dùng nên cẩn trọng nhưng không nên tự ý kết luận vi phạm trước khi có quyết định chính thức.",
+      "reference": "Thực phẩm bảo vệ sức khỏe Cà gai leo giải độc gan MB và La Hán Quả Tana có nội dung quảng cáo vi phạm quy định của pháp luật về quảng cáo.",
+      "claim_id": "vifactcheck_18399058"
+    },
+    {
+      "claim": "Bệnh viện Chợ Rẫy, TP.HCM đã không cứu sống thành công bệnh nhân bị container cán qua người. Theo TS-BS Ngô Đức Hiệp, Trưởng khoa Phỏng - Phẫu thuật tạo hình (BV Chợ Rẫy), bệnh nhân không được chuyển lên từ BV huyện Bình Chánh và không có tình trạng đa chấn thương nặng. Đùi và bẹn không bị dập nát, tầng sinh môn không bị rách nát, dương vật không mất và trực tràng không bị đứt hoàn toàn cũng như bàng quang không vỡ.",
+      "verdict": "SAI",
+      "generated": "Thông tin ban đầu nói bệnh nhân không bị thương nặng nhưng thực tế, bệnh nhân bị đa chấn thương nghiêm trọng, dập nát đùi, bẹn, mất dương vật, đứt trực tràng và vỡ bàng quang. Bệnh nhân đã trải qua 11 lần phẫu thuật và điều trị kéo dài 112 ngày, cho thấy tình trạng rất nguy kịch. Do đó, kết luận \"SAI\" là đúng vì thông tin ban đầu không phản ánh chính xác mức độ thương tích và quá trình điều trị phức tạp.",
+      "reference": "Bệnh viện Chợ Rẫy, TP.HCM đã cứu sống thành công bệnh nhân bị container cán qua người Theo TS-BS Ngô Đức Hiệp, Trưởng khoa Phỏng - Phẫu thuật tạo hình (BV Chợ Rẫy), cho biết bệnh nhân được chuyển lên từ BV huyện Bình Chánh trong tình trạng đa chấn thương nặng, dập nát đùi và bẹn trái, rách nát tầng sinh môn, mất dương vật, đứt hoàn toàn trực tràng, vỡ bàng quang",
+      "claim_id": "vifactcheck_19623871"
+    },
+    {
+      "claim": "Ung thư phổi không dễ chẩn đoán sớm nếu không thăm khám sức khỏe định kỳ, nhưng nếu phát hiện ở giai đoạn sớm thì có thể cho phép điều trị ung thư phổi hiệu quả, thậm chí là khỏi không bao giờ bị lại nữa.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng ung thư phổi có thể chữa khỏi nếu phát hiện sớm, nhưng kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" vì bài viết chỉ đề cập đến trường hợp bệnh nhân phát hiện muộn, không có bằng chứng cụ thể về trường hợp được chữa khỏi. Ngoài ra, bài viết nhấn mạnh tầm quan trọng của khám sức khỏe định kỳ, nhưng không chứng minh rằng việc khám định kỳ sẽ giúp phát hiện sớm và chữa khỏi ung thư phổi. Do đó, thông tin trong claim chưa đủ rõ ràng và cụ thể để đưa ra kết luận chắc chắn.",
+      "reference": "ung thư phổi không dễ chẩn đoán sớm nếu không tham gia khám sức khỏe định kỳ việc phát hiện ung thư phổi ở giai đoạn sớm cho phép điều trị hiệu quả, thậm chí chữa khỏi.",
+      "claim_id": "vifactcheck_18775878"
+    },
+    {
+      "claim": "Một bé gái 3 tuổi (ngụ Long An) được đưa tới Bệnh viện Nhi đồng 1 (TP.HCM) vào ngày 30.3 trong tình trạng quấy khóc, đau nhức mũi, chảy dịch vàng lẫn máu bên mũi phải.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng bé gái 3 tuổi bị chảy dịch vàng lẫn máu bên mũi phải do nguyên nhân chưa được xác định rõ. Tuy nhiên, Verdict là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin trong Evidence đã cho thấy nguyên nhân rõ ràng là bé nhét pin điện tử vào mũi, gây tổn thương niêm mạc. Kết luận này phù hợp vì các bằng chứng y khoa cụ thể đã xác định rõ dị vật và hậu quả, chứ không chỉ dừng lại ở triệu chứng ban đầu. Do đó, không thể khẳng định nguyên nhân gây ra triệu chứng đó chỉ dựa vào các triệu chứng ban đầu mà chưa có kết luận chẩn đoán chính xác.",
+      "reference": "Ngày 30.3, tin từ Bệnh viện Nhi đồng 1 (TP.HCM) cho biết, bệnh viện vừa tiếp nhận bé gái 3 tuổi (ngụ Long An) tình trạng quấy khóc, đau nhức mũi, chảy dịch vàng lẫn máu bên mũi phải.",
+      "claim_id": "vifactcheck_18150825"
+    },
+    {
+      "claim": "Khi máy CT ở Bệnh viện Chợ Rẫy hư có thể ảnh hưởng đến an toàn của bệnh nhân.",
+      "verdict": "ĐÚNG",
+      "generated": "Kết luận \"ĐÚNG\" vì khi máy CT ở Bệnh viện Chợ Rẫy hư, bệnh nhân phải chuyển sang máy ở xa hơn, gây chậm trễ trong chẩn đoán và điều trị, ảnh hưởng đến sức khỏe và tính mạng. Điều này đặc biệt nguy hiểm với bệnh nhân cấp cứu hoặc nặng. Việc thiếu thiết bị y tế khiến bệnh viện hoạt động quá tải, tạo ra rủi ro cho người bệnh.",
+      "reference": "Máy CT ở Bệnh viện Chợ Rẫy hoạt động với cường độ liên tục. Khi máy hư, lãnh đạo bệnh viện như \"ngồi trên đống lửa\" vì phải chuyển bệnh nhân sang máy CT đặt ở vị trí xa hơn, ảnh hưởng đến an toàn và tính mạng người bệnh. máy CT ở Bệnh viện Chợ Rẫy hoạt động với cường độ liên tục. Khi máy CT cấp cứu hư, lãnh đạo bệnh viện như \"ngồi trên đống lửa\" vì phải chuyển bệnh nhân sang máy CT đặt ở vị trí xa hơn, ảnh hưởng đến an toàn và tính mạng người bệnh. Đáng lo sợ nhất là nếu chiếc máy cuối cùng trong bệnh viện bị hỏng thì các bệnh nhân nặng, bệnh nhân cấp cứu phải đưa đi càng xa dẫn đến nguy cơ càng cao\"",
+      "claim_id": "vifactcheck_18833054"
+    },
+    {
+      "claim": "Các loại cây, hoa có chứa các hợp chất gây độc trong trường cần được loại bỏ, riêng đối với các cây cổ thủ được trồng phục vụ môn Sinh học, cần phải có biển cảnh báo và biện pháp kiểm soát an toàn.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim đề xuất cần loại bỏ cây có hợp chất độc và cảnh báo đối với cây cổ thụ dùng cho học tập. Tuy nhiên, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin chỉ cho thấy một sự việc cụ thể về ngộ độc do ăn quả ngô đồng, chưa đủ để khẳng định tất cả cây có độc đều cần loại bỏ hay cần biển cảnh báo. Cần thêm dữ liệu tổng quát về nguy cơ và mức độ nguy hiểm của các loại cây khác.",
+      "reference": "Các đơn vị giáo dục cần loại bỏ các loại cây, hoa có chứa các hợp chất gây độc được trồng phải có biển cảnh báo và biện pháp kiểm soát an toàn. Riêng đối với các cây cổ thụ được trồng với mục đích học tập, nghiên cứu,",
+      "claim_id": "vifactcheck_18520725"
+    },
+    {
+      "claim": "TP.HCM vào mùa mưa tháng 6, mùa cao điểm của các bệnh đường hô hấp, dễ lây lan trong môi trường tập trung đông người, cần báo ngay cho trạm y tế và trung tâm y tế địa phương để có hướng xử lý kịp thời nếu có bất thường.",
+      "verdict": "ĐÚNG",
+      "generated": "Thông tin đúng vì TP.HCM trong mùa mưa, thời tiết ẩm ướt tạo điều kiện thuận lợi cho virus đường hô hấp phát triển và lây lan, đặc biệt trong môi trường đông người như trường học. Khi có dấu hiệu bất thường như nhiều học sinh nghỉ ốm, cần báo ngay cho trạm y tế để xử lý kịp thời, ngăn ngừa dịch lan rộng. Việc phát hiện và xử lý nhanh như trường hợp H1N1 tại quận 10 là minh chứng cho hiệu quả của biện pháp này.",
+      "reference": "TP.HCM vào mùa cao điểm của các bệnh đường hô hấp, dễ lây lan trong môi trường tập trung đông người. cần báo ngay cho trạm y tế và trung tâm y tế địa phương để có hướng xử lý kịp thời",
+      "claim_id": "vifactcheck_19241975"
+    },
+    {
+      "claim": "Bệnh nhân ung thư ngày càng có xu hướng tăng khi tại Việt Nam, ung thư gan đứng đầu, xếp sau là ung thư phổi.",
+      "verdict": "ĐÚNG",
+      "generated": "Thông tin cho thấy ung thư phổi đang có xu hướng tăng và trẻ hóa tại Việt Nam, đứng thứ hai sau ung thư gan. Điều này được xác nhận qua các ca bệnh thực tế và nhận định của chuyên gia. Các yếu tố như hút thuốc lá, môi trường sống và lối sống không lành mạnh góp phần làm gia tăng nguy cơ mắc bệnh. Do đó, kết luận \"ĐÚNG\" là phù hợp với thực tế y tế hiện nay.",
+      "reference": "bệnh ung thư ngày càng có xu hướng tăng, Tại Việt Nam, ung thư phổi đứng thứ 2, chỉ sau ung thư gan.",
+      "claim_id": "vifactcheck_18775878"
+    },
+    {
+      "claim": "Hệ thống miễn dịch đóng vai trò quan trọng trong việc bảo vệ cơ thể khỏi bệnh tật, trong đó có ung thư.",
+      "verdict": "ĐÚNG",
+      "generated": "Claim nói rằng hệ miễn dịch đóng vai trò quan trọng trong việc bảo vệ cơ thể khỏi bệnh tật, trong đó có ung thư – đây là thông tin đúng. Hệ miễn dịch là “lá chắn tự nhiên” của cơ thể, có thể phát hiện và tấn công các tế bào lạ, bao gồm cả tế bào ung thư. Nghiên cứu đã chứng minh rằng hệ miễn dịch có thể ức chế sự phát triển của ung thư và hỗ trợ điều trị. Vì vậy, kết luận \"ĐÚNG\" là phù hợp.",
+      "reference": "hệ miễn dịch còn đóng vai trò quan trọng trong việc điều trị ung thư và góp phần tăng khả năng chiến thắng bệnh.",
+      "claim_id": "vifactcheck_19907779"
+    },
+    {
+      "claim": "Giúp hệ vi sinh đường ruột khỏe mạnh, không bị táo bón qua việc bổ sung lợi khuẩn bằng men vi sinh Optibac Probiotics Optibac.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" vì bài viết chỉ nêu tình trạng sức khỏe đường ruột phổ biến và đề cập đến lợi khuẩn nói chung, chứ không có bằng chứng cụ thể về hiệu quả của sản phẩm Optibac Probiotics Optibac trong việc cải thiện táo bón. Các thông tin về sản phẩm chủ yếu là quảng bá thương hiệu, chưa có nghiên cứu lâm sàng hoặc dữ liệu thực nghiệm chứng minh tác dụng cụ thể. Do đó, chưa đủ cơ sở để khẳng định sản phẩm có hiệu quả như claim.",
+      "reference": "Bổ sung lợi khuẩn bằng men vi sinh Optibac Probiotics Optibac giúp hệ vi sinh đường ruột khỏe mạnh.",
+      "claim_id": "vifactcheck_18776258"
+    },
+    {
+      "claim": "Đang chơi cùng chị gái, cháu bé 3 tuổi chạy vào nhà báo với người thân vừa nhét đồ chơi vào mũi, cháu bé than đau và hợp tác với gia đình lấy ra vẫn không được.",
+      "verdict": "SAI",
+      "generated": "Claim nói rằng cháu bé 3 tuổi đã hợp tác lấy dị vật ra khỏi mũi, nhưng kết quả kiểm chứng cho thấy kết luận là \"SAI\". Lý do là vì bé không hợp tác, không thể tự lấy dị vật ra, phải đưa đến bệnh viện và bác sĩ mới lấy được pin điện tử ra. Pin đã gây tổn thương niêm mạc mũi. Do đó, claim không đúng với thực tế.",
+      "reference": "bé đang chơi một mình thì bất ngờ chạy vào nhà báo với người thân vừa nhét đồ chơi vào mũi. Sau đó bé than đau bé không hợp tác nên không lấy được dị vật.",
+      "claim_id": "vifactcheck_18150825"
+    },
+    {
+      "claim": "Đã 99 ngày liên tiếp Việt Nam không ghi nhận ca tử vong do COVID-19, tổng số ca được điều trị khỏi đến nay là 10.614.857 ca.",
+      "verdict": "SAI",
+      "generated": "Thông tin cho rằng Việt Nam đã 99 ngày không ghi nhận ca tử vong do COVID-19 là sai. Theo dữ liệu Bộ Y tế, hiện nay đã 79 ngày liên tiếp không có ca tử vong, không phải 99 ngày. Ngoài ra, số ca điều trị khỏi được nêu trong claim là 10.614.857 ca, nhưng theo báo cáo, tổng số ca khỏi bệnh đến nay là 10.614.857 ca, nên phần này đúng. Tuy nhiên, do thông tin về số ngày không có ca tử vong sai, nên kết luận là \"SAI\".",
+      "reference": "Tổng số ca được điều trị khỏi đến nay là 10.614.857 ca. Đã 79 ngày liên tiếp Việt Nam không ghi nhận ca tử vong do COVID-19.",
+      "claim_id": "vifactcheck_19824583"
+    },
+    {
+      "claim": "Ca phẫu thuật đã thành công trong việc bình thường hóa hoàn toàn bộ phận sinh dục của đứa trẻ.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng ca phẫu thuật đã \"bình thường hóa hoàn toàn bộ phận sinh dục của đứa trẻ\", tuy nhiên kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì bài viết chỉ mô tả phẫu thuật đã giúp trẻ có thể đi tiểu bình thường và thay đổi giấy khai sinh, nhưng không chứng minh rằng bộ phận sinh dục đã hoàn toàn bình thường như giới tính thật. Phẫu thuật đã điều chỉnh vị trí lỗ tiểu và hạ tinh hoàn, nhưng chưa có thông tin cụ thể về kết quả giải phẫu cuối cùng hay đánh giá chuyên sâu về hình dạng bộ phận sinh dục. Do đó, chưa đủ bằng chứng để khẳng định \"bình thường hóa hoàn toàn\".",
+      "reference": "Việc phát hiện sớm và can thiệp kịp thời giúp người bệnh mang đúng với giới tính thật",
+      "claim_id": "vifactcheck_19808369"
+    },
+    {
+      "claim": "Trưởng khoa Phụ Sản, kiêm Giám Đốc Y khoa Bệnh viện Quốc tế City TS.BS Tạ Thị Thanh Thủy sinh năm 1980 cho biết,  vừa tiếp nhận và phẫu thuật thành công cho một trường hợp khối u khổng lồ như người mang bầu sắp sinh",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin đưa ra mô tả một trường hợp khối u to 11kg được phẫu thuật thành công, tuy nhiên không có bằng chứng cụ thể về nguồn tin, thời gian, hay xác minh từ các cơ quan y tế chính thức. Do đó, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là phù hợp. Người đọc không thể xác định tính chính xác của thông tin do thiếu thông tin chi tiết và nguồn tin đáng tin cậy.",
+      "reference": "TS.BS Tạ Thị Thanh Thủy, trưởng khoa Phụ Sản, kiêm Giám Đốc Y khoa Bệnh viện Quốc tế City cho biết, tại đây vừa tiếp nhận và phẫu thuật thành công cho một trường hợp khối u khổng lồ như người mang bầu sắp sinh.",
+      "claim_id": "vifactcheck_19465997"
+    },
+    {
+      "claim": "TP Hồ Chí Minh đã ghi nhận các chùm ca bệnh hô hấp trường học ở quận Bình Thạnh và mới đây là Quận 10 trong ngày 30/1.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin cho thấy TP Hồ Chí Minh đã ghi nhận chùm ca bệnh cúm A/H1N1 tại trường tiểu học ở Quận 10, không phải là \"các chùm ca bệnh hô hấp trường học\" như claim. Vì vậy, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là đúng. Dữ liệu cụ thể chỉ đề cập đến một chùm cúm A/H1N1, không phải nhiều chùm hô hấp khác.",
+      "reference": "TP Hồ Chí Minh đã ghi nhận các chùm ca bệnh hô hấp trường học ở quận Bình Thạnh và mới đây là Quận 10",
+      "claim_id": "vifactcheck_19075533"
+    },
+    {
+      "claim": "Tiến hành phẫu thuật cắt phần gan có khối ung thư là phương pháp điều trị duy nhất.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Phẫu thuật cắt gan không phải là phương pháp điều trị duy nhất cho ung thư gan. Trong trường hợp của ông B, phẫu thuật được áp dụng vì khối u chưa lan rộng, nhưng có nhiều phương pháp khác như hóa trị, xạ trị, điều trị bằng thuốc, hoặc kết hợp đa mô thức tùy theo giai đoạn và tình trạng sức khỏe. Do đó, kết luận \"duy nhất\" không đúng vì còn nhiều lựa chọn điều trị phù hợp.",
+      "reference": "Sự nguy hiểm của ung thư gan tùy thuộc vào nhiều yếu tố như giai đoạn bệnh, mức độ tiến triển, tình trạng sức khỏe và khả năng đáp ứng các liệu pháp điều trị.",
+      "claim_id": "vifactcheck_18981326"
+    },
+    {
+      "claim": "Mẫu bệnh phẩm của các trường hợp có tiền sử tiếp xúc với gia cầm ốm, chết cần gửi về Viện Vệ sinh dịch tễ/Viện Pasteur ở đường 222 đường Nguyễn Trãi, Khánh Hòa để xét nghiệm và triển khai kịp thời các biện pháp cách ly, điều trị, phòng, chống dịch.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng mẫu bệnh phẩm của người tiếp xúc với gia cầm ốm, chết cần gửi về Viện Vệ sinh dịch tễ hoặc Viện Pasteur để xét nghiệm. Tuy nhiên, Verdict là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì trong Evidence không có thông tin cụ thể nào xác nhận việc gửi mẫu bệnh phẩm đến các viện này, mà chỉ đề cập đến việc cần thực hiện các biện pháp giám sát, tuyên truyền và xử lý dịch bệnh. Do đó, không đủ cơ sở để khẳng định việc gửi mẫu bệnh phẩm là yêu cầu bắt buộc hay được thực hiện.",
+      "reference": "các trường hợp có tiền sử tiếp xúc với gia cầm ốm, chết cần được lấy mẫu bệnh phẩm gửi về Viện Vệ sinh dịch tễ/Viện Pasteur để xét nghiệm và triển khai kịp thời các biện pháp cách ly, điều trị, phòng, chống dịch.",
+      "claim_id": "vifactcheck_19434752"
+    },
+    {
+      "claim": "Bệnh Marburg là một dạng bệnh sốt xuất huyết với các triệu chứng như sốt, choáng váng, ói mửa và có tỷ lệ tử vong đến 98%.",
+      "verdict": "SAI",
+      "generated": "Claim sai vì bệnh Marburg không phải là dạng của bệnh sốt xuất huyết. Bệnh Marburg do virus gây ra, có tỷ lệ tử vong cao (khoảng 88%), nhưng không thuộc nhóm sốt xuất huyết. Sốt xuất huyết do vi-rút Dengue gây ra, có triệu chứng khác như chảy máu và phát ban. Bệnh Marburg có triệu chứng như sốt, choáng váng, nôn và tiêu chảy, nhưng không có vaccine hay thuốc chữa hiệu quả hiện nay.",
+      "reference": "bệnh do virus Marburg là một dạng bệnh sốt xuất huyết có tỷ lệ tử vong lên tới 88%. Các triệu chứng mắc bệnh gồm sốt, choáng váng, nôn",
+      "claim_id": "vifactcheck_18605258"
+    },
+    {
+      "claim": "Một nam thanh niên 19 tuổi bị gãy dương vật do đứt dây hãm bao quy đầu trong lúc quan hệ.",
+      "verdict": "ĐÚNG",
+      "generated": "Claim nói về một nam thanh niên 19 tuổi bị gãy dương vật do đứt dây hãm bao quy đầu trong lúc quan hệ là đúng. Lý do là vì các bác sĩ đã xác định nguyên nhân vụ việc là do dây hãm bị đứt, gây chảy máu và tổn thương, đồng thời có cách điều trị phù hợp. Đây là tình huống thực tế được ghi nhận và chia sẻ tại các bệnh viện, phù hợp với các triệu chứng và hậu quả nêu trong claim.",
+      "reference": "bam thanh niên Gãy \"của quý\" Nguyên nhân được xác định thanh niên này bị đứt dây hãm bao quy đầu trong lúc quan hệ",
+      "claim_id": "vifactcheck_18605106"
+    },
+    {
+      "claim": "1 người tử vong, 10 người phải nhập viện, trong đó nhiều bệnh nhân nguy kịch trong 3 vụ ngộ độc liên tiếp do ăn cá chép ủ chua xảy ra tại huyện Châu Thành.",
+      "verdict": "SAI",
+      "generated": "Thông tin ban đầu cho rằng 3 vụ ngộ độc do ăn cá chép ủ chua gây 1 người tử vong, 10 người nhập viện là sai. Thực tế, chỉ có 1 người tử vong, 9 người nhập viện, trong đó nhiều bệnh nhân nguy kịch nhưng hiện đã có tiến triển tốt, cai máy thở. Các bệnh nhân đang được theo dõi và điều trị tích cực, chưa có trường hợp nào ra viện. Do đó, kết luận \"SAI\" là đúng vì số người nhập viện và tình trạng bệnh nhân không trùng khớp với thông tin ban đầu.",
+      "reference": "3 vụ ngộ độc liên tiếp do ăn cá chép ủ chua xảy ra tại huyện Phước Sơn khiến 1 người tử vong, 9 người phải nhập viện, trong đó nhiều bệnh nhân nguy kịch.",
+      "claim_id": "vifactcheck_18594679"
+    },
+    {
+      "claim": "Các BV nên tăng cường bảo mật thông tin người bệnh theo khuyến cáo của Sở Y tế HCM để tránh những đáng tiếc không nên có.",
+      "verdict": "ĐÚNG",
+      "generated": "Việc Sở Y tế TP.HCM khuyến cáo các bệnh viện tăng cường bảo mật thông tin người bệnh là cần thiết để ngăn chặn lừa đảo, giả mạo giấy tờ y tế. Các vụ việc như giả mạo giấy chứng nhận, mạo danh nhân viên y tế để lừa đảo đã xảy ra, gây thiệt hại tài sản cho người dân. Vì vậy, các bệnh viện cần tuân thủ hướng dẫn để bảo vệ thông tin người bệnh, tránh bị kẻ xấu lợi dụng. Đây là biện pháp đúng đắn nhằm đảm bảo an toàn cho cả người bệnh và cơ sở y tế.",
+      "reference": "Sở Y tế TP.HCM cũng yêu cầu các BV trên địa bàn tăng cường bảo mật thông tin người bệnh, tránh bị kẻ xấu lợi dụng nhằm mục đích trục lợi, lừa đảo. Khi",
+      "claim_id": "vifactcheck_18569663"
+    },
+    {
+      "claim": "Các bệnh truyền nhiễm mới nguy hiểm đã ít xuất hiện và hạn chế lay lan đồng thời các biến chủng cũng đã ngừng biến đổi.",
+      "verdict": "SAI",
+      "generated": "Claim nói rằng các bệnh truyền nhiễm mới nguy hiểm đã ít xuất hiện và không còn biến đổi, nhưng kết luận là \"SAI\" vì thực tế, dịch COVID-19 vẫn đang có ca mắc mới, biến thể mới vẫn tiếp tục xuất hiện, và các bệnh truyền nhiễm khác như cúm A/H5N1, Marburg cũng đang diễn biến phức tạp. Bộ Y tế cũng cảnh báo nguy cơ lây lan và biến đổi của virus vẫn tồn tại. Do đó, thông tin trong claim không đúng với thực tế.",
+      "reference": "Các bệnh truyền nhiễm nguy hiểm, mới nổi tiếp tục xuất hiện và lây lan như bệnh Marburg tại khu vực Châu Phi, cúm A/H5N1 tại Campuchia... Các tác nhân gây bệnh, các chủng virus cúm liên tục biến đổi làm giảm khả năng bảo vệ của vắc-xin, tiềm ẩn nguy cơ đại dịch.",
+      "claim_id": "vifactcheck_18864596"
+    },
+    {
+      "claim": "Bệnh nhân đang trong tình trạng nguy kịch và cần được phẫu thuật ngay lập tức để cứu mạng sống của họ.",
+      "verdict": "ĐÚNG",
+      "generated": "Bệnh nhân bị thương rất nặng với nhiều tổn thương nội tạng, mất máu nhiều và nguy cơ tử vong cao. Các bác sĩ đã kích hoạt quy trình cấp cứu khẩn cấp, phẫu thuật kịp thời và phối hợp nhiều chuyên khoa để cứu sống bệnh nhân. Do tình trạng nguy kịch và cần can thiệp phẫu thuật ngay lập tức, kết luận \"ĐÚNG\" là phù hợp.",
+      "reference": "Bệnh nhân được chuyển vào cấp cứu trong trạng thái sốc nặng, tri giác lơ mơ, huyết áp tụt và kẹt.",
+      "claim_id": "vifactcheck_19732291"
+    },
+    {
+      "claim": "Bác sĩ đã lấy được pin điện tử qua đường nội soi mũi, bơm rửa hốc mũi nhiều lần, lấy bớt phần niêm mạc bị hoại tử, bôi thuốc trị viêm cho bé. Trong vòng 1 tuần không có biến chứng xảy ra.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng bác sĩ đã lấy pin điện tử qua đường nội soi mũi, bơm rửa hốc mũi nhiều lần, lấy phần niêm mạc hoại tử và bôi thuốc, trong 1 tuần không có biến chứng. Tuy nhiên, kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin trong Evidence không chứng minh rõ việc \"lấy bớt phần niêm mạc bị hoại tử\" hay \"bôi thuốc trị viêm\" như trong Claim. Ngoài ra, Claim nói \"trong vòng 1 tuần không có biến chứng xảy ra\" nhưng Evidence chỉ nói \"qua hơn 1 tuần theo dõi chưa thấy có cấu trúc quan trọng nào bị hoại tử, không có tai biến hay biến chứng nguy hiểm nào xảy ra\", chưa đủ để khẳng định không có biến chứng. Do đó, thông tin trong Claim không được hỗ trợ đầy đủ bởi bằng chứng có sẵn.",
+      "reference": "bác sĩ đã lấy được pin điện tử qua đường nội soi mũi bơm rửa hốc mũi nhiều lần, lấy bớt phần niêm mạc bị hoại tử, 1 tuần theo dõi chưa thấy có cấu trúc quan trọng nào bị hoại tử, không có tai biến hay biến chứng nguy hiểm nào xảy ra.",
+      "claim_id": "vifactcheck_18150825"
+    },
+    {
+      "claim": "6 bệnh nhân bị nghi ngộ độc chất kích thích có triệu chứng  mệt, lơ mơ, tím tái,  chóng mặt và tê tay chân.",
+      "verdict": "SAI",
+      "generated": "Claim nói 6 bệnh nhân bị ngộ độc chất kích thích có triệu chứng mệt, lơ mơ, tím tái, chóng mặt và tê tay chân là sai. Vì theo thông tin từ bệnh viện, các bệnh nhân có triệu chứng tương tự nhưng xét nghiệm không phát hiện chất kích thích, mà nguyên nhân nghi do uống rượu kèm thuốc không rõ. Các triệu chứng là do ngộ độc chất gây nghiện, nhưng không phải do chất kích thích. Do đó, kết luận \"SAI\" là đúng.",
+      "reference": "được đưa vào bệnh viện cấp cứu trong tình trạng lơ mơ, tím tái, mệt, chóng mặt, tê tay chân… nghi bị ngộ độc. các bệnh nhân nhập viện có triệu chứng ngộ độc chất gây nghiện",
+      "claim_id": "vifactcheck_19639800"
+    },
+    {
+      "claim": "Sau thời gian nỗ lực điều trị của các bác sĩ, bệnh nhân cuối cùng trong vụ ngộ độc sau khi ăn cá chép ủ chua ở Quảng Nam hiện đã cai máy thở, tự thở được, các chỉ số ổn định.",
+      "verdict": "ĐÚNG",
+      "generated": "Thông tin cho biết bệnh nhân cuối cùng trong vụ ngộ độc do ăn cá chép ủ chua đã cai máy thở, tự thở và các chỉ số ổn định, đây là dấu hiệu tích cực cho thấy tình trạng sức khỏe đang cải thiện. Các bác sĩ đã nỗ lực điều trị và hỗ trợ thuốc giải độc, giúp bệnh nhân dần hồi phục. Kết luận \"ĐÚNG\" vì thông tin này phản ánh đúng tiến triển tốt của bệnh nhân sau điều trị, phù hợp với tình hình thực tế được báo chí đưa tin.",
+      "reference": "Bệnh nhân cuối cùng trong vụ ngộ độc sau khi ăn cá chép ủ chua ở Quảng Nam hiện đã cai máy thở, tự thở được, các chỉ số ổn định. Sau thời gian nỗ lực điều trị của các bác sĩ",
+      "claim_id": "vifactcheck_18594679"
+    },
+    {
+      "claim": "Dị tật hở môi và hàm ếch là khiếm khuyết bẩm sinh phổ biến nhất xảy ra tại vùng mắt và mũi, hiện nay tất cả các dị tật vùng hàm mặt đều có thể chỉnh sửa được.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng dị tật hở môi và hàm ếch là khiếm khuyết bẩm sinh phổ biến nhất ở vùng mắt và mũi, và tất cả dị tật hàm mặt đều có thể chỉnh sửa được. Tuy nhiên, kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin chỉ đề cập đến dị tật hở môi và hàm ếch là phổ biến nhất ở vùng **mặt và miệng**, không phải vùng **mắt và mũi**. Ngoài ra, việc nói \"tất cả các dị tật vùng hàm mặt đều có thể chỉnh sửa được\" là quá tuyệt đối, khi thực tế một số dị tật phức tạp có thể khó điều trị hơn. Do đó, thông tin chưa đủ chính xác và đầy đủ để khẳng định như vậy.",
+      "reference": "Dị tật hở môi và hàm ếch là khiếm khuyết bẩm sinh phổ biến nhất xảy ra tại vùng mặt và miệng. Hiện nay tất cả các dị tật vùng hàm mặt đều có thể chỉnh sửa được.",
+      "claim_id": "vifactcheck_19818074"
+    },
+    {
+      "claim": "Bệnh viện Sản Nhi Nghệ An là bệnh viện chuyên sản nhi nổi tiếng ở Bắc Trung Bộ.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin chỉ nêu ra một trường hợp bé gái 9 tuổi được điều trị tại Bệnh viện Sản Nhi Nghệ An, nhưng không có dữ liệu so sánh hoặc đánh giá về uy tín, chất lượng, số lượng ca điều trị hay xếp hạng của bệnh viện. Do đó, chưa đủ bằng chứng để khẳng định bệnh viện này là \"chuyên sản nhi nổi tiếng\" ở Bắc Trung Bộ.",
+      "reference": "Bệnh viện Sản Nhi Nghệ An",
+      "claim_id": "vifactcheck_18387536"
+    },
+    {
+      "claim": "Giải thưởng danh giá Kovalevskaia, giải thưởng cao quý chỉ dành cho tập thể khoa học xuất sắc trong nghiên cứu và ứng dụng khoa học vào thực tiễn cuộc sống.",
+      "verdict": "SAI",
+      "generated": "Claim nói rằng \"Giải thưởng danh giá Kovalevskaia là giải thưởng cao quý chỉ dành cho tập thể khoa học xuất sắc\", nhưng kết luận là \"SAI\". Lý do là vì trong Evidence, thông tin cho thấy giải thưởng Kovalevskaia không chỉ dành cho tập thể mà còn dành cho cá nhân nữ khoa học xuất sắc. Do đó, Claim sai khi cho rằng giải thưởng chỉ dành cho tập thể.",
+      "reference": "giải thưởng danh giá Kovalevskaia, giải thưởng cao quý dành cho tập thể, cá nhân nữ khoa học xuất sắc trong nghiên cứu và ứng dụng khoa học vào thực tiễn cuộc sống",
+      "claim_id": "vifactcheck_19624207"
+    },
+    {
+      "claim": "Vì thiếu thuốc và thiết bị y tế nên khi lượng bệnh nhân dồn về, bệnh viện Chợ Rẫy đã tăng chi phí khám chữa bệnh.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim cho rằng thiếu thuốc và thiết bị y tế khiến bệnh viện Chợ Rẫy tăng chi phí khám chữa bệnh. Tuy nhiên, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là đúng vì thông tin trong bài không chứng minh được việc thiếu thiết bị dẫn đến tăng chi phí. Thay vào đó, bài cho thấy bệnh viện đã khắc phục được tình trạng thiếu thiết bị sau khi có Nghị quyết 30 và Nghị định 07, đồng thời khẳng định bệnh viện không tăng chi phí cho người bệnh. Do đó, không có bằng chứng trực tiếp chứng minh mối liên hệ giữa thiếu thiết bị và tăng chi phí.",
+      "reference": "TS-BSCK2 Nguyễn Tri Thức, Giám đốc Bệnh viện Chợ Rẫy, cho biết vì thiếu thuốc, thiết bị y tế nên trong thời gian qua, lượng bệnh nhân dồn về bệnh viện luôn tạo mọi điều kiện tốt nhất cho người bệnh, như không tăng chi phí khám chữa bệnh, bố trí chỗ trọ trong lúc chờ chuyển sang cơ sở y tế khác để chụp chiếu...",
+      "claim_id": "vifactcheck_18833054"
+    },
+    {
+      "claim": "Qua giám sát chủ động, Trung tâm Kiểm soát bệnh tật TP Hồ Chí Minh cho biết tối 22/3 đơn vị đã phát hiện chùm ca cúm A/H1N1 tại một trường tiểu học ở Quận 10.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin cho thấy Trung tâm Kiểm soát bệnh tật TP.HCM đã phát hiện chùm ca cúm A/H1N1 tại trường tiểu học Quận 10, qua xét nghiệm xác nhận 6/6 mẫu dương tính. Tuy nhiên, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" có thể xuất phát từ việc chưa có thông tin chính thức công khai về số ca bệnh cụ thể, thời gian bùng phát rõ ràng hay số liệu thống kê toàn thành phố. Do đó, cần thêm bằng chứng để xác nhận tính chất và quy mô của chùm ca bệnh.",
+      "reference": "Tối 22/3, Trung tâm Kiểm soát bệnh tật TP Hồ Chí Minh cho biết, qua giám sát chủ động, đơn vị đã phát hiện chùm ca cúm A/H1N1 tại một trường tiểu học ở Quận 10.",
+      "claim_id": "vifactcheck_19075533"
+    },
+    {
+      "claim": "Ở độ tuổi tò mò khám phá thế giới xung quanh, cần trong trẻ cẩn thận, tránh để trẻ chơi với những vật nhõ, vừa tay vì trẻ có thể nuốt hay sặc vào đường thở hoặc nhét dị vật vào các hốc của cơ thể gây tai nạn nguy hiểm.",
+      "verdict": "ĐÚNG",
+      "generated": "Claim là đúng vì trẻ nhỏ có xu hướng nhét vật nhỏ vào mũi hoặc miệng, gây nguy hiểm như tắc đường thở, tổn thương niêm mạc hoặc ăn mòn. Ví dụ ở bệnh viện Nhi đồng 1, bé 3 tuổi đã nhét pin điện tử vào mũi, dẫn đến hoại tử niêm mạc và cần can thiệp khẩn cấp. Do đó, cần giám sát trẻ cẩn thận, tránh để trẻ tiếp xúc với vật nhỏ, đặc biệt là pin điện tử.",
+      "reference": "cho biết ở độ tuổi khám phá thế giới xung quanh, trẻ nhỏ có thể nuốt hay sặc vào đường thở hoặc nhét bất cứ dị vật nào vào các hốc tự nhiên của cơ thể biến chứng nguy hiểm và chuyện đáng tiếc nhất đã xảy ra hãy trông trẻ cẩn thận, tránh để trẻ chơi với những vật nhỏ, gọn vừa tầm tay",
+      "claim_id": "vifactcheck_18265759"
+    },
+    {
+      "claim": "Những thói quen ăn uống ảnh hưởng đến sự cân bằng hệ vi khuẩn đường ruột, khiến khoảng 10 triệu dân gặp vấn đề sức khỏe đường tiêu hóa theo thông tin của Viện Dinh dưỡng quốc gia.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng thói quen ăn uống ảnh hưởng đến hệ vi khuẩn đường ruột và gây ra vấn đề tiêu hóa ở 10 triệu người. Tuy nhiên, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là do thông tin không nêu rõ mối liên hệ cụ thể giữa thói quen ăn uống và sự mất cân bằng vi khuẩn, cũng như không có dữ liệu thống kê chính xác về 10 triệu người bị ảnh hưởng. Ngoài ra, bài viết còn quảng bá sản phẩm men vi sinh, có thể gây hiểu lầm về hiệu quả và tính khách quan của thông tin.",
+      "reference": "Theo Viện Dinh dưỡng Quốc gia, khoảng 10 triệu người dân gặp vấn đề sức khỏe đường tiêu hóa Những thói quen ăn uống ảnh hưởng đến sự cân bằng hệ vi khuẩn đường ruột",
+      "claim_id": "vifactcheck_18776258"
+    },
+    {
+      "claim": "Bộ Y tế sẽ thực hiện những biện pháp cụ thể nào để tăng tỷ lệ tiêm chủng và thúc đẩy các chiến dịch giáo dục sức khỏe phòng chống dịch bệnh lây lan.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Bộ Y tế tỉnh Long An đã đưa ra nhiều biện pháp như tăng cường giám sát dịch bệnh, tiêm chủng cho trẻ em và phụ nữ có thai, đào tạo cán bộ y tế, và triển khai hệ thống báo cáo điện tử. Tuy nhiên, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là do thông tin chỉ đề cập đến các hoạt động của tỉnh Long An, không thể xác định được các biện pháp cụ thể mà Bộ Y tế trung ương sẽ thực hiện trên toàn quốc để tăng tỷ lệ tiêm chủng và giáo dục sức khỏe.",
+      "reference": "Giám đốc Sở Y tế tỉnh tăng cường công tác phòng, chống dịch bệnh",
+      "claim_id": "vifactcheck_19031874"
+    },
+    {
+      "claim": "Cha mẹ nên ngồi kế bên quan sát khi con em sử dụng màu sáp vì có thể bé sẽ nhét màu vào lỗ mũi.",
+      "verdict": "ĐÚNG",
+      "generated": "Claim cho rằng cha mẹ nên ngồi kế bên quan sát khi con em sử dụng màu sáp vì bé có thể nhét vào lỗ mũi là **đúng**. Lý do là vì trẻ nhỏ hay tò mò, dễ nhét vật nhỏ vào mũi hoặc miệng, gây nguy hiểm như tắc nghẽn, ăn mòn niêm mạc, thậm chí đe dọa tính mạng. Ví dụ như trường hợp bé 3 tuổi nhét pin điện tử vào mũi, gây hoại tử mô và cần can thiệp y tế khẩn cấp. Do đó, cha mẹ cần giám sát để phòng tránh tai nạn.",
+      "reference": "Do đó, bác sĩ Trung khuyến cáo hãy trông trẻ cẩn thận, tránh để trẻ chơi với những vật nhỏ, gọn vừa tầm tay. Đặc biệt không nên cho trẻ chơi những đồ chơi sử dụng pin điện tử dạng cúc áo.",
+      "claim_id": "vifactcheck_18199706"
+    },
+    {
+      "claim": "Ông H nhanh chóng được truyền máu, thở ô xy, lập hai đường truyền thuốc và máu, sau đó được phẫu thuật cấp cứu.",
+      "verdict": "ĐÚNG",
+      "generated": "Claim nói rằng ông H được truyền máu, thở ô xy, lập hai đường truyền thuốc và máu, sau đó được phẫu thuật cấp cứu – điều này đúng. Vì trong thông tin được cung cấp, rõ ràng ghi nhận ông H đã được truyền máu, thở ô xy, đặt đường truyền thuốc và được phẫu thuật ngay lập tức. Các bác sĩ đã tiến hành phẫu thuật nối tay bị đứt lìa trong tình trạng cấp cứu. Do đó, kết luận \"ĐÚNG\" là phù hợp với diễn biến y tế thực tế.",
+      "reference": "Tiếp theo, ông H được phẫu thuật cấp cứu Ông H nhanh chóng được truyền máu, thở ô xy, lập hai đường truyền thuốc và truyền máu,",
+      "claim_id": "vifactcheck_18774207"
+    },
+    {
+      "claim": "Tiến sĩ Madesh Muniswamy 50 tuổi, bác sĩ tim mạch tại Trung tâm Khoa học Y tế Đại học Texas, người dẫn đầu nghiên cứu nói rằng bước tiếp theo là tiến hành một số dược động học trước khi nghiên cứu thí điểm trên người.",
+      "verdict": "SAI",
+      "generated": "Claim nói rằng Tiến sĩ Muniswamy đề cập đến việc tiến hành dược động học trước khi thử nghiệm trên người, nhưng Verdict là \"SAI\". Thực tế, trong bài viết, Tiến sĩ Muniswamy chính là người nói rằng họ đang chuẩn bị tiến hành dược động học trước khi thử nghiệm trên người. Do đó, Claim là đúng, nhưng Verdict ghi là \"SAI\", nên kết luận là sai.",
+      "reference": "Người dẫn đầu nghiên cứu, tiến sĩ Madesh Muniswamy, bác sĩ tim mạch tại Trung tâm Khoa học Y tế Đại học Texas, nói rằng: Bước tiếp theo của chúng tôi là tiến hành một số dược động học trước khi nghiên cứu thí điểm trên người.",
+      "claim_id": "vifactcheck_19442448"
+    },
+    {
+      "claim": "Tình trạng của bà cụ nguy hiểm đến tính mạng vì bà có khối u ở thận phải kèm với lý nền.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng tình trạng của bà cụ nguy hiểm đến tính mạng vì có khối u thận kèm theo bệnh lý nền. Tuy nhiên, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là đúng vì bài viết chỉ mô tả một trường hợp cụ thể được điều trị thành công, không chứng minh rằng tất cả trường hợp có khối u thận kèm bệnh lý nền đều nguy hiểm đến tính mạng. Thông tin đưa ra không đủ để khẳng định mức độ nguy hiểm chung cho mọi trường hợp. Do đó, cần thêm bằng chứng tổng quát hơn để xác định tính nguy hiểm của tình trạng này.",
+      "reference": "người bệnh có khối bướu thận phải kèm theo bệnh lý nền Tình trạng này có nguy cơ đe dọa nghiêm trọng tới sức khỏe và tính mạng",
+      "claim_id": "vifactcheck_18604655"
+    },
+    {
+      "claim": "Các em học sinh và các giáo viên khác đều mừng rỡ khi thấy thầy giáo quay trở lại lớp học.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng \"các em học sinh và các giáo viên khác đều mừng rỡ khi thấy thầy giáo quay trở lại lớp học\", nhưng kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\". Lý do là vì thông tin chỉ đề cập đến sự kiện một thầy giáo bị ngừng tim và được cứu sống, sau đó trở lại lớp học, nhưng không có bằng chứng nào cho thấy \"các em học sinh và các giáo viên khác đều mừng rỡ\". Chỉ có một sự kiện cụ thể được mô tả, không phải là tình huống chung hoặc phổ biến. Do đó, không thể khẳng định claim là đúng dựa trên bằng chứng hiện có.",
+      "reference": "Các em học sinh đã bật khóc và vỗ tay reo mừng khi vừa nhìn thấy thầy giáo bị ngừng tim vào 7 tháng trước, bất ngờ bước vào lớp học",
+      "claim_id": "vifactcheck_18854146"
+    },
+    {
+      "claim": "Ngày 30.3, Bệnh viện Nhi đồng 1(TP.HCM) vừa ghi nhận 1 ca hoại tử mũi do nhét pin điện tử vào lỗ mũi.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin cho thấy một bé 3 tuổi đã nhét pin điện tử vào mũi, gây hoại tử niêm mạc do ăn mòn. Tuy nhiên, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là do không có tài liệu chính thức hay báo cáo y tế công khai xác nhận vụ việc xảy ra vào ngày 30.3. Thông tin được đưa ra là từ một bài báo, không phải kết luận của cơ quan y tế chính thức. Do đó, chưa đủ bằng chứng để xác nhận sự việc như trong claim.",
+      "reference": "Ngày 30.3, tin từ Bệnh viện Nhi đồng 1 (TP.HCM) cho biết, bệnh viện vừa tiếp nhận bé gái 3 tuổi (ngụ Long An) do nhét pin điện tử vào mũi. pin đã ăn mòn làm hoại tử một phần niêm mạc vách ngăn, cuốn mũi dưới và sàn mũi nơi pin tiếp xúc.",
+      "claim_id": "vifactcheck_18199706"
+    },
+    {
+      "claim": "Sau chuyến đi dã ngoại của Trường Tiểu học Kim GIang, các em học sinh đã bị ngộ độc, trong đó có 73 trẻ vào viện, 14 trẻ đã được ra viện, hầu hết sức khỏe các em đều ổn định.",
+      "verdict": "ĐÚNG",
+      "generated": "Thông tin cho thấy sau chuyến dã ngoại, nhiều học sinh bị ngộ độc nhưng hiện tại sức khỏe các em đã ổn định và được ra viện. Các cơ sở y tế tiếp nhận và theo dõi tình hình, cho thấy số lượng trẻ vào viện giảm dần, phần lớn đã hồi phục. Do đó, kết luận \"ĐÚNG\" là phù hợp vì tình hình đã được kiểm soát và các em học sinh đang dần hồi phục.",
+      "reference": "Hầu hết các em học sinh bị ngộ độc sau khi đi dã ngoại của Trường Tiểu học Kim Giang đều đã ổn định sức khoẻ. Tiếp tục thông tin vụ hàng loạt học sinh trường Tiểu học Kim Giang bị ngộ độc sau khi đi dã ngoại, đã có 73 trẻ phải vào viện; trong đó có 14 cháu được ra viện",
+      "claim_id": "vifactcheck_18522478"
+    },
+    {
+      "claim": "Bộ đội Biên phòng Bình Phước và các đơn vị liên quan tổ chức trạm kiểm soát dọc đường biên chung với Campuchia, tại cửa khẩu Lạng Sơn phải tập trung cao lực lượng nhất.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin không đủ chứng vì không có bằng chứng cụ thể về việc Bộ đội Biên phòng Bình Phước tổ chức trạm kiểm soát tại cửa khẩu Lạng Sơn. Nội dung chỉ đề cập đến hoạt động kiểm soát dịch bệnh tại biên giới Bình Phước, không liên quan đến Lạng Sơn. Do đó, không thể xác nhận claim là đúng.",
+      "reference": "đường biên chung với Campuchia Bộ đội Biên phòng Bình Phước và các đơn vị liên quan trạm kiểm soát dọc biên giới",
+      "claim_id": "vifactcheck_18900383"
+    },
+    {
+      "claim": "Sau hơn 1 tháng theo dõi và điều trị, dù một phần niêm mạc và sàn mũi đã bị ăn mòn, các bác sĩ chưa thấy cấu trúc quan trọng nào bị hoại tử và cũng không có tai biến hay biến chứng nào nguy hiểm nhờ vào sự can thiệp khẩn trương của bác sĩ.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim cho rằng sau 1 tháng điều trị, không có cấu trúc quan trọng bị hoại tử và không có biến chứng nguy hiểm. Tuy nhiên, kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin chỉ đề cập đến tình trạng sau 1 tuần theo dõi, không có dữ liệu cụ thể sau 1 tháng. Ngoài ra, pin đã gây hoại tử một phần niêm mạc, cho thấy tổn thương vẫn tồn tại. Do đó, chưa đủ bằng chứng để khẳng định không có biến chứng nguy hiểm trong thời gian dài.",
+      "reference": "Nhờ khẩn trương can thiệp kịp thời 1 tuần theo dõi thấy pin đã ăn mòn làm hoại tử một phần niêm mạc vách ngăn, cuốn mũi dưới và sàn mũi nơi pin tiếp xúc",
+      "claim_id": "vifactcheck_18265759"
+    },
+    {
+      "claim": "Tạp chí báo cáo các trường hợp y khoa là Medical Mycology Case Reports và quá trình lâm sàng của ca bệnh phải được thể hiện rõ ràng cho tất cả người đọc.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng tạp chí Medical Mycology Case Reports phải thể hiện rõ quá trình lâm sàng của ca bệnh. Tuy báo cáo có mô tả chi tiết về triệu chứng, chẩn đoán, điều trị và kết quả, nhưng không có phần trình bày rõ ràng và hệ thống quá trình lâm sàng theo tiêu chuẩn y khoa. Do đó, kết luận là \"không đủ bằng chứng\" vì thiếu sự minh bạch và đầy đủ trong việc ghi nhận quá trình điều trị và theo dõi bệnh nhân.",
+      "reference": "Trường hợp này đã được nêu trên tạp chí báo cáo các trường hợp y khoa Medical Mycology Case Reports.",
+      "claim_id": "vifactcheck_18323468"
+    },
+    {
+      "claim": "Khoa Di truyền y học của bệnh viện đã đóng vai trò tiên phong trong việc áp dụng xét nghiệm PCR để xác định thai phụ có mắc COVID-19 hay không trong bối cảnh đại dịch, phương pháp xét nghiệm này đã mang lại lợi ích quan trọng cho việc đánh giá tình trạng sức khỏe của thai phụ, giúp đưa ra các quyết định về điều trị và quản lý hiệu quả, đồng thời đảm bảo an toàn cho thai nhi và giảm nguy cơ lây nhiễm trong cộng đồng.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng Khoa Di truyền y học đã tiên phong áp dụng xét nghiệm PCR để xác định thai phụ nhiễm COVID-19, mang lại lợi ích cho sức khỏe thai phụ và thai nhi. Tuy nhiên, kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin trong Evidence chỉ đề cập đến việc khoa thực hiện xét nghiệm PCR cho thai phụ trong đại dịch, nhưng không chứng minh rõ vai trò tiên phong hay lợi ích cụ thể về đánh giá sức khỏe, điều trị hay an toàn cho thai nhi. Ngoài ra, nội dung chủ yếu nói về xét nghiệm di truyền và chứng nhận ISO, không tập trung vào hiệu quả của xét nghiệm PCR trong quản lý thai phụ nhiễm COVID-19.",
+      "reference": "trong dịch COVID-19, Khoa Di truyền y học của bệnh viện là đơn vị sản đầu tiên thực hiện xét nghiệm PCR để xác định thai phụ nhiễm COVID-19.",
+      "claim_id": "vifactcheck_19488283"
+    },
+    {
+      "claim": "Lợi khuẩn (probiotics) là những vi khuẩn - vi sinh vật có lợi cho đường ruột, chúng ta cần bổ sung chúng vào chế độ ăn nhằm cân bằng hệ vi khuẩn đường ruột để cải thiện sức khỏe.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin về lợi khuẩn (probiotics) có thể hỗ trợ cân bằng hệ vi sinh đường ruột, nhưng kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" vì tài liệu không cung cấp đủ bằng chứng khoa học cụ thể về hiệu quả của probiotics trong việc cải thiện sức khỏe tổng thể. Thay vào đó, tài liệu nhấn mạnh vai trò của chất xơ, dinh dưỡng và lối sống lành mạnh trong việc duy trì hệ tiêu hóa khỏe mạnh. Do đó, chưa đủ cơ sở để khẳng định probiotics là yếu tố thiết yếu trong việc cải thiện sức khỏe.",
+      "reference": "Lợi khuẩn (probiotics) trong cơ thể chúng ta là những vi khuẩn - vi sinh vật sống có lợi cho sức khỏe vật chủ. Lợi khuẩn Probiotic là một loại lợi khuẩn thuộc nhóm các vi khuẩn sống và là những vi sinh vật sống, chủ yếu đây là vi khuẩn, tương tự các vi sinh vật có lợi tự nhiên được tìm thấy trong ruột. Chúng còn được gọi là \"vi khuẩn thân thiện\" hay \"vi khuẩn có lợi\" (vi khuẩn có lợi cho con người), những vi khuẩn này được bổ sung vào chế độ ăn nhằm cân bằng hệ vi khuẩn đường ruột để cải thiện sức khỏe.",
+      "claim_id": "vifactcheck_18569515"
+    },
+    {
+      "claim": "Bệnh viện Chợ Rẫy trước Nghị quyết 30 và Nghị định 7 có 5 máy CT hư hỏng trong đó có 2 máy của hãng Toshiba.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin về 5 máy CT hư hỏng tại Bệnh viện Chợ Rẫy trước Nghị quyết 30 và Nghị định 07 không được chứng minh rõ ràng trong bài viết. Bài báo chỉ đề cập đến tình trạng thiếu thiết bị y tế và việc sửa chữa máy CT sau khi có chính sách mới, nhưng không nêu cụ thể số lượng máy hư hỏng hay hãng sản xuất. Do đó, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" là phù hợp.",
+      "reference": "Trước khi có Nghị quyết 30 và Nghị định 07, Bệnh viện Chợ Rẫy chỉ còn 1 máy CT, 5 máy hư hỏng mà không thể sửa chữa.",
+      "claim_id": "vifactcheck_18833054"
+    },
+    {
+      "claim": "Bệnh nhân có tiền sử phẫu thuật vùng bụng trước đó và nhờ có sự phối hợp nhanh chóng, hiệu quả của các chuyên khoa nên nhiều ca mổ đã thành công.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng bệnh nhân sống sót nhờ sự phối hợp nhanh chóng của các chuyên khoa. Tuy nhiên, kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì bài viết không cung cấp đủ thông tin để xác định rõ vai trò cụ thể của sự phối hợp chuyên khoa trong việc cứu sống bệnh nhân. Thay vào đó, thông tin nhấn mạnh vào sự may mắn và các yếu tố ngẫu nhiên như vết thương cơ hoành giúp giảm chèn ép tim. Do đó, không thể khẳng định chắc chắn rằng sự phối hợp chuyên khoa là yếu tố chính dẫn đến thành công.",
+      "reference": "nhờ có sự phối hợp nhanh chóng, hiệu quả của các chuyên khoa nên nhiều ca mổ đã thành công",
+      "claim_id": "vifactcheck_19732291"
+    },
+    {
+      "claim": "Bác sĩ Nguyễn Minh Trung, trưởng khoa Tai Mũi Họng của bệnh viện Nhi Đồng 1 cho biết ở độ tuổi tò mò về thế giới xung quanh, trẻ nhỏ có thể nuốt hay sặc đường thở cũng như nhét các dị vật vào các hốc của cơ thể.",
+      "verdict": "ĐÚNG",
+      "generated": "Claim nói rằng trẻ nhỏ có thể nuốt hoặc nhét dị vật vào cơ thể là đúng. Lý do là vì có trường hợp bé 3 tuổi nhét pin điện tử vào mũi, gây hoại tử niêm mạc và cần can thiệp y tế khẩn cấp. Bác sĩ Nguyễn Minh Trung cũng nhấn mạnh nguy cơ này ở trẻ nhỏ, do đó kết luận \"ĐÚNG\" là phù hợp.",
+      "reference": "Bác sĩ Nguyễn Minh Trung, Bệnh viện Nhi đồng 1, cho biết ở độ tuổi khám phá thế giới xung quanh, trẻ nhỏ có thể nuốt hay sặc vào đường thở hoặc nhét bất cứ dị vật nào vào các hốc tự nhiên của cơ thể.",
+      "claim_id": "vifactcheck_18195555"
+    },
+    {
+      "claim": "Để chủ động phòng chống dịch cúm gia cầm lây sang người trước tình hình dịch cúm A (H5N1) trên gia cầm đã lây sang người gây tử vong tại Campuchia, cần phải tuyên truyền sâu rộng đến người dân nắm bắt được thông tin, phòng tránh và xử lý kịp thời không để dịch bệnh lây sang người.",
+      "verdict": "SAI",
+      "generated": "Claim là sai vì nội dung trong Verdict không phủ nhận mà ngược lại khẳng định việc tuyên truyền và phòng chống dịch cúm gia cầm lây sang người là cần thiết và đang được triển khai cụ thể. Các biện pháp như tuyên truyền, giám sát, kiểm tra, xử lý ổ dịch, và phối hợp giữa các ngành đều được nêu rõ trong Evidence, cho thấy việc chủ động phòng chống dịch là đúng đắn và đang được thực hiện. Do đó, kết luận \"SAI\" không phù hợp với nội dung thực tế.",
+      "reference": "Trước tình hình dịch cúm A (H5N1) trên gia cầm đã lây sang người gây tử vong tại Campuchia, để chủ động phòng chống dịch cúm gia cầm lây sang người, cần phải tuyên truyền sâu rộng đến người dân nắm bắt được thông tin, phòng tránh và xử lý kịp thời không để dịch bệnh lây sang người.",
+      "claim_id": "vifactcheck_19434752"
+    },
+    {
+      "claim": "Tổng thời gian điều trị là 112 ngày (2 đợt) từ ngày 1-2 đến ngày 2-6 với tổng chi phí 380 triệu đồng (bảo hiểm trả 240 triệu đồng).",
+      "verdict": "SAI",
+      "generated": "Thông tin nói rằng bệnh nhân được điều trị trong 112 ngày với 2 đợt điều trị là sai. Bài báo chỉ đề cập đến tổng thời gian điều trị là 112 ngày, không phân chia thành 2 đợt. Ngoài ra, chi phí 380 triệu đồng và bảo hiểm chi trả 240 triệu đồng cũng không được xác minh rõ ràng. Do đó, kết luận \"SAI\" là phù hợp vì thông tin không chính xác và thiếu bằng chứng cụ thể.",
+      "reference": "Tổng thời gian điều trị là 112 ngày (2 đợt) với tổng chi phí 380 triệu đồng (bảo hiểm trả 240 triệu đồng).",
+      "claim_id": "vifactcheck_19623871"
+    },
+    {
+      "claim": "BS Hải mới từ BV Hữu nghị Việt Đức (Hà Nội) về công tác được mấy năm, Do vậy, khi anh đề xuất phương án chữa trị không ít người nghi ngại.",
+      "verdict": "SAI",
+      "generated": "Claim nói BS Hải mới về công tác được mấy năm, nhưng trong bài viết, BS Hải đã công tác tại BVĐK Như Xuân từ tháng 6/2021, tức là hơn 3 năm, không phải mới về được mấy tháng. Do đó, kết luận \"SAI\" là đúng.",
+      "reference": "BS Hải mới từ BV Hữu nghị Việt Đức (Hà Nội) về công tác được mấy tháng. Do vậy, khi anh đề xuất phương án không ít người nghi ngại.",
+      "claim_id": "vifactcheck_19088868"
+    },
+    {
+      "claim": "Bệnh viện Nhi đồng 1 đã tiếp nhận một bệnh nhi nhét pin điện tử vào mũi, sau khi kiểm tra cho thấy pin đã ăn mòn toàn bộ niêm mạc vách ngăn, cuốn mũi dưới và sàn mũi nơi pin tiếp xúc.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin đưa ra mô tả tình trạng bệnh nhi nhét pin vào mũi và hậu quả do pin gây ra, nhưng không cung cấp bằng chứng cụ thể về việc pin đã \"ăn mòn toàn bộ niêm mạc vách ngăn, cuốn mũi dưới và sàn mũi\". Chỉ có kết quả là \"hoại tử một phần niêm mạc\". Do đó, kết luận \"KHÔNG ĐỦ BẰNG CHỨNG\" vì không đủ dữ liệu chứng minh mức độ tổn thương như trong claim.",
+      "reference": "Bệnh viện Nhi đồng 1 vừa tiếp nhận một bệnh nhi nhét pin điện tử vào mũi Kết quả kiểm tra cho thấy pin đã ăn mòn làm hoại tử một phần niêm mạc vách ngăn, cuốn mũi dưới và sàn mũi nơi pin tiếp xúc",
+      "claim_id": "vifactcheck_18195555"
+    },
+    {
+      "claim": "WHO đang làm việc với các nhà nước chức trách và nhà sản xuất để nghiên cứu vaccine nhưng hiện nay vẫn chưa có thuốc trên thị trường.",
+      "verdict": "ĐÚNG",
+      "generated": "WHO xác nhận hiện chưa có vaccine hay thuốc chữa bệnh Marburg được cấp phép sử dụng. Tổ chức này đang hợp tác với các nước và nhà sản xuất để nghiên cứu và thử nghiệm vaccine. Điều này phù hợp với thông tin được đưa ra, do bệnh có tỷ lệ tử vong cao và chưa có phương pháp điều trị hiệu quả. Vì vậy, kết luận \"ĐÚNG\" là phù hợp.",
+      "reference": "Hiện chưa có vaccine phòng hay thuốc chữa được cấp phép sử dụng với bệnh này. WHO cho biết đang làm việc với các nhà chức trách và các nhà sản xuất vaccine để tiến hành thử nghiệm lâm sàng",
+      "claim_id": "vifactcheck_18605258"
+    },
+    {
+      "claim": "Vitamin và khoáng chất có vai trò xúc tác các phản ứng lí hóa diễn ra bên trong cơ thể, góp phần hình thành nên các tế bào ngăn chặn sự xâm nhập có hại từ bên ngoài.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng vitamin và khoáng chất có vai trò xúc tác các phản ứng lí hóa trong cơ thể và giúp hình thành tế bào ngăn chặn độc hại. Tuy nhiên, kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin trong Evidence tập trung vào vai trò của chất xơ, chất béo tốt, và hệ vi sinh đường ruột, chứ không đủ chứng minh rõ ràng vai trò xúc tác của vitamin và khoáng chất trong các phản ứng sinh hóa hay trong việc hình thành tế bào. Do đó, cần thêm bằng chứng cụ thể để xác nhận claim.",
+      "reference": "Vitamin và khoáng chất có vai trò như là chất xúc tác giúp biến đổi thức ăn thành năng lượng. Đồng thời, chúng có khả năng giúp các tế bào nhung mao, niêm mạc đường tiêu hóa chống lại sự tấn công của các tác nhân nhiễm trùng nhờ khả năng chống lại quá trình oxy hóa, sửa chữa cấu trúc bị tổn thương",
+      "claim_id": "vifactcheck_18569515"
+    },
+    {
+      "claim": "Dương vật có thể bị gãy do sở thích bẻ dương vật, chơi thể thao và tỷ lệ dương vật bị gãy cao gấp 3 lần trong những năm gần đây.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng dương vật có thể bị gãy do sở thích bẻ, chơi thể thao và tỷ lệ gãy tăng 3 lần gần đây, nhưng kết luận là \"không đủ bằng chứng\". Điều này vì các bằng chứng chỉ cho thấy gãy dương vật có thể xảy ra do quan hệ sai tư thế, tai nạn trong sinh hoạt, hoặc tác động mạnh, nhưng không có dữ liệu thống kê nào chứng minh tỷ lệ tăng 3 lần. Ngoài ra, các trường hợp được nêu là cá biệt, không đủ để xác định xu hướng chung. Do đó, không thể khẳng định claim có cơ sở y khoa vững chắc.",
+      "reference": "có sở thích bẻ dương vật đang cương cứng bị gãy dương vật khi đang chơi thể thao",
+      "claim_id": "vifactcheck_18605106"
+    },
+    {
+      "claim": "Sau khi nghe bác sĩ nước ngoài tư vấn, cô quyết định điều chỉnh lại chế độ dinh dưỡng, ăn uống, luyện tập và sử dụng kết hợp thuốc tây y với Thực phẩm bảo vệ sức khỏe Diabetna.",
+      "verdict": "SAI",
+      "generated": "Kết luận \"SAI\" vì thông tin không cung cấp bằng chứng khoa học rõ ràng về hiệu quả của sản phẩm Diabetna trong việc điều trị tiểu đường. Các kết quả sức khỏe của cô Hạnh có thể do thay đổi chế độ ăn, luyện tập và điều trị y tế đúng cách, chứ không chỉ nhờ sản phẩm này. Sản phẩm chỉ là thực phẩm bảo vệ sức khỏe, không thể thay thế thuốc chữa bệnh.",
+      "reference": "cô quyết định điều chỉnh lại chế độ ăn uống, luyện tập và sử dụng kết hợp thuốc tây y với Thực phẩm bảo vệ sức khỏe (TPBVSK) Diabetna cô được nghe bác sĩ tư vấn về dinh dưỡng luyện tập và khuyên nên dùng Đông Tây y kết hợp trong điều trị, trong đó tiêu biểu là sản phẩm Diabetna.",
+      "claim_id": "vifactcheck_19655115"
+    },
+    {
+      "claim": "Bệnh nhân nam bị gãy \"của quý\" được phẩu thuật cầm máu nhưng chưa làm tạo hình dây hãm.",
+      "verdict": "SAI",
+      "generated": "Claim nói bệnh nhân bị gãy \"của quý\" chỉ được phẫu thuật cầm máu mà không tạo hình dây hãm, nhưng kết luận là sai. Lý do là vì khi dây hãm bị đứt, việc tạo hình dây hãm là cần thiết để phục hồi chức năng, tránh biến dạng và đảm bảo khả năng sinh lý. Các bác sĩ đã tiến hành tạo hình dây hãm trong phẫu thuật, như được nêu trong thông tin. Do đó, claim không đúng.",
+      "reference": "nam bệnh nhân bị vỡ vật hang Với nam bệnh nhân nói trên, các bác sĩ phẫu thuật cầm máu vết rách, khâu và tạo hình dây phanh hãm",
+      "claim_id": "vifactcheck_18605106"
+    },
+    {
+      "claim": "Đây là trường hợp tổn thương đặc biệt nghiêm trọng do tai nạn nhưng theo y văn, những trường hợp tương tự vẫn có khả năng cứu sống cao.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim cho rằng trường hợp tai nạn của ông Minh H. là tổn thương đặc biệt nghiêm trọng nhưng vẫn có khả năng cứu sống cao theo y văn. Tuy nhiên, Verdict là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì trong y văn, các trường hợp tương tự thường có tỷ lệ sống rất thấp, không phải cao. Trong khi đó, thông tin cung cấp chỉ mô tả tình trạng nguy kịch và quá trình điều trị, nhưng không có bằng chứng khoa học hoặc tài liệu y văn cụ thể chứng minh rằng trường hợp này thuộc nhóm có khả năng cứu sống cao. Do đó, không đủ cơ sở để khẳng định claim.",
+      "reference": "Đây là trường hợp tổn thương đặc biệt nghiêm trọng do tai nạn Theo y văn, những trường hợp tương tự khả năng cứu sống rất mong manh”.",
+      "claim_id": "vifactcheck_18855523"
+    },
+    {
+      "claim": "Hồng và Tuấn quen nhau ở buổi gặp phỏng vấn thực tập, ban đầu là bạn sau dần thành người yêu rồi cưới nhau sau khi cả hai đều lấy được bằng tốt nghiệp.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng Hồng và Tuấn quen nhau ở buổi phỏng vấn thực tập, sau đó trở thành người yêu rồi kết hôn sau khi lấy bằng tốt nghiệp. Tuy nhiên, kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì trong văn bản không có thông tin cụ thể về buổi phỏng vấn thực tập mà chỉ nói họ quen nhau khi đăng ký học chung khoá dạy lái xe. Ngoài ra, không có bằng chứng xác thực về việc họ quen nhau ở buổi phỏng vấn thực tập như Claim nói. Do đó, thông tin trong Claim không được chứng minh từ nội dung văn bản.",
+      "reference": "Hồng quen Tuấn khi cả hai đăng ký học chung một khoá dạy lái xe ô tô, sau mấy tuần học lái thì Hồng và Tuấn đã trở thành đôi bạn khá thân thiết. Khi thi lấy bằng lái, Hồng run lắm, căng thẳng đến toát mồ hôi. Tuấn đã luôn bên cạnh động viên cô và khi Hồng thi trượt, Tuấn lại trở thành \"thày giáo\" kèm cặp tay lái cho Hồng để thi lại lần thứ hai. Hơn nửa năm sau ngày Hồng nhận bằng lái, đám cưới của cô và Tuấn diễn ra trang trọng, đầm ấm.",
+      "claim_id": "vifactcheck_18876642"
+    },
+    {
+      "claim": "Loài nấm được tìm thấy trên người bệnh nhân là nấm chondrostereum purpureum, một loại nấm gây ra bệnh bạc lá ở thực vật.",
+      "verdict": "ĐÚNG",
+      "generated": "Claim nói rằng loài nấm gây bệnh cho người là nấm chondrostereum purpureum, một loại nấm gây bệnh bạc lá ở cây trồng, là đúng. Lý do là vì báo cáo y khoa đã xác định loại nấm này là nguyên nhân gây nhiễm trùng ở bệnh nhân, dù nó thường gây bệnh cho cây. Nấm này lây lan qua không khí và có thể ảnh hưởng đến người khi tiếp xúc trực tiếp, như trường hợp của thợ săn nấm. Do đó, kết luận \"ĐÚNG\" là phù hợp.",
+      "reference": "Kết quả cho thấy đó là nấm chondrostereum purpureum. Loại nấm này gây ra bệnh bạc lá ở thực vật",
+      "claim_id": "vifactcheck_18323468"
+    },
+    {
+      "claim": "Sau hơn 5 tháng nằm viện, vết thương mỏm cụt của bệnh nhân đã được che phủ tốt nhưng các bác sĩ khuyên bệnh nhân ở lại viện 6 tháng nữa.",
+      "verdict": "ĐÚNG",
+      "generated": "Bệnh nhân đã qua giai đoạn cấp cứu và vết thương mỏm cụt đã được che phủ tốt, nhưng cần thời gian dài để hồi phục hoàn toàn. Các bác sĩ khuyên ở lại viện 6 tháng nữa để đảm bảo vết thương lành tốt, tránh biến chứng và cải thiện chất lượng cuộc sống. Điều này là đúng vì quá trình hồi phục sau chấn thương nặng, đặc biệt là sau phẫu thuật phức tạp, cần thời gian dài để cơ thể phục hồi hoàn toàn.",
+      "reference": "Sau hơn 5 tháng nằm viện vết thương vùng mỏm cụt đã được che phủ tốt",
+      "claim_id": "vifactcheck_18855523"
+    },
+    {
+      "claim": "Các sản phẩm Cerave trước khi lưu hành trên thị trường đều tuân thủ quy tắc 7 không nên mỹ phẩm Cerave đã và đang có mặt tại nhiều quốc gia trên thế giới, được ưa chuộng rộng rãi.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim cho rằng các sản phẩm Cerave tuân thủ quy tắc 7 không trước khi lưu hành. Tuy nhiên, kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì đoạn văn không cung cấp bằng chứng cụ thể, như tài liệu, báo cáo hay hình ảnh minh chứng cho việc các sản phẩm tuân thủ quy tắc 7 không. Thay vào đó, nội dung chỉ nhấn mạnh sự an toàn và lành tính của sản phẩm, nhưng không giải thích rõ ràng về quy tắc 7 không. Do đó, không đủ cơ sở để khẳng định claim một cách chắc chắn.",
+      "reference": "Mỹ phẩm Cerave đã và đang có mặt tại nhiều quốc gia trên thế giới, được ưa chuộng rộng rãi không chỉ bởi sự uy tín lâu năm của thương hiệu các sản phẩm Cerave trước khi lưu hành trên thị trường đều tuân thủ quy tắc 7 không:",
+      "claim_id": "vifactcheck_18750959"
+    },
+    {
+      "claim": "Ổ chứa tự nhiên là loài dơi ăn quả, bệnh có thể lây từ động vật sang người, từ người sang người, nguồn gốc của bệnh được phát hiện ở Trung Quốc.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Thông tin nói rằng \"ổ chứa tự nhiên là loài dơi ăn quả, bệnh có thể lây từ động vật sang người, từ người sang người, nguồn gốc của bệnh được phát hiện ở Trung Quốc\" không đủ bằng chứng. Vì trong văn bản chỉ đề cập đến việc Bình Phước tăng cường giám sát dịch Marburg, không có thông tin cụ thể về nguồn gốc bệnh hay cách lây truyền từ động vật sang người. Do đó, kết luận này chưa được chứng minh rõ ràng.",
+      "reference": "Ổ chứa tự nhiên là loài dơi ăn quả. Bệnh có thể lây từ động vật sang người, từ người sang người",
+      "claim_id": "vifactcheck_18900383"
+    },
+    {
+      "claim": "Lễ tôn vinh nữ trí thức tiêu biểu ngành y giai đoạn 2019-2022 do Bộ Y tế phối hợp với Hội Nữ Trí thức Việt Nam, Công đoàn Y tế Việt Nam tổ chức sáng 2-3.",
+      "verdict": "ĐÚNG",
+      "generated": "Claim nói rằng lễ tôn vinh nữ trí thức tiêu biểu ngành y giai đoạn 2019-2022 do Bộ Y tế phối hợp tổ chức là đúng. Lý do là vì thông tin trong Evidence xác nhận sự kiện này đã diễn ra vào sáng 2-3, do Bộ Y tế cùng Hội Nữ Trí thức Việt Nam và Công đoàn Y tế Việt Nam tổ chức. Điều này phù hợp với nội dung trong báo chí, khẳng định tính chính xác của Claim.",
+      "reference": "Sáng 2-3, Bộ Y tế phối hợp với Hội Nữ Trí thức Việt Nam, Công đoàn Y tế Việt Nam tổ chức lễ tôn vinh nữ trí thức tiêu biểu ngành y giai đoạn 2019-2022",
+      "claim_id": "vifactcheck_19624207"
+    },
+    {
+      "claim": "Đường ruột có khoảng 100 nghìn tỷ vi sinh vật (đa phần là vi khuẩn) bao gồm cả lợi khuẩn và hại khuẩn, chúng luôn giữ mức cân bằng nhầm tránh những tác hại không đáng có với cơ thể vật chủ.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng đường ruột có khoảng 100 nghìn tỷ vi sinh vật và chúng giữ cân bằng để tránh hại cho cơ thể. Tuy nhiên, kết luận là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì thông tin trong Evidence chủ yếu tập trung vào cách chăm sóc hệ tiêu hóa, bổ sung chất xơ, vitamin, probiotic, chứ không cung cấp bằng chứng cụ thể về số lượng vi sinh vật trong đường ruột hay cơ chế cân bằng của chúng. Những nội dung này mang tính hướng dẫn chăm sóc sức khỏe, chứ không chứng minh được claim.",
+      "reference": "đường ruột có khoảng 100 nghìn tỷ vi sinh vật (đa phần là vi khuẩn) còn gọi là hệ vi sinh đường ruột, trong đó có 85% là lợi khuẩn và 15% là hại khuẩn. Nếu sự cân bằng này mất đi, tỷ lệ hại khuẩn gia tăng thì hệ miễn dịch của con người suy yếu, giảm sức đề kháng và dễ mắc bệnh",
+      "claim_id": "vifactcheck_18569515"
+    },
+    {
+      "claim": "Haloperidol là một loại thuốc gây ngộ độc khi dùng quá liều, đặc biệt là đối với người lớn, nên thuốc được gia đình cất kỹ trong tủ của gia đình.",
+      "verdict": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "generated": "Claim nói rằng Haloperidol gây ngộ độc khi dùng quá liều và cần cất kỹ, tuy nhiên verdict là \"KHÔNG ĐỦ BẰNG CHỨNG\" vì chỉ có một trường hợp cụ thể về trẻ em uống nhầm thuốc, không đủ để khẳng định thuốc này nguy hiểm đối với người lớn hay cần cất kỹ phổ biến. Trong khi đó, Haloperidol là thuốc được dùng phổ biến và có thể an toàn nếu dùng đúng liều. Do đó, cần thêm bằng chứng để kết luận về mức độ nguy hiểm và cách cất giữ thuốc.",
+      "reference": "Thuốc điều trị bệnh tâm thần phân liệt này là của bố và thường được cất trong tủ của gia đình. Thuốc mà cháu T. uống nhầm có tên là Haloperidol. Đây là một loại thuốc an thần kinh, dùng quá liều có thể gây ngộ độc với các triệu chứng loạn thần, đặc biệt có thể gây tử vong đối với trẻ em.",
+      "claim_id": "vifactcheck_18405130"
+    },
+    {
+      "claim": "Chanh chứa nhiều vitamin D, uống nước chanh nóng có thể giúp giảm nghẹt mũi hoặc làm dịu cơn đau họng.",
+      "verdict": "SAI",
+      "generated": "Claim sai vì chanh không chứa nhiều vitamin D mà chứa vitamin C. Nước chanh nóng có thể giúp giảm nghẹt mũi và dịu họng khi kết hợp với mật ong, nhưng không có bằng chứng rõ ràng cho hiệu quả này. Các nghiên cứu chỉ khẳng định vitamin C hỗ trợ hệ miễn dịch, không phải là thuốc chữa trị. Do đó, kết luận \"chanh chứa nhiều vitamin D\" là sai.",
+      "reference": "Uống nước chanh nóng có thể giúp giảm nghẹt mũi hoặc làm dịu cơn đau họng. Chanh chứa nhiều vitamin C.",
+      "claim_id": "vifactcheck_19448851"
+    },
+    {
+      "claim": "4 bệnh nhân trong các chùm ca bệnh ngộ độc botulinum vì ăn cá chép muối ủ chua đang được xem xét cho xuất viện sau nhiều ngày điều trị.",
+      "verdict": "ĐÚNG",
+      "generated": "Thông tin cho thấy 4 bệnh nhân ngộ độc botulinum do ăn cá chép muối ủ chua đã hồi phục tốt, được xem xét xuất viện sau nhiều ngày điều trị. Các bệnh nhân từng thở máy nay đã cai máy, sức khỏe ổn định. Thuốc giải độc đã được sử dụng và bệnh viện miễn phí cho người dân khó khăn. Vì vậy, kết luận là đúng, vì tình hình sức khỏe bệnh nhân cải thiện rõ ràng, phù hợp với tiến triển điều trị của ngộ độc botulinum.",
+      "reference": "Sau nhiều ngày điều trị, 4 bệnh nhân trong các chùm ca bệnh ngộ độc botulinum vì ăn cá chép muối ủ chua đang được xem xét cho xuất viện.",
+      "claim_id": "vifactcheck_18857757"
+    }
+  ]
+}

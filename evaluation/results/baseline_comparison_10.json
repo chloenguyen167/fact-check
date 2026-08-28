@@ -1,0 +1,453 @@
+{
+  "summary": {
+    "llm_only": {
+      "method_label": "LLM-only",
+      "accuracy": 0.3,
+      "f1_macro": 0.21666666666666667,
+      "precision_macro": 0.42857142857142855,
+      "recall_macro": 0.2698412698412698,
+      "latency_mean_sec": 1.1423936917970423,
+      "num_samples": 10
+    },
+    "rag_llm": {
+      "method_label": "RAG + LLM",
+      "accuracy": 0.3,
+      "f1_macro": 0.25925925925925924,
+      "precision_macro": 0.4444444444444444,
+      "recall_macro": 0.20634920634920637,
+      "latency_mean_sec": 25.740716120705475,
+      "num_samples": 10
+    },
+    "rag_nli": {
+      "method_label": "RAG + NLI (đề xuất)",
+      "accuracy": 0.8,
+      "f1_macro": 0.5277777777777778,
+      "precision_macro": 0.5333333333333333,
+      "recall_macro": 0.5714285714285715,
+      "latency_mean_sec": 19.480686125095236,
+      "num_samples": 10
+    }
+  },
+  "methods": {
+    "llm_only": {
+      "accuracy": 0.3,
+      "precision_macro": 0.42857142857142855,
+      "recall_macro": 0.2698412698412698,
+      "f1_macro": 0.21666666666666667,
+      "classification_report": "                     precision    recall  f1-score   support\n\n               ĐÚNG       1.00      0.14      0.25         7\n                SAI       0.00      0.00      0.00         0\nKHÔNG ĐỦ BẰNG CHỨNG       0.29      0.67      0.40         3\n\n           accuracy                           0.30        10\n          macro avg       0.43      0.27      0.22        10\n       weighted avg       0.79      0.30      0.30        10\n",
+      "confusion_matrix": [
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "latency": {
+        "count": 10,
+        "mean_sec": 1.1423936917970423,
+        "p50_sec": 0.9172448125027586,
+        "p95_sec": 2.7558835396775945
+      },
+      "method": "llm_only",
+      "method_label": "LLM-only",
+      "num_samples": 10,
+      "details": [
+        {
+          "claim": "Tăng cường vận động giúp giảm đau do viêm cột sống dính khớp",
+          "label_gold": "ĐÚNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_357",
+          "latency_sec": 4.039588582993019,
+          "llm_raw": "Không đủ bằng chứng.",
+          "verdict_score": null,
+          "evidence_preview": ""
+        },
+        {
+          "claim": "Thực hành đúng tư thế khi đứng, ngồi có thể giúp giảm đau và tăng cường cơ lưng, nhưng không phải là biện pháp hiệu quả nhất để điều trị viêm cột sống dính khớp",
+          "label_gold": "ĐÚNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_357",
+          "latency_sec": 0.7104990829830058,
+          "llm_raw": "KHÔNG ĐỦ BẰNG CHỨNG.",
+          "verdict_score": null,
+          "evidence_preview": ""
+        },
+        {
+          "claim": "Ngăn ngừa căng thẳng mạn tính có thể giúp giảm viêm và cải thiện tình trạng bệnh viêm cột sống dính khớp, nhưng không phải là biện pháp thay thế cho các phương pháp điều trị y tế",
+          "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_357",
+          "latency_sec": 1.1869107089587487,
+          "llm_raw": "Không đòi bắt buộc chứng. Ngăn ngừa căng thẳng mạn tính có thể giúp giảm viêm và cải thiện tình trạng bệnh viêm c",
+          "verdict_score": null,
+          "evidence_preview": ""
+        },
+        {
+          "claim": "Emflaza được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_10010",
+          "latency_sec": 0.4944554590038024,
+          "llm_raw": "Không đủ bằng chứng.",
+          "verdict_score": null,
+          "evidence_preview": ""
+        },
+        {
+          "claim": "Emflaza có thể gây ra nhiều tác dụng phụ nghiêm trọng như hội chứng Cushing, tăng huyết áp và nguy cơ thủng đường tiêu hóa.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_10010",
+          "latency_sec": 1.1239905420225114,
+          "llm_raw": "Claim này không được hỗ trợ bởi tài liệu tham chiếu đáng tin cậy. Emflaza là thuốc điều trị bệnh tiểu đường loại 2,",
+          "verdict_score": null,
+          "evidence_preview": ""
+        },
+        {
+          "claim": "Emflaza chỉ được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên, không rõ liệu nó có hiệu quả trong trường hợp khác.",
+          "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "label_pred": "SAI",
+          "article_id": "skds_10010",
+          "latency_sec": 1.1769391249981709,
+          "llm_raw": "Claim này là SAI. Emflaza được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 6 tuổi trở lên",
+          "verdict_score": null,
+          "evidence_preview": ""
+        },
+        {
+          "claim": "Viêm da cơ và viêm đa cơ là nhóm bệnh tự miễn với tình trạng viêm, thoái hóa các sợi cơ vân gây yếu cơ làm giảm hoặc mất khả năng vận động.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_9233",
+          "latency_sec": 1.1844644999946468,
+          "llm_raw": "Claim này không được hỗ trợ bởi tài liệu y khoa. Viêm da cơ và viêm đa cơ không phải là nhóm bệnh tự miễn. Viêm",
+          "verdict_score": null,
+          "evidence_preview": ""
+        },
+        {
+          "claim": "Nguyên nhân chính xác của bệnh viêm da cơ và viêm đa cơ chưa được xác định rõ ràng.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "ĐÚNG",
+          "article_id": "skds_9233",
+          "latency_sec": 0.4122126249712892,
+          "llm_raw": "ĐÚNG",
+          "verdict_score": null,
+          "evidence_preview": ""
+        },
+        {
+          "claim": "Bệnh viêm da cơ và viêm đa cơ có liên quan đến tăng nguy cơ ác tính, nhưng không phải là nguyên nhân trực tiếp gây ra tình trạng này.",
+          "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_9233",
+          "latency_sec": 0.5419059170526452,
+          "llm_raw": "Không đủ bằng chứng.",
+          "verdict_score": null,
+          "evidence_preview": ""
+        },
+        {
+          "claim": "Nước chanh, cần tây, xô thơm, cỏ lúa mì, cây mê điệt, giấm táo, dầu bạc hà và rau xà lách đều có tác dụng loại bỏ mùi hôi nách.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "SAI",
+          "article_id": "skds_1650",
+          "latency_sec": 0.552970374992583,
+          "llm_raw": "Claim này là SAI.",
+          "verdict_score": null,
+          "evidence_preview": ""
+        }
+      ]
+    },
+    "rag_llm": {
+      "accuracy": 0.3,
+      "precision_macro": 0.4444444444444444,
+      "recall_macro": 0.20634920634920637,
+      "f1_macro": 0.25925925925925924,
+      "classification_report": "                     precision    recall  f1-score   support\n\n               ĐÚNG       1.00      0.29      0.44         7\n                SAI       0.00      0.00      0.00         0\nKHÔNG ĐỦ BẰNG CHỨNG       0.33      0.33      0.33         3\n\n           accuracy                           0.30        10\n          macro avg       0.44      0.21      0.26        10\n       weighted avg       0.80      0.30      0.41        10\n",
+      "confusion_matrix": [
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "latency": {
+        "count": 10,
+        "mean_sec": 25.740716120705475,
+        "p50_sec": 24.116763645521132,
+        "p95_sec": 36.944525960469015
+      },
+      "method": "rag_llm",
+      "method_label": "RAG + LLM",
+      "num_samples": 10,
+      "details": [
+        {
+          "claim": "Tăng cường vận động giúp giảm đau do viêm cột sống dính khớp",
+          "label_gold": "ĐÚNG",
+          "label_pred": "ĐÚNG",
+          "article_id": "skds_357",
+          "latency_sec": 46.19705154199619,
+          "llm_raw": "Tôi phân loại claim \"Tăng cường vận động giúp giảm đau do viêm cột sống dính khớp\" thành ĐÚNG.\n\nBằng",
+          "verdict_score": null,
+          "evidence_preview": "SKĐS - Viêm cột sống dính khớp là hiện tượng viêm xảy ra ở mối nối giữa các đốt của cột sống lưng hay giữa cột sống và xương chậu, dẫn đến đau, cứng và bất động khớp. Các triệu chứng của viêm cột sống dính khớp có thể từ nhẹ đến nặng. Triệu chứng sớm nhất có thể thấy là các cơn đau tại vùng lưng, cộ"
+        },
+        {
+          "claim": "Thực hành đúng tư thế khi đứng, ngồi có thể giúp giảm đau và tăng cường cơ lưng, nhưng không phải là biện pháp hiệu quả nhất để điều trị viêm cột sống dính khớp",
+          "label_gold": "ĐÚNG",
+          "label_pred": "ĐÚNG",
+          "article_id": "skds_357",
+          "latency_sec": 24.03606250003213,
+          "llm_raw": "Tôi sẽ phân loại claim thành MỘT trong ba nhãn như sau:\n\n- Claim: \"Thực hành đúng tư thế khi đứng,",
+          "verdict_score": null,
+          "evidence_preview": "đau. Nhưng thực ra, h oạt động thể chất có thể giúp cải thiện tính linh hoạt của khớp , giảm đau và cứng do viêm cột sống dính khớp. Người b ệ nh không cần phải thực hiện các hoạt động tác động mạnh mà nên cân nhắc thêm một số hình thức hoạt động thể chất cường độ vừa phải như bơi lội, đi bộ, đạp xe"
+        },
+        {
+          "claim": "Ngăn ngừa căng thẳng mạn tính có thể giúp giảm viêm và cải thiện tình trạng bệnh viêm cột sống dính khớp, nhưng không phải là biện pháp thay thế cho các phương pháp điều trị y tế",
+          "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "label_pred": "SAI",
+          "article_id": "skds_357",
+          "latency_sec": 23.207560916955117,
+          "llm_raw": "Tôi sẽ phân loại claim thành SAI vì bằng chứng trực tiếp mâu thuẫn claim. Claim cho rằng ngăn ngừa căng thẳng mạn",
+          "verdict_score": null,
+          "evidence_preview": "làm trầm trọng thêm các triệu chứng của viêm cột sống dính khớp. Nguyên nhân do c ăng thẳng kích hoạt giải phóng các hormone gây căng thẳng như cortisol và adrenaline . Các h ormone căng thẳng kích thích hệ thống miễn dịch giải phóng các cytokine, là những protein gây viêm. Do đó, c ăng thẳng m ạ n "
+        },
+        {
+          "claim": "Emflaza được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "SAI",
+          "article_id": "skds_10010",
+          "latency_sec": 24.197464791010134,
+          "llm_raw": "Tôi sẽ phân loại claim thành SAI vì bằng chứng không trực tiếp ủng hộ claim. Mặc dù Emflaza được phê duyệt để điều",
+          "verdict_score": null,
+          "evidence_preview": "SKĐS - Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ 5 tuổi trở lên bị bệnh teo cơ Duchenne (DMD), Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ"
+        },
+        {
+          "claim": "Emflaza có thể gây ra nhiều tác dụng phụ nghiêm trọng như hội chứng Cushing, tăng huyết áp và nguy cơ thủng đường tiêu hóa.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "SAI",
+          "article_id": "skds_10010",
+          "latency_sec": 20.324865749978926,
+          "llm_raw": "Tôi sẽ phân loại claim thành SAI vì bằng chứng trực tiếp mâu thuẫn claim. Emflaza không được đề cập trong các tác dụng",
+          "verdict_score": null,
+          "evidence_preview": "mạng. Bệnh nhân thường không qua được độ tuổi 20 hoặc 30. Tuy nhiên, mức độ nặng và tuổi thọ ở từng trường hợp là khác nhau. Emflaza là một corticosteroid có tác dụng giảm viêm và ức chế miễn dịch. Corticosteroid được sử dụng phổ biến để điều trị DMD trên toàn thế giới, nhưng deflazacort là thuốc đầ"
+        },
+        {
+          "claim": "Emflaza chỉ được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên, không rõ liệu nó có hiệu quả trong trường hợp khác.",
+          "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "label_pred": "SAI",
+          "article_id": "skds_10010",
+          "latency_sec": 23.550515417009592,
+          "llm_raw": "Tôi sẽ phân loại claim thành SAI vì bằng chứng trực tiếp mâu thuẫn claim. Claim cho rằng Emflaza chỉ được phê duyệt để",
+          "verdict_score": null,
+          "evidence_preview": "SKĐS - Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ 5 tuổi trở lên bị bệnh teo cơ Duchenne (DMD), Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ"
+        },
+        {
+          "claim": "Viêm da cơ và viêm đa cơ là nhóm bệnh tự miễn với tình trạng viêm, thoái hóa các sợi cơ vân gây yếu cơ làm giảm hoặc mất khả năng vận động.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_9233",
+          "latency_sec": 21.330279541027267,
+          "llm_raw": "Tôi sẽ phân loại claim thành MỘT trong ba nhãn như sau:\n\n- Claim: \"Viêm da cơ và viêm đa cơ là",
+          "verdict_score": null,
+          "evidence_preview": "SKĐS - Viêm da cơ và viêm đa cơ được xếp vào nhóm bệnh tự miễn với đặc trưng bởi tình trạng viêm, thoái hóa các sợi cơ vân, gây nên tình trạng yếu cơ làm giảm hoặc mất khả năng vận động. Thể tổn thương cơ đơn thuần được gọi là viêm đa cơ. Khi có tổn thương đặc hiệu ở da kèm theo gọi là viêm da cơ. T"
+        },
+        {
+          "claim": "Nguyên nhân chính xác của bệnh viêm da cơ và viêm đa cơ chưa được xác định rõ ràng.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_9233",
+          "latency_sec": 24.31634166598087,
+          "llm_raw": "Tôi sẽ phân loại claim thành MỘT trong ba nhãn như sau:\n\n- Claim: \"Nguyên nhân chính xác của bệnh viêm da",
+          "verdict_score": null,
+          "evidence_preview": "SKĐS - Viêm da cơ và viêm đa cơ được xếp vào nhóm bệnh tự miễn với đặc trưng bởi tình trạng viêm, thoái hóa các sợi cơ vân, gây nên tình trạng yếu cơ làm giảm hoặc mất khả năng vận động. Thể tổn thương cơ đơn thuần được gọi là viêm đa cơ. Khi có tổn thương đặc hiệu ở da kèm theo gọi là viêm da cơ. T"
+        },
+        {
+          "claim": "Bệnh viêm da cơ và viêm đa cơ có liên quan đến tăng nguy cơ ác tính, nhưng không phải là nguyên nhân trực tiếp gây ra tình trạng này.",
+          "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_9233",
+          "latency_sec": 24.611135500017554,
+          "llm_raw": "Tôi sẽ phân loại claim thành MỘT trong ba nhãn như sau:\n\nClaim: \"Bệnh viêm da cơ và viêm đa cơ có",
+          "verdict_score": null,
+          "evidence_preview": "Lời khuyên thầy thuốc Viêm da cơ ảnh hưởng đến cả trẻ em và người lớn, các biến chứng có thể gặp là loét đường tiêu hóa có thể gây ra tiêu phân đen, ói máu. Nhồi máu ruột có thể xảy ra, đặc biệt là trong viêm da cơ... Cả viêm da cơ và viêm đa cơ đều có liên quan đến tăng nguy cơ ác tính. Có liên qua"
+        },
+        {
+          "claim": "Nước chanh, cần tây, xô thơm, cỏ lúa mì, cây mê điệt, giấm táo, dầu bạc hà và rau xà lách đều có tác dụng loại bỏ mùi hôi nách.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "SAI",
+          "article_id": "skds_1650",
+          "latency_sec": 25.63588358304696,
+          "llm_raw": "Tôi phân loại claim thành SAI vì không có bằng chứng trực tiếp ủng hộ claim. Mặc dù trong bài viết đã đề cập đến nhiều",
+          "verdict_score": null,
+          "evidence_preview": "SKĐS - Mùi cơ thể, nhất là mùi hôi ở nách sẽ khiến bạn và người xung quanh vô cùng khó chịu. Những cách tự nhiên dưới đây sẽ giúp bạn loại bỏ mùi hôi nách. Nước chanh Axit citric có trong chanh sẽ tiêu diệt vi khuẩn, phục hồi cân bằng độ pH của da và làm sáng da. Cách làm: Trộn 1/2 cốc nước chanh vớ"
+        }
+      ]
+    },
+    "rag_nli": {
+      "accuracy": 0.8,
+      "precision_macro": 0.5333333333333333,
+      "recall_macro": 0.5714285714285715,
+      "f1_macro": 0.5277777777777778,
+      "classification_report": "                     precision    recall  f1-score   support\n\n               ĐÚNG       1.00      0.71      0.83         7\n                SAI       0.00      0.00      0.00         0\nKHÔNG ĐỦ BẰNG CHỨNG       0.60      1.00      0.75         3\n\n           accuracy                           0.80        10\n          macro avg       0.53      0.57      0.53        10\n       weighted avg       0.88      0.80      0.81        10\n",
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "latency": {
+        "count": 10,
+        "mean_sec": 19.480686125095236,
+        "p50_sec": 18.143004604498856,
+        "p95_sec": 26.761518196348334
+      },
+      "method": "rag_nli",
+      "method_label": "RAG + NLI (đề xuất)",
+      "num_samples": 10,
+      "details": [
+        {
+          "claim": "Tăng cường vận động giúp giảm đau do viêm cột sống dính khớp",
+          "label_gold": "ĐÚNG",
+          "label_pred": "ĐÚNG",
+          "article_id": "skds_357",
+          "latency_sec": 23.826468540995847,
+          "llm_raw": null,
+          "verdict_score": 0.975661039352417,
+          "evidence_preview": "SKĐS - Viêm cột sống dính khớp là hiện tượng viêm xảy ra ở mối nối giữa các đốt của cột sống lưng hay giữa cột sống và xương chậu, dẫn đến đau, cứng và bất động khớp. Các triệu chứng của viêm cột sống dính khớp có thể từ nhẹ đến nặng. Triệu chứng sớm nhất có thể thấy là các cơn đau tại vùng lưng, cộ"
+        },
+        {
+          "claim": "Thực hành đúng tư thế khi đứng, ngồi có thể giúp giảm đau và tăng cường cơ lưng, nhưng không phải là biện pháp hiệu quả nhất để điều trị viêm cột sống dính khớp",
+          "label_gold": "ĐÚNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_357",
+          "latency_sec": 26.640291917021386,
+          "llm_raw": null,
+          "verdict_score": 0.9177809953689575,
+          "evidence_preview": "đau. Nhưng thực ra, h oạt động thể chất có thể giúp cải thiện tính linh hoạt của khớp , giảm đau và cứng do viêm cột sống dính khớp. Người b ệ nh không cần phải thực hiện các hoạt động tác động mạnh mà nên cân nhắc thêm một số hình thức hoạt động thể chất cường độ vừa phải như bơi lội, đi bộ, đạp xe"
+        },
+        {
+          "claim": "Ngăn ngừa căng thẳng mạn tính có thể giúp giảm viêm và cải thiện tình trạng bệnh viêm cột sống dính khớp, nhưng không phải là biện pháp thay thế cho các phương pháp điều trị y tế",
+          "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_357",
+          "latency_sec": 26.00911762501346,
+          "llm_raw": null,
+          "verdict_score": 0.7367590765158335,
+          "evidence_preview": "làm trầm trọng thêm các triệu chứng của viêm cột sống dính khớp. Nguyên nhân do c ăng thẳng kích hoạt giải phóng các hormone gây căng thẳng như cortisol và adrenaline . Các h ormone căng thẳng kích thích hệ thống miễn dịch giải phóng các cytokine, là những protein gây viêm. Do đó, c ăng thẳng m ạ n "
+        },
+        {
+          "claim": "Emflaza được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "ĐÚNG",
+          "article_id": "skds_10010",
+          "latency_sec": 18.085432416992262,
+          "llm_raw": null,
+          "verdict_score": 0.9899196624755859,
+          "evidence_preview": "SKĐS - Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ 5 tuổi trở lên bị bệnh teo cơ Duchenne (DMD), Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ"
+        },
+        {
+          "claim": "Emflaza có thể gây ra nhiều tác dụng phụ nghiêm trọng như hội chứng Cushing, tăng huyết áp và nguy cơ thủng đường tiêu hóa.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "ĐÚNG",
+          "article_id": "skds_10010",
+          "latency_sec": 13.449587958981283,
+          "llm_raw": null,
+          "verdict_score": 0.897085964679718,
+          "evidence_preview": "mạng. Bệnh nhân thường không qua được độ tuổi 20 hoặc 30. Tuy nhiên, mức độ nặng và tuổi thọ ở từng trường hợp là khác nhau. Emflaza là một corticosteroid có tác dụng giảm viêm và ức chế miễn dịch. Corticosteroid được sử dụng phổ biến để điều trị DMD trên toàn thế giới, nhưng deflazacort là thuốc đầ"
+        },
+        {
+          "claim": "Emflaza chỉ được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên, không rõ liệu nó có hiệu quả trong trường hợp khác.",
+          "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_10010",
+          "latency_sec": 13.922165957977995,
+          "llm_raw": null,
+          "verdict_score": 0.7296422123908997,
+          "evidence_preview": "SKĐS - Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ 5 tuổi trở lên bị bệnh teo cơ Duchenne (DMD), Thuốc Emflaza (deflazacort) vừa được Cơ quan Quản lý Dược phẩm và Thực phẩm Mỹ (FDA) phê duyệt để điều trị cho bệnh nhân từ"
+        },
+        {
+          "claim": "Viêm da cơ và viêm đa cơ là nhóm bệnh tự miễn với tình trạng viêm, thoái hóa các sợi cơ vân gây yếu cơ làm giảm hoặc mất khả năng vận động.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "ĐÚNG",
+          "article_id": "skds_9233",
+          "latency_sec": 13.317476291966159,
+          "llm_raw": null,
+          "verdict_score": 0.9700648784637451,
+          "evidence_preview": "SKĐS - Viêm da cơ và viêm đa cơ được xếp vào nhóm bệnh tự miễn với đặc trưng bởi tình trạng viêm, thoái hóa các sợi cơ vân, gây nên tình trạng yếu cơ làm giảm hoặc mất khả năng vận động. Thể tổn thương cơ đơn thuần được gọi là viêm đa cơ. Khi có tổn thương đặc hiệu ở da kèm theo gọi là viêm da cơ. T"
+        },
+        {
+          "claim": "Nguyên nhân chính xác của bệnh viêm da cơ và viêm đa cơ chưa được xác định rõ ràng.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "ĐÚNG",
+          "article_id": "skds_9233",
+          "latency_sec": 14.495040416019037,
+          "llm_raw": null,
+          "verdict_score": 0.982772946357727,
+          "evidence_preview": "SKĐS - Viêm da cơ và viêm đa cơ được xếp vào nhóm bệnh tự miễn với đặc trưng bởi tình trạng viêm, thoái hóa các sợi cơ vân, gây nên tình trạng yếu cơ làm giảm hoặc mất khả năng vận động. Thể tổn thương cơ đơn thuần được gọi là viêm đa cơ. Khi có tổn thương đặc hiệu ở da kèm theo gọi là viêm da cơ. T"
+        },
+        {
+          "claim": "Bệnh viêm da cơ và viêm đa cơ có liên quan đến tăng nguy cơ ác tính, nhưng không phải là nguyên nhân trực tiếp gây ra tình trạng này.",
+          "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_9233",
+          "latency_sec": 18.20057679200545,
+          "llm_raw": null,
+          "verdict_score": 0.6452089895804723,
+          "evidence_preview": "Lời khuyên thầy thuốc Viêm da cơ ảnh hưởng đến cả trẻ em và người lớn, các biến chứng có thể gặp là loét đường tiêu hóa có thể gây ra tiêu phân đen, ói máu. Nhồi máu ruột có thể xảy ra, đặc biệt là trong viêm da cơ... Cả viêm da cơ và viêm đa cơ đều có liên quan đến tăng nguy cơ ác tính. Có liên qua"
+        },
+        {
+          "claim": "Nước chanh, cần tây, xô thơm, cỏ lúa mì, cây mê điệt, giấm táo, dầu bạc hà và rau xà lách đều có tác dụng loại bỏ mùi hôi nách.",
+          "label_gold": "ĐÚNG",
+          "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+          "article_id": "skds_1650",
+          "latency_sec": 26.860703333979473,
+          "llm_raw": null,
+          "verdict_score": 0.9084809819857279,
+          "evidence_preview": "SKĐS - Mùi cơ thể, nhất là mùi hôi ở nách sẽ khiến bạn và người xung quanh vô cùng khó chịu. Những cách tự nhiên dưới đây sẽ giúp bạn loại bỏ mùi hôi nách. Nước chanh Axit citric có trong chanh sẽ tiêu diệt vi khuẩn, phục hồi cân bằng độ pH của da và làm sáng da. Cách làm: Trộn 1/2 cốc nước chanh vớ"
+        }
+      ]
+    }
+  }
+}

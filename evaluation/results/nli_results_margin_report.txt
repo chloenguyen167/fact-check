@@ -1,0 +1,9 @@
+                     precision    recall  f1-score   support
+
+               ĐÚNG       0.35      0.46      0.40       166
+                SAI       0.39      0.33      0.35       166
+KHÔNG ĐỦ BẰNG CHỨNG       0.32      0.27      0.30       166
+
+           accuracy                           0.35       498
+          macro avg       0.35      0.35      0.35       498
+       weighted avg       0.35      0.35      0.35       498

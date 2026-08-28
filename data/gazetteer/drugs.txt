@@ -1,0 +1,94 @@
+# Thuốc / vaccine / thực phẩm chức năng dùng như thuốc
+aspirin
+statin
+warfarin
+heparin
+metformin
+insulin
+paracetamol
+ibuprofen
+amoxicillin
+kháng sinh
+thuốc chống đông
+thuốc chống đông máu
+thuốc hạ huyết áp
+thuốc huyết áp
+thuốc ho
+pseudoephedrine
+phenylephrine
+oxybutynin
+oxytrol
+phenytoin
+libtayo
+vắc xin
+vaccine
+vắc xin cúm
+vắc xin hpv
+thuốc giảm đau
+corticoid
+corticosteroid
+thuốc chống viêm
+thuốc an thần
+thuốc chống trầm cảm
+thuốc trị gout
+bisphosphonate
+thuốc loãng xương
+thuốc tiểu đường
+thuốc mỡ máu
+thuốc statin
+omega-3
+dầu cá
+đông trùng hạ thảo
+nhân sâm
+thực phẩm chức năng
+thuốc đông y
+thuốc tây
+thuốc kháng histamine
+thuốc hen
+salbutamol
+prednisolone
+dexamethasone
+omeprazole
+pantoprazole
+losartan
+amlodipine
+enalapril
+atenolol
+metoprolol
+clopidogrel
+digoxin
+furosemide
+spironolactone
+levothyroxine
+methimazole
+acarbose
+glibenclamide
+sitagliptin
+oseltamivir
+tamiflu
+remdesivir
+molnupiravir
+ivermectin
+chloroquine
+hydroxychloroquine
+morphine
+codeine
+tramadol
+diazepam
+lorazepam
+sertraline
+fluoxetine
+omeprazol
+ranitidine
+cetirizine
+loratadine
+montelukast
+salmeterol
+budesonide
+bevacizumab
+trastuzumab
+pembrolizumab
+chemotherapy
+hóa trị
+xạ trị
+miễn dịch trị liệu
