@@ -1,0 +1,2184 @@
+{
+  "cv": {
+    "k": 5,
+    "repeats": 5,
+    "n": 250,
+    "variants": {
+      "FULL": {
+        "name": "Đề xuất (Rerank + NLI + ESS)",
+        "f1_macro": 0.6455058431062313,
+        "f1_sd": 0.0145577875434893,
+        "accuracy": 0.6456000000000001,
+        "delta_f1_vs_B0": 0.02029811176267813,
+        "wins_vs_B0": 4
+      },
+      "B0": {
+        "name": "− ESS (RAG + NLI gốc)",
+        "f1_macro": 0.6252077313435531,
+        "f1_sd": 0.0,
+        "accuracy": 0.632,
+        "delta_f1_vs_B0": 0.0,
+        "wins_vs_B0": 0
+      },
+      "-RERANK": {
+        "name": "− Rerank chunk (dense top-3)",
+        "f1_macro": 0.6560591884808068,
+        "f1_sd": 0.0,
+        "accuracy": 0.656,
+        "delta_f1_vs_B0": 0.03085145713725368,
+        "wins_vs_B0": 5
+      },
+      "B0-RR": {
+        "name": "− ESS − Rerank",
+        "f1_macro": 0.6252077313435531,
+        "f1_sd": 0.0,
+        "accuracy": 0.632,
+        "delta_f1_vs_B0": 0.0,
+        "wins_vs_B0": 0
+      },
+      "+CALIB": {
+        "name": "+ Hiệu chỉnh ngưỡng",
+        "f1_macro": 0.6053966929430135,
+        "f1_sd": 0.02031177066042321,
+        "accuracy": 0.6032,
+        "delta_f1_vs_B0": -0.01981103840053968,
+        "wins_vs_B0": 0
+      },
+      "+GATE": {
+        "name": "+ Cổng liên quan",
+        "f1_macro": 0.6455058431062313,
+        "f1_sd": 0.0145577875434893,
+        "accuracy": 0.6456000000000001,
+        "delta_f1_vs_B0": 0.02029811176267813,
+        "wins_vs_B0": 4
+      },
+      "+CALIB+GATE": {
+        "name": "+ Hiệu chỉnh + cổng",
+        "f1_macro": 0.6008938529188794,
+        "f1_sd": 0.020026377734960337,
+        "accuracy": 0.5984,
+        "delta_f1_vs_B0": -0.024313878424673717,
+        "wins_vs_B0": 0
+      },
+      "MEAN": {
+        "name": "Tổng hợp trung bình (chunk)",
+        "f1_macro": 0.48180399253211165,
+        "f1_sd": 0.0,
+        "accuracy": 0.504,
+        "delta_f1_vs_B0": -0.14340373881144147,
+        "wins_vs_B0": 0
+      }
+    }
+  },
+  "dataset": "vifactcheck",
+  "mode": "oracle",
+  "test_size": 100,
+  "dev_size": 150,
+  "label_dist_test": {
+    "ĐÚNG": 37,
+    "SAI": 28,
+    "KHÔNG ĐỦ BẰNG CHỨNG": 35
+  },
+  "variants": {
+    "FULL": {
+      "name": "Đề xuất (Rerank + NLI + ESS)",
+      "spec": {
+        "order": "rr",
+        "dir": "window",
+        "decision": "wmax",
+        "gate": false,
+        "rel_source": "rr"
+      },
+      "params": {
+        "m": null,
+        "tau_r": -Infinity
+      },
+      "dev_f1_acc": [
+        0.6377272727272727,
+        0.64
+      ],
+      "accuracy": 0.68,
+      "precision_macro": 0.7133333333333334,
+      "recall_macro": 0.6883526383526384,
+      "f1_macro": 0.6851503108851574,
+      "confusion_matrix": [
+        [
+          18,
+          2,
+          17
+        ],
+        [
+          3,
+          21,
+          4
+        ],
+        [
+          4,
+          2,
+          29
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.59,
+        0.77
+      ],
+      "f1_ci95": [
+        0.592694144585718,
+        0.7685777032531318
+      ],
+      "latency": {
+        "mean_sec": 2.6304624595002677,
+        "p50_sec": 2.316830707495683,
+        "p95_sec": 4.617230537070282
+      },
+      "pred_dist": {
+        "ĐÚNG": 25,
+        "SAI": 25,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 50
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.72,
+          "recall": 0.4864864864864865,
+          "f1": 0.5806451612903226,
+          "support": 37
+        },
+        "SAI": {
+          "precision": 0.84,
+          "recall": 0.75,
+          "f1": 0.7924528301886793,
+          "support": 28
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.58,
+          "recall": 0.8285714285714286,
+          "f1": 0.6823529411764706,
+          "support": 35
+        }
+      }
+    },
+    "B0": {
+      "name": "− ESS (RAG + NLI gốc)",
+      "spec": {
+        "order": "rr",
+        "dir": "chunk",
+        "decision": "wmax",
+        "gate": false,
+        "rel_source": "rr"
+      },
+      "params": {},
+      "dev_f1_acc": null,
+      "accuracy": 0.66,
+      "precision_macro": 0.6862591963780419,
+      "recall_macro": 0.6761261261261261,
+      "f1_macro": 0.6540046527085411,
+      "confusion_matrix": [
+        [
+          14,
+          6,
+          17
+        ],
+        [
+          1,
+          23,
+          4
+        ],
+        [
+          4,
+          2,
+          29
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.57,
+        0.75
+      ],
+      "f1_ci95": [
+        0.5582543291534611,
+        0.7420370678850101
+      ],
+      "latency": {
+        "mean_sec": 1.0566288611997152,
+        "p50_sec": 0.9604535829857923,
+        "p95_sec": 1.8013522828230633
+      },
+      "pred_dist": {
+        "ĐÚNG": 19,
+        "SAI": 31,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 50
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.7368421052631579,
+          "recall": 0.3783783783783784,
+          "f1": 0.5,
+          "support": 37
+        },
+        "SAI": {
+          "precision": 0.7419354838709677,
+          "recall": 0.8214285714285714,
+          "f1": 0.7796610169491526,
+          "support": 28
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.58,
+          "recall": 0.8285714285714286,
+          "f1": 0.6823529411764706,
+          "support": 35
+        }
+      }
+    },
+    "-RERANK": {
+      "name": "− Rerank chunk (dense top-3)",
+      "spec": {
+        "order": "all",
+        "dir": "window",
+        "decision": "wmax",
+        "gate": false,
+        "rel_source": "rr",
+        "select": false
+      },
+      "params": {},
+      "dev_f1_acc": null,
+      "accuracy": 0.68,
+      "precision_macro": 0.7133333333333334,
+      "recall_macro": 0.6883526383526384,
+      "f1_macro": 0.6851503108851574,
+      "confusion_matrix": [
+        [
+          18,
+          2,
+          17
+        ],
+        [
+          3,
+          21,
+          4
+        ],
+        [
+          4,
+          2,
+          29
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.59,
+        0.77
+      ],
+      "f1_ci95": [
+        0.5912996264609167,
+        0.7691885448558856
+      ],
+      "latency": {
+        "mean_sec": 2.6304624595002677,
+        "p50_sec": 2.316830707495683,
+        "p95_sec": 4.617230537070282
+      },
+      "pred_dist": {
+        "ĐÚNG": 25,
+        "SAI": 25,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 50
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.72,
+          "recall": 0.4864864864864865,
+          "f1": 0.5806451612903226,
+          "support": 37
+        },
+        "SAI": {
+          "precision": 0.84,
+          "recall": 0.75,
+          "f1": 0.7924528301886793,
+          "support": 28
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.58,
+          "recall": 0.8285714285714286,
+          "f1": 0.6823529411764706,
+          "support": 35
+        }
+      }
+    },
+    "B0-RR": {
+      "name": "− ESS − Rerank",
+      "spec": {
+        "order": "all",
+        "dir": "chunk",
+        "decision": "wmax",
+        "gate": false,
+        "rel_source": "rr",
+        "select": false
+      },
+      "params": {},
+      "dev_f1_acc": null,
+      "accuracy": 0.66,
+      "precision_macro": 0.6862591963780419,
+      "recall_macro": 0.6761261261261261,
+      "f1_macro": 0.6540046527085411,
+      "confusion_matrix": [
+        [
+          14,
+          6,
+          17
+        ],
+        [
+          1,
+          23,
+          4
+        ],
+        [
+          4,
+          2,
+          29
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.56,
+        0.75
+      ],
+      "f1_ci95": [
+        0.5607068567127226,
+        0.7437680156511718
+      ],
+      "latency": {
+        "mean_sec": 1.0566288611997152,
+        "p50_sec": 0.9604535829857923,
+        "p95_sec": 1.8013522828230633
+      },
+      "pred_dist": {
+        "ĐÚNG": 19,
+        "SAI": 31,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 50
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.7368421052631579,
+          "recall": 0.3783783783783784,
+          "f1": 0.5,
+          "support": 37
+        },
+        "SAI": {
+          "precision": 0.7419354838709677,
+          "recall": 0.8214285714285714,
+          "f1": 0.7796610169491526,
+          "support": 28
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.58,
+          "recall": 0.8285714285714286,
+          "f1": 0.6823529411764706,
+          "support": 35
+        }
+      }
+    },
+    "+CALIB": {
+      "name": "+ Hiệu chỉnh ngưỡng",
+      "spec": {
+        "order": "rr",
+        "dir": "window",
+        "decision": "calib",
+        "gate": false,
+        "rel_source": "rr"
+      },
+      "params": {
+        "m": null,
+        "tau_e": 0.8,
+        "tau_c": 0.4,
+        "tau_r": -Infinity
+      },
+      "dev_f1_acc": [
+        0.6594152272197998,
+        0.66
+      ],
+      "accuracy": 0.63,
+      "precision_macro": 0.6487179487179486,
+      "recall_macro": 0.6391891891891892,
+      "f1_macro": 0.6428928928928929,
+      "confusion_matrix": [
+        [
+          21,
+          2,
+          14
+        ],
+        [
+          3,
+          21,
+          4
+        ],
+        [
+          11,
+          3,
+          21
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.54,
+        0.72
+      ],
+      "f1_ci95": [
+        0.5455179963161794,
+        0.7268566142261166
+      ],
+      "latency": {
+        "mean_sec": 2.6304624595002677,
+        "p50_sec": 2.316830707495683,
+        "p95_sec": 4.617230537070282
+      },
+      "pred_dist": {
+        "ĐÚNG": 35,
+        "SAI": 26,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 39
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.6,
+          "recall": 0.5675675675675675,
+          "f1": 0.5833333333333333,
+          "support": 37
+        },
+        "SAI": {
+          "precision": 0.8076923076923077,
+          "recall": 0.75,
+          "f1": 0.7777777777777779,
+          "support": 28
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.5384615384615384,
+          "recall": 0.6,
+          "f1": 0.5675675675675675,
+          "support": 35
+        }
+      }
+    },
+    "+GATE": {
+      "name": "+ Cổng liên quan",
+      "spec": {
+        "order": "rr",
+        "dir": "window",
+        "decision": "wmax",
+        "gate": true,
+        "rel_source": "rr"
+      },
+      "params": {
+        "m": null,
+        "tau_r": -Infinity
+      },
+      "dev_f1_acc": [
+        0.6377272727272727,
+        0.64
+      ],
+      "accuracy": 0.68,
+      "precision_macro": 0.7133333333333334,
+      "recall_macro": 0.6883526383526384,
+      "f1_macro": 0.6851503108851574,
+      "confusion_matrix": [
+        [
+          18,
+          2,
+          17
+        ],
+        [
+          3,
+          21,
+          4
+        ],
+        [
+          4,
+          2,
+          29
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.58,
+        0.76
+      ],
+      "f1_ci95": [
+        0.5866827636721291,
+        0.7661096019539912
+      ],
+      "latency": {
+        "mean_sec": 2.6304624595002677,
+        "p50_sec": 2.316830707495683,
+        "p95_sec": 4.617230537070282
+      },
+      "pred_dist": {
+        "ĐÚNG": 25,
+        "SAI": 25,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 50
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.72,
+          "recall": 0.4864864864864865,
+          "f1": 0.5806451612903226,
+          "support": 37
+        },
+        "SAI": {
+          "precision": 0.84,
+          "recall": 0.75,
+          "f1": 0.7924528301886793,
+          "support": 28
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.58,
+          "recall": 0.8285714285714286,
+          "f1": 0.6823529411764706,
+          "support": 35
+        }
+      }
+    },
+    "+CALIB+GATE": {
+      "name": "+ Hiệu chỉnh + cổng",
+      "spec": {
+        "order": "rr",
+        "dir": "window",
+        "decision": "calib",
+        "gate": true,
+        "rel_source": "rr"
+      },
+      "params": {
+        "m": null,
+        "tau_e": 0.8,
+        "tau_c": 0.4,
+        "tau_r": -Infinity
+      },
+      "dev_f1_acc": [
+        0.6594152272197998,
+        0.66
+      ],
+      "accuracy": 0.63,
+      "precision_macro": 0.6487179487179486,
+      "recall_macro": 0.6391891891891892,
+      "f1_macro": 0.6428928928928929,
+      "confusion_matrix": [
+        [
+          21,
+          2,
+          14
+        ],
+        [
+          3,
+          21,
+          4
+        ],
+        [
+          11,
+          3,
+          21
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.53,
+        0.73
+      ],
+      "f1_ci95": [
+        0.5433563000567462,
+        0.7289941933112236
+      ],
+      "latency": {
+        "mean_sec": 2.6304624595002677,
+        "p50_sec": 2.316830707495683,
+        "p95_sec": 4.617230537070282
+      },
+      "pred_dist": {
+        "ĐÚNG": 35,
+        "SAI": 26,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 39
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.6,
+          "recall": 0.5675675675675675,
+          "f1": 0.5833333333333333,
+          "support": 37
+        },
+        "SAI": {
+          "precision": 0.8076923076923077,
+          "recall": 0.75,
+          "f1": 0.7777777777777779,
+          "support": 28
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.5384615384615384,
+          "recall": 0.6,
+          "f1": 0.5675675675675675,
+          "support": 35
+        }
+      }
+    },
+    "MEAN": {
+      "name": "Tổng hợp trung bình (chunk)",
+      "spec": {
+        "order": "rr",
+        "dir": "chunk",
+        "decision": "mean",
+        "gate": false,
+        "rel_source": "rr"
+      },
+      "params": {},
+      "dev_f1_acc": null,
+      "accuracy": 0.53,
+      "precision_macro": 0.6996996996996997,
+      "recall_macro": 0.5258043758043759,
+      "f1_macro": 0.511957970673567,
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          27
+        ],
+        [
+          2,
+          11,
+          15
+        ],
+        [
+          3,
+          0,
+          32
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.44,
+        0.63
+      ],
+      "f1_ci95": [
+        0.4147928748935137,
+        0.6093304611212105
+      ],
+      "latency": {
+        "mean_sec": 1.0566288611997152,
+        "p50_sec": 0.9604535829857923,
+        "p95_sec": 1.8013522828230633
+      },
+      "pred_dist": {
+        "ĐÚNG": 15,
+        "SAI": 11,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 74
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.6666666666666666,
+          "recall": 0.2702702702702703,
+          "f1": 0.3846153846153846,
+          "support": 37
+        },
+        "SAI": {
+          "precision": 1.0,
+          "recall": 0.39285714285714285,
+          "f1": 0.5641025641025641,
+          "support": 28
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.43243243243243246,
+          "recall": 0.9142857142857143,
+          "f1": 0.5871559633027523,
+          "support": 35
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "FULL_vs_B0": {
+      "delta_f1_ci95": [
+        -0.022103483317916995,
+        0.08880477049576081
+      ],
+      "p_f1": 0.1375,
+      "delta_acc_ci95": [
+        -0.029999999999999916,
+        0.06999999999999995
+      ],
+      "p_acc": 0.265,
+      "mcnemar": {
+        "a_only": 4,
+        "b_only": 2,
+        "p": 0.6875
+      }
+    },
+    "FULL_vs_-RERANK": {
+      "delta_f1_ci95": [
+        0.0,
+        0.0
+      ],
+      "p_f1": 1.0,
+      "delta_acc_ci95": [
+        0.0,
+        0.0
+      ],
+      "p_acc": 1.0,
+      "mcnemar": {
+        "a_only": 0,
+        "b_only": 0,
+        "p": 1.0
+      }
+    },
+    "FULL_vs_B0-RR": {
+      "delta_f1_ci95": [
+        -0.02218882626336043,
+        0.09117967846545742
+      ],
+      "p_f1": 0.136,
+      "delta_acc_ci95": [
+        -0.029999999999999916,
+        0.07000000000000006
+      ],
+      "p_acc": 0.2545,
+      "mcnemar": {
+        "a_only": 4,
+        "b_only": 2,
+        "p": 0.6875
+      }
+    },
+    "FULL_vs_+CALIB": {
+      "delta_f1_ci95": [
+        -0.016052090973736183,
+        0.09895603774650015
+      ],
+      "p_f1": 0.0835,
+      "delta_acc_ci95": [
+        -0.010000000000000009,
+        0.10999999999999999
+      ],
+      "p_acc": 0.093,
+      "mcnemar": {
+        "a_only": 8,
+        "b_only": 3,
+        "p": 0.2265625
+      }
+    },
+    "FULL_vs_+GATE": {
+      "delta_f1_ci95": [
+        0.0,
+        0.0
+      ],
+      "p_f1": 1.0,
+      "delta_acc_ci95": [
+        0.0,
+        0.0
+      ],
+      "p_acc": 1.0,
+      "mcnemar": {
+        "a_only": 0,
+        "b_only": 0,
+        "p": 1.0
+      }
+    },
+    "FULL_vs_+CALIB+GATE": {
+      "delta_f1_ci95": [
+        -0.0159418431880361,
+        0.10050438728068548
+      ],
+      "p_f1": 0.0735,
+      "delta_acc_ci95": [
+        -0.010000000000000009,
+        0.11024999999999872
+      ],
+      "p_acc": 0.0735,
+      "mcnemar": {
+        "a_only": 8,
+        "b_only": 3,
+        "p": 0.2265625
+      }
+    },
+    "FULL_vs_MEAN": {
+      "delta_f1_ci95": [
+        0.08519365249747785,
+        0.2684507162620675
+      ],
+      "p_f1": 0.0,
+      "delta_acc_ci95": [
+        0.06999999999999995,
+        0.23999999999999994
+      ],
+      "p_acc": 0.0005,
+      "mcnemar": {
+        "a_only": 18,
+        "b_only": 3,
+        "p": 0.0014896392822265625
+      }
+    },
+    "B0_vs_B0-RR": {
+      "delta_f1_ci95": [
+        0.0,
+        0.0
+      ],
+      "p_f1": 1.0,
+      "delta_acc_ci95": [
+        0.0,
+        0.0
+      ],
+      "p_acc": 1.0,
+      "mcnemar": {
+        "a_only": 0,
+        "b_only": 0,
+        "p": 1.0
+      }
+    }
+  },
+  "sensitivity_m": {
+    "1": {
+      "acc": 0.65,
+      "f1_macro": 0.6576686500464463
+    },
+    "2": {
+      "acc": 0.65,
+      "f1_macro": 0.6576686500464463
+    },
+    "3": {
+      "acc": 0.66,
+      "f1_macro": 0.6665057067603161
+    },
+    "5": {
+      "acc": 0.67,
+      "f1_macro": 0.675656108597285
+    },
+    "None": {
+      "acc": 0.68,
+      "f1_macro": 0.6851503108851574
+    }
+  },
+  "test_details": [
+    {
+      "idx": 0,
+      "claim": "Chanh và mật ong kết hợp tạo ra chất axit hòa tan có lợi giúp tăng cường khả năng miễn dịch, thanh lọc cơ thể, cải thiện hệ tiêu hóa, đào thải độc tố tích tụ lâu ngày để đường tiết niệu sạch sẽ.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 1,
+      "claim": "Tại buổi lễ khẳng định tinh thần thi đua yêu nước và ý chí quyết tâm vượt lên chính mình của các nữ trí thức, các bác sĩ, dược sĩ, Phó Thủ tướng Trần Hồng Hà sinh năm 1980 nhấn mạnh.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 2,
+      "claim": "Làm chín bằng phương pháp lên men tự nhiên nên nem chua cũng còn chứa nhiều vi khuẩn chỉ bị tiêu diệt khi qua xử lý nhiệt, ảnh hưởng không tốt đến đường tiêu hóa.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 3,
+      "claim": "Các em học sinh của Trường tiểu học Birkdale mừng rỡ khi nhìn thấy thầy giáo bị ngưng tim vài tháng trước quay trở lại lớp học.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "SAI",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 4,
+      "claim": "Bác sĩ trực khoa Tai mũi họng sau khi thăm khám đã nhận định dị vật là pin điện tử nguy hiểm, cần lấy khỏi mũi từ từ, chậm rãi để ngăn dị vật làm tắt đường thở, đường ăn gây hoại tử.",
+      "gold": "SAI",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 5,
+      "claim": "Trẻ em dưới 5 tuổi dễ mắc bệnh lao nặng và phức tạp hơn.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 6,
+      "claim": "Các đối tượng mạo danh là giáo viên hoặc nhân viên BV làm giả giấy tờ chứng nhận tình trạng sức khỏe của người bệnh tại BV để làm hoang mang người thân của bệnh nhân rồi bắt đầu thu thập thông tin của mọi người trong lúc thiếu bình tĩnh.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 7,
+      "claim": "Ông Phạm Gia Hữu, Trưởng phòng GD&ĐT quận Thanh Xuân cho biết trong ngày đưa học sinh đi trải nghiệm, thực phẩm được bếp ăn nhà trường là cở sở bếp ăn Thiện Phước chuẩn bị cho các em.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 8,
+      "claim": "Bị đau đầu, tê tay, chị Đ.T.T.P đi khám và được chẩn đoán là thoái hóa đốt sống cổ C5,C6.",
+      "gold": "ĐÚNG",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 9,
+      "claim": "Các nhà khoa học Mỹ đang phát minh một loại thuốc là \"thần dược\" có thể giúp tránh tăng cân trong nghiên cứu mới nhất, được công bố trên tập san học thuật Cell Reports.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "SAI",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 10,
+      "claim": "Sau khi kiểm tra, chụp X-quang ngực kết quả cho ra không bình thường và cho thấy áp xe cạnh khí quản ở cổ.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI"
+    },
+    {
+      "idx": 11,
+      "claim": "Chỉ có các khối u màng não kích thước lớn mới khiến người bệnh có thể tử vong, trong khi khối u nhỏ thì không có khả năng gây tử vong.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 12,
+      "claim": "Bệnh viện Chợ Rẫy, TP.HCM đã cứu sống thành công bệnh nhân bị container cán qua người, đa chấn thương nặng sau 11 lần phẫu thuật.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 13,
+      "claim": "Để tháo gỡ ngay khó khăn, vướng mắc cho các bệnh viện, Phó Thủ tướng Trần Hồng Hà yêu cầu Bộ Y tế, Tài chính, KH&ĐT khẩn trương sửa đổi các thông tư, nghị định thuộc lĩnh vực quản lý.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 14,
+      "claim": "Phó Thủ tướng Trần Hồng Hà đã làm việc với lãnh đạo Bộ Y tế, Bộ Tài chính, Bộ KH&ĐT và một số bệnh viện trong ngày 25-2 liên quan đến những vướng mắc trong mua sắm trang thiết bị y tế, hoá chất xét nghiệm, sinh phẩm y tế...",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 15,
+      "claim": "Khối bướu khoảng 4cm đã được lấy ra khỏi bệnh nhân sau khi thực hiện phẫu thuật nội soi cắt thận toàn phần.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 16,
+      "claim": "Chính phủ đã chủ trì nhiều cuộc họp với các bệnh viện về vấn đề đảm bảo đầy đủ thuốc và trang thiết bị cho việc chữa bệnh.",
+      "gold": "SAI",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 17,
+      "claim": "Trưởng Khoa Cấp cứu, chống độc (Bệnh viện Nhi Trung ương) PGS T.S Trần Minh Điển cho biết rất nhiều bệnh nhân đến cấp cứu, có trường hợp không có người thân đi cùng bệnh nhân, không có giấy tờ tùy thân, không có tiền.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 18,
+      "claim": "Các bác sĩ nghĩ rằng ông bị nhiễm bệnh khi làm công việc nghiên cứu nấm học thực vật và đã làm việc với vật liệu thối rữa, nấm và nhiều loại nấm thực vật trong thời gian dài.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 19,
+      "claim": "Danh mục thuốc mở rộng bao gồm các thuốc điều trị bệnh thông thường và chuyên khoa như tim mạch, tiêu hóa, đái tháo đường, cơ xương khớp, hô hấp, truyền nhiễm, ung thư và thuốc kháng sinh, kháng viêm.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 20,
+      "claim": "Bộ Y tế sẽ không áp dụng bất kỳ biện pháp nào để ngăn chặn sự bùng phát của các bệnh truyền nhiễm và sẽ chỉ dựa vào việc xử lý khi có dịch.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI"
+    },
+    {
+      "idx": 21,
+      "claim": "Để phát hiện các bệnh lý di truyền từ sớm và chính xác sẽ hạn chế rất nhiều các trường hợp phải chọc ối không cần thiết đó là một trong những điểm nổi trội của xét nghiệm di truyền, Khoa Giải phẫu bệnh – Tế bào và Khoa Di truyền học, Bệnh viện Hùng Vương TP HCM đã đón nhận chứng chỉ ISO 15189:2012 vào ngày 15-3.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 22,
+      "claim": "Tuy tạm thời không hoạt động nhưng nếu điều kiện như nhiệt độ, độ ẩm phù hợp thì những vi sinh vật gây hại sẽ được kích hoạt và sinh sôi.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 23,
+      "claim": "Bệnh đang bùng phát ở Tanzania và được dự đoán sẽ lây lan nhanh chóng sang các tỉnh lân cận.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 24,
+      "claim": "Bạn sẽ nhận thấy rằng khi uống nhiều nước dừa, trong dạ dày tích tụ nhiều nước, bụng sẽ căng lên và khiến bạn cảm thấy ậm ạch khó chịu, số lần đi tiểu tiện sẽ tăng lên với tần suất lớn hơn.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 25,
+      "claim": "Bệnh nhân có thể tự đến bệnh viện trước khi phẫu thuật.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI"
+    },
+    {
+      "idx": 26,
+      "claim": "Cô bắt đầu có dấu hiệu mờ mắt và tê bì chân tay chỉ sau 4 năm khi phát bệnh, nhiều lúc có những buổi sáng thức dậy mà tay chân không có cảm giác, phải xoa bóp mới có thể xuống giường được.",
+      "gold": "ĐÚNG",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 27,
+      "claim": "Bác sĩ nhận định pin điện tử không quá nguy hiểm tuy nhiên cũng cần nhanh chóng lấy dị vật ra khỏi hốc mũi để tránh những nguy hiểm nghiêm trọng cho cơ thể.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 28,
+      "claim": "Sở Công Thương TP.HCM cần phối hợp chặt chẽ với lực lượng Công an và ngành nông nghiệp tăng cường kiểm tra, kiểm soát hoạt động buôn bán, vận chuyển gia cầm, không để gia cầm không rõ nguồn gốc lưu thông trên địa bàn Thành phố.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI"
+    },
+    {
+      "idx": 29,
+      "claim": "Bệnh viện Quốc tế City vừa tiếp nhận và phẫu thuật thành công cho một trường hợp khối u khổng lồ như người mang bầu sắp sinh.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 30,
+      "claim": "Ngày xảy ra vụ việc không được tiết lộ trong báo cáo vì cho đến nay, không có bằng chứng cho thấy có loại nấm nào có thể lây bệnh sang người và ngược lại.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "SAI",
+      "B0": "ĐÚNG",
+      "-RERANK": "SAI",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 31,
+      "claim": "Thực phẩm bảo vệ sức khỏe Cà gai leo giải độc gan MB và La Hán Quả Tana có nội dung quảng cáo vi phạm quy định của pháp luật về quảng cáo.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 32,
+      "claim": "Bệnh viện Chợ Rẫy, TP.HCM đã không cứu sống thành công bệnh nhân bị container cán qua người. Theo TS-BS Ngô Đức Hiệp, Trưởng khoa Phỏng - Phẫu thuật tạo hình (BV Chợ Rẫy), bệnh nhân không được chuyển lên từ BV huyện Bình Chánh và không có tình trạng đa chấn thương nặng. Đùi và bẹn không bị dập nát, tầng sinh môn không bị rách nát, dương vật không mất và trực tràng không bị đứt hoàn toàn cũng như bàng quang không vỡ.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI"
+    },
+    {
+      "idx": 33,
+      "claim": "Ung thư phổi không dễ chẩn đoán sớm nếu không thăm khám sức khỏe định kỳ, nhưng nếu phát hiện ở giai đoạn sớm thì có thể cho phép điều trị ung thư phổi hiệu quả, thậm chí là khỏi không bao giờ bị lại nữa.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 34,
+      "claim": "Một bé gái 3 tuổi (ngụ Long An) được đưa tới Bệnh viện Nhi đồng 1 (TP.HCM) vào ngày 30.3 trong tình trạng quấy khóc, đau nhức mũi, chảy dịch vàng lẫn máu bên mũi phải.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 35,
+      "claim": "Khi máy CT ở Bệnh viện Chợ Rẫy hư có thể ảnh hưởng đến an toàn của bệnh nhân.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 36,
+      "claim": "Các loại cây, hoa có chứa các hợp chất gây độc trong trường cần được loại bỏ, riêng đối với các cây cổ thủ được trồng phục vụ môn Sinh học, cần phải có biển cảnh báo và biện pháp kiểm soát an toàn.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 37,
+      "claim": "TP.HCM vào mùa mưa tháng 6, mùa cao điểm của các bệnh đường hô hấp, dễ lây lan trong môi trường tập trung đông người, cần báo ngay cho trạm y tế và trung tâm y tế địa phương để có hướng xử lý kịp thời nếu có bất thường.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 38,
+      "claim": "Bệnh nhân ung thư ngày càng có xu hướng tăng khi tại Việt Nam, ung thư gan đứng đầu, xếp sau là ung thư phổi.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 39,
+      "claim": "Hệ thống miễn dịch đóng vai trò quan trọng trong việc bảo vệ cơ thể khỏi bệnh tật, trong đó có ung thư.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 40,
+      "claim": "Giúp hệ vi sinh đường ruột khỏe mạnh, không bị táo bón qua việc bổ sung lợi khuẩn bằng men vi sinh Optibac Probiotics Optibac.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "SAI",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 41,
+      "claim": "Đang chơi cùng chị gái, cháu bé 3 tuổi chạy vào nhà báo với người thân vừa nhét đồ chơi vào mũi, cháu bé than đau và hợp tác với gia đình lấy ra vẫn không được.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 42,
+      "claim": "Đã 99 ngày liên tiếp Việt Nam không ghi nhận ca tử vong do COVID-19, tổng số ca được điều trị khỏi đến nay là 10.614.857 ca.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI"
+    },
+    {
+      "idx": 43,
+      "claim": "Ca phẫu thuật đã thành công trong việc bình thường hóa hoàn toàn bộ phận sinh dục của đứa trẻ.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 44,
+      "claim": "Trưởng khoa Phụ Sản, kiêm Giám Đốc Y khoa Bệnh viện Quốc tế City TS.BS Tạ Thị Thanh Thủy sinh năm 1980 cho biết,  vừa tiếp nhận và phẫu thuật thành công cho một trường hợp khối u khổng lồ như người mang bầu sắp sinh",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 45,
+      "claim": "TP Hồ Chí Minh đã ghi nhận các chùm ca bệnh hô hấp trường học ở quận Bình Thạnh và mới đây là Quận 10 trong ngày 30/1.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 46,
+      "claim": "Tiến hành phẫu thuật cắt phần gan có khối ung thư là phương pháp điều trị duy nhất.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 47,
+      "claim": "Mẫu bệnh phẩm của các trường hợp có tiền sử tiếp xúc với gia cầm ốm, chết cần gửi về Viện Vệ sinh dịch tễ/Viện Pasteur ở đường 222 đường Nguyễn Trãi, Khánh Hòa để xét nghiệm và triển khai kịp thời các biện pháp cách ly, điều trị, phòng, chống dịch.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 48,
+      "claim": "Bệnh Marburg là một dạng bệnh sốt xuất huyết với các triệu chứng như sốt, choáng váng, ói mửa và có tỷ lệ tử vong đến 98%.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI"
+    },
+    {
+      "idx": 49,
+      "claim": "Một nam thanh niên 19 tuổi bị gãy dương vật do đứt dây hãm bao quy đầu trong lúc quan hệ.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "SAI",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 50,
+      "claim": "1 người tử vong, 10 người phải nhập viện, trong đó nhiều bệnh nhân nguy kịch trong 3 vụ ngộ độc liên tiếp do ăn cá chép ủ chua xảy ra tại huyện Châu Thành.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 51,
+      "claim": "Các BV nên tăng cường bảo mật thông tin người bệnh theo khuyến cáo của Sở Y tế HCM để tránh những đáng tiếc không nên có.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 52,
+      "claim": "Các bệnh truyền nhiễm mới nguy hiểm đã ít xuất hiện và hạn chế lay lan đồng thời các biến chủng cũng đã ngừng biến đổi.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI"
+    },
+    {
+      "idx": 53,
+      "claim": "Bệnh nhân đang trong tình trạng nguy kịch và cần được phẫu thuật ngay lập tức để cứu mạng sống của họ.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 54,
+      "claim": "Bác sĩ đã lấy được pin điện tử qua đường nội soi mũi, bơm rửa hốc mũi nhiều lần, lấy bớt phần niêm mạc bị hoại tử, bôi thuốc trị viêm cho bé. Trong vòng 1 tuần không có biến chứng xảy ra.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 55,
+      "claim": "6 bệnh nhân bị nghi ngộ độc chất kích thích có triệu chứng  mệt, lơ mơ, tím tái,  chóng mặt và tê tay chân.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 56,
+      "claim": "Sau thời gian nỗ lực điều trị của các bác sĩ, bệnh nhân cuối cùng trong vụ ngộ độc sau khi ăn cá chép ủ chua ở Quảng Nam hiện đã cai máy thở, tự thở được, các chỉ số ổn định.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "SAI",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 57,
+      "claim": "Dị tật hở môi và hàm ếch là khiếm khuyết bẩm sinh phổ biến nhất xảy ra tại vùng mắt và mũi, hiện nay tất cả các dị tật vùng hàm mặt đều có thể chỉnh sửa được.",
+      "gold": "SAI",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 58,
+      "claim": "Bệnh viện Sản Nhi Nghệ An là bệnh viện chuyên sản nhi nổi tiếng ở Bắc Trung Bộ.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 59,
+      "claim": "Giải thưởng danh giá Kovalevskaia, giải thưởng cao quý chỉ dành cho tập thể khoa học xuất sắc trong nghiên cứu và ứng dụng khoa học vào thực tiễn cuộc sống.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI"
+    },
+    {
+      "idx": 60,
+      "claim": "Vì thiếu thuốc và thiết bị y tế nên khi lượng bệnh nhân dồn về, bệnh viện Chợ Rẫy đã tăng chi phí khám chữa bệnh.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 61,
+      "claim": "Qua giám sát chủ động, Trung tâm Kiểm soát bệnh tật TP Hồ Chí Minh cho biết tối 22/3 đơn vị đã phát hiện chùm ca cúm A/H1N1 tại một trường tiểu học ở Quận 10.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 62,
+      "claim": "Ở độ tuổi tò mò khám phá thế giới xung quanh, cần trong trẻ cẩn thận, tránh để trẻ chơi với những vật nhõ, vừa tay vì trẻ có thể nuốt hay sặc vào đường thở hoặc nhét dị vật vào các hốc của cơ thể gây tai nạn nguy hiểm.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 63,
+      "claim": "Những thói quen ăn uống ảnh hưởng đến sự cân bằng hệ vi khuẩn đường ruột, khiến khoảng 10 triệu dân gặp vấn đề sức khỏe đường tiêu hóa theo thông tin của Viện Dinh dưỡng quốc gia.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 64,
+      "claim": "Bộ Y tế sẽ thực hiện những biện pháp cụ thể nào để tăng tỷ lệ tiêm chủng và thúc đẩy các chiến dịch giáo dục sức khỏe phòng chống dịch bệnh lây lan.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 65,
+      "claim": "Cha mẹ nên ngồi kế bên quan sát khi con em sử dụng màu sáp vì có thể bé sẽ nhét màu vào lỗ mũi.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 66,
+      "claim": "Ông H nhanh chóng được truyền máu, thở ô xy, lập hai đường truyền thuốc và máu, sau đó được phẫu thuật cấp cứu.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 67,
+      "claim": "Tiến sĩ Madesh Muniswamy 50 tuổi, bác sĩ tim mạch tại Trung tâm Khoa học Y tế Đại học Texas, người dẫn đầu nghiên cứu nói rằng bước tiếp theo là tiến hành một số dược động học trước khi nghiên cứu thí điểm trên người.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "SAI",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 68,
+      "claim": "Tình trạng của bà cụ nguy hiểm đến tính mạng vì bà có khối u ở thận phải kèm với lý nền.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 69,
+      "claim": "Các em học sinh và các giáo viên khác đều mừng rỡ khi thấy thầy giáo quay trở lại lớp học.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 70,
+      "claim": "Ngày 30.3, Bệnh viện Nhi đồng 1(TP.HCM) vừa ghi nhận 1 ca hoại tử mũi do nhét pin điện tử vào lỗ mũi.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 71,
+      "claim": "Sau chuyến đi dã ngoại của Trường Tiểu học Kim GIang, các em học sinh đã bị ngộ độc, trong đó có 73 trẻ vào viện, 14 trẻ đã được ra viện, hầu hết sức khỏe các em đều ổn định.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 72,
+      "claim": "Bộ đội Biên phòng Bình Phước và các đơn vị liên quan tổ chức trạm kiểm soát dọc đường biên chung với Campuchia, tại cửa khẩu Lạng Sơn phải tập trung cao lực lượng nhất.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 73,
+      "claim": "Sau hơn 1 tháng theo dõi và điều trị, dù một phần niêm mạc và sàn mũi đã bị ăn mòn, các bác sĩ chưa thấy cấu trúc quan trọng nào bị hoại tử và cũng không có tai biến hay biến chứng nào nguy hiểm nhờ vào sự can thiệp khẩn trương của bác sĩ.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 74,
+      "claim": "Tạp chí báo cáo các trường hợp y khoa là Medical Mycology Case Reports và quá trình lâm sàng của ca bệnh phải được thể hiện rõ ràng cho tất cả người đọc.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 75,
+      "claim": "Khoa Di truyền y học của bệnh viện đã đóng vai trò tiên phong trong việc áp dụng xét nghiệm PCR để xác định thai phụ có mắc COVID-19 hay không trong bối cảnh đại dịch, phương pháp xét nghiệm này đã mang lại lợi ích quan trọng cho việc đánh giá tình trạng sức khỏe của thai phụ, giúp đưa ra các quyết định về điều trị và quản lý hiệu quả, đồng thời đảm bảo an toàn cho thai nhi và giảm nguy cơ lây nhiễm trong cộng đồng.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 76,
+      "claim": "Lợi khuẩn (probiotics) là những vi khuẩn - vi sinh vật có lợi cho đường ruột, chúng ta cần bổ sung chúng vào chế độ ăn nhằm cân bằng hệ vi khuẩn đường ruột để cải thiện sức khỏe.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 77,
+      "claim": "Bệnh viện Chợ Rẫy trước Nghị quyết 30 và Nghị định 7 có 5 máy CT hư hỏng trong đó có 2 máy của hãng Toshiba.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 78,
+      "claim": "Bệnh nhân có tiền sử phẫu thuật vùng bụng trước đó và nhờ có sự phối hợp nhanh chóng, hiệu quả của các chuyên khoa nên nhiều ca mổ đã thành công.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 79,
+      "claim": "Bác sĩ Nguyễn Minh Trung, trưởng khoa Tai Mũi Họng của bệnh viện Nhi Đồng 1 cho biết ở độ tuổi tò mò về thế giới xung quanh, trẻ nhỏ có thể nuốt hay sặc đường thở cũng như nhét các dị vật vào các hốc của cơ thể.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 80,
+      "claim": "Để chủ động phòng chống dịch cúm gia cầm lây sang người trước tình hình dịch cúm A (H5N1) trên gia cầm đã lây sang người gây tử vong tại Campuchia, cần phải tuyên truyền sâu rộng đến người dân nắm bắt được thông tin, phòng tránh và xử lý kịp thời không để dịch bệnh lây sang người.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 81,
+      "claim": "Tổng thời gian điều trị là 112 ngày (2 đợt) từ ngày 1-2 đến ngày 2-6 với tổng chi phí 380 triệu đồng (bảo hiểm trả 240 triệu đồng).",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 82,
+      "claim": "BS Hải mới từ BV Hữu nghị Việt Đức (Hà Nội) về công tác được mấy năm, Do vậy, khi anh đề xuất phương án chữa trị không ít người nghi ngại.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 83,
+      "claim": "Bệnh viện Nhi đồng 1 đã tiếp nhận một bệnh nhi nhét pin điện tử vào mũi, sau khi kiểm tra cho thấy pin đã ăn mòn toàn bộ niêm mạc vách ngăn, cuốn mũi dưới và sàn mũi nơi pin tiếp xúc.",
+      "gold": "SAI",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "SAI",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 84,
+      "claim": "WHO đang làm việc với các nhà nước chức trách và nhà sản xuất để nghiên cứu vaccine nhưng hiện nay vẫn chưa có thuốc trên thị trường.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 85,
+      "claim": "Vitamin và khoáng chất có vai trò xúc tác các phản ứng lí hóa diễn ra bên trong cơ thể, góp phần hình thành nên các tế bào ngăn chặn sự xâm nhập có hại từ bên ngoài.",
+      "gold": "SAI",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 86,
+      "claim": "Dương vật có thể bị gãy do sở thích bẻ dương vật, chơi thể thao và tỷ lệ dương vật bị gãy cao gấp 3 lần trong những năm gần đây.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 87,
+      "claim": "Sau khi nghe bác sĩ nước ngoài tư vấn, cô quyết định điều chỉnh lại chế độ dinh dưỡng, ăn uống, luyện tập và sử dụng kết hợp thuốc tây y với Thực phẩm bảo vệ sức khỏe Diabetna.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 88,
+      "claim": "Bệnh nhân nam bị gãy \"của quý\" được phẩu thuật cầm máu nhưng chưa làm tạo hình dây hãm.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI"
+    },
+    {
+      "idx": 89,
+      "claim": "Đây là trường hợp tổn thương đặc biệt nghiêm trọng do tai nạn nhưng theo y văn, những trường hợp tương tự vẫn có khả năng cứu sống cao.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 90,
+      "claim": "Hồng và Tuấn quen nhau ở buổi gặp phỏng vấn thực tập, ban đầu là bạn sau dần thành người yêu rồi cưới nhau sau khi cả hai đều lấy được bằng tốt nghiệp.",
+      "gold": "SAI",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 91,
+      "claim": "Loài nấm được tìm thấy trên người bệnh nhân là nấm chondrostereum purpureum, một loại nấm gây ra bệnh bạc lá ở thực vật.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 92,
+      "claim": "Sau hơn 5 tháng nằm viện, vết thương mỏm cụt của bệnh nhân đã được che phủ tốt nhưng các bác sĩ khuyên bệnh nhân ở lại viện 6 tháng nữa.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 93,
+      "claim": "Các sản phẩm Cerave trước khi lưu hành trên thị trường đều tuân thủ quy tắc 7 không nên mỹ phẩm Cerave đã và đang có mặt tại nhiều quốc gia trên thế giới, được ưa chuộng rộng rãi.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 94,
+      "claim": "Ổ chứa tự nhiên là loài dơi ăn quả, bệnh có thể lây từ động vật sang người, từ người sang người, nguồn gốc của bệnh được phát hiện ở Trung Quốc.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 95,
+      "claim": "Lễ tôn vinh nữ trí thức tiêu biểu ngành y giai đoạn 2019-2022 do Bộ Y tế phối hợp với Hội Nữ Trí thức Việt Nam, Công đoàn Y tế Việt Nam tổ chức sáng 2-3.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG"
+    },
+    {
+      "idx": 96,
+      "claim": "Đường ruột có khoảng 100 nghìn tỷ vi sinh vật (đa phần là vi khuẩn) bao gồm cả lợi khuẩn và hại khuẩn, chúng luôn giữ mức cân bằng nhầm tránh những tác hại không đáng có với cơ thể vật chủ.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 97,
+      "claim": "Haloperidol là một loại thuốc gây ngộ độc khi dùng quá liều, đặc biệt là đối với người lớn, nên thuốc được gia đình cất kỹ trong tủ của gia đình.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI"
+    },
+    {
+      "idx": 98,
+      "claim": "Chanh chứa nhiều vitamin D, uống nước chanh nóng có thể giúp giảm nghẹt mũi hoặc làm dịu cơn đau họng.",
+      "gold": "SAI",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "SAI",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 99,
+      "claim": "4 bệnh nhân trong các chùm ca bệnh ngộ độc botulinum vì ăn cá chép muối ủ chua đang được xem xét cho xuất viện sau nhiều ngày điều trị.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG"
+    }
+  ]
+}

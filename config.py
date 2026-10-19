@@ -63,5 +63,12 @@ GUARD_NER_ASSIST_MIN_ENTITIES = 1
 GUARD_GAZETTEER_DIR = "data/gazetteer"
 
 # Bump khi đổi corpus/model pipeline để vô hiệu cache cũ
-CLAIM_CACHE_VERSION = "1"
+CLAIM_CACHE_VERSION = "2"
 CLAIM_CACHE_TTL_SECONDS = 2 * 60 * 60  # 2 giờ
+
+# Bộ ra kết luận (xem evaluation/ablation_cache.py + ablation_analyze.py)
+#   "ess"         : đề xuất — weighted_max mức chunk quyết định có kết luận hay không,
+#                   top-m câu bằng chứng (ESS) quyết định hướng ĐÚNG/SAI
+#   "weighted_max": pipeline gốc (baseline)
+VERDICT_STRATEGY = "ess"
+ESS_TOP_M = 5  # chọn trên tập dev Viet-MedFact (None = mọi câu)

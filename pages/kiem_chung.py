@@ -96,6 +96,21 @@ def _render_result(result: dict) -> None:
             unsafe_allow_html=True,
         )
 
+    sentences = result.get("key_sentences") or []
+    if sentences:
+        st.markdown(
+            '<div class="section-title">Câu bằng chứng then chốt</div>',
+            unsafe_allow_html=True,
+        )
+        tags = {"entailment": "ủng hộ", "contradiction": "mâu thuẫn", "neutral": "trung lập"}
+        for sent in sentences[:3]:
+            rel = max(tags, key=lambda k: sent.get(k, 0.0))
+            st.markdown(
+                f'<div class="evidence-box">{html.escape(sent["text"])}'
+                f'<br><small>→ {tags[rel]} ({sent.get(rel, 0.0) * 100:.0f}%)</small></div>',
+                unsafe_allow_html=True,
+            )
+
     st.markdown('<div class="section-title">Nguồn tham khảo</div>', unsafe_allow_html=True)
     docs = result.get("evidence_docs") or []
     if docs:

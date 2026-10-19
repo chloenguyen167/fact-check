@@ -1,0 +1,2592 @@
+{
+  "cv": {
+    "k": 5,
+    "repeats": 5,
+    "n": 250,
+    "variants": {
+      "FULL": {
+        "name": "Đề xuất (Rerank + NLI + ESS)",
+        "f1_macro": 0.4930529174688621,
+        "f1_sd": 0.0038154506774190056,
+        "accuracy": 0.5032,
+        "delta_f1_vs_B0": 0.012107065514060544,
+        "wins_vs_B0": 5
+      },
+      "B0": {
+        "name": "− ESS (RAG + NLI gốc)",
+        "f1_macro": 0.48094585195480155,
+        "f1_sd": 0.0,
+        "accuracy": 0.488,
+        "delta_f1_vs_B0": 0.0,
+        "wins_vs_B0": 0
+      },
+      "-RERANK": {
+        "name": "− Rerank chunk (dense top-3)",
+        "f1_macro": 0.48968693756165094,
+        "f1_sd": 0.003516189174360453,
+        "accuracy": 0.512,
+        "delta_f1_vs_B0": 0.008741085606849386,
+        "wins_vs_B0": 5
+      },
+      "B0-RR": {
+        "name": "− ESS − Rerank",
+        "f1_macro": 0.4930668272355569,
+        "f1_sd": 0.0,
+        "accuracy": 0.508,
+        "delta_f1_vs_B0": 0.012120975280755342,
+        "wins_vs_B0": 5
+      },
+      "+CALIB": {
+        "name": "+ Hiệu chỉnh ngưỡng",
+        "f1_macro": 0.46976786566059525,
+        "f1_sd": 0.007348077861845914,
+        "accuracy": 0.46799999999999997,
+        "delta_f1_vs_B0": -0.011177986294206355,
+        "wins_vs_B0": 1
+      },
+      "+GATE": {
+        "name": "+ Cổng liên quan",
+        "f1_macro": 0.5036190116039049,
+        "f1_sd": 0.007174585811792104,
+        "accuracy": 0.5128,
+        "delta_f1_vs_B0": 0.02267315964910339,
+        "wins_vs_B0": 5
+      },
+      "+CALIB+GATE": {
+        "name": "+ Hiệu chỉnh + cổng",
+        "f1_macro": 0.49293665059994857,
+        "f1_sd": 0.009067434663685274,
+        "accuracy": 0.4904,
+        "delta_f1_vs_B0": 0.011990798645147006,
+        "wins_vs_B0": 4
+      },
+      "MEAN": {
+        "name": "Tổng hợp trung bình (chunk)",
+        "f1_macro": 0.4795234953533643,
+        "f1_sd": 0.0,
+        "accuracy": 0.484,
+        "delta_f1_vs_B0": -0.0014223566014372468,
+        "wins_vs_B0": 0
+      }
+    }
+  },
+  "dataset": "viet_medfact",
+  "mode": "e2e",
+  "test_size": 100,
+  "dev_size": 150,
+  "label_dist_test": {
+    "ĐÚNG": 44,
+    "SAI": 23,
+    "KHÔNG ĐỦ BẰNG CHỨNG": 33
+  },
+  "variants": {
+    "FULL": {
+      "name": "Đề xuất (Rerank + NLI + ESS)",
+      "spec": {
+        "order": "rr",
+        "dir": "window",
+        "decision": "wmax",
+        "gate": false,
+        "rel_source": "rr"
+      },
+      "params": {
+        "m": 5,
+        "tau_r": -Infinity
+      },
+      "dev_f1_acc": [
+        0.4879088710703831,
+        0.5
+      ],
+      "accuracy": 0.52,
+      "precision_macro": 0.5125974025974026,
+      "recall_macro": 0.5135046113306984,
+      "f1_macro": 0.5114418220103606,
+      "confusion_matrix": [
+        [
+          29,
+          0,
+          15
+        ],
+        [
+          5,
+          14,
+          4
+        ],
+        [
+          16,
+          8,
+          9
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.42,
+        0.62
+      ],
+      "f1_ci95": [
+        0.4145350895438271,
+        0.6035107397442472
+      ],
+      "latency": {
+        "mean_sec": 6.224500217657715,
+        "p50_sec": 6.210194662658308,
+        "p95_sec": 9.05769924758355
+      },
+      "pred_dist": {
+        "ĐÚNG": 50,
+        "SAI": 22,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 28
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.58,
+          "recall": 0.6590909090909091,
+          "f1": 0.6170212765957446,
+          "support": 44
+        },
+        "SAI": {
+          "precision": 0.6363636363636364,
+          "recall": 0.6086956521739131,
+          "f1": 0.6222222222222223,
+          "support": 23
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.32142857142857145,
+          "recall": 0.2727272727272727,
+          "f1": 0.2950819672131148,
+          "support": 33
+        }
+      }
+    },
+    "B0": {
+      "name": "− ESS (RAG + NLI gốc)",
+      "spec": {
+        "order": "rr",
+        "dir": "chunk",
+        "decision": "wmax",
+        "gate": false,
+        "rel_source": "rr"
+      },
+      "params": {},
+      "dev_f1_acc": null,
+      "accuracy": 0.49,
+      "precision_macro": 0.4775132275132275,
+      "recall_macro": 0.4976943346508564,
+      "f1_macro": 0.4856265733407012,
+      "confusion_matrix": [
+        [
+          25,
+          4,
+          15
+        ],
+        [
+          4,
+          15,
+          4
+        ],
+        [
+          16,
+          8,
+          9
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.39975000000000005,
+        0.59
+      ],
+      "f1_ci95": [
+        0.39237631406734097,
+        0.5833184559178904
+      ],
+      "latency": {
+        "mean_sec": 4.3669294346384415,
+        "p50_sec": 4.124452416988788,
+        "p95_sec": 6.898262243453064
+      },
+      "pred_dist": {
+        "ĐÚNG": 45,
+        "SAI": 27,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 28
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.5555555555555556,
+          "recall": 0.5681818181818182,
+          "f1": 0.5617977528089888,
+          "support": 44
+        },
+        "SAI": {
+          "precision": 0.5555555555555556,
+          "recall": 0.6521739130434783,
+          "f1": 0.6,
+          "support": 23
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.32142857142857145,
+          "recall": 0.2727272727272727,
+          "f1": 0.2950819672131148,
+          "support": 33
+        }
+      }
+    },
+    "-RERANK": {
+      "name": "− Rerank chunk (dense top-3)",
+      "spec": {
+        "order": "dense",
+        "dir": "window",
+        "decision": "wmax",
+        "gate": false,
+        "rel_source": "dense"
+      },
+      "params": {
+        "m": null,
+        "tau_r": -Infinity
+      },
+      "dev_f1_acc": [
+        0.5010925121390238,
+        0.5133333333333333
+      ],
+      "accuracy": 0.51,
+      "precision_macro": 0.49415081042988024,
+      "recall_macro": 0.49088713219148006,
+      "f1_macro": 0.49229960183307037,
+      "confusion_matrix": [
+        [
+          27,
+          4,
+          13
+        ],
+        [
+          5,
+          10,
+          8
+        ],
+        [
+          11,
+          8,
+          14
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.41,
+        0.61
+      ],
+      "f1_ci95": [
+        0.39283322353974526,
+        0.5926981519150193
+      ],
+      "latency": {
+        "mean_sec": 3.616880824118853,
+        "p50_sec": 3.4570267495000735,
+        "p95_sec": 6.359964921775099
+      },
+      "pred_dist": {
+        "ĐÚNG": 43,
+        "SAI": 22,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 35
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.627906976744186,
+          "recall": 0.6136363636363636,
+          "f1": 0.6206896551724139,
+          "support": 44
+        },
+        "SAI": {
+          "precision": 0.45454545454545453,
+          "recall": 0.43478260869565216,
+          "f1": 0.4444444444444445,
+          "support": 23
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.4,
+          "recall": 0.42424242424242425,
+          "f1": 0.411764705882353,
+          "support": 33
+        }
+      }
+    },
+    "B0-RR": {
+      "name": "− ESS − Rerank",
+      "spec": {
+        "order": "dense",
+        "dir": "chunk",
+        "decision": "wmax",
+        "gate": false,
+        "rel_source": "dense"
+      },
+      "params": {},
+      "dev_f1_acc": null,
+      "accuracy": 0.51,
+      "precision_macro": 0.49660894660894667,
+      "recall_macro": 0.49088713219148006,
+      "f1_macro": 0.4933155080213904,
+      "confusion_matrix": [
+        [
+          27,
+          4,
+          13
+        ],
+        [
+          5,
+          10,
+          8
+        ],
+        [
+          12,
+          7,
+          14
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.41,
+        0.61
+      ],
+      "f1_ci95": [
+        0.3867916622894662,
+        0.5930028193396732
+      ],
+      "latency": {
+        "mean_sec": 2.427449836588203,
+        "p50_sec": 2.2474576879903907,
+        "p95_sec": 4.909711775632604
+      },
+      "pred_dist": {
+        "ĐÚNG": 44,
+        "SAI": 21,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 35
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.6136363636363636,
+          "recall": 0.6136363636363636,
+          "f1": 0.6136363636363636,
+          "support": 44
+        },
+        "SAI": {
+          "precision": 0.47619047619047616,
+          "recall": 0.43478260869565216,
+          "f1": 0.4545454545454545,
+          "support": 23
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.4,
+          "recall": 0.42424242424242425,
+          "f1": 0.411764705882353,
+          "support": 33
+        }
+      }
+    },
+    "+CALIB": {
+      "name": "+ Hiệu chỉnh ngưỡng",
+      "spec": {
+        "order": "rr",
+        "dir": "window",
+        "decision": "calib",
+        "gate": false,
+        "rel_source": "rr"
+      },
+      "params": {
+        "m": 5,
+        "tau_e": 0.9,
+        "tau_c": 0.9,
+        "tau_r": -Infinity
+      },
+      "dev_f1_acc": [
+        0.5363309849426716,
+        0.54
+      ],
+      "accuracy": 0.46,
+      "precision_macro": 0.5031778505182761,
+      "recall_macro": 0.441699604743083,
+      "f1_macro": 0.4556878306878307,
+      "confusion_matrix": [
+        [
+          23,
+          0,
+          21
+        ],
+        [
+          4,
+          8,
+          11
+        ],
+        [
+          13,
+          5,
+          15
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.37,
+        0.56
+      ],
+      "f1_ci95": [
+        0.3553659549131283,
+        0.5558501683501683
+      ],
+      "latency": {
+        "mean_sec": 6.224500217657715,
+        "p50_sec": 6.210194662658308,
+        "p95_sec": 9.05769924758355
+      },
+      "pred_dist": {
+        "ĐÚNG": 40,
+        "SAI": 13,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 47
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.575,
+          "recall": 0.5227272727272727,
+          "f1": 0.5476190476190476,
+          "support": 44
+        },
+        "SAI": {
+          "precision": 0.6153846153846154,
+          "recall": 0.34782608695652173,
+          "f1": 0.4444444444444444,
+          "support": 23
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.3191489361702128,
+          "recall": 0.45454545454545453,
+          "f1": 0.375,
+          "support": 33
+        }
+      }
+    },
+    "+GATE": {
+      "name": "+ Cổng liên quan",
+      "spec": {
+        "order": "rr",
+        "dir": "window",
+        "decision": "wmax",
+        "gate": true,
+        "rel_source": "rr"
+      },
+      "params": {
+        "m": 5,
+        "tau_r": 0.6754
+      },
+      "dev_f1_acc": [
+        0.49512490904681056,
+        0.5066666666666667
+      ],
+      "accuracy": 0.55,
+      "precision_macro": 0.5597222222222222,
+      "recall_macro": 0.5438076416337286,
+      "f1_macro": 0.5502761141790464,
+      "confusion_matrix": [
+        [
+          29,
+          0,
+          15
+        ],
+        [
+          4,
+          14,
+          5
+        ],
+        [
+          15,
+          6,
+          12
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.46,
+        0.65
+      ],
+      "f1_ci95": [
+        0.4516073492372762,
+        0.6433215157654147
+      ],
+      "latency": {
+        "mean_sec": 6.224500217657715,
+        "p50_sec": 6.210194662658308,
+        "p95_sec": 9.05769924758355
+      },
+      "pred_dist": {
+        "ĐÚNG": 48,
+        "SAI": 20,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 32
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.6041666666666666,
+          "recall": 0.6590909090909091,
+          "f1": 0.6304347826086956,
+          "support": 44
+        },
+        "SAI": {
+          "precision": 0.7,
+          "recall": 0.6086956521739131,
+          "f1": 0.6511627906976744,
+          "support": 23
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.375,
+          "recall": 0.36363636363636365,
+          "f1": 0.3692307692307692,
+          "support": 33
+        }
+      }
+    },
+    "+CALIB+GATE": {
+      "name": "+ Hiệu chỉnh + cổng",
+      "spec": {
+        "order": "rr",
+        "dir": "window",
+        "decision": "calib",
+        "gate": true,
+        "rel_source": "rr"
+      },
+      "params": {
+        "m": 5,
+        "tau_e": 0.9,
+        "tau_c": 0.9,
+        "tau_r": -Infinity
+      },
+      "dev_f1_acc": [
+        0.5363309849426716,
+        0.54
+      ],
+      "accuracy": 0.46,
+      "precision_macro": 0.5031778505182761,
+      "recall_macro": 0.441699604743083,
+      "f1_macro": 0.4556878306878307,
+      "confusion_matrix": [
+        [
+          23,
+          0,
+          21
+        ],
+        [
+          4,
+          8,
+          11
+        ],
+        [
+          13,
+          5,
+          15
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.37,
+        0.56
+      ],
+      "f1_ci95": [
+        0.3461143700689712,
+        0.5529996460713924
+      ],
+      "latency": {
+        "mean_sec": 6.224500217657715,
+        "p50_sec": 6.210194662658308,
+        "p95_sec": 9.05769924758355
+      },
+      "pred_dist": {
+        "ĐÚNG": 40,
+        "SAI": 13,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 47
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.575,
+          "recall": 0.5227272727272727,
+          "f1": 0.5476190476190476,
+          "support": 44
+        },
+        "SAI": {
+          "precision": 0.6153846153846154,
+          "recall": 0.34782608695652173,
+          "f1": 0.4444444444444444,
+          "support": 23
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.3191489361702128,
+          "recall": 0.45454545454545453,
+          "f1": 0.375,
+          "support": 33
+        }
+      }
+    },
+    "MEAN": {
+      "name": "Tổng hợp trung bình (chunk)",
+      "spec": {
+        "order": "rr",
+        "dir": "chunk",
+        "decision": "mean",
+        "gate": false,
+        "rel_source": "rr"
+      },
+      "params": {},
+      "dev_f1_acc": null,
+      "accuracy": 0.48,
+      "precision_macro": 0.4791144527986633,
+      "recall_macro": 0.46563460693895475,
+      "f1_macro": 0.4709029370018561,
+      "confusion_matrix": [
+        [
+          25,
+          3,
+          16
+        ],
+        [
+          4,
+          10,
+          9
+        ],
+        [
+          13,
+          7,
+          13
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.38,
+        0.57
+      ],
+      "f1_ci95": [
+        0.36432647201945506,
+        0.5637991066763037
+      ],
+      "latency": {
+        "mean_sec": 4.3669294346384415,
+        "p50_sec": 4.124452416988788,
+        "p95_sec": 6.898262243453064
+      },
+      "pred_dist": {
+        "ĐÚNG": 42,
+        "SAI": 20,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 38
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.5952380952380952,
+          "recall": 0.5681818181818182,
+          "f1": 0.5813953488372093,
+          "support": 44
+        },
+        "SAI": {
+          "precision": 0.5,
+          "recall": 0.43478260869565216,
+          "f1": 0.46511627906976744,
+          "support": 23
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.34210526315789475,
+          "recall": 0.3939393939393939,
+          "f1": 0.3661971830985915,
+          "support": 33
+        }
+      }
+    },
+    "llm_only": {
+      "name": "LLM-only",
+      "accuracy": 0.51,
+      "precision_macro": 0.5310705842620737,
+      "recall_macro": 0.4814448836187967,
+      "f1_macro": 0.49498674498674494,
+      "confusion_matrix": [
+        [
+          29,
+          1,
+          14
+        ],
+        [
+          2,
+          9,
+          12
+        ],
+        [
+          16,
+          4,
+          13
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.42,
+        0.61
+      ],
+      "f1_ci95": [
+        0.3933973005314469,
+        0.5892893756935134
+      ],
+      "latency": {
+        "count": 100,
+        "mean_sec": 1.1547614933154546,
+        "p50_sec": 0.8673630419943947,
+        "p95_sec": 1.3595192798034987
+      },
+      "pred_dist": {
+        "ĐÚNG": 47,
+        "SAI": 14,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 39
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.6170212765957447,
+          "recall": 0.6590909090909091,
+          "f1": 0.6373626373626374,
+          "support": 44
+        },
+        "SAI": {
+          "precision": 0.6428571428571429,
+          "recall": 0.391304347826087,
+          "f1": 0.4864864864864865,
+          "support": 23
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.3333333333333333,
+          "recall": 0.3939393939393939,
+          "f1": 0.36111111111111105,
+          "support": 33
+        }
+      }
+    },
+    "rag_llm": {
+      "name": "RAG + LLM",
+      "accuracy": 0.44,
+      "precision_macro": 0.44516594516594515,
+      "recall_macro": 0.3604523495827843,
+      "f1_macro": 0.31826956433017034,
+      "confusion_matrix": [
+        [
+          35,
+          0,
+          9
+        ],
+        [
+          18,
+          1,
+          4
+        ],
+        [
+          24,
+          1,
+          8
+        ]
+      ],
+      "labels": [
+        "ĐÚNG",
+        "SAI",
+        "KHÔNG ĐỦ BẰNG CHỨNG"
+      ],
+      "acc_ci95": [
+        0.34,
+        0.53
+      ],
+      "f1_ci95": [
+        0.2331993447459794,
+        0.40610712198017423
+      ],
+      "latency": {
+        "count": 100,
+        "mean_sec": 47.167782317889504,
+        "p50_sec": 50.52064810399315,
+        "p95_sec": 53.4915951975825
+      },
+      "pred_dist": {
+        "ĐÚNG": 77,
+        "SAI": 2,
+        "KHÔNG ĐỦ BẰNG CHỨNG": 21
+      },
+      "per_class": {
+        "ĐÚNG": {
+          "precision": 0.45454545454545453,
+          "recall": 0.7954545454545454,
+          "f1": 0.5785123966942148,
+          "support": 44
+        },
+        "SAI": {
+          "precision": 0.5,
+          "recall": 0.043478260869565216,
+          "f1": 0.08,
+          "support": 23
+        },
+        "KHÔNG ĐỦ BẰNG CHỨNG": {
+          "precision": 0.38095238095238093,
+          "recall": 0.24242424242424243,
+          "f1": 0.2962962962962963,
+          "support": 33
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "FULL_vs_B0": {
+      "delta_f1_ci95": [
+        -0.01748341032167298,
+        0.07231999257111617
+      ],
+      "p_f1": 0.124,
+      "delta_acc_ci95": [
+        -0.010000000000000009,
+        0.07999999999999996
+      ],
+      "p_acc": 0.125,
+      "mcnemar": {
+        "a_only": 4,
+        "b_only": 1,
+        "p": 0.375
+      }
+    },
+    "FULL_vs_-RERANK": {
+      "delta_f1_ci95": [
+        -0.0760299574245837,
+        0.11392882757017836
+      ],
+      "p_f1": 0.348,
+      "delta_acc_ci95": [
+        -0.08000000000000002,
+        0.09999999999999998
+      ],
+      "p_acc": 0.457,
+      "mcnemar": {
+        "a_only": 10,
+        "b_only": 9,
+        "p": 1.0
+      }
+    },
+    "FULL_vs_B0-RR": {
+      "delta_f1_ci95": [
+        -0.0759649057148103,
+        0.11496185717907352
+      ],
+      "p_f1": 0.34,
+      "delta_acc_ci95": [
+        -0.07999999999999996,
+        0.09999999999999998
+      ],
+      "p_acc": 0.4475,
+      "mcnemar": {
+        "a_only": 11,
+        "b_only": 10,
+        "p": 1.0
+      }
+    },
+    "FULL_vs_+CALIB": {
+      "delta_f1_ci95": [
+        -0.02979631446993647,
+        0.14377893815823745
+      ],
+      "p_f1": 0.1055,
+      "delta_acc_ci95": [
+        -0.02999999999999997,
+        0.15000000000000002
+      ],
+      "p_acc": 0.1085,
+      "mcnemar": {
+        "a_only": 13,
+        "b_only": 7,
+        "p": 0.26317596435546875
+      }
+    },
+    "FULL_vs_+GATE": {
+      "delta_f1_ci95": [
+        -0.08547446007349373,
+        -0.0003111102675272534
+      ],
+      "p_f1": 0.997,
+      "delta_acc_ci95": [
+        -0.06999999999999995,
+        0.0
+      ],
+      "p_acc": 1.0,
+      "mcnemar": {
+        "a_only": 0,
+        "b_only": 3,
+        "p": 0.25
+      }
+    },
+    "FULL_vs_+CALIB+GATE": {
+      "delta_f1_ci95": [
+        -0.03332256886702249,
+        0.14237815711846707
+      ],
+      "p_f1": 0.1135,
+      "delta_acc_ci95": [
+        -0.02999999999999997,
+        0.14000000000000007
+      ],
+      "p_acc": 0.112,
+      "mcnemar": {
+        "a_only": 13,
+        "b_only": 7,
+        "p": 0.26317596435546875
+      }
+    },
+    "FULL_vs_MEAN": {
+      "delta_f1_ci95": [
+        -0.03447225754766584,
+        0.1182252024665224
+      ],
+      "p_f1": 0.142,
+      "delta_acc_ci95": [
+        -0.030000000000000027,
+        0.11999999999999994
+      ],
+      "p_acc": 0.1655,
+      "mcnemar": {
+        "a_only": 9,
+        "b_only": 5,
+        "p": 0.4239501953125
+      }
+    },
+    "FULL_vs_llm_only": {
+      "delta_f1_ci95": [
+        -0.11360260245684632,
+        0.1396998470661012
+      ],
+      "p_f1": 0.4135,
+      "delta_acc_ci95": [
+        -0.11999999999999994,
+        0.13000000000000006
+      ],
+      "p_acc": 0.489,
+      "mcnemar": {
+        "a_only": 22,
+        "b_only": 21,
+        "p": 1.0
+      }
+    },
+    "FULL_vs_rag_llm": {
+      "delta_f1_ci95": [
+        0.06503494365902783,
+        0.3197786932769874
+      ],
+      "p_f1": 0.0025,
+      "delta_acc_ci95": [
+        -0.05999999999999994,
+        0.20999999999999996
+      ],
+      "p_acc": 0.126,
+      "mcnemar": {
+        "a_only": 26,
+        "b_only": 18,
+        "p": 0.2912152365458951
+      }
+    },
+    "B0_vs_rag_llm": {
+      "delta_f1_ci95": [
+        0.03621552363617388,
+        0.2881429294477474
+      ],
+      "p_f1": 0.0065,
+      "delta_acc_ci95": [
+        -0.09000000000000002,
+        0.18999999999999995
+      ],
+      "p_acc": 0.255,
+      "mcnemar": {
+        "a_only": 26,
+        "b_only": 21,
+        "p": 0.5600646295802106
+      }
+    },
+    "B0_vs_llm_only": {
+      "delta_f1_ci95": [
+        -0.1309398977483766,
+        0.11309460949836225
+      ],
+      "p_f1": 0.567,
+      "delta_acc_ci95": [
+        -0.14999999999999997,
+        0.10000000000000003
+      ],
+      "p_acc": 0.651,
+      "mcnemar": {
+        "a_only": 19,
+        "b_only": 21,
+        "p": 0.8746293123804207
+      }
+    },
+    "B0_vs_B0-RR": {
+      "delta_f1_ci95": [
+        -0.09585618013388596,
+        0.0843315446599104
+      ],
+      "p_f1": 0.567,
+      "delta_acc_ci95": [
+        -0.10000000000000003,
+        0.06000000000000005
+      ],
+      "p_acc": 0.731,
+      "mcnemar": {
+        "a_only": 8,
+        "b_only": 10,
+        "p": 0.8145294189453125
+      }
+    }
+  },
+  "sensitivity_m": {
+    "1": {
+      "acc": 0.45,
+      "f1_macro": 0.42024617762322675
+    },
+    "2": {
+      "acc": 0.49,
+      "f1_macro": 0.4766700656260621
+    },
+    "3": {
+      "acc": 0.51,
+      "f1_macro": 0.4988391246372264
+    },
+    "5": {
+      "acc": 0.52,
+      "f1_macro": 0.5114418220103606
+    },
+    "None": {
+      "acc": 0.51,
+      "f1_macro": 0.5024422883907661
+    }
+  },
+  "test_details": [
+    {
+      "idx": 0,
+      "claim": "Tăng cường vận động giúp giảm đau do viêm cột sống dính khớp",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 1,
+      "claim": "Thực hành đúng tư thế khi đứng, ngồi có thể giúp giảm đau và tăng cường cơ lưng, nhưng không phải là biện pháp hiệu quả nhất để điều trị viêm cột sống dính khớp",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 2,
+      "claim": "Ngăn ngừa căng thẳng mạn tính có thể giúp giảm viêm và cải thiện tình trạng bệnh viêm cột sống dính khớp, nhưng không phải là biện pháp thay thế cho các phương pháp điều trị y tế",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 3,
+      "claim": "Emflaza được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 4,
+      "claim": "Emflaza có thể gây ra nhiều tác dụng phụ nghiêm trọng như hội chứng Cushing, tăng huyết áp và nguy cơ thủng đường tiêu hóa.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 5,
+      "claim": "Emflaza chỉ được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên, không rõ liệu nó có hiệu quả trong trường hợp khác.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 6,
+      "claim": "Viêm da cơ và viêm đa cơ là nhóm bệnh tự miễn với tình trạng viêm, thoái hóa các sợi cơ vân gây yếu cơ làm giảm hoặc mất khả năng vận động.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 7,
+      "claim": "Nguyên nhân chính xác của bệnh viêm da cơ và viêm đa cơ chưa được xác định rõ ràng.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 8,
+      "claim": "Bệnh viêm da cơ và viêm đa cơ có liên quan đến tăng nguy cơ ác tính, nhưng không phải là nguyên nhân trực tiếp gây ra tình trạng này.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 9,
+      "claim": "Nước chanh, cần tây, xô thơm, cỏ lúa mì, cây mê điệt, giấm táo, dầu bạc hà và rau xà lách đều có tác dụng loại bỏ mùi hôi nách.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 10,
+      "claim": "Không có thông tin cụ thể về cách sử dụng dầu cây trà để loại bỏ mùi hôi nách.",
+      "gold": "SAI",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 11,
+      "claim": "Không có bằng chứng khoa học nào hỗ trợ cho việc sử dụng rau xà lách để loại bỏ mùi hôi nách.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "SAI",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 12,
+      "claim": "Ngủ 7-8 tiếng mỗi đêm và tập luyện thường xuyên giúp giảm nguy cơ đột quỵ!",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 13,
+      "claim": "Ngủ nhiều không tăng nguy cơ đột quỵ, mà ngược lại làm giảm nguy cơ!",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 14,
+      "claim": "Bài viết không nói rõ liệu ngủ ít hay nhiều có ảnh hưởng đến nguy cơ đột quỵ?",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 15,
+      "claim": "Bệnh vảy nến ở trẻ em đa số đáp ứng với điều trị tại chỗ.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 16,
+      "claim": "Vảy nến ở trẻ em từ 4 tuổi trở lên có nhiều lựa chọn điều trị khác nhau, bao gồm thuốc ức chế miễn dịch và liệu pháp ánh sáng.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 17,
+      "claim": "Quản lý vảy nến thông thường ở trẻ em từ 4 tuổi trở lên không chỉ dựa trên corticosteroid tại chỗ mà còn có nhiều lựa chọn khác.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 18,
+      "claim": "Người loạn dưỡng mỡ cần xây dựng chế độ ăn uống khoa học, hợp lý để hạn chế chất béo và cung cấp đủ năng lượng cho cơ thể.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 19,
+      "claim": "Ăn nhiều dầu thực vật không phải là một phần của chế độ ăn uống phù hợp với người loạn dưỡng mỡ.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 20,
+      "claim": "Người loạn dưỡng mỡ nên ăn nhiều thịt đỏ và nội tạng động vật để cải thiện sức khỏe.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 21,
+      "claim": "Viêm gan C là bệnh truyền nhiễm do Hepatitis C virus (HCV) gây nên, có thể lây lan qua đường máu và tình dục.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 22,
+      "claim": "Viêm gan C không phải là bệnh nguy hiểm nếu người bệnh bị nhiễm thêm viêm gan B.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 23,
+      "claim": "Không có vaccine phòng bệnh viêm gan C, vì vậy cách duy nhất để phòng ngừa lây nhiễm virus viêm gan C là không sử dụng chung kim tiêm.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 24,
+      "claim": "Khi máy bay cất hay hạ cánh, sự chênh lệch áp suất không khí gây ù tai.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 25,
+      "claim": "Sử dụng thuốc thông mũi và thuốc xịt mũi thường xuyên có thể dẫn đến nhờn thuốc và tăng sự tắc nghẽn hơn.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 26,
+      "claim": "Đừng ngủ trong lúc cất cánh hoặc hạ cánh để tránh bị ù tai, đau tai.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 27,
+      "claim": "Chế độ ăn thiếu canxi có thể dẫn đến hạ canxi huyết ở trẻ em.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 28,
+      "claim": "Hạ canxi huyết chỉ xảy ra khi cơ thể không có dự trữ canxi.",
+      "gold": "SAI",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "SAI",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 29,
+      "claim": "Cân bằng canxi trong máu phụ thuộc vào nhiều yếu tố và không đơn giản là thiếu canxi.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 30,
+      "claim": "Uống cà phê quá nhiều có thể gây mất ngủ",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 31,
+      "claim": "Tập thiền, đi bộ không giúp cải thiện giấc ngủ ở người già",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 32,
+      "claim": "Chứng mất ngủ do nguyên nhân thực thể như bệnh tật, trầm cảm, lo lắng... cần giải quyết tận gốc các nguyên nhân này",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 33,
+      "claim": "Mụn cóc tái phát có thể do chưa hết chân sau đốt hoặc mụn cóc nhỏ gây lây lan.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 34,
+      "claim": "Không có cách nào làm hết được mụn cóc, cần phải điều trị bằng phương pháp phá hủy gốc mụn như đốt điện, laze...",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 35,
+      "claim": "Mụn cóc tái phát có thể do nhiều nguyên nhân khác nhau, không chỉ đơn giản là chưa hết chân sau đốt.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 36,
+      "claim": "Mẹ nhiễm HIV nên nuôi con bằng sữa thay thế để giảm nguy cơ lây truyền HIV cho con.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 37,
+      "claim": "Mẹ nhiễm HIV có thể sinh con âm tính với HIV nếu tiếp cận sớm với thuốc kháng virus và các dịch vụ hỗ trợ trong quá trình mang thai, sinh nở và cho con bú.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 38,
+      "claim": "Sữa mẹ không phải là nguồn tiềm ẩn duy nhất của HIV, nên phụ nữ nhiễm HIV có thể cho con bú mà không cần thay thế bằng sữa công thức.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 39,
+      "claim": "Sỏi túi mật có thể gây ra các biến chứng nguy hiểm như viêm và nhiễm khuẩn đường mật, túi mật cấp, hoại tử túi mật và thấm mật phúc mạc.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 40,
+      "claim": "Sỏi túi mật chỉ ảnh hưởng đến phụ nữ ở Mỹ, không phải ở cả nam giới hay Việt Nam.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 41,
+      "claim": "Sỏi túi mật không thể gây ra biến chứng như rò túi mật đường mật vào ống tiêu hóa và ứ nước túi mật.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 42,
+      "claim": "Bác sĩ đã phẫu thuật thành công cho 2 bệnh nhi mắc động kinh kháng thuốc và cả hai đều được phẫu thuật miễn phí.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 43,
+      "claim": "Không có thông tin về việc bác sĩ đã thử nghiệm kỹ thuật mới trước khi áp dụng tại Bệnh viện Nhi Trung ương.",
+      "gold": "SAI",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 44,
+      "claim": "Bài viết không cung cấp thông tin chi tiết về quy trình phẫu thuật và kết quả sau phẫu thuật cho cả 2 bệnh nhi.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "SAI",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 45,
+      "claim": "Bệnh Basedow là bệnh tự miễn nhưng nguyên nhân chưa rõ ràng và thường gặp ở phụ nữ trẻ từ 20 - 50 tuổi.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "SAI",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 46,
+      "claim": "Bệnh Basedow có thể khởi phát đột ngột hoặc tiến triển từ từ gây sút cân, mệt mỏi, khó nhận biết ngay.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 47,
+      "claim": "Không có biện pháp hữu hiệu nào để phòng ngừa bệnh Basedow và không có phương pháp điều trị mạnh mẽ cho bệnh này.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "SAI",
+      "llm_only": "SAI",
+      "rag_llm": "SAI"
+    },
+    {
+      "idx": 48,
+      "claim": "Căng thẳng và mất ngủ có thể khiến cơn đau đầu trở nên tồi tệ hơn",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 49,
+      "claim": "Căng thẳng và mất ngủ không phải nguyên nhân gây ra cơn đau đầu",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 50,
+      "claim": "Bài viết không cung cấp bằng chứng cụ thể về mối quan hệ giữa đau nửa đầu và đột quỵ",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 51,
+      "claim": "Táo bón có thể gây ra bởi nhiều yếu tố lối sống như thay đổi trong thói quen, chế độ ăn ít chất xơ, uống không đủ nước và ít vận động.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 52,
+      "claim": "Táo bón là do mang thai",
+      "gold": "SAI",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 53,
+      "claim": "Táo bón không phải là do uống rượu hoặc ăn quá nhiều đường",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 54,
+      "claim": "Phenytoin không nên dùng cho bệnh nhân rối loạn chuyển hóa porphyrin và quá mẫn với các dẫn chất hydantoin.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 55,
+      "claim": "Phenytoin có thể gây tăng sản lợi khi ngừng thuốc đột ngột.",
+      "gold": "SAI",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 56,
+      "claim": "Phenytoin không phải là loại thuốc cần vệ sinh miệng tốt khi dùng.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 57,
+      "claim": "Chăm sóc trước và sau mổ ảnh hưởng trực tiếp tới kết quả điều trị phẫu thuật.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 58,
+      "claim": "Mở nắp sọ là một phần của phẫu thuật sọ não để lấy bỏ khối u, cục máu đông hoặc sửa chữa tổn thương gãy xương sọ.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 59,
+      "claim": "Không được lái xe cho đến khi bạn được bác sĩ cho phép sau phẫu thuật sọ não.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 60,
+      "claim": "E6 chủng HPV làm tăng nguy cơ mắc ung thư vòm họng",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 61,
+      "claim": "HPV không gây ung thư vòm họng",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "SAI",
+      "rag_llm": "SAI"
+    },
+    {
+      "idx": 62,
+      "claim": "Ung thư vòm họng có thể do các yếu tố khác nhau gây ra, không chỉ HPV",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 63,
+      "claim": "Mang thai ngoài tử cung có thể gây ra biến chứng nghiêm trọng như vỡ ống dẫn trứng, gây xuất huyết trong và đe dọa tính mạng người phụ nữ.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 64,
+      "claim": "Không có biện pháp phòng ngừa được cho mang thai ngoài tử cung",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 65,
+      "claim": "Mang thai ngoài tử cung là tình trạng nguy hiểm và cần được phát hiện, xử trí kịp thời để tránh những biến chứng nghiêm trọng.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 66,
+      "claim": "Phụ nữ mang thai cần dùng kháng sinh khi bị viêm họng do vi khuẩn",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 67,
+      "claim": "Phụ nữ mang thai không được tự điều trị viêm họng bằng thuốc ngậm tại chỗ",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 68,
+      "claim": "Phụ nữ có thai có thể dùng paracetamol để hạ sốt và giảm đau họng",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 69,
+      "claim": "Ung thư tụy là căn bệnh ít gặp nhưng lại rất nguy hiểm bởi khó phát hiện, khó điều trị và tỉ lệ tử vong cực cao.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 70,
+      "claim": "Bạn có thể ngăn ngừa ung thư tụy bằng cách không hút thuốc lá, hạn chế thức uống có nồng độ cồn cao, ăn nhiều trái cây tươi, rau xanh, ngũ cốc nguyên hạt...",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "SAI",
+      "B0": "ĐÚNG",
+      "-RERANK": "SAI",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 71,
+      "claim": "Ung thư tụy chỉ sống được khoảng 2-3 năm sau khi điều trị bằng phẫu thuật",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "SAI",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 72,
+      "claim": "Một bệnh nhân người dân tộc thiểu số được hỗ trợ kinh phí để phẫu thuật lấy thai sau khi bị tiền sản giật nguy kịch.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 73,
+      "claim": "Không có thông tin cụ thể về việc bệnh nhân đã hoàn trả viện phí cho các khoản hỗ trợ từ người hảo tâm và bệnh viện.",
+      "gold": "SAI",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 74,
+      "claim": "Bài viết không cung cấp đủ thông tin về tình trạng sức khỏe sau mổ của sản phụ để xác nhận hay bác bỏ.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 75,
+      "claim": "Thuốc libtayo được phê duyệt để điều trị ung thư biểu mô tế bào vảy đã di căn (CSCC) và có thể giúp hệ thống miễn dịch của cơ thể chống lại các tế bào ung thư.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 76,
+      "claim": "Libtayo chỉ điều trị ung thư da, không phải tất cả các loại ung thư.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 77,
+      "claim": "Thuốc libtayo có thể gây hại cho thai nhi đang phát triển và phụ nữ nên được tư vấn về nguy cơ tiềm ẩn cho thai nhi.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 78,
+      "claim": "Chữa hen suyễn hiệu quả nhất là điều trị dự phòng.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 79,
+      "claim": "Hen suyễn có thể khỏi hoàn toàn mà không cần điều trị dự phòng.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 80,
+      "claim": "Thuốc Đông y chỉ là một lựa chọn thay thế cho thuốc tân dược trong điều trị hen suyễn.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 81,
+      "claim": "U xơ vòm mũi họng là một trong những bướu lành tính hay gặp nhất ở tuổi dậy thì",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "SAI",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 82,
+      "claim": "U xơ vòm mũi họng có thể gây tử vong nếu không được điều trị đúng, kịp thời",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 83,
+      "claim": "Không có thông tin cụ thể về nguy hiểm của u xơ vòm mũi họng và cách điều trị hiệu quả",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 84,
+      "claim": "Bánh mì nguyên cám hoặc bánh mì ngũ cốc nguyên hạt là lựa chọn tốt nhất cho người bị trào ngược dạ dày - thực quản",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "SAI",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 85,
+      "claim": "Tất cả loại bánh mì đều khiến trào ngược acid",
+      "gold": "SAI",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 86,
+      "claim": "Không có loại bánh mì nào là hoàn toàn tốt cho người bị trào ngược dạ dày - thực quản",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "SAI",
+      "B0-RR": "SAI",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 87,
+      "claim": "Sử dụng thuốc điều trị loãng xương như alendronate có thể giúp giảm nguy cơ mắc bệnh đái tháo đường loại 2",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 88,
+      "claim": "Nghiên cứu chỉ ra mối liên hệ giữa việc sử dụng thuốc điều trị loãng xương và giảm nguy cơ mắc bệnh đái tháo đường, nhưng chưa rõ cơ chế cụ thể",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 89,
+      "claim": "Sử dụng thuốc điều trị loãng xương không phải là nguyên nhân chính gây giảm nguy cơ mắc bệnh đái tháo đường loại 2",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 90,
+      "claim": "Ung thư tinh hoàn không thể chữa khỏi bằng đông y, chỉ có phương pháp y học hiện đại mới có thể điều trị hiệu quả.",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "SAI",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "SAI",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "SAI",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 91,
+      "claim": "Ung thư tinh hoàn có thể chữa khỏi bằng đông y và các phương pháp tự nhiên khác.",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "SAI",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 92,
+      "claim": "Ung thư tinh hoàn là bệnh lý hiếm gặp, tỷ lệ chữa khỏi khá cao và cần được phát hiện sớm để điều trị hiệu quả.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 93,
+      "claim": "Loét miệng thường do virut herpes (HSV) gây ra",
+      "gold": "SAI",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 94,
+      "claim": "Bị nhiệt là nguyên nhân chính của loét miệng",
+      "gold": "SAI",
+      "FULL": "SAI",
+      "B0": "SAI",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "SAI",
+      "+GATE": "SAI",
+      "+CALIB+GATE": "SAI",
+      "MEAN": "SAI",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 95,
+      "claim": "Thiếu vitamin PP hoặc vitamin C cũng có thể gây ra loét miệng",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "ĐÚNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "ĐÚNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "ĐÚNG"
+    },
+    {
+      "idx": 96,
+      "claim": "Bài viết có thể là một nguồn thông tin đáng tin cậy về các bài thuốc Đông y để phòng và trị bệnh sốt rét.",
+      "gold": "ĐÚNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 97,
+      "claim": "Bài viết không cung cấp bằng chứng khoa học cụ thể để hỗ trợ các bài thuốc Đông y được đề cập.",
+      "gold": "SAI",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 98,
+      "claim": "Bài viết có thể là một nguồn thông tin hữu ích về bệnh sốt rét và cách phòng chống nó, nhưng cần thêm nghiên cứu khoa học để xác nhận hiệu quả của các bài thuốc Đông y.",
+      "gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "FULL": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "-RERANK": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "B0-RR": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "llm_only": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "rag_llm": "KHÔNG ĐỦ BẰNG CHỨNG"
+    },
+    {
+      "idx": 99,
+      "claim": "Bệnh Acanthosis nigricans là tình trạng da nhiễm sắc tố đen, dày lên",
+      "gold": "ĐÚNG",
+      "FULL": "ĐÚNG",
+      "B0": "ĐÚNG",
+      "-RERANK": "ĐÚNG",
+      "B0-RR": "ĐÚNG",
+      "+CALIB": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "+GATE": "ĐÚNG",
+      "+CALIB+GATE": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "MEAN": "ĐÚNG",
+      "llm_only": "ĐÚNG",
+      "rag_llm": "ĐÚNG"
+    }
+  ]
+}

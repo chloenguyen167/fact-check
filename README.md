@@ -156,9 +156,11 @@ Hàm chính: `verify_claim(claim, with_explanation=True, use_cache=True)` trong 
    └─ Cross-Encoder BAAI/bge-reranker-v2-m3
    └─ Chọn TOP_RERANK=3 đoạn có điểm cao nhất
 
-4. predict_nli_multi(claim, top_docs, strategy="weighted_max")
-   └─ NLI từng chunk evidence
-   └─ Aggregate → verdict + confidence score
+4. predict_nli_ess(claim, top_docs, score_texts)      [VERDICT_STRATEGY="ess", mặc định]
+   └─ NLI 3 chunk + weighted_max → có kết luận hay KHÔNG ĐỦ BẰNG CHỨNG
+   └─ ESS: tách câu, cross-encoder chọn ESS_TOP_M=5 câu sát claim nhất
+   └─ NLI trên các câu được chọn → ĐÚNG hay SAI (+ trả về "key_sentences" cho UI)
+   (VERDICT_STRATEGY="weighted_max" = pipeline gốc, chỉ dùng mức chunk)
 
 5. explain(claim, evidence, verdict)   [nếu with_explanation=True]
    └─ LLM sinh giải thích tiếng Việt
@@ -179,6 +181,24 @@ Chiến lược `weighted_max` (mặc định):
 - So sánh **margin** so với điểm neutral trung bình
 - Chỉ chấp nhận ĐÚNG/SAI khi margin > 0.3 (tránh nhầm bằng chứng chỉ *liên quan chủ đề* thành *ủng hộ*)
 - Fallback: contradiction > 0.5 → SAI; còn lại → KHÔNG ĐỦ BẰNG CHỨNG
+
+### Cải tiến ESS và thí nghiệm ablation
+
+Thiết kế ESS được chọn **chỉ trên tập dev** (idx 100–249) và đánh giá trên tập test (100 mẫu đầu, trùng tập baseline cũ).
+Hai mở rộng nhiều tham số (ngưỡng hiệu chỉnh τe/τc, cổng liên quan τr) đã thử nhưng overfit trên dev nên không bật.
+
+```bash
+# 1. Cache điểm retrieval/rerank/NLI (nặng, chạy 1 lần; ~8 s/claim trên Apple M2)
+python -m evaluation.ablation_cache --dataset viet_medfact --mode e2e --max-samples 250
+python -m evaluation.ablation_cache --dataset vifactcheck  --mode oracle --max-samples 250
+python -m evaluation.ablation_cache --dataset vifactcheck  --mode e2e --max-samples 250
+# 2. Tính mọi biến thể + bootstrap CI + McNemar + CV lặp (nhẹ, vài phút)
+python -m evaluation.ablation_analyze --dataset viet_medfact --mode e2e
+# 3. Đánh giá Guard theo tầng
+python -m evaluation.eval_guard
+```
+
+Kết quả: `evaluation/results/ablation/summary_*.json`, `evaluation/results/guard_results.json`.
 
 ### Pipeline thay thế (dùng trong đánh giá baseline)
 

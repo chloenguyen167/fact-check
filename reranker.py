@@ -30,6 +30,14 @@ def rerank(claim, documents, top_n=None):
     return ranked[: (top_n or TOP_RERANK)]
 
 
+def score_texts(claim, texts):
+    """Điểm liên quan (0-1) cho từng text, giữ nguyên thứ tự đầu vào."""
+    if not texts:
+        return []
+    logits = reranker.predict([[claim, t] for t in texts])
+    return (1 / (1 + np.exp(-np.array(logits)))).tolist()
+
+
 def rerank_records(claim, records, top_n=None):
     """Rerank documents kèm metadata (article_id, ...)."""
 

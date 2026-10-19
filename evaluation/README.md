@@ -98,6 +98,26 @@ python -m evaluation.error_analysis
 python -m evaluation.plot_confusion_matrix
 ```
 
+### Ablation cải tiến ESS (dev/test tách biệt)
+
+```bash
+# Cache một lần (nặng): retrieval + rerank + NLI mức chunk và mức câu
+python -m evaluation.ablation_cache --dataset viet_medfact --mode e2e --max-samples 250
+python -m evaluation.ablation_cache --dataset vifactcheck --mode oracle --max-samples 250
+python -m evaluation.ablation_cache --dataset vifactcheck --mode e2e --max-samples 250
+
+# So sánh các thiết kế luật quyết định CHỈ trên dev (idx >= 100)
+python -m evaluation.ablation_design_dev --dataset viet_medfact --mode e2e
+
+# Biến thể trên test (100 mẫu đầu) + bootstrap CI + McNemar + 5×5-fold CV
+python -m evaluation.ablation_analyze --dataset viet_medfact --mode e2e
+python -m evaluation.ablation_analyze --dataset vifactcheck --mode oracle
+python -m evaluation.ablation_analyze --dataset vifactcheck --mode e2e
+
+# Guard theo tầng (882 claim hợp lệ + 60 input không hợp lệ)
+python -m evaluation.eval_guard
+```
+
 ## Chạy toàn bộ
 
 ```bash

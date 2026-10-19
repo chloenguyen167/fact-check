@@ -22,6 +22,28 @@ LABEL_FILES = {
     "SYMPTOM_MEASURE": "symptoms_measures.txt",
 }
 
+# Từ khóa miền y tế tổng quát: chỉ đếm cho NER-fallback, không phải entity
+MEDICAL_CUES_FILE = "medical_cues.txt"
+
+
+def _load_terms(fpath: Path) -> list[str]:
+    if not fpath.exists():
+        return []
+    terms = []
+    for line in fpath.read_text(encoding="utf-8").splitlines():
+        term = normalize(line.split("#", 1)[0])
+        if term:
+            terms.append(term)
+    return terms
+
+
+def _compile(terms: list[str]):
+    if not terms:
+        return None
+    pattern = "|".join(re.escape(t) for t in sorted(terms, key=len, reverse=True))
+    # \b kém ổn với tiếng Việt có dấu → lookaround
+    return re.compile(rf"(?<![\wÀ-ỹ])({pattern})(?![\wÀ-ỹ])")
+
 
 @dataclass
 class Entity:
@@ -36,24 +58,13 @@ class GazetteerNER:
         gazetteer_dir = Path(gazetteer_dir)
         self.terms: list[tuple[str, str]] = []
         for label, fname in LABEL_FILES.items():
-            fpath = gazetteer_dir / fname
-            if not fpath.exists():
-                continue
-            for line in fpath.read_text(encoding="utf-8").splitlines():
-                raw = line.split("#", 1)[0]
-                term = normalize(raw)
-                if term:
-                    self.terms.append((term, label))
+            for term in _load_terms(gazetteer_dir / fname):
+                self.terms.append((term, label))
 
         self.terms.sort(key=lambda x: len(x[0]), reverse=True)
         self._label_of = {t: lab for t, lab in self.terms}
-
-        if self.terms:
-            pattern = "|".join(re.escape(t) for t, _ in self.terms)
-            # \b kém ổn với tiếng Việt có dấu → lookaround
-            self._regex = re.compile(rf"(?<![\wÀ-ỹ])({pattern})(?![\wÀ-ỹ])")
-        else:
-            self._regex = None
+        self._regex = _compile([t for t, _ in self.terms])
+        self._cue_regex = _compile(_load_terms(gazetteer_dir / MEDICAL_CUES_FILE))
 
     def extract(self, text: str) -> list[Entity]:
         if self._regex is None:
@@ -75,5 +86,8 @@ class GazetteerNER:
             "has_drug": "DRUG" in labels,
             "has_substance": "SUBSTANCE" in labels,
             "has_symptom_measure": "SYMPTOM_MEASURE" in labels,
+            "num_medical_cues": (
+                len(self._cue_regex.findall(normalize(text))) if self._cue_regex else 0
+            ),
             "entities": ents,
         }

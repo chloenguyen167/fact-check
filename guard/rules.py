@@ -17,13 +17,6 @@ QUESTION_CUES = [
     "thế nào",
     "là gì",
     "có nên",
-    "nên không",
-    "được không",
-    "có đúng không",
-    "đúng không",
-    "phải không",
-    "hay không",
-    "không ạ",
     "cho hỏi",
     "cho mình hỏi",
     "cho em hỏi",
@@ -31,6 +24,13 @@ QUESTION_CUES = [
 ]
 
 QUESTION_END = re.compile(r"\?\s*$")
+
+# Đuôi câu hỏi chỉ tính khi đứng cuối câu ("... có hiệu quả hay không" giữa câu
+# trần thuật vẫn là claim)
+QUESTION_TAIL = re.compile(
+    r"(nên không|được không|có đúng không|đúng không|phải không|hay không|không ạ)"
+    r"[\s.!…]*$"
+)
 
 OPINION_CUES = [
     "tôi thấy",
@@ -73,17 +73,17 @@ SELF_CUES = [
 ]
 
 COMMAND_CUES = [
-    "hãy ",
     "giúp tôi",
     "giúp mình",
     "giúp em",
-    "tư vấn",
     "khuyên tôi",
     "chỉ cho tôi",
-    "hướng dẫn",
     "làm ơn",
     "vui lòng",
 ]
+
+# Động từ mệnh lệnh chỉ tính ở đầu câu ("cần được bác sĩ tư vấn" vẫn là claim)
+COMMAND_START = re.compile(r"^(hãy|tư vấn|hướng dẫn|gợi ý|kê)\s")
 
 MIN_TOKENS = 4
 
@@ -117,6 +117,10 @@ def rule_filter(text: str) -> RuleResult:
     if QUESTION_END.search(t):
         return RuleResult("reject", "question", "?")
 
+    m = QUESTION_TAIL.search(t)
+    if m:
+        return RuleResult("reject", "question", m.group(1))
+
     cue = _find_cue(t, QUESTION_CUES)
     if cue:
         return RuleResult("reject", "question", cue)
@@ -128,6 +132,10 @@ def rule_filter(text: str) -> RuleResult:
     cue = _find_cue(t, SELF_CUES)
     if cue:
         return RuleResult("reject", "personal_diagnosis", cue)
+
+    m = COMMAND_START.search(t)
+    if m:
+        return RuleResult("reject", "command", m.group(1))
 
     cue = _find_cue(t, COMMAND_CUES)
     if cue:

@@ -20,3 +20,6 @@ evaluation/data/pubhealth_cache/
 *.safetensors
 *.pt
 *.pth
+
+# Build tài liệu
+docs/build/node_modules/

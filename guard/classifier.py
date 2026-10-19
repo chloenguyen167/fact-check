@@ -44,7 +44,11 @@ class GuardClassifier:
         self.base_model = base_model
         self._pipe = None
         self._segment = None
-        self.available = model_path is not None and Path(model_path).exists()
+        # Thư mục có thể còn config/tokenizer nhưng thiếu trọng số (bị .gitignore)
+        self.available = model_path is not None and any(
+            (Path(model_path) / name).is_file()
+            for name in ("model.safetensors", "pytorch_model.bin")
+        )
 
     def _load(self) -> None:
         if self._pipe is not None:
@@ -83,4 +87,7 @@ class GuardClassifier:
             return "factual_claim", 0.85
         if n == 1:
             return "factual_claim", 0.65
+        # Gazetteer chưa phủ hết thuật ngữ → dựa thêm từ khóa miền y tế
+        if ner_feats.get("num_medical_cues", 0) >= 1:
+            return "factual_claim", 0.6
         return "other", 0.6

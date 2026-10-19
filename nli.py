@@ -187,6 +187,57 @@ def predict_nli_multi(claim, evidence_chunks, strategy="weighted_max"):
     return _LABEL_MAP[best_nli_label], best_score, chunk_details
 
 
+_SENT_SPLIT = re.compile(r"(?<=[.!?…])\s+|\n+")
+
+
+def split_windows(text, max_sent=2, min_chars=25):
+    """Tách đoạn thành câu, sinh cửa sổ 1..max_sent câu liên tiếp (ứng viên bằng chứng)."""
+    text = " ".join(str(text).split())
+    sents = [s.strip() for s in _SENT_SPLIT.split(text) if s and s.strip()]
+    sents = [s for s in sents if len(s) >= min_chars] or [text]
+    windows = []
+    for size in range(1, max_sent + 1):
+        for i in range(0, len(sents) - size + 1):
+            windows.append(" ".join(sents[i:i + size]))
+    return windows
+
+
+def predict_nli_ess(claim, evidence_docs, score_windows, top_m=ESS_TOP_M):
+    """
+    Bộ ra kết luận đề xuất (thiết kế chọn trên tập dev, xem evaluation/ablation_analyze.py):
+      1. NLI mức chunk + weighted_max quyết định "có đủ căn cứ để kết luận" hay KHÔNG ĐỦ BẰNG CHỨNG
+      2. ESS: tách câu các chunk, cross-encoder chọn top_m câu liên quan nhất
+      3. Nếu có kết luận: hướng ĐÚNG/SAI lấy từ NLI trên các câu được chọn
+
+    evidence_docs: [{"text", "score"}] sau rerank; score_windows(claim, texts) → điểm liên quan.
+    Trả về (verdict, score, details) với details["sentences"] là câu bằng chứng then chốt.
+    """
+    if not evidence_docs:
+        return "KHÔNG ĐỦ BẰNG CHỨNG", 0.0, {"sentences": []}
+
+    chunk_verdict, chunk_score, _ = predict_nli_multi(
+        claim, [doc["text"] for doc in evidence_docs], strategy="weighted_max"
+    )
+
+    windows = [w for doc in evidence_docs for w in split_windows(doc["text"])]
+    ranked = sorted(zip(score_windows(claim, windows), windows), key=lambda x: -x[0])
+    selected = ranked[:top_m] if top_m else ranked
+    sentences = [
+        {"text": text, "relevance": float(rel), **predict_nli_scores(claim, text)}
+        for rel, text in selected
+    ]
+    max_ent = max(s.get("entailment", 0.0) for s in sentences)
+    max_con = max(s.get("contradiction", 0.0) for s in sentences)
+    details = {"chunk_verdict": chunk_verdict, "max_entailment": max_ent,
+               "max_contradiction": max_con, "sentences": sentences}
+
+    if chunk_verdict == "KHÔNG ĐỦ BẰNG CHỨNG":
+        return chunk_verdict, chunk_score, details
+    if max_ent >= max_con:
+        return "ĐÚNG", max_ent, details
+    return "SAI", max_con, details
+
+
 def get_label(result):
     label = None
     if isinstance(result, dict):

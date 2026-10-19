@@ -1,0 +1,236 @@
+{
+  "none": {
+    "valid_total": 882,
+    "valid_false_reject": 0,
+    "false_reject_rate": 0.0,
+    "invalid_total": 60,
+    "invalid_blocked": 0,
+    "block_recall": 0.0,
+    "block_precision": 0.0,
+    "block_f1": 0.0,
+    "blocked_by_type": {
+      "question": {
+        "blocked": 0,
+        "total": 15
+      },
+      "personal_opinion": {
+        "blocked": 0,
+        "total": 10
+      },
+      "personal_diagnosis": {
+        "blocked": 0,
+        "total": 10
+      },
+      "command": {
+        "blocked": 0,
+        "total": 10
+      },
+      "other": {
+        "blocked": 0,
+        "total": 12
+      },
+      "too_short": {
+        "blocked": 0,
+        "total": 3
+      }
+    },
+    "ms_per_input": 2.5743094985739123e-05,
+    "false_reject_examples": [],
+    "missed_invalid_examples": [
+      "Uống nước dừa có tốt cho bà bầu không?",
+      "Bệnh sởi lây qua đường nào",
+      "Trẻ bị sốt bao nhiêu độ thì cần đi viện",
+      "Vì sao trẻ em hay bị viêm tai giữa",
+      "Có nên tiêm vắc xin HPV sau 26 tuổi không",
+      "Tiểu đường type 2 có chữa khỏi được không",
+      "Uống thuốc kháng sinh bao lâu thì hết tác dụng?",
+      "Làm sao để hết mất ngủ kéo dài",
+      "Cho mình hỏi viêm gan B có lây qua ăn uống không",
+      "Thuốc paracetamol uống mấy viên một ngày?",
+      "Bị đau dạ dày nên ăn gì",
+      "Ung thư phổi giai đoạn 2 sống được bao lâu",
+      "Liệu có cách nào chữa dứt điểm bệnh gút",
+      "Xin hỏi bé 6 tháng ăn dặm như thế nào là đúng",
+      "Sốt xuất huyết có cần truyền dịch không ạ",
+      "Mình nghĩ uống sữa nhiều làm trẻ cao hơn hẳn",
+      "Tôi thấy thuốc nam an toàn hơn thuốc tây",
+      "Theo mình bệnh viện tư phục vụ tốt hơn bệnh viện công",
+      "Em nghĩ ăn kiêng low-carb là cách giảm cân tốt nhất",
+      "Hình như dạo này nhiều người bị cúm hơn mọi năm",
+      "Tôi tin là châm cứu chữa được mọi bệnh đau lưng",
+      "Chắc là do thời tiết nên con tôi hay ốm",
+      "Có vẻ thực phẩm hữu cơ không tốt hơn thực phẩm thường",
+      "Mình cảm thấy uống collagen da đẹp hẳn lên",
+      "Tôi cho rằng tiêm vắc xin nhiều quá không tốt cho trẻ",
+      "Tôi bị đau dạ dày mỗi khi ăn cay",
+      "Con tôi bị sốt 39 độ từ tối qua",
+      "Mình bị mất ngủ gần một tháng nay rồi",
+      "Bác sĩ nói tôi bị gan nhiễm mỡ độ 2",
+      "Em đang bị ho có đờm kéo dài hai tuần",
+      "Kết quả của tôi đường huyết lúc đói là 7.8",
+      "Mẹ tôi bị thoái hóa khớp gối nặng",
+      "Tôi mắc viêm xoang mãn tính nhiều năm",
+      "Bố tôi bị tai biến nằm một chỗ",
+      "Người nhà tôi đang điều trị ung thư vú",
+      "Hãy kê cho tôi một đơn thuốc trị ho",
+      "Giúp tôi tính chỉ số BMI với cân nặng 60kg",
+      "Tư vấn giúp mình cách chăm sóc trẻ sơ sinh",
+      "Hướng dẫn tôi cách sơ cứu người bị đuối nước",
+      "Làm ơn gợi ý thực đơn cho người tiểu đường",
+      "Vui lòng tìm cho tôi bác sĩ da liễu giỏi",
+      "Chỉ cho tôi nhà thuốc gần nhất",
+      "Khuyên tôi nên tập môn thể thao nào",
+      "Giúp em viết bài thuyết trình về bệnh lao",
+      "Hãy tóm tắt bài báo này giúp tôi",
+      "Trận chung kết bóng đá diễn ra vào tối chủ nhật",
+      "Giá xăng tuần này giảm nhẹ",
+      "Thành phố sẽ cắt điện khu vực quận 3 ngày mai",
+      "Ca sĩ này vừa ra mắt album mới",
+      "Năm nay mưa nhiều hơn mọi năm",
+      "Điện thoại mới có camera rất đẹp",
+      "Công ty tôi tổ chức du lịch hè ở Đà Nẵng",
+      "Chứng khoán hôm nay giảm điểm",
+      "Kẹt xe trên đường Nguyễn Văn Linh",
+      "Sinh viên năm nhất bắt đầu nhập học tuần sau",
+      "Mèo nhà tôi rất thích ăn cá",
+      "Lịch thi học kỳ được công bố trên website trường",
+      "Xin chào",
+      "Ung thư",
+      "Tốt không"
+    ]
+  },
+  "rules": {
+    "valid_total": 882,
+    "valid_false_reject": 23,
+    "false_reject_rate": 0.026077097505668934,
+    "invalid_total": 60,
+    "invalid_blocked": 43,
+    "block_recall": 0.7166666666666667,
+    "block_precision": 0.6515151515151515,
+    "block_f1": 0.6825396825396826,
+    "blocked_by_type": {
+      "question": {
+        "blocked": 11,
+        "total": 15
+      },
+      "personal_opinion": {
+        "blocked": 10,
+        "total": 10
+      },
+      "personal_diagnosis": {
+        "blocked": 9,
+        "total": 10
+      },
+      "command": {
+        "blocked": 10,
+        "total": 10
+      },
+      "other": {
+        "blocked": 0,
+        "total": 12
+      },
+      "too_short": {
+        "blocked": 3,
+        "total": 3
+      }
+    },
+    "ms_per_input": 0.01398204247016883,
+    "false_reject_examples": [
+      "Bài viết không nói rõ liệu ngủ ít hay nhiều có ảnh hưởng đến nguy cơ đột quỵ?",
+      "Thuốc libtayo có thể gây hại cho thai nhi đang phát triển và phụ nữ nên được tư vấn về nguy cơ tiềm ẩn cho thai nhi.",
+      "Chế độ ăn uống cho bệnh nhân sỏi tiết niệu tái phát là một chủ đề phức tạp và cần được tư vấn bởi chuyên gia dinh dưỡng để đảm bảo an toàn và hiệu quả",
+      "Bé gái chỉ nặng 3,6kg nên không phải là hội chứng siêu nữ",
+      "Hội chứng siêu nữ có thể chữa khỏi được bằng phương pháp điều trị từ sớm và hỗ trợ tư vấn tâm lý",
+      "Tập luyện có thể giúp giảm đau và cải thiện chức năng cho người mắc Hội chứng móng - xương bánh chè, nhưng không chắc chắn liệu nó có hiệu quả hay không",
+      "Chụp MRI cột sống không phải là lựa chọn đầu tiên cho mọi người mắc các triệu chứng đau lưng kéo dài, cần được bác sĩ tư vấn và đánh giá kỹ lưỡng",
+      "Cảm giác đau vùng thượng vị không phải là triệu chứng chính xác của ung thư dạ dày",
+      "Cô bắt đầu có dấu hiệu mờ mắt và tê bì chân tay chỉ sau 4 năm khi phát bệnh, nhiều lúc có những buổi sáng thức dậy mà tay chân không có cảm giác, phải xoa bóp mới có thể xuống giường được.",
+      "Khoa Di truyền y học của bệnh viện đã đóng vai trò tiên phong trong việc áp dụng xét nghiệm PCR để xác định thai phụ có mắc COVID-19 hay không trong bối cảnh đại dịch, phương pháp xét nghiệm này đã mang lại lợi ích quan trọng cho việc đánh giá tình trạng sức khỏe của thai phụ, giúp đưa ra các quyết định về điều trị và quản lý hiệu quả, đồng thời đảm bảo an toàn cho thai nhi và giảm nguy cơ lây nhiễm trong cộng đồng.",
+      "Sau khi nghe bác sĩ nước ngoài tư vấn, cô quyết định điều chỉnh lại chế độ dinh dưỡng, ăn uống, luyện tập và sử dụng kết hợp thuốc tây y với Thực phẩm bảo vệ sức khỏe Diabetna.",
+      "Không rõ liệu việc kéo dài ngày hết hạn của thuốc có ảnh hưởng đến sự sẵn có hoặc chi phí của những loại thuốc này cho bệnh nhân hay không nhưng sau 2 đợt gia hạn theo Nghị quyết 80 của Quốc hội, hiện đã có gần 9.600 thuốc được gia hạn.",
+      "Trong men chua có chức các vi sinh vật gây bệnh do đặc thù nguyên liệu có thịt sống, nếu không qua xử lý nhiệt thì trong men chua sẽ tồn tại những vi sinh vật gây ngộ độc cho người sử dụng.",
+      "PGS.TS Trần Cao Bính, Giám đốc Bệnh viện Răng - Hàm - Mặt Trung ương Hà Nội đã có mặt tại chương trình Tư vấn điều trị toàn diện và phẫu thuật miễn phí cho trẻ khe hở môi - vòm miệng diễn ra sáng 22/3 cho biết, mỗi ngày trên thế giới có trung bình 550 trẻ em không may mắn ra đời bị dị tật bẩm sinh.",
+      "Trong khi người chồng vẫn còn nhu cầu trong chuyện ấy, thì người vợ lại không còn thiết tha gì, cứ mỗi khi ông động vào người bà lại đuổi như đuổi tà nên không sinh hoạt được."
+    ],
+    "missed_invalid_examples": [
+      "Bệnh sởi lây qua đường nào",
+      "Làm sao để hết mất ngủ kéo dài",
+      "Bị đau dạ dày nên ăn gì",
+      "Ung thư phổi giai đoạn 2 sống được bao lâu",
+      "Em đang bị ho có đờm kéo dài hai tuần",
+      "Trận chung kết bóng đá diễn ra vào tối chủ nhật",
+      "Giá xăng tuần này giảm nhẹ",
+      "Thành phố sẽ cắt điện khu vực quận 3 ngày mai",
+      "Ca sĩ này vừa ra mắt album mới",
+      "Năm nay mưa nhiều hơn mọi năm",
+      "Điện thoại mới có camera rất đẹp",
+      "Công ty tôi tổ chức du lịch hè ở Đà Nẵng",
+      "Chứng khoán hôm nay giảm điểm",
+      "Kẹt xe trên đường Nguyễn Văn Linh",
+      "Sinh viên năm nhất bắt đầu nhập học tuần sau",
+      "Mèo nhà tôi rất thích ăn cá",
+      "Lịch thi học kỳ được công bố trên website trường"
+    ]
+  },
+  "rules+ner": {
+    "valid_total": 882,
+    "valid_false_reject": 317,
+    "false_reject_rate": 0.35941043083900226,
+    "invalid_total": 60,
+    "invalid_blocked": 55,
+    "block_recall": 0.9166666666666666,
+    "block_precision": 0.1478494623655914,
+    "block_f1": 0.25462962962962965,
+    "blocked_by_type": {
+      "question": {
+        "blocked": 12,
+        "total": 15
+      },
+      "personal_opinion": {
+        "blocked": 10,
+        "total": 10
+      },
+      "personal_diagnosis": {
+        "blocked": 9,
+        "total": 10
+      },
+      "command": {
+        "blocked": 10,
+        "total": 10
+      },
+      "other": {
+        "blocked": 11,
+        "total": 12
+      },
+      "too_short": {
+        "blocked": 3,
+        "total": 3
+      }
+    },
+    "ms_per_input": 0.05188893311819647,
+    "false_reject_examples": [
+      "Emflaza được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên.",
+      "Emflaza chỉ được phê duyệt để điều trị bệnh teo cơ Duchenne ở trẻ em từ 5 tuổi trở lên, không rõ liệu nó có hiệu quả trong trường hợp khác.",
+      "Không có thông tin cụ thể về cách sử dụng dầu cây trà để loại bỏ mùi hôi nách.",
+      "Không có bằng chứng khoa học nào hỗ trợ cho việc sử dụng rau xà lách để loại bỏ mùi hôi nách.",
+      "Bài viết không nói rõ liệu ngủ ít hay nhiều có ảnh hưởng đến nguy cơ đột quỵ?",
+      "Sử dụng thuốc thông mũi và thuốc xịt mũi thường xuyên có thể dẫn đến nhờn thuốc và tăng sự tắc nghẽn hơn.",
+      "Mụn cóc tái phát có thể do chưa hết chân sau đốt hoặc mụn cóc nhỏ gây lây lan.",
+      "Mụn cóc tái phát có thể do nhiều nguyên nhân khác nhau, không chỉ đơn giản là chưa hết chân sau đốt.",
+      "Không có thông tin về việc bác sĩ đã thử nghiệm kỹ thuật mới trước khi áp dụng tại Bệnh viện Nhi Trung ương.",
+      "Bệnh Basedow là bệnh tự miễn nhưng nguyên nhân chưa rõ ràng và thường gặp ở phụ nữ trẻ từ 20 - 50 tuổi.",
+      "Không có biện pháp hữu hiệu nào để phòng ngừa bệnh Basedow và không có phương pháp điều trị mạnh mẽ cho bệnh này.",
+      "Không có biện pháp phòng ngừa được cho mang thai ngoài tử cung",
+      "Mang thai ngoài tử cung là tình trạng nguy hiểm và cần được phát hiện, xử trí kịp thời để tránh những biến chứng nghiêm trọng.",
+      "Phụ nữ mang thai không được tự điều trị viêm họng bằng thuốc ngậm tại chỗ",
+      "Không có thông tin cụ thể về việc bệnh nhân đã hoàn trả viện phí cho các khoản hỗ trợ từ người hảo tâm và bệnh viện."
+    ],
+    "missed_invalid_examples": [
+      "Bệnh sởi lây qua đường nào",
+      "Làm sao để hết mất ngủ kéo dài",
+      "Ung thư phổi giai đoạn 2 sống được bao lâu",
+      "Em đang bị ho có đờm kéo dài hai tuần",
+      "Kẹt xe trên đường Nguyễn Văn Linh"
+    ]
+  }
+}

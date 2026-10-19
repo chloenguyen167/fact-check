@@ -1,6 +1,7 @@
+from config import TOP_RERANK, VERDICT_STRATEGY
 from retrieval import retrieve_with_metadata
-from reranker import rerank_records
-from nli import predict_nli_multi
+from reranker import rerank_records, score_texts
+from nli import predict_nli_ess, predict_nli_multi
 from llm import classify_verdict_llm, explain
 from claim_cache import get_cached, save_cached
 
@@ -26,7 +27,8 @@ def _enrich_link(doc: dict) -> dict:
 
 def _build_evidence_bundle(claim):
     records = retrieve_with_metadata(claim)
-    ranked = rerank_records(claim, records)
+    # top_n bắt buộc: mặc định rerank_records trả về toàn bộ 20 chunk
+    ranked = rerank_records(claim, records, top_n=TOP_RERANK)
     evidence_docs = [_enrich_link(doc) for doc in ranked]
     evidence = "\n\n".join(doc["text"] for doc in evidence_docs)
     return evidence, evidence_docs
@@ -39,11 +41,16 @@ def verify_claim(claim, with_explanation=True, use_cache=True):
             return cached
 
     evidence, evidence_docs = _build_evidence_bundle(claim)
-    top_docs = [doc["text"] for doc in evidence_docs]
 
-    verdict, verdict_score, nli_chunk_details = predict_nli_multi(
-        claim, top_docs, strategy="weighted_max"
-    )
+    key_sentences = []
+    if VERDICT_STRATEGY == "ess":
+        verdict, verdict_score, details = predict_nli_ess(claim, evidence_docs, score_texts)
+        key_sentences = details.get("sentences", [])
+    else:
+        top_docs = [doc["text"] for doc in evidence_docs]
+        verdict, verdict_score, _ = predict_nli_multi(
+            claim, top_docs, strategy="weighted_max"
+        )
 
     explanation = ""
     if with_explanation:
@@ -55,6 +62,7 @@ def verify_claim(claim, with_explanation=True, use_cache=True):
         "verdict_score": float(verdict_score),
         "evidence": evidence,
         "evidence_docs": evidence_docs,
+        "key_sentences": key_sentences,
         "explanation": explanation,
         "from_cache": False,
     }

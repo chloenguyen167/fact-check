@@ -1,0 +1,61 @@
+text,label
+Uống nước dừa có tốt cho bà bầu không?,question
+Bệnh sởi lây qua đường nào,question
+Trẻ bị sốt bao nhiêu độ thì cần đi viện,question
+Vì sao trẻ em hay bị viêm tai giữa,question
+Có nên tiêm vắc xin HPV sau 26 tuổi không,question
+Tiểu đường type 2 có chữa khỏi được không,question
+Uống thuốc kháng sinh bao lâu thì hết tác dụng?,question
+Làm sao để hết mất ngủ kéo dài,question
+Cho mình hỏi viêm gan B có lây qua ăn uống không,question
+Thuốc paracetamol uống mấy viên một ngày?,question
+Bị đau dạ dày nên ăn gì,question
+Ung thư phổi giai đoạn 2 sống được bao lâu,question
+Liệu có cách nào chữa dứt điểm bệnh gút,question
+Xin hỏi bé 6 tháng ăn dặm như thế nào là đúng,question
+Sốt xuất huyết có cần truyền dịch không ạ,question
+Mình nghĩ uống sữa nhiều làm trẻ cao hơn hẳn,personal_opinion
+Tôi thấy thuốc nam an toàn hơn thuốc tây,personal_opinion
+Theo mình bệnh viện tư phục vụ tốt hơn bệnh viện công,personal_opinion
+Em nghĩ ăn kiêng low-carb là cách giảm cân tốt nhất,personal_opinion
+Hình như dạo này nhiều người bị cúm hơn mọi năm,personal_opinion
+Tôi tin là châm cứu chữa được mọi bệnh đau lưng,personal_opinion
+Chắc là do thời tiết nên con tôi hay ốm,personal_opinion
+Có vẻ thực phẩm hữu cơ không tốt hơn thực phẩm thường,personal_opinion
+Mình cảm thấy uống collagen da đẹp hẳn lên,personal_opinion
+Tôi cho rằng tiêm vắc xin nhiều quá không tốt cho trẻ,personal_opinion
+Tôi bị đau dạ dày mỗi khi ăn cay,personal_diagnosis
+Con tôi bị sốt 39 độ từ tối qua,personal_diagnosis
+Mình bị mất ngủ gần một tháng nay rồi,personal_diagnosis
+Bác sĩ nói tôi bị gan nhiễm mỡ độ 2,personal_diagnosis
+Em đang bị ho có đờm kéo dài hai tuần,personal_diagnosis
+Kết quả của tôi đường huyết lúc đói là 7.8,personal_diagnosis
+Mẹ tôi bị thoái hóa khớp gối nặng,personal_diagnosis
+Tôi mắc viêm xoang mãn tính nhiều năm,personal_diagnosis
+Bố tôi bị tai biến nằm một chỗ,personal_diagnosis
+Người nhà tôi đang điều trị ung thư vú,personal_diagnosis
+Hãy kê cho tôi một đơn thuốc trị ho,command
+Giúp tôi tính chỉ số BMI với cân nặng 60kg,command
+Tư vấn giúp mình cách chăm sóc trẻ sơ sinh,command
+Hướng dẫn tôi cách sơ cứu người bị đuối nước,command
+Làm ơn gợi ý thực đơn cho người tiểu đường,command
+Vui lòng tìm cho tôi bác sĩ da liễu giỏi,command
+Chỉ cho tôi nhà thuốc gần nhất,command
+Khuyên tôi nên tập môn thể thao nào,command
+Giúp em viết bài thuyết trình về bệnh lao,command
+Hãy tóm tắt bài báo này giúp tôi,command
+Trận chung kết bóng đá diễn ra vào tối chủ nhật,other
+Giá xăng tuần này giảm nhẹ,other
+Thành phố sẽ cắt điện khu vực quận 3 ngày mai,other
+Ca sĩ này vừa ra mắt album mới,other
+Năm nay mưa nhiều hơn mọi năm,other
+Điện thoại mới có camera rất đẹp,other
+Công ty tôi tổ chức du lịch hè ở Đà Nẵng,other
+Chứng khoán hôm nay giảm điểm,other
+Kẹt xe trên đường Nguyễn Văn Linh,other
+Sinh viên năm nhất bắt đầu nhập học tuần sau,other
+Mèo nhà tôi rất thích ăn cá,other
+Lịch thi học kỳ được công bố trên website trường,other
+Xin chào,too_short
+Ung thư,too_short
+Tốt không,too_short
