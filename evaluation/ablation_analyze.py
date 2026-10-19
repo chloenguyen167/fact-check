@@ -386,11 +386,12 @@ def run_cv(recs, mode, k, repeats=5):
     return out
 
 
-def load_baselines(dataset, mode, test_claims):
-    fname = BASELINE_FILES.get((dataset, mode))
-    if not fname:
-        return {}
-    path = os.path.join(RESULTS_DIR, fname)
+def load_baselines(dataset, mode, test_claims, path=None):
+    if path is None:
+        fname = BASELINE_FILES.get((dataset, mode))
+        if not fname:
+            return {}
+        path = os.path.join(RESULTS_DIR, fname)
     if not os.path.exists(path):
         return {}
     data = json.load(open(path, encoding="utf-8"))
@@ -420,6 +421,10 @@ def main():
     parser.add_argument("--output", default=None)
     parser.add_argument("--test-size", type=int, default=TEST_SIZE)
     parser.add_argument("--cv", type=int, default=5, help="Số fold CV trên toàn bộ cache (0 = bỏ qua)")
+    parser.add_argument(
+        "--baselines", default=None,
+        help="File so sánh baseline (LLM-only / RAG+LLM); mặc định theo BASELINE_FILES",
+    )
     args = parser.parse_args()
 
     base = os.path.join(RESULTS_DIR, "ablation")
@@ -463,7 +468,7 @@ def main():
         }
 
     test_claims = [r["claim"] for r in test]
-    for key, b in load_baselines(args.dataset, args.mode, test_claims).items():
+    for key, b in load_baselines(args.dataset, args.mode, test_claims, args.baselines).items():
         preds[key] = b["pred"]
         m = classification_metrics(list(y_test), list(b["pred"]), VERDICTS)
         m.pop("classification_report", None)

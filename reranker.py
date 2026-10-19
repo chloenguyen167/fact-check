@@ -1,10 +1,12 @@
 import numpy as np
+import torch
 from sentence_transformers import CrossEncoder
 from config import *
 
+# CUDA nếu có (nhanh hơn ~50 lần); MPS giữ CPU như cũ
 reranker = CrossEncoder(
     RERANKER_MODEL,
-    device="cpu"
+    device="cuda" if torch.cuda.is_available() else "cpu"
 )
 
 def rerank(claim, documents, top_n=None):
