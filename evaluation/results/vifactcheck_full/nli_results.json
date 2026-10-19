@@ -1,0 +1,3538 @@
+{
+  "accuracy": 0.6164383561643836,
+  "precision_macro": 0.6281701796777174,
+  "recall_macro": 0.6180418432130761,
+  "f1_macro": 0.6078493561202126,
+  "classification_report": "                     precision    recall  f1-score   support\n\n               ĐÚNG       0.64      0.39      0.49       148\n                SAI       0.71      0.72      0.71       146\nKHÔNG ĐỦ BẰNG CHỨNG       0.54      0.74      0.62       144\n\n           accuracy                           0.62       438\n          macro avg       0.63      0.62      0.61       438\n       weighted avg       0.63      0.62      0.61       438\n",
+  "confusion_matrix": [
+    [
+      58,
+      27,
+      63
+    ],
+    [
+      12,
+      105,
+      29
+    ],
+    [
+      21,
+      16,
+      107
+    ]
+  ],
+  "labels": [
+    "ĐÚNG",
+    "SAI",
+    "KHÔNG ĐỦ BẰNG CHỨNG"
+  ],
+  "num_samples": 438,
+  "strategy": "weighted_max",
+  "chunk_size": 800,
+  "details": [
+    {
+      "claim": "Chanh và mật ong kết hợp tạo ra chất axit hòa tan có lợi giúp tăng cường khả năng miễn dịch, thanh lọc cơ thể, cải thiện hệ tiêu hóa, đào thải độc tố tích tụ lâu ngày để đường tiết niệu sạch sẽ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6480246782302856,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19448851"
+    },
+    {
+      "claim": "Tại buổi lễ khẳng định tinh thần thi đua yêu nước và ý chí quyết tâm vượt lên chính mình của các nữ trí thức, các bác sĩ, dược sĩ, Phó Thủ tướng Trần Hồng Hà sinh năm 1980 nhấn mạnh.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8917106588681539,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19624207"
+    },
+    {
+      "claim": "Làm chín bằng phương pháp lên men tự nhiên nên nem chua cũng còn chứa nhiều vi khuẩn chỉ bị tiêu diệt khi qua xử lý nhiệt, ảnh hưởng không tốt đến đường tiêu hóa.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.4895976781845093,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18815575"
+    },
+    {
+      "claim": "Các em học sinh của Trường tiểu học Birkdale mừng rỡ khi nhìn thấy thầy giáo bị ngưng tim vài tháng trước quay trở lại lớp học.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9626392722129822,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18854146"
+    },
+    {
+      "claim": "Bác sĩ trực khoa Tai mũi họng sau khi thăm khám đã nhận định dị vật là pin điện tử nguy hiểm, cần lấy khỏi mũi từ từ, chậm rãi để ngăn dị vật làm tắt đường thở, đường ăn gây hoại tử.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.959600826104482,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18265759"
+    },
+    {
+      "claim": "Trẻ em dưới 5 tuổi dễ mắc bệnh lao nặng và phức tạp hơn.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8410288742743433,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19021637"
+    },
+    {
+      "claim": "Các đối tượng mạo danh là giáo viên hoặc nhân viên BV làm giả giấy tờ chứng nhận tình trạng sức khỏe của người bệnh tại BV để làm hoang mang người thân của bệnh nhân rồi bắt đầu thu thập thông tin của mọi người trong lúc thiếu bình tĩnh.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9397722780704498,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18569663"
+    },
+    {
+      "claim": "Ông Phạm Gia Hữu, Trưởng phòng GD&ĐT quận Thanh Xuân cho biết trong ngày đưa học sinh đi trải nghiệm, thực phẩm được bếp ăn nhà trường là cở sở bếp ăn Thiện Phước chuẩn bị cho các em.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6335034271081289,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19021700"
+    },
+    {
+      "claim": "Bị đau đầu, tê tay, chị Đ.T.T.P đi khám và được chẩn đoán là thoái hóa đốt sống cổ C5,C6.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.7784566283226013,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18418964"
+    },
+    {
+      "claim": "Các nhà khoa học Mỹ đang phát minh một loại thuốc là \"thần dược\" có thể giúp tránh tăng cân trong nghiên cứu mới nhất, được công bố trên tập san học thuật Cell Reports.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9784592390060425,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19442448"
+    },
+    {
+      "claim": "Sau khi kiểm tra, chụp X-quang ngực kết quả cho ra không bình thường và cho thấy áp xe cạnh khí quản ở cổ.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9986147880554199,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18323468"
+    },
+    {
+      "claim": "Chỉ có các khối u màng não kích thước lớn mới khiến người bệnh có thể tử vong, trong khi khối u nhỏ thì không có khả năng gây tử vong.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9888450105985006,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19157631"
+    },
+    {
+      "claim": "Bệnh viện Chợ Rẫy, TP.HCM đã cứu sống thành công bệnh nhân bị container cán qua người, đa chấn thương nặng sau 11 lần phẫu thuật.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5791689356168112,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19623871"
+    },
+    {
+      "claim": "Để tháo gỡ ngay khó khăn, vướng mắc cho các bệnh viện, Phó Thủ tướng Trần Hồng Hà yêu cầu Bộ Y tế, Tài chính, KH&ĐT khẩn trương sửa đổi các thông tư, nghị định thuộc lĩnh vực quản lý.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.816106379032135,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19028868"
+    },
+    {
+      "claim": "Phó Thủ tướng Trần Hồng Hà đã làm việc với lãnh đạo Bộ Y tế, Bộ Tài chính, Bộ KH&ĐT và một số bệnh viện trong ngày 25-2 liên quan đến những vướng mắc trong mua sắm trang thiết bị y tế, hoá chất xét nghiệm, sinh phẩm y tế...",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8426672418912252,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19028868"
+    },
+    {
+      "claim": "Khối bướu khoảng 4cm đã được lấy ra khỏi bệnh nhân sau khi thực hiện phẫu thuật nội soi cắt thận toàn phần.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7702690362930298,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18604655"
+    },
+    {
+      "claim": "Chính phủ đã chủ trì nhiều cuộc họp với các bệnh viện về vấn đề đảm bảo đầy đủ thuốc và trang thiết bị cho việc chữa bệnh.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9783411622047424,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18446899"
+    },
+    {
+      "claim": "Trưởng Khoa Cấp cứu, chống độc (Bệnh viện Nhi Trung ương) PGS T.S Trần Minh Điển cho biết rất nhiều bệnh nhân đến cấp cứu, có trường hợp không có người thân đi cùng bệnh nhân, không có giấy tờ tùy thân, không có tiền.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9839872121810913,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19486876"
+    },
+    {
+      "claim": "Các bác sĩ nghĩ rằng ông bị nhiễm bệnh khi làm công việc nghiên cứu nấm học thực vật và đã làm việc với vật liệu thối rữa, nấm và nhiều loại nấm thực vật trong thời gian dài.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.943298727273941,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18323468"
+    },
+    {
+      "claim": "Danh mục thuốc mở rộng bao gồm các thuốc điều trị bệnh thông thường và chuyên khoa như tim mạch, tiêu hóa, đái tháo đường, cơ xương khớp, hô hấp, truyền nhiễm, ung thư và thuốc kháng sinh, kháng viêm.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9294432997703552,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18808851"
+    },
+    {
+      "claim": "Bộ Y tế sẽ không áp dụng bất kỳ biện pháp nào để ngăn chặn sự bùng phát của các bệnh truyền nhiễm và sẽ chỉ dựa vào việc xử lý khi có dịch.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9970993995666504,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19031874"
+    },
+    {
+      "claim": "Để phát hiện các bệnh lý di truyền từ sớm và chính xác sẽ hạn chế rất nhiều các trường hợp phải chọc ối không cần thiết đó là một trong những điểm nổi trội của xét nghiệm di truyền, Khoa Giải phẫu bệnh – Tế bào và Khoa Di truyền học, Bệnh viện Hùng Vương TP HCM đã đón nhận chứng chỉ ISO 15189:2012 vào ngày 15-3.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6375388279557228,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19488283"
+    },
+    {
+      "claim": "Tuy tạm thời không hoạt động nhưng nếu điều kiện như nhiệt độ, độ ẩm phù hợp thì những vi sinh vật gây hại sẽ được kích hoạt và sinh sôi.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9760112762451172,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18815575"
+    },
+    {
+      "claim": "Bệnh đang bùng phát ở Tanzania và được dự đoán sẽ lây lan nhanh chóng sang các tỉnh lân cận.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6334680914878845,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18605258"
+    },
+    {
+      "claim": "Bạn sẽ nhận thấy rằng khi uống nhiều nước dừa, trong dạ dày tích tụ nhiều nước, bụng sẽ căng lên và khiến bạn cảm thấy ậm ạch khó chịu, số lần đi tiểu tiện sẽ tăng lên với tần suất lớn hơn.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9844813495874405,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18759066"
+    },
+    {
+      "claim": "Bệnh nhân có thể tự đến bệnh viện trước khi phẫu thuật.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9934329986572266,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19732291"
+    },
+    {
+      "claim": "Cô bắt đầu có dấu hiệu mờ mắt và tê bì chân tay chỉ sau 4 năm khi phát bệnh, nhiều lúc có những buổi sáng thức dậy mà tay chân không có cảm giác, phải xoa bóp mới có thể xuống giường được.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.7210018634796143,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19655115"
+    },
+    {
+      "claim": "Bác sĩ nhận định pin điện tử không quá nguy hiểm tuy nhiên cũng cần nhanh chóng lấy dị vật ra khỏi hốc mũi để tránh những nguy hiểm nghiêm trọng cho cơ thể.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8963423371315002,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18195555"
+    },
+    {
+      "claim": "Sở Công Thương TP.HCM cần phối hợp chặt chẽ với lực lượng Công an và ngành nông nghiệp tăng cường kiểm tra, kiểm soát hoạt động buôn bán, vận chuyển gia cầm, không để gia cầm không rõ nguồn gốc lưu thông trên địa bàn Thành phố.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9849677681922913,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19434752"
+    },
+    {
+      "claim": "Bệnh viện Quốc tế City vừa tiếp nhận và phẫu thuật thành công cho một trường hợp khối u khổng lồ như người mang bầu sắp sinh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6901793380578359,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19465997"
+    },
+    {
+      "claim": "Ngày xảy ra vụ việc không được tiết lộ trong báo cáo vì cho đến nay, không có bằng chứng cho thấy có loại nấm nào có thể lây bệnh sang người và ngược lại.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9734183549880981,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18500132"
+    },
+    {
+      "claim": "Thực phẩm bảo vệ sức khỏe Cà gai leo giải độc gan MB và La Hán Quả Tana có nội dung quảng cáo vi phạm quy định của pháp luật về quảng cáo.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9483928680419922,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18399058"
+    },
+    {
+      "claim": "Bệnh viện Chợ Rẫy, TP.HCM đã không cứu sống thành công bệnh nhân bị container cán qua người. Theo TS-BS Ngô Đức Hiệp, Trưởng khoa Phỏng - Phẫu thuật tạo hình (BV Chợ Rẫy), bệnh nhân không được chuyển lên từ BV huyện Bình Chánh và không có tình trạng đa chấn thương nặng. Đùi và bẹn không bị dập nát, tầng sinh môn không bị rách nát, dương vật không mất và trực tràng không bị đứt hoàn toàn cũng như bàng quang không vỡ.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9964535236358643,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19623871"
+    },
+    {
+      "claim": "Ung thư phổi không dễ chẩn đoán sớm nếu không thăm khám sức khỏe định kỳ, nhưng nếu phát hiện ở giai đoạn sớm thì có thể cho phép điều trị ung thư phổi hiệu quả, thậm chí là khỏi không bao giờ bị lại nữa.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8622440679797104,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18775878"
+    },
+    {
+      "claim": "Một bé gái 3 tuổi (ngụ Long An) được đưa tới Bệnh viện Nhi đồng 1 (TP.HCM) vào ngày 30.3 trong tình trạng quấy khóc, đau nhức mũi, chảy dịch vàng lẫn máu bên mũi phải.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8144780993461609,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18150825"
+    },
+    {
+      "claim": "Khi máy CT ở Bệnh viện Chợ Rẫy hư có thể ảnh hưởng đến an toàn của bệnh nhân.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9991449117660522,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18833054"
+    },
+    {
+      "claim": "Các loại cây, hoa có chứa các hợp chất gây độc trong trường cần được loại bỏ, riêng đối với các cây cổ thủ được trồng phục vụ môn Sinh học, cần phải có biển cảnh báo và biện pháp kiểm soát an toàn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6092206587394079,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18520725"
+    },
+    {
+      "claim": "TP.HCM vào mùa mưa tháng 6, mùa cao điểm của các bệnh đường hô hấp, dễ lây lan trong môi trường tập trung đông người, cần báo ngay cho trạm y tế và trung tâm y tế địa phương để có hướng xử lý kịp thời nếu có bất thường.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7678735360503197,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19241975"
+    },
+    {
+      "claim": "Bệnh nhân ung thư ngày càng có xu hướng tăng khi tại Việt Nam, ung thư gan đứng đầu, xếp sau là ung thư phổi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.736909205360072,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18775878"
+    },
+    {
+      "claim": "Hệ thống miễn dịch đóng vai trò quan trọng trong việc bảo vệ cơ thể khỏi bệnh tật, trong đó có ung thư.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9986403584480286,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19907779"
+    },
+    {
+      "claim": "Giúp hệ vi sinh đường ruột khỏe mạnh, không bị táo bón qua việc bổ sung lợi khuẩn bằng men vi sinh Optibac Probiotics Optibac.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6401761993765831,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18776258"
+    },
+    {
+      "claim": "Đang chơi cùng chị gái, cháu bé 3 tuổi chạy vào nhà báo với người thân vừa nhét đồ chơi vào mũi, cháu bé than đau và hợp tác với gia đình lấy ra vẫn không được.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9986833930015564,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18150825"
+    },
+    {
+      "claim": "Đã 99 ngày liên tiếp Việt Nam không ghi nhận ca tử vong do COVID-19, tổng số ca được điều trị khỏi đến nay là 10.614.857 ca.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9991650581359863,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19824583"
+    },
+    {
+      "claim": "Ca phẫu thuật đã thành công trong việc bình thường hóa hoàn toàn bộ phận sinh dục của đứa trẻ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8334368318319321,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19808369"
+    },
+    {
+      "claim": "Trưởng khoa Phụ Sản, kiêm Giám Đốc Y khoa Bệnh viện Quốc tế City TS.BS Tạ Thị Thanh Thủy sinh năm 1980 cho biết,  vừa tiếp nhận và phẫu thuật thành công cho một trường hợp khối u khổng lồ như người mang bầu sắp sinh",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7403032779693604,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19465997"
+    },
+    {
+      "claim": "TP Hồ Chí Minh đã ghi nhận các chùm ca bệnh hô hấp trường học ở quận Bình Thạnh và mới đây là Quận 10 trong ngày 30/1.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8339354395866394,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19075533"
+    },
+    {
+      "claim": "Tiến hành phẫu thuật cắt phần gan có khối ung thư là phương pháp điều trị duy nhất.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9037720561027527,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18981326"
+    },
+    {
+      "claim": "Mẫu bệnh phẩm của các trường hợp có tiền sử tiếp xúc với gia cầm ốm, chết cần gửi về Viện Vệ sinh dịch tễ/Viện Pasteur ở đường 222 đường Nguyễn Trãi, Khánh Hòa để xét nghiệm và triển khai kịp thời các biện pháp cách ly, điều trị, phòng, chống dịch.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7811967432498932,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19434752"
+    },
+    {
+      "claim": "Bệnh Marburg là một dạng bệnh sốt xuất huyết với các triệu chứng như sốt, choáng váng, ói mửa và có tỷ lệ tử vong đến 98%.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9985262155532837,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18605258"
+    },
+    {
+      "claim": "Một nam thanh niên 19 tuổi bị gãy dương vật do đứt dây hãm bao quy đầu trong lúc quan hệ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9386231303215027,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18605106"
+    },
+    {
+      "claim": "1 người tử vong, 10 người phải nhập viện, trong đó nhiều bệnh nhân nguy kịch trong 3 vụ ngộ độc liên tiếp do ăn cá chép ủ chua xảy ra tại huyện Châu Thành.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9847501516342163,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18594679"
+    },
+    {
+      "claim": "Các BV nên tăng cường bảo mật thông tin người bệnh theo khuyến cáo của Sở Y tế HCM để tránh những đáng tiếc không nên có.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9950254559516907,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18569663"
+    },
+    {
+      "claim": "Các bệnh truyền nhiễm mới nguy hiểm đã ít xuất hiện và hạn chế lay lan đồng thời các biến chủng cũng đã ngừng biến đổi.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9967568516731262,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18864596"
+    },
+    {
+      "claim": "Bệnh nhân đang trong tình trạng nguy kịch và cần được phẫu thuật ngay lập tức để cứu mạng sống của họ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9040431976318359,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19732291"
+    },
+    {
+      "claim": "Bác sĩ đã lấy được pin điện tử qua đường nội soi mũi, bơm rửa hốc mũi nhiều lần, lấy bớt phần niêm mạc bị hoại tử, bôi thuốc trị viêm cho bé. Trong vòng 1 tuần không có biến chứng xảy ra.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9384487469991049,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18150825"
+    },
+    {
+      "claim": "6 bệnh nhân bị nghi ngộ độc chất kích thích có triệu chứng  mệt, lơ mơ, tím tái,  chóng mặt và tê tay chân.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5827109515666962,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19639800"
+    },
+    {
+      "claim": "Sau thời gian nỗ lực điều trị của các bác sĩ, bệnh nhân cuối cùng trong vụ ngộ độc sau khi ăn cá chép ủ chua ở Quảng Nam hiện đã cai máy thở, tự thở được, các chỉ số ổn định.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.8665028214454651,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18594679"
+    },
+    {
+      "claim": "Dị tật hở môi và hàm ếch là khiếm khuyết bẩm sinh phổ biến nhất xảy ra tại vùng mắt và mũi, hiện nay tất cả các dị tật vùng hàm mặt đều có thể chỉnh sửa được.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9809366762638092,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19818074"
+    },
+    {
+      "claim": "Bệnh viện Sản Nhi Nghệ An là bệnh viện chuyên sản nhi nổi tiếng ở Bắc Trung Bộ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9964757561683655,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18387536"
+    },
+    {
+      "claim": "Giải thưởng danh giá Kovalevskaia, giải thưởng cao quý chỉ dành cho tập thể khoa học xuất sắc trong nghiên cứu và ứng dụng khoa học vào thực tiễn cuộc sống.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9925212264060974,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19624207"
+    },
+    {
+      "claim": "Vì thiếu thuốc và thiết bị y tế nên khi lượng bệnh nhân dồn về, bệnh viện Chợ Rẫy đã tăng chi phí khám chữa bệnh.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9916860461235046,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18833054"
+    },
+    {
+      "claim": "Qua giám sát chủ động, Trung tâm Kiểm soát bệnh tật TP Hồ Chí Minh cho biết tối 22/3 đơn vị đã phát hiện chùm ca cúm A/H1N1 tại một trường tiểu học ở Quận 10.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9259786605834961,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19075533"
+    },
+    {
+      "claim": "Ở độ tuổi tò mò khám phá thế giới xung quanh, cần trong trẻ cẩn thận, tránh để trẻ chơi với những vật nhõ, vừa tay vì trẻ có thể nuốt hay sặc vào đường thở hoặc nhét dị vật vào các hốc của cơ thể gây tai nạn nguy hiểm.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9963261485099792,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18265759"
+    },
+    {
+      "claim": "Những thói quen ăn uống ảnh hưởng đến sự cân bằng hệ vi khuẩn đường ruột, khiến khoảng 10 triệu dân gặp vấn đề sức khỏe đường tiêu hóa theo thông tin của Viện Dinh dưỡng quốc gia.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6631117649376392,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18776258"
+    },
+    {
+      "claim": "Bộ Y tế sẽ thực hiện những biện pháp cụ thể nào để tăng tỷ lệ tiêm chủng và thúc đẩy các chiến dịch giáo dục sức khỏe phòng chống dịch bệnh lây lan.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8323018431663514,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19031874"
+    },
+    {
+      "claim": "Cha mẹ nên ngồi kế bên quan sát khi con em sử dụng màu sáp vì có thể bé sẽ nhét màu vào lỗ mũi.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.63467837870121,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18199706"
+    },
+    {
+      "claim": "Ông H nhanh chóng được truyền máu, thở ô xy, lập hai đường truyền thuốc và máu, sau đó được phẫu thuật cấp cứu.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8991422653198242,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18774207"
+    },
+    {
+      "claim": "Tiến sĩ Madesh Muniswamy 50 tuổi, bác sĩ tim mạch tại Trung tâm Khoa học Y tế Đại học Texas, người dẫn đầu nghiên cứu nói rằng bước tiếp theo là tiến hành một số dược động học trước khi nghiên cứu thí điểm trên người.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9703636169433594,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19442448"
+    },
+    {
+      "claim": "Tình trạng của bà cụ nguy hiểm đến tính mạng vì bà có khối u ở thận phải kèm với lý nền.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.650344580411911,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18604655"
+    },
+    {
+      "claim": "Các em học sinh và các giáo viên khác đều mừng rỡ khi thấy thầy giáo quay trở lại lớp học.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.584407776594162,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18854146"
+    },
+    {
+      "claim": "Ngày 30.3, Bệnh viện Nhi đồng 1(TP.HCM) vừa ghi nhận 1 ca hoại tử mũi do nhét pin điện tử vào lỗ mũi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5680909951527914,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18199706"
+    },
+    {
+      "claim": "Sau chuyến đi dã ngoại của Trường Tiểu học Kim GIang, các em học sinh đã bị ngộ độc, trong đó có 73 trẻ vào viện, 14 trẻ đã được ra viện, hầu hết sức khỏe các em đều ổn định.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8710006475448608,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18522478"
+    },
+    {
+      "claim": "Bộ đội Biên phòng Bình Phước và các đơn vị liên quan tổ chức trạm kiểm soát dọc đường biên chung với Campuchia, tại cửa khẩu Lạng Sơn phải tập trung cao lực lượng nhất.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9472382515668869,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18900383"
+    },
+    {
+      "claim": "Sau hơn 1 tháng theo dõi và điều trị, dù một phần niêm mạc và sàn mũi đã bị ăn mòn, các bác sĩ chưa thấy cấu trúc quan trọng nào bị hoại tử và cũng không có tai biến hay biến chứng nào nguy hiểm nhờ vào sự can thiệp khẩn trương của bác sĩ.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9913153648376465,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18265759"
+    },
+    {
+      "claim": "Tạp chí báo cáo các trường hợp y khoa là Medical Mycology Case Reports và quá trình lâm sàng của ca bệnh phải được thể hiện rõ ràng cho tất cả người đọc.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9749085158109665,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18323468"
+    },
+    {
+      "claim": "Khoa Di truyền y học của bệnh viện đã đóng vai trò tiên phong trong việc áp dụng xét nghiệm PCR để xác định thai phụ có mắc COVID-19 hay không trong bối cảnh đại dịch, phương pháp xét nghiệm này đã mang lại lợi ích quan trọng cho việc đánh giá tình trạng sức khỏe của thai phụ, giúp đưa ra các quyết định về điều trị và quản lý hiệu quả, đồng thời đảm bảo an toàn cho thai nhi và giảm nguy cơ lây nhiễm trong cộng đồng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7452143970876932,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19488283"
+    },
+    {
+      "claim": "Lợi khuẩn (probiotics) là những vi khuẩn - vi sinh vật có lợi cho đường ruột, chúng ta cần bổ sung chúng vào chế độ ăn nhằm cân bằng hệ vi khuẩn đường ruột để cải thiện sức khỏe.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.960419774055481,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18569515"
+    },
+    {
+      "claim": "Bệnh viện Chợ Rẫy trước Nghị quyết 30 và Nghị định 7 có 5 máy CT hư hỏng trong đó có 2 máy của hãng Toshiba.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9955421586831411,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18833054"
+    },
+    {
+      "claim": "Bệnh nhân có tiền sử phẫu thuật vùng bụng trước đó và nhờ có sự phối hợp nhanh chóng, hiệu quả của các chuyên khoa nên nhiều ca mổ đã thành công.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9962259729703268,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19732291"
+    },
+    {
+      "claim": "Bác sĩ Nguyễn Minh Trung, trưởng khoa Tai Mũi Họng của bệnh viện Nhi Đồng 1 cho biết ở độ tuổi tò mò về thế giới xung quanh, trẻ nhỏ có thể nuốt hay sặc đường thở cũng như nhét các dị vật vào các hốc của cơ thể.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9868534803390503,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18195555"
+    },
+    {
+      "claim": "Để chủ động phòng chống dịch cúm gia cầm lây sang người trước tình hình dịch cúm A (H5N1) trên gia cầm đã lây sang người gây tử vong tại Campuchia, cần phải tuyên truyền sâu rộng đến người dân nắm bắt được thông tin, phòng tránh và xử lý kịp thời không để dịch bệnh lây sang người.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9396921396255493,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19434752"
+    },
+    {
+      "claim": "Tổng thời gian điều trị là 112 ngày (2 đợt) từ ngày 1-2 đến ngày 2-6 với tổng chi phí 380 triệu đồng (bảo hiểm trả 240 triệu đồng).",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.48400844136873883,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19623871"
+    },
+    {
+      "claim": "BS Hải mới từ BV Hữu nghị Việt Đức (Hà Nội) về công tác được mấy năm, Do vậy, khi anh đề xuất phương án chữa trị không ít người nghi ngại.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7503480315208435,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19088868"
+    },
+    {
+      "claim": "Bệnh viện Nhi đồng 1 đã tiếp nhận một bệnh nhi nhét pin điện tử vào mũi, sau khi kiểm tra cho thấy pin đã ăn mòn toàn bộ niêm mạc vách ngăn, cuốn mũi dưới và sàn mũi nơi pin tiếp xúc.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.5713064670562744,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18195555"
+    },
+    {
+      "claim": "WHO đang làm việc với các nhà nước chức trách và nhà sản xuất để nghiên cứu vaccine nhưng hiện nay vẫn chưa có thuốc trên thị trường.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9853284358978271,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18605258"
+    },
+    {
+      "claim": "Vitamin và khoáng chất có vai trò xúc tác các phản ứng lí hóa diễn ra bên trong cơ thể, góp phần hình thành nên các tế bào ngăn chặn sự xâm nhập có hại từ bên ngoài.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9562949538230896,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18569515"
+    },
+    {
+      "claim": "Dương vật có thể bị gãy do sở thích bẻ dương vật, chơi thể thao và tỷ lệ dương vật bị gãy cao gấp 3 lần trong những năm gần đây.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7211647431055704,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18605106"
+    },
+    {
+      "claim": "Sau khi nghe bác sĩ nước ngoài tư vấn, cô quyết định điều chỉnh lại chế độ dinh dưỡng, ăn uống, luyện tập và sử dụng kết hợp thuốc tây y với Thực phẩm bảo vệ sức khỏe Diabetna.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9282392348561969,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19655115"
+    },
+    {
+      "claim": "Bệnh nhân nam bị gãy \"của quý\" được phẩu thuật cầm máu nhưng chưa làm tạo hình dây hãm.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9929948449134827,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18605106"
+    },
+    {
+      "claim": "Đây là trường hợp tổn thương đặc biệt nghiêm trọng do tai nạn nhưng theo y văn, những trường hợp tương tự vẫn có khả năng cứu sống cao.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7403571605682373,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18855523"
+    },
+    {
+      "claim": "Hồng và Tuấn quen nhau ở buổi gặp phỏng vấn thực tập, ban đầu là bạn sau dần thành người yêu rồi cưới nhau sau khi cả hai đều lấy được bằng tốt nghiệp.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9868245050311089,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18876642"
+    },
+    {
+      "claim": "Loài nấm được tìm thấy trên người bệnh nhân là nấm chondrostereum purpureum, một loại nấm gây ra bệnh bạc lá ở thực vật.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9085009694099426,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18323468"
+    },
+    {
+      "claim": "Sau hơn 5 tháng nằm viện, vết thương mỏm cụt của bệnh nhân đã được che phủ tốt nhưng các bác sĩ khuyên bệnh nhân ở lại viện 6 tháng nữa.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9939332604408264,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18855523"
+    },
+    {
+      "claim": "Các sản phẩm Cerave trước khi lưu hành trên thị trường đều tuân thủ quy tắc 7 không nên mỹ phẩm Cerave đã và đang có mặt tại nhiều quốc gia trên thế giới, được ưa chuộng rộng rãi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8060993179678917,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18750959"
+    },
+    {
+      "claim": "Ổ chứa tự nhiên là loài dơi ăn quả, bệnh có thể lây từ động vật sang người, từ người sang người, nguồn gốc của bệnh được phát hiện ở Trung Quốc.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.8741958737373352,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18900383"
+    },
+    {
+      "claim": "Lễ tôn vinh nữ trí thức tiêu biểu ngành y giai đoạn 2019-2022 do Bộ Y tế phối hợp với Hội Nữ Trí thức Việt Nam, Công đoàn Y tế Việt Nam tổ chức sáng 2-3.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8150041699409485,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19624207"
+    },
+    {
+      "claim": "Đường ruột có khoảng 100 nghìn tỷ vi sinh vật (đa phần là vi khuẩn) bao gồm cả lợi khuẩn và hại khuẩn, chúng luôn giữ mức cân bằng nhầm tránh những tác hại không đáng có với cơ thể vật chủ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9953693598508835,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18569515"
+    },
+    {
+      "claim": "Haloperidol là một loại thuốc gây ngộ độc khi dùng quá liều, đặc biệt là đối với người lớn, nên thuốc được gia đình cất kỹ trong tủ của gia đình.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9512233734130859,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18405130"
+    },
+    {
+      "claim": "Chanh chứa nhiều vitamin D, uống nước chanh nóng có thể giúp giảm nghẹt mũi hoặc làm dịu cơn đau họng.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.930575966835022,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19448851"
+    },
+    {
+      "claim": "4 bệnh nhân trong các chùm ca bệnh ngộ độc botulinum vì ăn cá chép muối ủ chua đang được xem xét cho xuất viện sau nhiều ngày điều trị.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7716808319091797,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18857757"
+    },
+    {
+      "claim": "Không rõ liệu việc kéo dài ngày hết hạn của thuốc có ảnh hưởng đến sự sẵn có hoặc chi phí của những loại thuốc này cho bệnh nhân hay không nhưng sau 2 đợt gia hạn theo Nghị quyết 80 của Quốc hội, hiện đã có gần 9.600 thuốc được gia hạn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9165123999118805,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18808851"
+    },
+    {
+      "claim": "Cục An toàn thực phẩm khuyến nghị người dân không nên mua và sử dụng sản phẩm có nội dung quảng cáo sai sự thật.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9751707315444946,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18419134"
+    },
+    {
+      "claim": "Bô giáo dục Anh sẽ trang bị máy khử rung tim tại các trường công lập và tư thục vào tháng 1.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8143305579821268,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18854146"
+    },
+    {
+      "claim": "Trung tâm Kiểm soát bệnh tật TP.HCM phối hợp với Bệnh viện Nhi đồng 1 và Trung tâm Y tế quận 10 điều tra dịch tễ, thăm khám, có tổng cộng 30 học sinh bị bệnh với các triệu chứng như: sốt, ho, đau họng, mệt mỏi, ói.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7644142508506775,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19241975"
+    },
+    {
+      "claim": "Nhiều bệnh viện đã trở lại hoạt động bình thường sau 2 tuần bị gián đoạn bởi việc thiếu vật tư gây ra bởi đấu thầu mua sắm trang thiết bị bệnh viện.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7423935006372631,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18446899"
+    },
+    {
+      "claim": "Cháu T nhập viện vì đã uống nhầm thuốc điều trị bênh tâm thần, Haloperidol, có thể gây mất mạng đối với trẻ nhỏ khi sử dụng quá liều.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.93556147813797,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18387536"
+    },
+    {
+      "claim": "Bé trai uống nhầm thuốc điều trị tâm thần của người thân khiến bản thân phải nhập viện.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9291875958442688,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18387536"
+    },
+    {
+      "claim": "Theo StyleCraze, trang báo về Khoa Học và Xã Hội  cho hay mật ong  có đặc tính kháng khuẩn giúp loại bỏ vi khuẩn gây ho có hại.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.8853685855865479,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19448851"
+    },
+    {
+      "claim": "Trong nước dừa có chứa rất nhiều Vitamin và khoáng chất giúp chống lão hóa da, cải thiện sức khỏe tim mạch nếu uống quá nhiều nước dừa, có thể dẫn tới tình trạng dư thừa kali, làm hạ huyết áp quá mức, gây hoa mắt chóng mặt và thậm chí là ngất xỉu.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.952842503786087,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18759066"
+    },
+    {
+      "claim": "Tốt nhất mỗi ngày không nên uống quá 3 trái dừa vì thói quen uống nước dừa nhiều hằng ngày hoàn toàn không tốt cho sức khỏe.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.973097026348114,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18759066"
+    },
+    {
+      "claim": "Về dịch COVID-19 so với ngày 19, hôm nay 20-3, Bộ Y tế cho biết số bệnh nhân giảm mạnh hơn 3 lần.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.739698052406311,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19824583"
+    },
+    {
+      "claim": "Tổn thương lồng ngực thể hiện qua các triệu chứng như đau, mệt, khó thở sau chấn thương và thường gặp ở người lớn tuổi hơn người trẻ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8125361800193787,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18604391"
+    },
+    {
+      "claim": "Khối u màng não lần này đã được loại bỏ một cách hoàn toàn để người bệnh không còn gặp phải bất kỳ vấn đề sức khỏe liên quan đến u.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.6560476422309875,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19157631"
+    },
+    {
+      "claim": "Bác sĩ Viên Đình Hải tham gia Dự án 585 của Bộ Y tế, bác sĩ Viên Đình Hải quyết định rời bệnh viện tuyến trung ương về công tác tại bệnh viện một huyện miền núi xa xôi của tỉnh Thanh Hóa.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.6919485926628113,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19088868"
+    },
+    {
+      "claim": "Bệnh gan nhiễm mỡ là tình trạng có quá nhiều chất béo trong gan, tuy nhiên bệnh có thể được điều trị bằng việc thay đổi chế độ ăn uống.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.99524986743927,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18814986"
+    },
+    {
+      "claim": "Ở mỗi bệnh nhân nguyên nhân và các biểu hiện của bệnh hoàn toàn giống nhau nên việc chẩn đoán sớm, chính xác dễ dàng.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9954547882080078,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18396498"
+    },
+    {
+      "claim": "Nguyên nhân bệnh dại tái xuất hiện ở Đồng Nai là do sự chủ quan của người dân, còn chính quyền đã quản lý tốt đàn chó, mèo trong cộng đồng rồi.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9936002492904663,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18605497"
+    },
+    {
+      "claim": "Những chiếc máy khử rung tim được lắp đặt tại trường là do quy định của Chính phủ.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9174721837043762,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18854146"
+    },
+    {
+      "claim": "Sau gần 10 tiếng được các BS phẫu thuật, ông H cũng đã tỉnh táo.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8135868906974792,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18774207"
+    },
+    {
+      "claim": "Trong quá trình các cơ quan chức năng xử lý, Cục An toàn thực phẩm đề nghị người tiêu dùng căn cứ vào các nội dung quảng cáo vi phạm để quyết định mua và sử dụng sản phẩm.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9988768696784973,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18399058"
+    },
+    {
+      "claim": "Các đường link mua 2 sản phẩm này được gắn trên các quảng cáo tràn lan các trang mạng xã hội.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9643486142158508,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18419134"
+    },
+    {
+      "claim": "Sau phẫu thuật, gia đình người bệnh đã thay đổi tên, giới tính của trẻ trong giấy khai sinh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6830127947032452,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19808369"
+    },
+    {
+      "claim": "Nếu có dấu hiệu đau hông hoặc tiểu máu kéo dài, cần đến ngay cơ sở y tế để điều trị hoặc gọi điện tham khảo các chuyên gia y tế nổi tiếng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6222225576639175,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18604655"
+    },
+    {
+      "claim": "Bé đang chơi thì chạy vào báo người thân và nhét đồ chơi và mũi nên cả nhà đưa bé đi phòng khám, dù bé đã hợp tác nhưng dị vật không thể được lấy ra.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9987911581993103,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18241348"
+    },
+    {
+      "claim": "Virus Marburg lây từ người sang người qua tiếp xúc trực tiếp với máu, dịch tiết cơ thể chỉ ảnh hưởng đến người lớn trên 50 tuổi.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.997935676574707,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19023164"
+    },
+    {
+      "claim": "Cục An toàn thực phẩm thuộc Bộ Y tế vừa đưa ra cảnh báo về việc sản phẩm thực phẩm bảo vệ sức khỏe Cà gai leo giải độc gan MB về nội dung quảng cáo không phù hợp với giấy xác nhận nội dung quảng cáo đã được cấp.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.6010828018188477,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18399058"
+    },
+    {
+      "claim": "Đồ ăn trưa cho học sinh được nấu tại trường và mang theo đến địa điểm trải nghiệm, gồm các món: Cơm rang, gà phi lê chiên xù, khoai tây chiên, canh chua nấu thịt, bánh Oreo Kinh Đô, trong đó món canh chua nấu thịt là nguyên nhân gây ra ngộ độc.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7248314420382181,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18522478"
+    },
+    {
+      "claim": "Ngày 30.3 Bệnh viện Nhi Đồng 1 (TPHCM) vừa tiếp nhận bé gái 3 tuổi nhét pin điện tử vào mũi, hành động này đã gây tổn thương ở bên trong mũi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.873928964138031,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18195555"
+    },
+    {
+      "claim": "Ngày 29/3, WHO đã tiếp nhận thông tin ở Guinea Xích đạo có 9 ca bệnh Marburg trong đó có 7 ca tử vong.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8389756679534912,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18605258"
+    },
+    {
+      "claim": "Đội phản ứng nhanh đến thực hiện khám phân loại, lấy mẫu nôn và mẫu thức ăn để gửi Viện Kiểm nghiệm an toàn thực phẩm quốc gia.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8188621923327446,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19591411"
+    },
+    {
+      "claim": "Trong men chua có chức các vi sinh vật gây bệnh do đặc thù nguyên liệu có thịt sống, nếu không qua xử lý nhiệt thì trong men chua sẽ tồn tại những vi sinh vật gây ngộ độc cho người sử dụng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9452634453773499,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18815575"
+    },
+    {
+      "claim": "Bệnh do virus marburg gây ra, đây là bệnh truyền nhiễm cấp tính đặc biệt nguy hiểm, có tỷ lệ tử vong đến 90%.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9931017160415649,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18900383"
+    },
+    {
+      "claim": "Người trực tiếp thực hiện ca phẫu thuật TS.BS Nguyễn Quang Đức 50 tuổi, cho biết, khó nhất của ca mổ này là khối dị dạng chiếm phần lớn diện tích vùng mặt, mũi, mắt và liên quan đến thần kinh, mạch máu.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9762265980243683,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19087842"
+    },
+    {
+      "claim": "Các bác sĩ Bệnh viện Việt Đức đã tiến hành phẫu thuật chỉnh sửa khiếm khuyết bẩm sinh vùng sinh dục cho bệnh nhân.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9819769859313965,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19808369"
+    },
+    {
+      "claim": "Viện Pasteur Nha Trang thực hiện đã xác định Clostridium Botulinum type E (+) trong mẫu cá muối ủ chua kết quả là không đúng  với chẩn đoán ban đầu của ê kíp bác sĩ Bệnh viện Chợ Rẫy.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9982001781463623,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18626281"
+    },
+    {
+      "claim": "Kể từ đầu dịch Việt Nam có hơn 14 triệu ca nhiễm với tỷ lệ ca nhiễm/1 triệu dân.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9938825368881226,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18809110"
+    },
+    {
+      "claim": "Tỉ lệ lây lan của các loại bệnh lao đa dạng nhưng việc điều trị bệnh lao rất đơn giản và luôn thành công.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9773976355791092,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19021637"
+    },
+    {
+      "claim": "Sau gần năm tiếng phẫu thuật, với nhiều lần ông H rơi vào nguy kịch, nạn nhân cũng đã tỉnh táo, hai bàn tay có dấu hiệu sống và ngón tay hồng ấm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8660353720188141,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18774207"
+    },
+    {
+      "claim": "Một bệnh nhân đã được chuyển đến bệnh viện cấp cứu sau khi bị va chạm với xe đầu kéo trên quốc lộ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9953113198280334,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18855523"
+    },
+    {
+      "claim": "Tình trạng của bệnh nhân xấu đi trong quá trình phẫu thuật nhưng bệnh nhân đã hồi phục sức khoẻ sau 3 tuần điều trị.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9330001076062521,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19732291"
+    },
+    {
+      "claim": "PGS-TS-BS Hoàng Thị Diễm, Giám đốc Bệnh viện Từ Vũ, cho biết thêm trên toàn cầu, các nghiên cứu chỉ ra rằng kết quả cận lâm sàng ảnh hưởng 90%-100% đến quyết định điều trị của bác sĩ, trong việc chẩn đoán và điều trị bệnh kịp thời và chính xác.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8825995922088623,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19488283"
+    },
+    {
+      "claim": "Chất xơ là chất xúc tiến cho hoạt động của hệ bài tiết và hệ tiêu hóa, đẩy nhanh quá trình bài tiết và góp phần giữ nước cho cơ thể.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8066399898380041,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18569515"
+    },
+    {
+      "claim": "Đến sáng 24/3, bệnh nhân H.V.Đ (57 tuổi, trú huyện Phước Sơn) và H.K.H(48 tuổi, trú huyện Châu Thành) đã cai thở máy, tự thở được, các chỉ số sinh hiệu ổn định.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5979015926520029,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18594679"
+    },
+    {
+      "claim": "Theo thông tin từ Bệnh viện Nhi đồng 1 (TP.HCM) cho biết, bệnh viện vừa tiếp nhận bé trai 3 tuổi bị hoại tử một phần mũi do nhét pin điện tử vào cơ quan này.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9626295566558838,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18152043"
+    },
+    {
+      "claim": "Có 7 học sinh vào bệnh viện Đống Đa, sức khỏe ổn định, còn bệnh viện Xanh Pôn và bệnh viện Nhi Trung ương, mỗi bệnh viện tiếp nhận 1 em do là trường hợp nặng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6697834804654121,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18522478"
+    },
+    {
+      "claim": "Có 51 nữ trí thức tiêu biểu ngành y giai đoạn 2019-2022 đã được Bộ Y tế tôn vinh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9890390634536743,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19624207"
+    },
+    {
+      "claim": "Nước chanh nóng có thể mang lại một số lợi ích cho sức khỏe, đặc biệt, khi kết hợp nước chanh nóng với mật ong sẽ giúp làm dịu cổ họng và sạch đường thở.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9908267855644226,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19448851"
+    },
+    {
+      "claim": "Bệnh nhi được thực hiện bơm rửa hốc mũi tầm 10 -12 lần, nghỉ 5 phút rồi tiếp tục thêm 5 lần nữa để lấy bớt phần niêm mạc bị hoại tử ra ngoài.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9941966931025187,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18199706"
+    },
+    {
+      "claim": "Khe hở môi, vòm miệng là dị tật bẩm sinh phổ biến ở vùng mặt, miệng và bác sĩ có thể sửa các dị tật này, nên cha me đừng vì trẻ bị dị tật này mà đình chỉ thai kỳ,  PGS.TS Trần Cao Bính cho biết.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.815443143248558,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19818074"
+    },
+    {
+      "claim": "Suốt thời gian theo dõi, bệnh nhân bị biến chứng nặng và không có dấu hiệu hết bệnh, nên các nhà nghiên cứu đã cảnh báo trường hợp này \"đặt ra những vấn đề nghiêm trọng\".",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.99869304895401,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18500132"
+    },
+    {
+      "claim": "Tổng số ca tử vong do COVID-19 tại Việt Nam là 43.186 ca và có dấu hiệu tăng tiếp.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8396963477134705,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18809110"
+    },
+    {
+      "claim": "Trong ngày, có thêm 6 bệnh nhân ở TP HCM được công bố khỏi bệnh.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.6955627202987671,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18809110"
+    },
+    {
+      "claim": "Mỹ phẩm Cerave đang được cộng đồng skincare Việt “bàn tán” xôn xao nhờ khả năng chăm sóc da hiệu quả, phù hợp với mọi làn da, đặc biệt giá cả vô cùng hạt dẻ và phù hợp với lứa tuổi học sinh sinh viên.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9901430681347847,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18750959"
+    },
+    {
+      "claim": "Thầy Nick Sheeran sau khi bị ngừng tim thì đã được các đồng nghiệp sơ cứu bằng hô hấp nhân tạo và máy khử rung tim.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9788524508476257,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18854146"
+    },
+    {
+      "claim": "Không thể phủ nhận tầm quan trọng của hệ thống miễn dịch đối với con người và nó có thể nhắm mục tiêu cụ thể và tấn công các tế bào ung thư.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9885987043380737,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19907779"
+    },
+    {
+      "claim": "Sản phẩm của Công ty TNHH TM Fucoidan Nhật Bản, Fucoidan 3-Plus, một sản phẩm thực phẩm tốt cho sức khỏe, được FDA chấp thuận để điều trị ung thư.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9543745517730713,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19907779"
+    },
+    {
+      "claim": "Sau khi bị té đập ngực xuống đường, một người đàn ông 69 tuổi đã bị đau ngực dữ dội do gãy hàng loạt xương sườn, tràn máu màng phổi dẫn đến suy hô hấp.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.821114718914032,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18604391"
+    },
+    {
+      "claim": "Phụ huynh nên chủ động cho con đi tiêm ngừa các bệnh đã có vaccine như cúm, thủy đậu, quai bị với mức giá chỉ từ 1 - 5 triệu để phòng ngừa hiệu quả nhất để làm giảm tỷ lệ mắc và tỷ lệ bệnh nặng do bệnh truyền nhiễm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7461657404899598,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19075533"
+    },
+    {
+      "claim": "2 sản phẩm vi phạm quảng cáo này sẽ được Cục y tế  xác minh và xử lý theo quy định.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8706728219985962,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18419134"
+    },
+    {
+      "claim": "Bộ Y tế cho biết dịch COVID-19 và các bệnh truyền nhiễm khác cơ bản đang mất kiểm soát, nguy cơ xâm nhập và lay lan các tác nhân bệnh không còn tiềm ẩn nữa.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9984514713287354,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18864596"
+    },
+    {
+      "claim": "Tiêm vaccine cúm giúp kích thích cơ thể sinh ra miễn dịch chủ động để phòng ngừa bệnh và giảm nguy cơ làm bệnh nặng hơn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9787196516990662,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18936394"
+    },
+    {
+      "claim": "Người phụ nữ chịu đựng chứng bụng to suốt nhiều năm vì thấy bụng to lên bất thường, nhưng ngại đi khám cho đến khi bác sĩ phẫu thuật lấy khối u 11kg ra khỏi ổ bụng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8358604709307352,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19465997"
+    },
+    {
+      "claim": "Sở y tế tỉnh Lâm Đồng yêu cầu các cơ quan chức năng có biện pháp ứng phó kịp thời trước thông tin 14 học sinh trường THCS tại địa bàn nhập viện vì ăn quả cây ngô đồng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.8205510973930359,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18520725"
+    },
+    {
+      "claim": "PGS.TS Trần Cao Bính, Giám đốc Bệnh viện Răng - Hàm - Mặt Trung ương Hà Nội đã có mặt tại chương trình Tư vấn điều trị toàn diện và phẫu thuật miễn phí cho trẻ khe hở môi - vòm miệng diễn ra sáng 22/3 cho biết, mỗi ngày trên thế giới có trung bình 550 trẻ em không may mắn ra đời bị dị tật bẩm sinh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.49271639809012413,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19818074"
+    },
+    {
+      "claim": "Do suy giảm nội tiết tố, phần vì bị gò bó bởi định kiến: Già còn ham là mất nết\", nhiều phụ nữ sau mãn kinh vẫn còn giữ chế độ quan hệ đều đặn.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8037109196186065,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18900849"
+    },
+    {
+      "claim": "Bệnh lý thoái hóa đốt sống (cột sống) ngày càng phổ biến và gây ảnh hưởng lớn đến cuộc sống, sức khỏe của người bệnh vì bệnh chỉ có thể phát hiện với những triệu chứng không ngờ tới.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9745068922638893,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18396498"
+    },
+    {
+      "claim": "Pin điện tử đã làm hoại tử niêm mạc vách ngăn của bệnh nhi khi trẻ nhét viên pin vào mũi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.649479741230607,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18241348"
+    },
+    {
+      "claim": "Bộ Y tế gửi UBND các tỉnh, thành phố văn bản tổ chức triển khai kế hoạch phòng, chống dịch bệnh truyền nhiễm vào sáng ngày 22/3 lúc 9h.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7037034258246422,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18864596"
+    },
+    {
+      "claim": "Đứa trẻ ban đầu bị chẩn đoán nhầm là nam khi mới sinh.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9847383499145508,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19808369"
+    },
+    {
+      "claim": "Người bệnh khó có thể nhầm lẫn các dấu hiệu của bệnh thoái hóa đốt sống với triệu chứng của bệnh khác như hội chứng đau đầu, rối loạn tiền đình, viêm xoang.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.808891236782074,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18396498"
+    },
+    {
+      "claim": "Bếp ăn tập thể Trường Tiểu học Kim Giang phải tạm dừng hoạt động để điều tra rõ nguyên nhân trong 1 năm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8727799989283085,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19591411"
+    },
+    {
+      "claim": "TP đã ghi nhận các chùm ca bệnh hô hấp ở trường học Hai Bà Trưng tại quận Bình Thạnh và mới đây là quận 10 trong tháng 1-2023.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9214680194854736,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19241975"
+    },
+    {
+      "claim": "Chấn thương mà ông T. là chấn thương thể nặng do gãy đa cung xương sườn, biến dạng phổi, tràn máu lồng ngực.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.986048698425293,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18604391"
+    },
+    {
+      "claim": "Các quảng cáo thuốc đông y tràn lan trên mạng xã hội với những câu nói gây sốt như \"Nhà tôi 3 đời...\" được cho là nội dung quảng cáo không phù hợp với Giấy xác nhận nội dung quảng cáo đã được cấp.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9583466053009033,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18399058"
+    },
+    {
+      "claim": "Trong khi người chồng vẫn còn nhu cầu trong chuyện ấy, thì người vợ lại không còn thiết tha gì, cứ mỗi khi ông động vào người bà lại đuổi như đuổi tà nên không sinh hoạt được.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.762203311920166,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18900849"
+    },
+    {
+      "claim": "Cả hai vợ chồng đều đã ngoài tuổi lục tuần, cứ  mỗi khi ông động vào người bà lại đuổi như đuổi tà nên không sinh hoạt được.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6101803719997406,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18900849"
+    },
+    {
+      "claim": "Quảng cáo về cà gai leo MB và Viên ngậm ho La Hán Qủa Tana là phù hợp với giấy xác nhận nội dung quảng cáo đã được cấp.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9917005896568298,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18419134"
+    },
+    {
+      "claim": "Tờ Daily Mail hôm 29.3 đưa tin một người Ấn độ 61 tuổi bị nhiễm nấm gây chết cây trồng có nguy cơ gây chết người.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.6800376772880554,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18378070"
+    },
+    {
+      "claim": "Bệnh viện Chợ Rẫy không cứu sống được bệnh nhân VMH, một nam giới 53 tuổi, ngụ tại Bình Tân, TP.HCM, sau khi bị xe container cán qua người. Thực tế là bệnh nhân không được hồi sức tích cực và không thực hiện bất kỳ ca phẫu thuật nào và cũng không có sự phối hợp điều trị từ bất kỳ chuyên khoa nào.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9978201389312744,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19623871"
+    },
+    {
+      "claim": "Sau khi tình trạng bé cải thiện, bé nói chuyện hơi khó nghe do cơ hầu họng vẫn còn co cứng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7569476962089539,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18405130"
+    },
+    {
+      "claim": "Nguyên nhân dễ gây các vấn đề sức khỏe tiêu hóa là do không ít người đã hình thành thói quen ăn uống không lành mạnh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.5606096982955933,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18776258"
+    },
+    {
+      "claim": "Các trường hợp bị nghi ngộ độc chất gây nghiện có thể sẽ mất mạng nếu không được nhập viện kịp thời, đặc biệt là hai bệnh nhân bị nặng nhất.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9918590188026428,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19639800"
+    },
+    {
+      "claim": "Tình trạng thiếu thuốc và thiết bị y tế gây áp lực cho các bệnh viện tuyến cuối và kho khăn trong việc khám chữa bệnh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9874096512794495,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18833054"
+    },
+    {
+      "claim": "Chỉ trong 1 ngày mà số ca nhiễm tăng hơn 3 lần  so với ngày trước đó.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9914817810058594,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18809110"
+    },
+    {
+      "claim": "Trong 2 tuần bị gián đoạn do thiếu thuốc men, các bệnh nhân được các bác sĩ kê đơn và phải đem ra nhà thuốc bên ngoài bệnh viện để mua.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7104325741529465,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18446899"
+    },
+    {
+      "claim": "Cô gái ở Hà Nội đến BV Bạch Mai khám vì xuất hiện các triệu chứng đau ngực, khó thở, đau đầu, đau vùng cột sống thắt lưng, sau đó kết quả chẩn đoán cô đã mắc ung thư gan.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7663244519914899,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18775878"
+    },
+    {
+      "claim": "Bác sĩ Trung cho hay rằng trẻ nhỏ đang ở độ tuổi thích khám phá có thể sẽ có những hành vi gây nguy hiểm cho bản thân và ảnh hưởng nặng nề đến sức khỏe thể chất lẫn tinh thần của trẻ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9738045930862427,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18241348"
+    },
+    {
+      "claim": "Đường ruột có khoảng 90% hệ miễn dịch của cơ thể, nên việc tiêu hóa tốt sẽ giúp tăng cường miễn dịch, bảo vệ cơ thể trước các tác nhân gây bệnh.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9611181020736694,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18776258"
+    },
+    {
+      "claim": "Liên hiệp Các hội Khoa học và Kỹ thuật Việt Nam công nhận chứng chỉ ISO 15189:2012 là một chứng nhận năng lực xét nghiệm chẩn đoán y khoa đạt tiêu chuẩn cao.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.48963455855846405,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19488283"
+    },
+    {
+      "claim": "Sau khi nghe lời giải thích của Tuấn, Hồng quay về phòng khóc nức nở đồng thời soạn đồ rời khỏi nhà, về nhà mẹ đẻ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8636224865913391,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18876642"
+    },
+    {
+      "claim": "Fucoidan và nấm Agaricus có thể loại bỏ hoàn toàn các tác dụng phụ của hóa trị và xạ trị như buồn nôn và rụng tóc.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8708100219567617,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19907779"
+    },
+    {
+      "claim": "Dơi là ổ chứa vi rút Marburg tự nhiên duy nhất.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9709311962127686,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19023164"
+    },
+    {
+      "claim": "Dây hãm là phần mô có tính đàn hồi nằm dưới bao quy đầu và chức nhiều dây thần kinh, mạch máu.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9102585911750793,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18605106"
+    },
+    {
+      "claim": "Triệu chứng gặp phải của nhiễm loại nấm này khá giống với cảm cúm, tuy nhiên cận lâm sàng lại chỉ cho ta thấy được có áp xe cạnh khí quản ở cổ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.991510808467865,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18345278"
+    },
+    {
+      "claim": "Chị T.H bị đau đầu, chóng mặt, buồn nôn và phát hiện một khối u kích thước 5cm.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.751896858215332,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19157631"
+    },
+    {
+      "claim": "Với sản phẩm men vi sinh có các thành phần tự nhiên gồm 6 chủng lợi khuẩn có khả năng chống táo bón và giúp tỉnh táo, ản phẩm Optibac For Everyday được bình chọn là sả phẩm tốt nhất cho sức khỏe đường ruột năm 2023.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8346563279628754,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18776258"
+    },
+    {
+      "claim": "Bệnh nhân là một nhà nấm học thực vật đang nghiên cứu đồ án về sự sinh trưởng của nấm chodrostereum purpureum trong 10 năm gần đây.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.7137901186943054,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18345278"
+    },
+    {
+      "claim": "Cô Hạnh đã có dâu hiệu của biến chứng thần kinh và biến chứng mắt của tiểu đường, vì vậy dù cô có kiểm soát tốt các chỉ số đường huyết và mỡ máu, thì trong tương lai cô sẽ phải đối mặt với nhiều biến chứng nguy hiểm khác của bệnh tiểu đường.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9715357167380196,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19655115"
+    },
+    {
+      "claim": "Đề xuất tiếp tục gia hạn giấy phép trang thiết bị y tế đã hết hiệu lực từ tháng 3, với đề xuất của Bộ Y tế sau khi được gia hạn thì các lô vật tư, thiết bị y tế đã nhập khẩu từ đầu năm sẽ được thông quan ngay đầu tuần.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.4141422137618065,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19028868"
+    },
+    {
+      "claim": "Các sản phẩm của Cerave cũng được đội ngũ chuyên gia đánh giá cao về chất lượng và luôn được khuyên dùng với các bạn nữ đặc biệt phù hợp với những bạn có làn da nhạy cảm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9727127254009247,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18750959"
+    },
+    {
+      "claim": "Bộ Y tế gia hạn hạn sử dụng của 715 loại thuốc, nguyên liệu làm thuốc, vắc xin và sinh phẩm y tế đến ngày 31 tháng 12 năm 2024.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.7703759074211121,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18808851"
+    },
+    {
+      "claim": "Các đơn vị, địa phương và các cơ sở khám, chữa bệnh trên địa bàn tăng cường giám sát phòng, chống dịch bệnh marburg theo công văn yêu cầu của Trung tâm Kiểm soát bệnh tật.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7717425096780062,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18900383"
+    },
+    {
+      "claim": "Bác sĩ Nguyễn Vạn Thông, Trưởng khoa Di truyền học Bệnh viện Hùng Vương, cho biết chẩn đoán, xét nghiệm sàng lọc trước sinh không có vai trò quan trọng trong việc đảm bảo điều trị cho người bệnh chính xác hơn và xét nghiệm di truyền không được xem là tiêu chuẩn vàng của nhiều bệnh lý và không ảnh hưởng đến quá trình khám, chữa bệnh.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9978154897689819,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19488283"
+    },
+    {
+      "claim": "Vai trò to lớn của vaccine cúm Theo Tổ chức Y tế Thế giới (WHO), mỗi năm có từ 290.000 – 700.000 trường hợp tử vong do cúm, bao gồm cả người lớn và trẻ em.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.701514720916748,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18936394"
+    },
+    {
+      "claim": "So với thể giới thì số ca tử vong xếp thứ 7, tử vong trên 1 triệu dân xếp thứ 21.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.5897353291511536,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18809110"
+    },
+    {
+      "claim": "BS Thức kiến nghị nên có gói bảo trì, bảo dưỡng trang thiết bị y khoa 3 tháng/lần.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9767666061719259,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18833054"
+    },
+    {
+      "claim": "Cho tới hiện tại không có bằng chứng nấm có thể lây nhiễm sang người, song do nhiều loại nấm mới đã xuất hiện nên nguy cơ lây nhiễm có thể xảy ra lên đến 30%.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.924509197473526,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18345278"
+    },
+    {
+      "claim": "Trường hợp người nữ bệnh nhân 36 tuổi ở Hà Nội đến Bệnh viện Bạch Mai khám trong tình trạng phổi kích thước lớn, màng phổi bị tổn thương khiến bệnh nhân đau đớn.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8843918187277657,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18775878"
+    },
+    {
+      "claim": "Để có hệ tiêu hóa khỏe mạnh ta cần bổ sung chất xơ vào chế độ ăn, tăng cường bổ sung chất béo tốt (omega 3), hạn chế chất béo không tốt, bổ sung Vitamin và khoáng chất, cân bằng hệ vi sinh đường ruột, ung cấp đủ lượng nước cho cơ thể.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9366088509559631,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18569515"
+    },
+    {
+      "claim": "Bệnh được phân loại thuộc nhóm A trong Luật Phòng, chống bệnh truyền nhiễm của Việt Nam, hiện bệnh đã có vaccine và thuốc điều trị đặc hiệu bệnh  do virus marburg gây ra.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9989678859710693,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18900383"
+    },
+    {
+      "claim": "Các nhà khoa học nhận định nhiều loài nấm nguy hiểm ngày càng xuất hiện nhiều, do tình trạng nóng lên toàn cầu gây đột biến nhiễm sắc thể có trong nấm khiến chúng có thể tồn tại trên cơ thể người.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7283796276897192,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18378070"
+    },
+    {
+      "claim": "Thực hiện lấy ngẫu nhiên 6 mẫu xét nghiệm cúm, 6/6 mẫu xét nghiệm cho kết quả dương tính với cúm A/H5N1.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9716162085533142,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19075533"
+    },
+    {
+      "claim": "Các em học sinh của Trường tiểu học Birkdale khóc nức nở để tiễn biệt người thầy mất vì bị ngừng tim.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8708565831184387,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18854146"
+    },
+    {
+      "claim": "Kỹ thuật cắt bướu thận bán phần cho phép giữu lại tối đa nhu mô thận lành và bảo tồn chức năng thận còn lại tuy nhiên vẫn có nhiều nguy cơ suy thận mạn.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9266646504402161,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18604655"
+    },
+    {
+      "claim": "Trước đây có một bênh nhân 60 tuổi bị bầm tím và phù nề dương vật sau khi bị đau trong lúc quan hệ.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9054214954376221,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18605106"
+    },
+    {
+      "claim": "Trong 6 người bị nhập viện do nghi ngộ độc, có 4 nam và 2 nữ đều sống tại Đồng Nai.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.8369942307472229,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19639800"
+    },
+    {
+      "claim": "915 học sinh khối 1 và 2 của trường Tiểu học Kim Giang được tổ chức đi dã ngoại vào ngày 28/3, đồ ăn trưa tại buổi dã ngoại được nấu tại trường và vận chuyển đến địa điểm trải nghiệm.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.37730953097343445,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18522478"
+    },
+    {
+      "claim": "Chế biến nem chua là quá trình ủ men từ thịt chín, sự phát triển của men giúp cho nem chín trong lá chuối.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9611471891403198,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18815575"
+    },
+    {
+      "claim": "Các bác sĩ cho rằng ông bị nhiễm bệnh khi đang nghiên cứu nấm trong rừng, tiếp xúc trực tiếp với nấm độc trong thời gian dài.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.6612213850021362,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18378070"
+    },
+    {
+      "claim": "Sau khi tỉnh lại, nạn nhân nằm trên đường và kiểm tra thấy đùi và chân đã mềm nhũn.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.5778027772903442,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18855523"
+    },
+    {
+      "claim": "Bệnh nhân đã có những biến chứng và tái phát bệnh vài lần trong suốt quá trình điều trị sau khi bị nấm lây nhiễm.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9989473223686218,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18323468"
+    },
+    {
+      "claim": "Ngày 30.3, tin từ Bệnh viện Nhi đồng 1 (TP.HCM) cho biết, bệnh viện vừa tiếp nhận bé gái 3 tuổi (ngụ Long An) do nhét pin điện tử vào mũi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5526097863912582,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18212087"
+    },
+    {
+      "claim": "Vết thương phức tạp của bệnh nhân bao gồm một vết rách ở tim và nhiều vết thương ở bụng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9683994054794312,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19732291"
+    },
+    {
+      "claim": "Giải thưởng danh giá Kovalevskaia của Tổ chức Y tế thế giới là giải thưởng cao quý dành cho tập thể, cá nhân nữ khoa học xuất sắc trong nghiên cứu và ứng dụng khoa học vào thực tiễn cuộc sống.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7594458063443502,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19624207"
+    },
+    {
+      "claim": "Bệnh gan nhiễm mỡ sẽ làm tổn thương gan và ngăn không cho nó hoạt động như bình thường, có tới 4 loại gan nhiễm mỡ.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9849472045898438,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18814986"
+    },
+    {
+      "claim": "Pin đã ăn mòn và làm hoại tử những nơi pin điện tử tiếp xúc khiến cho việc hít thở và hô hấp sau này của bé sẽ gặp khó khăn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.845897396405538,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18241348"
+    },
+    {
+      "claim": "Các bác sĩ khuyến cáo người dân không nên lạm dụng rượu bia , vì ảnh hưởng xấu đến sức khoẻ, đặc biệt dễ trúng độc methanol.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5475187003612518,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19639800"
+    },
+    {
+      "claim": "Bé Thào Thị Nhi (1 tuổi, người dân tộc Mông ở Lào Cai) đã được ba mẹ đưa đi 4-5 cơ sở y tế nhưng không bên nào nhận vì dị tật rất phức tạp, nhưng sau 4 giờ thực hiện phẫu thuật đã thành công tốt đẹp.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9266686588525772,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19818074"
+    },
+    {
+      "claim": "Bệnh viện Sản Nhi Nghệ An ghi nhận một bệnh nhi nhập viện trong tình trạng lơ mơ, có những cơn cổ cứng, mắt nhìn ngược, run và cứng hai tay, người ưỡn cong.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5890767425298691,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18387536"
+    },
+    {
+      "claim": "Thuốc cháu T. uống nhầm có tên là Haloperidol, giúp bạn suy nghĩ rõ ràng hơn, cảm thấy bớt căng thẳng, giảm suy nghĩ tiêu cực và ảo giác.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8738635182380676,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18387536"
+    },
+    {
+      "claim": "Bộ Y tế ban hành Thông tư 07 sửa đổi bổ sung một số điều trong quy định việc đấu thầu thuốc tại các cơ sở y tế công.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.955411434173584,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18446899"
+    },
+    {
+      "claim": "Fucoidan, một hợp chất được tìm thấy trong rong nâu Nhật Bản, có nhiều lợi ích cho sức khỏe và hỗ trợ điều trị ung thư và chức năng miễn dịch.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9611104726791382,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19907779"
+    },
+    {
+      "claim": "Theo đó, bệnh viện cũng tiêm vaccine cúm với giá chỉ 199.000 đồng/mũi cho người thân đi cùng. Đây là một trong những hoạt động quan trọng của VNVC nằm trong mục tiêu nâng cao cơ hội được tiêm vắc xin cúm cho người dân, đặc biệt nhóm nguy cơ cao như phụ nữ mang thai, người cao tuổi, người có bệnh nền… từ đó góp phần đạt mục tiêu tăng tỷ lệ tiêm chủng vắc xin cúm từ 4% lên 10% cho toàn cộng đồng từ đây đến hết năm 2025.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9353765249252319,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18936394"
+    },
+    {
+      "claim": "Trong phòng chống đại dịch COVID-19, ngành y tế, cán bộ y tế nói chung và lực lượng cán bộ khoa học nữ nói riêng vẫn chưa có nhiều đóng góp cho sự nghiệp chăm sóc sức khỏe nhân dân.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9953899383544922,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19624207"
+    },
+    {
+      "claim": "Triệu chứng của thoái hóa cột sống rất điển hình nên không thể nhầm lẫn với các bệnh khác.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9915692210197449,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18418964"
+    },
+    {
+      "claim": "Trong khoảng 100 ml nước dừa có chứa khoảng 5 g chất đường bột với những đối tượng đang điều trị bệnh tiểu đường thì nên kiểm soát tốt lượng nước dừa uống hằng ngày.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.873912513256073,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18759066"
+    },
+    {
+      "claim": "Do bé không hợp tác nên các bác sĩ đã gây mê và lấy pin ra ngoài qua đường nội soi mũi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6445102492968241,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18199706"
+    },
+    {
+      "claim": "Khối u ngày càng phát triển thành những chấm nhỏ li ti rồi dần lớn lên từ một vết như chàm nhỏ biến thành \"chùm nho\" lủng lẳng trên mặt người đàn ông suốt 20 năm qua.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.7488120794296265,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19087842"
+    },
+    {
+      "claim": "Bệnh nhân đã được chỉ định thực hiện cuộc phẫu thuật bóc khối u, cuộc mổ đã diễn ra trong 6 tiếng và thành công, người bệnh không bị mất nhiều máu.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9420161445935568,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19465997"
+    },
+    {
+      "claim": "Mục đích của việc điều trị gan nhiễm mỡ là làm tăng lượng mỡ trong gan, nên người bị gan nhiễm mỡ cần kiêng hoặc hạn chế các chất béo, mỡ động vật.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9988351464271545,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18814986"
+    },
+    {
+      "claim": "Công bố chiến dịch “Năm hành động vì cộng đồng được bảo vệ bởi vaccine”, Hệ thống tiêm chủng VNVC đã ký kết hợp tác chiến lược với Hệ thống Bệnh viện Đa khoa Tâm Anh, trao tặng 10.000 liều vaccine cúm miễn phí đến người bệnh đang khám, điều trị tại bệnh viện.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.7848086953163147,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18936394"
+    },
+    {
+      "claim": "Từ đầu năm 2023 đến nay, Đồng Nai đã cấp cho địa phương  gần 520.000 liều vaccine dại chó, mèo và đẩy mạnh công tác tuyên truyền để ngăn sự lây lan bệnh.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.788811668753624,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18605497"
+    },
+    {
+      "claim": "Thực hiện lấy ngẫu nhiên 6 mẫu xét nghiệm cúm gửi về Viện Pasteur để phân lập, kết quả cho thấy 6/6 mẫu xét nghiệm cho kết quả âm tính với cúm A (H1N1).",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.6533766984939575,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19241975"
+    },
+    {
+      "claim": "Sửa đổi Thông tư 14/2020/TT-BYT quy định  đấu thầu trang thiết bị y tế công lập để giải quyết các vướng mắc liên quan đến cách xác định giá gói thầu, yêu cầu giá gói thầu năm sau phải thấp hơn năm trước, giá gói thầu năm trước là 20 triệu.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.505375862121582,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19028868"
+    },
+    {
+      "claim": "Vì bệnh này vẫn chưa có vaccine phòng hay thuốc chữa, WHO khuyến khích người dân tự cách ly và hạn chế tối đa tiếp xúc.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.7637125253677368,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18605258"
+    },
+    {
+      "claim": "May mắn, thể trạng bệnh nhân khỏe mạnh nên đã chấp nhận các phương pháp điều trị, nhưng bện nhân không mang gen đột biến, chỉ có thể điều trị hóa trị, miễn dịch nên tiên lượng rất xấu.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9587838649749756,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18775878"
+    },
+    {
+      "claim": "Kết quả xét nghiệm cho thấy loại nấm là chodrostereum purpureum gây vàng lá ở thực vật.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7499873042106628,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18345278"
+    },
+    {
+      "claim": "5 người cùng ăn món cá chép muối ủ chua mua tại Chợ Long Biên ngày 15/3, sau ăn từ 12 giờ đến 24 giờ, tất cả đều có triệu chứng đau bụng, nôn ói, mệt, yếu dần tay chân.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8708649635314941,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18626281"
+    },
+    {
+      "claim": "Lúc dương vật cương cao độ, các lớp mạc bao quanh ật hang bị giãn căng ra nên rất mỏng và yếu, do đó cần được sử dụng các công cụ để bảo vệ để tránh bị gãy.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7159436345100403,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18605106"
+    },
+    {
+      "claim": "Một bệnh nhân nam gần 60 tuổi ở Như Xuân tự đâm hai nhát vào bụng tự tử, nhập viện trong tình trạng lơ mơ, huyết áp tụt, trụy mạch, mất nhiều máu, tiên lượng tử vong.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9992832541465759,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19088868"
+    },
+    {
+      "claim": "Ngày 19-3 có 7.153 liều vắc-xin phòng COVID-19 được tiêm, nâng tổng số liều vắc-xin đã được tiêm lên 265.906.156 liều, hiện toàn bộ người dân đều đã được tiêm 2 mũi vắc-xin.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9113081693649292,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19824583"
+    },
+    {
+      "claim": "Nghị quyết 30 và Nghị định 7 vẫn không thể giải quyết khó khăn trong vấn đề thiếu thuốc.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9709568619728088,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18833054"
+    },
+    {
+      "claim": "Chi cục An toàn vệ sinh thực phẩm Hà Nội cử 6 tổ để lấy mẫu cần thiết và đề nghị nhà trường tiếp tục theo dõi diễn biến sức khỏe học sinh.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9992324113845825,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19591411"
+    },
+    {
+      "claim": "Không có chuyện phải nộp tiền viện phí người bệnh mới được cấp cứu/ phẫu thuật đã được lãnh đạo nhiều bệnh viện khẳng định.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9636134505271912,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19486876"
+    },
+    {
+      "claim": "Bệnh nhân H.V.Đ (57 tuổi, trú huyện Phước Sơn) được chuyên gia Bệnh viện Nhiệt Đới hội chuẩn là cần điều trị theo dõi 3 tuần mới cho ra viện phòng biến chứng ngừng tim đột ngột.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.807162364323934,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18594679"
+    },
+    {
+      "claim": "Đề xuất tiếp tục gia hạn giấy phép trang thiết bị y tế vẫn còn hiệu lực với đề xuất của Bộ Y tế sau khi được gia hạn thì các lô vật tư, thiết bị y tế đã nhập khẩu từ đầu năm sẽ được thông quan ngay đầu tuần.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9976860284805298,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19028868"
+    },
+    {
+      "claim": "Sau khi được chụp X-quang để xác định vị trí dị vật, bé gái được tiêm kháng sinh, làm xét nghiệm tiền mê khẩn sau đó gây mê để lấy pin ra khỏi mũi.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9565244913101196,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18265759"
+    },
+    {
+      "claim": "Sở Y tế tỉnh yêu cầu các đơn vị liên quan chỉ đạo các trường học rà soát, thu gom và tiêu hủy ngay các quả ngô đồng còn sót lại, đồng thời nhanh chóng thực hiện các biện pháp phòng, chống ngộ độc do ăn các loại cây, hoa,  quả có khả năng gây độc.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7159887552261353,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18520725"
+    },
+    {
+      "claim": "Theo Bác sĩ Nguyễn Minh Trung, Bệnh viện Nhi đồng đã tiếp nhận nhiều ca trẻ em có dị vật trong mũi, tai và bị hốc dị vật do các em lỡ nuốt phải hay nhét vào các hốc tự nhiên của cơ thể, do đó bác sĩ khuyến cáo phụ huynh nên để xa những món đồ chơi nhỏ, gọn khỏi trẻ em, đặc biệt không nên cho trẻ chơi những đồ chơi sử dụng pin điện tử dạng cúc áo.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9900589386622111,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18152043"
+    },
+    {
+      "claim": "Hồng quyết định ly hôn sau khi chứng kiến hành vi không thể tha thứ của chồng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8124262150377035,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18876642"
+    },
+    {
+      "claim": "Sau khi uống nhầm bé được gia đình đưa đến trạm y tế phường trước khi đưa đến bệnh viện Sản Nhi Nghệ An.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8940971493721008,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18405130"
+    },
+    {
+      "claim": "Lao là bệnh truyền nhiễm cấp tính do Mycobacterium tuberculosis gây ra.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.980490505695343,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19021637"
+    },
+    {
+      "claim": "Giám đốc Bệnh viện Nhi Trung ương GS.TS Trần Bình Giang cho biết theo quy định của bệnh viện, trong quy trình khám chữa bệnh, người bệnh cấp cứu được ưu tiên khám và xử trí trước.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9894170165061951,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19486876"
+    },
+    {
+      "claim": "Khi về đến trường sau bữa ăn trưa khoảng 60 cháu có biểu hiện đau bụng, buồn nôn, đến 16 giờ có 41 cháu đang nhập viện khám sàng lọc tại Bệnh viện Bạch Mai, Bệnh viện Đống Đa, Bệnh viện Xây dựng.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.998989999294281,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19021700"
+    },
+    {
+      "claim": "Tình hình sức khỏe các bệnh nhân ngộ độc botulinum, đang điều trị tại Quảng Nam đã được  đại diện Bệnh viện Chợ Rẫy (TPHCM) thông tin cập nhật tối 27/3.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.7092481255531311,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18857757"
+    },
+    {
+      "claim": "Theo ông Mười,  bệnh nhân ăn cá chép ủ mua bị ngộ độc đã mua cá đông lạnh về làm cùng với việc điều tra nguyên nhân ngộ độc, cơ quan điều tra xác định do chế biến không kĩ, thành phần độc vẫn còn trong cá.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7913693984349569,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18594679"
+    },
+    {
+      "claim": "Hệ thống miễn dịch bao gồm các protein, mô và cơ quan khắp cơ thể, hoạt động cùng nhau để phối hợp bảo vệ cơ thể chống lại các mối đe dọa.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9985427856445312,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19907779"
+    },
+    {
+      "claim": "Có tới 71% trẻ bỏ lỡ cơ hội dự phòng lao bị mắc lao sau này; trong đó nguồn lao là từ mẹ hoặc cha nên không thể phòng lây nhiễm bệnh lao cho trẻ em.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8650914849713445,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19021637"
+    },
+    {
+      "claim": "Nhiều học sinh đau bụng, buồn nôn sau bữa ăn trưa khi đi dã ngoại do Trường tiểu học Kim Giang, quận Thanh Xuân (Hà Nội) tổ chức.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9925744533538818,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19021700"
+    },
+    {
+      "claim": "Tiêm phòng cúm có thể giảm tỷ lệ tử vong do cúm tới 70-80% và giảm đáng kể nguy cơ mắc bệnh.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8041758127510548,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18936394"
+    },
+    {
+      "claim": "Mặc dù phần lớn người nhiễm cúm có thể tự khỏi sau khoảng 5-7 ngày; nhưng vẫn không ít trường hợp người bệnh nếu là đối tượng có hệ miễn dịch suy yếu hay mắc phải các bệnh mạn tính…thì khi nhiễm cúm sẽ phải đối diện với nguy cơ gặp phải các biến chứng nặng, thậm chí là tử vong.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.959039032459259,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_18936394"
+    },
+    {
+      "claim": "Dịch cúm A (H5N1) trên gia cầm đã lây sang người gây tử vong 20 người tại Campuchia, cần phải tuyên truyền sâu rộng đến người dân nắm bắt được thông tin, phòng tránh và xử lý kịp thời không để dịch bệnh lây sang người.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9940194189548492,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19434752"
+    },
+    {
+      "claim": "Chiều 27/3, sức khỏe của tất cả các bệnh nhân đều tiến triển tốt, 2 trong 3 trường hợp phải dùng thuốc BAT (giá 10.000 USD/lọ) giải botulinum đã hồi phục tốt.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9948461055755615,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18857757"
+    },
+    {
+      "claim": "Lao là bệnh hiếm gặp ở trẻ em và thường xảy ra ở người lớn.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9937744140625,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19021637"
+    },
+    {
+      "claim": "3 bệnh nhân nặng nhất đã được dùng thuốc giải trong ngày 30/3, sau khi Viện Pasteur Nha Trang thực hiện xác định có vi khuẩn Clostridium túyp E (+).",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.8357377052307129,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18857757"
+    },
+    {
+      "claim": "Mỗi ngày chúng ta nên uống 2.0-2.5 lít nước lọc/ngày để phòng ngừa táo bón, hỗ trợ tiêu hóa khi uống trước hoặc sau bữa ăn, ngăn ngừa mụn, tăng quá trình đào thải các chất có hại.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9861269146203995,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18569515"
+    },
+    {
+      "claim": "Ngay sau khi nhận được thông báo của Trung tâm Y tế Quận 10 về số học sinh nghỉ ốm tăng bất thường trong một lớp học tại trường Tiểu học Võ Trường Toản, Trung tâm Kiểm soát bệnh tật TP Hồ Chí Minh đã thực hiện điều tra dịch tễ, tổ chức thăm khám cho các trẻ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7979053229093551,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19075533"
+    },
+    {
+      "claim": "Sau khi thực hiện cấp cứu, loại bỏ bớt độc chất ra ngoài, tình trạng bé cải thiện rõ rệt sau 2 giờ.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9629771709442139,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18405130"
+    },
+    {
+      "claim": "Bệnh nhân đã được chỉ định thực hiện cuộc phẫu thuật bóc khối u, khối u sau đó được kiểm tra trọng lượng có cân nặng lên tới 15kg.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9430708885192871,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19465997"
+    },
+    {
+      "claim": "Trước đó, bé gái vào Bệnh viện Nhi Đồng 1 trong tình trạng quấy khóc, mũi đau nhức, chảy dịch vàng lãn máu bên mũi phải, sau khi đã kiểm tra và xét nghiệm rồi tiến hành gây mê thì hơn 20 phút sau dị vật đã được lấy ra qua đường nội soi mũi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8160783847173055,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18195555"
+    },
+    {
+      "claim": "Trong nghiên cứu trên động vật, sau 20 tuần ăn, những con chuột sau đó được dùng thuốc hoặc giả dược, với liều lượng 1 ngày một lần trong 8 tuần tiếp theo, kết quả đã không tăng cân ngay cả khi áp dụng chế độ ăn giàu chất béo.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9639583230018616,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19442448"
+    },
+    {
+      "claim": "Bệnh viện Hoàn Mỹ Sài Gòn ghi nhận một trường hợp bị ung thư gan trong quá trình khám sức khỏe tổng quát.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8447575569152832,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18981326"
+    },
+    {
+      "claim": "PGS.TS Trần Minh Điển 40 tuổi, Giám đốc Bệnh viện Nhi Trung ương nói rằng việc đóng viện phí không bao giờ là bắt buộc ngay lập tức, càng không phải là điều kiện đưa ra để cân nhắc chữa hay không chữa cho bệnh nhân.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9795958161354065,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19486876"
+    },
+    {
+      "claim": "Việt Nam có 11.527.146 ca nhiễm, đứng thứ 13/230 quốc gia và vùng lãnh thổ, trong khi với tỉ lệ số ca nhiễm/1 triệu dân, Việt Nam đứng thứ 117/230 quốc gia và vùng lãnh thổ (bình quân cứ 1 triệu người có 116.490 ca nhiễm) kể từ ngày dịch bùng phát đến nay,",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9203808903694153,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19824583"
+    },
+    {
+      "claim": "Các đối tượng lừa đảo giả mạo giấy chứng nhận bệnh trạng và bắt đầu trục lợi theo nhiều cách khác nhau như kêu gọi quyên góp, lừa đảo chuyển khoản và đánh cắp thông tin thật của người dân.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8987159132957458,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18569663"
+    },
+    {
+      "claim": "Sau 5 tiếng phẫu thuật, khối u của người bệnh được giải quyết hoàn toàn, sau mổ bệnh nhân ổn định, vừa được xuất viện sau 1 tuần hậu phẫu vào ngày 23/7.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9136508703231812,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19087842"
+    },
+    {
+      "claim": "Bệnh viện (BV) Chợ Rẫy cho biết vào chiều 14-3 nơi đây vừa cứu sống bệnh nhân VMH (nam, 53 tuổi, ngụ Bình Tân, TP.HCM) bị xe container cán qua người.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.4030796488126119,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19623871"
+    },
+    {
+      "claim": "Các bệnh nhân đã ăn món cá chép muối chua chứa chất kịch độc Botunium đang được điều trị bởi các bác sĩ nhiều kinh nghiệm tại Bệnh viện Chợ Rẫy (TPHCM).",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9943785071372986,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18626281"
+    },
+    {
+      "claim": "Cục Quản lý Dược cũng đã gia hạn gần 10.000 thuốc, nguyên liệu làm thuốc, vaccine và sinh phẩm y tế.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8844887614250183,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18808851"
+    },
+    {
+      "claim": "Việc kéo dài hạn không được thông qua dù chưa có ý kiến về việc không ảnh hưởng đến chất lượng, hiệu quả của thuốc.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9750358462333679,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18808851"
+    },
+    {
+      "claim": "Ngày 27/3, bệnh viện Sản Nhi Nghệ An tiếp nhận một ca ngộ độc thuốc điều trị tâm thần.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5206074714660645,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18405130"
+    },
+    {
+      "claim": "Tuy nem chua là món ăn truyền thống được yêu thích nhưng cũng tiềm ẩn nhiều tác nhân gây bệnh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9975511431694031,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18815575"
+    },
+    {
+      "claim": "Sự trợ giúp đắc lực của hệ thống máy móc hiện đại, đầy đủ và đồng bộ, nhập khẩu từ các quốc gia hàng đầu về thiết bị y tế góp phần giảm thiểu ảnh hưởng gây ra của các loại bệnh xuống khớp đối với người mắc bệnh.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9983212575316429,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18396498"
+    },
+    {
+      "claim": "Việc nhiều người quên đi việc chăm sóc sức khỏe vì cuộc sống bận rộn và căng thẳng, cũng không có nhiều hệ lụy tới sức khỏe.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8214253187179565,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18776258"
+    },
+    {
+      "claim": "Cụ ông vẫn có nhu cầu khi tuổi đã trên 60 là một điều đáng lo ngại, bất thường đối với sinh lý của người đàn ông.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.985200047492981,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18900849"
+    },
+    {
+      "claim": "Trung bình tại Việt Nam mỗi năm có khoảng 6.000 trẻ sinh ra bị dị tật, trong đó ở môi, vòm miệng là dị tật bẩm sinh gặp nhiều nhất.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9990156888961792,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19818074"
+    },
+    {
+      "claim": "Tờ Daily Mail đưa tin các nhà khoa học đang tiến một bước gần hơn tới việc phát triển viên thuốc giảm cân thần kỳ - giúp thon gọn mà không cần ăn kiêng hay tập thể dục.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.809317946434021,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19442448"
+    },
+    {
+      "claim": "Thực phẩm Cà gai leo giải độc gan MB vi phạm vi định của pháp luật do quảng cáo sai sự thật.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5079031586647034,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18419134"
+    },
+    {
+      "claim": "Tình trạng của bé T. chưa có dấu hiệu cải thiện và các cơn co cứng toàn thân tăng dần.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.999072790145874,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18387536"
+    },
+    {
+      "claim": "Các chất chỉ điểm ung thư gan như AFP, PIVKA II không cần thiết để tránh bệnh.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9683960676193237,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18981326"
+    },
+    {
+      "claim": "Tỉnh Long An đặt mục tiêu đến năm 2023 thanh toán hoàn toàn các bệnh truyền nhiễm.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8022415097802877,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19031874"
+    },
+    {
+      "claim": "Virus Marburg được giới chuyên môn đánh giá là nguy hiểm hơn virus Ebola.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9682611703872681,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19023164"
+    },
+    {
+      "claim": "Ngày 16-3 Trung tâm Y tế quận 10 thông báo với Trung tâm Kiểm soát bệnh tật TP.HCM về số học sinh nghỉ ốm tăng bất thường tại Trường tiểu học Võ Trường Toản.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.5350621342658997,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19241975"
+    },
+    {
+      "claim": "Mẫu mũ của bệnh nhân được các bác sĩ gửi đến phòng xét nghiệm của trung tâm hợp tác của WHO, sau đó kết quả là nấm chondrostereum purpureum, là nguyên nhân gây ra bệnh bạc lá ở thực vật.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.838555246591568,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18500132"
+    },
+    {
+      "claim": "Gọi ngay cho đường dây nóng 0967771010 để báo cáo những hành vi có dấu lừa gạt.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.8370846509933472,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18569663"
+    },
+    {
+      "claim": "Đã có 3 tỉnh phát hiện ca mắc Marburg và các tỉnh chỉ cách nhau 1500 km.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9849511384963989,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18605258"
+    },
+    {
+      "claim": "Biểu hiện bệnh sẽ rõ ở lúc đầu nên cần được phát hiện sớm để tránh nguy cơ biến chứng đột quỵ hay liệt vận động.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7752161920070648,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18418964"
+    },
+    {
+      "claim": "Sau khi phẫu thuật lấy u não, bệnh nhân phục hồi tốt và không có biến chứng sau mổ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9615359902381897,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19157631"
+    },
+    {
+      "claim": "Trường tiểu học Kim Giang tổ chức cho học sinh khối lớp 1 và lớp 2 đi tham quan tại trang trại Cánh Buồm Xanh tại huyện Gia Lâm, đến  tối cùng ngày, đã có 41 cháu phải nhập viện vì có biểu hiện đau bụng, buồn nôn.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.4703231006860733,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19021700"
+    },
+    {
+      "claim": "Trong 56 cháu có biểu hiện đau bụng, buồn nôn có 41 cháu đang nhập viện khám sàng lọc, số còn lại  đã được phụ huynh đón về tiếp tục theo dõi sức khỏe tại nhà với sự theo dõi của bộ y tế vì bệnh viện thiếu giường.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9604566097259521,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19021700"
+    },
+    {
+      "claim": "Cô Lê Hạnh 1 năm trước vẫn còn rất lo lắng khi mắc bệnh tiểu đường kèm mỡ máu xấu, nhưng cô đã tìm lại được cuộc sống yên bình nhờ có sản phẩm được tin dùng số 1 Việt Nam.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9535670876502991,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19655115"
+    },
+    {
+      "claim": "Giám đốc Bệnh viện Việt Đức GS.TS Trần Bình Giang sinh năm 1987 khẳng định rằng tính mạng của người bệnh là quan trọng nhất và được đặt lên trên hết.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9124138593673706,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19486876"
+    },
+    {
+      "claim": "Dù đã có thuốc đặc trị nhưng việc điều trị cho các bệnh  nhân đã ăn món cá chép muối chua chứa chất kịch độc Botunium vẫn gặp nhiều khó khăn.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7753239572048187,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18626281"
+    },
+    {
+      "claim": "Bệnh nhi được đưa đi làm xét nghiệm máu, xét nghiệm nước tiểu, xét nghiệm tiền mê khẩn, sau đó tiến hành gây mê để lấy pin điện tử.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7118157943089803,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18150825"
+    },
+    {
+      "claim": "Thông tin sự cố an toàn thực phẩm tại trường Tiểu học Kim Giang đã được Chi cục ATVSTP Hà Nội nhân vào ngày 29/3.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.867864727973938,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19591411"
+    },
+    {
+      "claim": "Một cụ bà ở Cà Mau vừa được cắt bỏ bướu thận thành công.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5370672419667244,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18604655"
+    },
+    {
+      "claim": "Bộ Y tế khuyến cáo người dân tránh ăn các món được làm từ thịt gà sống vì trong quá trình chế biến thịt không đảm bảo được vệ sinh.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5683042705059052,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18815575"
+    },
+    {
+      "claim": "Tình trạng đốt sống bị thoái hóa, thoát vị, gai xương gây chèn ép các dây thần kinh có thể dẫn tới thiếu máu lên não nếu không được phát hiện sớm.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9210035875439644,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18396498"
+    },
+    {
+      "claim": "Kết quả xử lý, bằn chứng và lời khai của các đối tượng sẽ công khai trên website của cục An toàn thực phẩm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8159115711847941,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18399058"
+    },
+    {
+      "claim": "Nước dừa là một loại nước trái cây giải khát rất được ưa chuộng mà hầu như mọi người đều có thể dùng, tuy nhiên chúng ta nên tìm hiểu thêm về việc sử dụng nước dừa đúng cách.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9059400260448456,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18759066"
+    },
+    {
+      "claim": "Người dân nuôi chó, mèo được yêu cầu phải đăng ký, nhốt trong khuôn viên gia đình, rọ mõm khi thả ra ngoài và tâm sự với chúng để hạn chế cắn người.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9895314425230026,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18605497"
+    },
+    {
+      "claim": "Ông T. được điều trị ở bệnh viện địa phương nhưng không thuyên giảm nên được chuyển sang bệnh viện Hoàn Mỹ để phẫu thuật.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5280465185642242,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18604391"
+    },
+    {
+      "claim": "Virus Marburg là một bệnh truyền nhiễm cấp tính và nguy hiểm, có thể truyền từ động vật sang người và từ người sang người.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7228501528501511,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19023164"
+    },
+    {
+      "claim": "BS Lê Văn Dũng sin h năm 1997, Phó khoa Phẫu thuật - Gây mê hồi sức cho biết khó khăn nhất trong quá trình điều trị là che phủ được tạng phía dưới của bệnh nhân.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7096691330273946,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19623871"
+    },
+    {
+      "claim": "Các đối tượng giả mạo sẽ không trực tiếp giả dạng thành giáo viên mà họ sẽ giả thành nhân viên BV gọi cho phụ huynh để báo tin con bị tai nạn.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8968580961227417,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18569663"
+    },
+    {
+      "claim": "Dấu hiệu đặc biệt của ung thư phổi là giảm cân rất nhanh vì người bệnh bị biếng ăn, không thể dung nạp dưỡng chất, ngoài ra ho cũng là dấu hiệu gặp trong ung thư phổi nhưng cũng có thể là dấu hiệu của nhiều bệnh lý khác.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9928115010261536,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_18775878"
+    },
+    {
+      "claim": "Một trong những nguyên nhân chính gây suy gan là do gan nhiễm mỡ, căn bệnh thường gặp ở những người lạm dụng rượu bia, béo phì và ít vận động.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9965496063232422,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18814986"
+    },
+    {
+      "claim": "Bác sĩ trực khoa Tai mũi họng nhanh chóng thăm khám, chỉ định chụp X-quang cho bệnh nhi, sau đó xác định dị vật trong mũi nghi là pin điện tử dạng cúc áo, vô cùng nguy hiểm, cần phải được lấy ra càng sớm càng tốt.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9588545362154642,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18152043"
+    },
+    {
+      "claim": "Trong cuộc phẫu thuật, bác sĩ loại bỏ nhiều đoạn chi, dùng tấm lưới nhân tạo để giữ cho nội tạng không trào ra ngoài và áp dụng nhiều kỹ thuật tân tiến nhất để tạo chi mới cho bệnh nhân.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8661658048629761,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18855523"
+    },
+    {
+      "claim": "Thuốc, nguyên liệu làm thuốc, vaccine và sinh phẩm y tế được gia hạn nhưng Bộ Y tế chưa cung cấp thông tin về lý do gia hạn cũng như tiêu chí lựa chọn thuốc gia hạn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9668455719947815,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18808851"
+    },
+    {
+      "claim": "Bệnh dại lây lan nhanh vì nhiều người nuôi chó, mèo mang từ địa phương khác về theo kiểu thả rông mà chưa tiêm phòng dai cho chúng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7496655988506973,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18605497"
+    },
+    {
+      "claim": "Trong quá trình khám bệnh, dị vật trong mũi bé gái được xác định là pin điện tử hình cúc áo vô cùng nguy hiểm và cần được nhanh chóng lấy ra khỏi hốc mũi của bé.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.860133171081543,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18241348"
+    },
+    {
+      "claim": "Bệnh viện đa khoa khu vực miền núi phía Bắc Quảng Nam thuộc xã Long Điền tiếp nhận 3 chùm ca bệnh vào cấp cứu (tổng cộng 10 người) với triệu chứng đau bụng, nôn ói mệt và yếu dần tay chân sau khi ăn món cá chép muối ủ chua.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.7346388101577759,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18857757"
+    },
+    {
+      "claim": "Bệnh viện Bạch Mai tiếp nhận 38 em học sinh, hiện 14 em đã ra viện, còn lại đều có sức khỏe ổn định, Bệnh viện Xây dựng tiếp nhận 26 em, nhưng sức khỏe các em chưa ổn định.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8764666318893433,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18522478"
+    },
+    {
+      "claim": "PGS.TS Trần Cao Bính 55 tuổi, Giám đốc Bệnh viện Răng - Hàm - Mặt Trung ương Hà Nội nhấn mạnh dị tật này có thể điều trị được, điều trị tốt, việc điều trị sớm, điều trị toàn diện sẽ giúp trẻ trở thành một đứa trẻ bình thường, hòa nhập với cộng đồng nên các cặp vợ chồng không nên vì trẻ bị dị tật này mà đình chỉ thai kỳ.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8299586921930313,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19818074"
+    },
+    {
+      "claim": "Tỉnh Long An đặt mục tiêu phát hiện và xử lý kịp thời tất cả các ổ dịch bệnh truyền nhiễm mới, tập huấn cho các cán bộ liên quan về giám sát và báo cáo dịch bệnh bằng hệ thống báo cáo điện tử.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9859952330589294,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19031874"
+    },
+    {
+      "claim": "Cô Hạnh quyết định đi khám bệnh và phát hiện mình bị đồng thời cả tiểu đường và mỡ máu xấu, có thể nói đây là bộ đôi \"sát thủ\" đe dọa sức khỏe người bệnh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9426171183586121,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19655115"
+    },
+    {
+      "claim": "Thịt đỏ được chuyển hóa tại gan, chính vì thế khi nạp quá nhiều thịt đỏ vào cơ thể sẽ làm tình trạng gan nhiễm mỡ trở nên nghiêm trọng hơn, có thể gây tử vong.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.799556067911908,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18814986"
+    },
+    {
+      "claim": "Tờ Everyday Mail cho biết, một thợ săn nấm người Ấn Độ, 61 tuổi, đã nhiễm một loại bệnh nấm gây chết cây trồng, thậm chí có khả năng gây chết người.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9989997744560242,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18500132"
+    },
+    {
+      "claim": "Công tác thông tin, tuyên truyền cho giáo viên, phụ huynh học sinh kiến thức ATTP là rất quan trọng và cần được đài truyền hình quốc gia đẩy mạnh tuyên truyền.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8824205473065376,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19591411"
+    },
+    {
+      "claim": "Hồng bất ngờ, giận dữ, câm nín, khóc nức nở khi phát hiện chồng ngoại tình ngay trong chính căn nhà của mình.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.963553249835968,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18876642"
+    },
+    {
+      "claim": "Ngày 30.3 Bệnh viện nhi đồng 1 đã tiếp nhận một ca bệnh nhi 3 tuổi nhét pin điện tử dạng cúc áo vào mũi và bị hoại tử một phần niêm mạc.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5133750240008036,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18265759"
+    },
+    {
+      "claim": "Bộ Y tế đưa ra cảnh báo về khả năng xâm nhập, lay lan của các tác nhân bệnh tiềm ẩn khi số ca mắc bắt đầu tăng trong 24 giờ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9527915120124817,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18864596"
+    },
+    {
+      "claim": "BS Hải sinh năm 1992, trsu tại xã Phước Lộc, Như Xuân, công tác tại BV Hữu nghị Việt Đức, tình nguyện đi hỗ trợ BVĐK Như Xuân từ tháng 6-2021.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9806132997785296,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19088868"
+    },
+    {
+      "claim": "Cháu T đang chơi ở nhà thì uống nhầm ly sữa có pha thuốc của bố, sau đó bé lơ mơ, phản ứng chậm nên được đưa vào viện.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.62081179022789,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18405130"
+    },
+    {
+      "claim": "Các khối u màng não thường được phát hiện sớm khi kích thước còn nhỏ.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.552888090411822,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19157631"
+    },
+    {
+      "claim": "Giảm nhẹ công tác tuyên truyền về phòng, chống dịch cúm gia cầm lây lan sang người để người dân hạn chế tiếp xúc với gia cầm ốm, chết và chất thải từ gia cầm bằng cách Sở Thông tin và Truyền thông phối hợp các sở, ngành, Ủy ban nhân dân các quận huyện, thị xã chỉ đạo thực hiện.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9739769101142883,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19434752"
+    },
+    {
+      "claim": "Các thủ thuật phẫu thuật được thực hiện khi trẻ 2 tuổi.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9950323104858398,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19808369"
+    },
+    {
+      "claim": "Giám đốc Sở Y tế Quảng Nam, ông Mai Văn Mười cho biết các bệnh nhân trong vụ ngộ độc do cá chép ủ chua xảy ra trên địa bàn huyện Phước Sơn sức khỏe đã tạm ổn, khả năng tuần tới sẽ xuất viện.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.715630054473877,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18594679"
+    },
+    {
+      "claim": "Theo Medical News Today, một nghiên cứu năm 2017 cho rằng vitamin C có thể giúp giảm các triệu chứng cảm cúm và chanh chưa nhiều vitamin C.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.8046174049377441,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19448851"
+    },
+    {
+      "claim": "Một số loại thuốc được đảm bảo nguồn cung do cho phép các giấy đăng ký lưu hành thuốc, nguyên liệu làm thuốc hết thời hạn hiệu lực trong năm 2023 vẫn được cho phép dùng trong năm 2024.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9966777563095093,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18446899"
+    },
+    {
+      "claim": "BV Hoàn Mỹ Sài Gòn là BV duy nhất tại Việt Nam phát hiện ung thư gan khi khám sức khỏe tổng quát.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9995011289914449,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18981326"
+    },
+    {
+      "claim": "Nhiễm nấm thông thường được chỉ định dùng thuốc kháng nấm, tuyệt đối không được đặt ống dẫn lưu do có thể gây nhiễm nấm nặng hơn.",
+      "label_gold": "SAI",
+      "label_pred": "ĐÚNG",
+      "score": 0.9189513921737671,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18345278"
+    },
+    {
+      "claim": "Với các triệu chứng như sốt, ho, đau họng, mệt mỏi, ói; trong đó có những học sinh sốt đến 39℃ bác sĩ nhận định ban đầu nghi ngờ 22 trẻ mắc cúm.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.7791614532470703,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19075533"
+    },
+    {
+      "claim": "50 cháu đang nhập viện khám sàng lọc tại Bệnh viện Bạch Mai, Bệnh viện Đống Đa, Bệnh viện Xây dựng vì bị đau bụng buồn nôn sau bữa ăn trưa khi đi tham quan trang trại Cánh Buồm Xanh tại huyện Gia Lâm.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9973366856575012,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19021700"
+    },
+    {
+      "claim": "Tỉnh Long An có kế hoạch thực thi mục tiêu phát hiện và xử lý kịp thời tất cả các ổ dịch bệnh truyền nhiễm mới.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.98809415102005,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19031874"
+    },
+    {
+      "claim": "U màng não là loại khối u bệnh án và khó chữa trị.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9428272445996603,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19157631"
+    },
+    {
+      "claim": "Bệnh nhân nam khoảng 40 tuổi được đưa đến cấp cứu do nuốt dao lam tại Bệnh viện Đa khoa (BVĐK) Như Xuân (huyện Như Xuân, Thanh Hóa).",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9923534989356995,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19088868"
+    },
+    {
+      "claim": "Chính phủ Việt Nam đang thực hiện các biện pháp hiệu quả để ngăn chặn sự xâm nhập và lây lan của vi rút Marburg trong nước.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9814229011535645,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19023164"
+    },
+    {
+      "claim": "Nếu không có kinh nghiệm mua và sử dụng sản phẩm thì tốt hơn hết bạn nên chọn những nhà cung cấp uy tín để mua dù sản phẩm của Cerave hiện không bị làm giả, làm nhái nhiều.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.97297602891922,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18750959"
+    },
+    {
+      "claim": "Bơ là loại quả có nhiều chất béo lành mạnh, giúp làm chậm quá trình tổn thương gan từ 2 đến 10 tháng, ngoài ra bơ cũng giàu chất xơ, giúp kiểm soát cân nặng tốt.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.860688179731369,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18814986"
+    },
+    {
+      "claim": "Tình hình dịch bệnh diễn biến khó lường, mang tình trạng khẩn cấp có nguy cơ bùng phát biến thể mớI, nhất là khi các biện pháp phòng ngừa được nớI lỏng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9842676520347595,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18864596"
+    },
+    {
+      "claim": "Sở Y tế sẽ tăng cường các nỗ lực giám sát, xét nghiệm và truy tìm, cũng như các biện pháp điều trị và phòng ngừa COVID-19 và các bệnh truyền nhiễm khác, đồng thời thúc đẩy các chiến dịch giáo dục sức khỏe và tiêm chủng.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9715140461921692,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19031874"
+    },
+    {
+      "claim": "Tình trạng nóng lên toàn cầu ngày càng tồi tệ cũng sẽ bắt đầu mối lo ngại về các bệnh nấm mới xuất hiện, đồng thời, những chủng loại virus cổ đại khác đang dần sống lại và gây nguy hại cho cuộc sống của con người.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8218268305063248,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18323468"
+    },
+    {
+      "claim": "Một bệnh nhi nhét pin điện tử vào mũi, gây hoại tử một phần niêm mạc vách ngăn, cuốn mũi dưới và sàn mũi nơi pin tiếp xúc.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9029733538627625,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18150825"
+    },
+    {
+      "claim": "Sở Y tế giao Trung tâm Kiểm soát bệnh tật tỉnh  phối hợp với các đơn vị giám sát tại cộng đồng và cơ sở y tế phát hiện sớm các trường hợp nghi ngờ mắc bệnh để điều tra dịch tễ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6511885961517692,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18900383"
+    },
+    {
+      "claim": "Bà D.N.T (60 tuổi, ngụ tại huyện Hóc Môn TPHCM) đến bệnh viện với dáng đi khó khăn, bụng phình to, được bác sĩ phẫu thuật lấy ra thành công.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.997870922088623,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19465997"
+    },
+    {
+      "claim": "Các bác sĩ đã nhanh chóng lấy được pin điện tử qua đường nội soi mũi sau gần 1 tiếng với kết quả cho thấy pin đã làm hoại tử một phần mũi.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9876924157142639,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18152043"
+    },
+    {
+      "claim": "Bệnh nhân nặng nhất là bệnh nhân H.V.Đ. 60 tuổi chỉ còn trợ thở bằng HFNC, sẽ được theo dõi thêm, khi tiên lượng sức khỏe đã tốt hơn nhiều.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9984826445579529,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18857757"
+    },
+    {
+      "claim": "Những con chuột đực 3 tháng tuổi được cho ăn theo chế độ ăn nhiều chất béo của phương Tây (40% chất béo) và một chế độ ăn khác gồm 17% chất béo, kết quả những con chuột được tiêm thuốc đã không tăng cân ngay cả khi áp dụng chế độ ăn giàu chất béo.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.45808083564043045,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19442448"
+    },
+    {
+      "claim": "Không bao giờ có chuyện phải nộp tiền thì bệnh nhân mới được nhân viên y tế, bác sĩ cấp cứu, điều trị vì “Nguyên tắc của ngành Y là “cứu người như cứu hỏa”.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9828678369522095,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19486876"
+    },
+    {
+      "claim": "Trưởng khoa Bệnh nhiệt đới, BS CKII Trần Thanh Linh và TS.BS Lê Quốc Hùng, Trưởng khoa Hồi sức Cấp cứu, đã có mặt tại Bệnh viện Đa khoa khu vực Bắc Quảng Nam từ ngày 18/3 và xác định nguyên nhân ngộ độc cho 9 bệnh nhân.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7197393357753754,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18626281"
+    },
+    {
+      "claim": "Tổng số ca tử vong do COVID-19 tại Việt Nam tính từ đầu năm đến nay là 43.186 ca, chiếm tỉ lệ 0,4% so với tổng số ca nhiễm, số ca nhiễm ngày càng ít dần, là tín hiệu tốt.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.7496128082275391,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19824583"
+    },
+    {
+      "claim": "Đã có vắc-xin và thuốc chữa vi-rút Marburg.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9988343119621277,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19023164"
+    },
+    {
+      "claim": "Nước dừa được đánh giá là thức uống bổ sung nguồn khoáng chất kali khá dồi dào - một trong những dưỡng chất cấm kị với người bệnh điều trị cao huyết áp.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9958053827285767,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18759066"
+    },
+    {
+      "claim": "Bệnh lao chỉ lây khi các bệnh nhân mắc phải căn bệnh ho vào người đối diện.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9090847969055176,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19021637"
+    },
+    {
+      "claim": "Bé gái nhập viện trong tình trạng quấy khúc, mũi chảy máu và dịch vàng kèm với sốt cao vì nhét dị vật vào mũi khi đang chơi một mình.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9260058601697286,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18265759"
+    },
+    {
+      "claim": "Cerave đang dần tạo ra chỗ đứng cho bản thân trên thị trường mỹ phẩm đầy cạnh tranh nhờ những nghiên cứu mang tính đột phá.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9407456293702126,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18750959"
+    },
+    {
+      "claim": "UBND thành phố Hà Nội yêu cầu UBND các quận, huyện, thị xã cũng như các sở ban ngành của Hà Nội cần tăng cường kiểm tra, giám sát tình hình dịch bệnh trên đàn gia cầm trước tình hình dịch cúm A (H5N1) trên gia cầm đã lây sang người gây tử vong tại Campuchia.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9412928819656372,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19434752"
+    },
+    {
+      "claim": "Chánh văn phòng Trung tâm Đào tạo - Chỉ đạo tuyến, Bệnh viện Phụ sản Trung ương TP.HCM- ThS.BS Phan Chí Thành cho biết gia đình xin bác sĩ thuốc \"hãm\" vì cụ ông ngoài 60 vẫn thèm chuyện ấy.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.5590237528085709,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18900849"
+    },
+    {
+      "claim": "Tại bệnh viện, các máy móc hiện đại sẽ được sử dụng để chẩn đoán hiệu quả giai đoạn đầu và được chi trả hoàn toàn bởi bảo hiểm y tế.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9976890608668327,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18418964"
+    },
+    {
+      "claim": "Theo Nghị quyết số 144, nếu các công ty được thầu không đảm bảo được đầy đủ vật tư và thuốc men cho bệnh viện thì sẽ bị nhưng hợp đồng ngay lập tức.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9260486364364624,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18446899"
+    },
+    {
+      "claim": "Uống nước chanh nóng giúp cải thiện các triệu chứng cảm cúm đã được một nghiên cứu từ năm 2008 đã phát hiện ra.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.6504085063934326,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19448851"
+    },
+    {
+      "claim": "Các bác sĩ thực hiện hồi sức tích cực và cố định xương sườn số 7,8 của ông T bằng đinh nhựa.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7818839947382609,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18604391"
+    },
+    {
+      "claim": "Bệnh viện Trung ương Quân đội 108 thông tin về trường hợp đặc biệt ngày 9/3,  người đàn ông bị khối u dị dạng mạch máu lớn trên vùng nửa mặt bên trái, như \"chùm nho\" khổng lồ.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9248240292072296,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19087842"
+    },
+    {
+      "claim": "Gia đình bệnh nhi cho biết, do mẹ em bận họp với đối tác trong phòng riêng nên để em ở ngoài phòng khách chơi một mình, sau đó thấy em chạy vào báo với người thân vừa nhét đồ chơi vào mũi và than đau, gia đình có đưa đến phòng khám gần nhà nhưng vì bé quấy khóc, không chịu hợp tác nên không thể lấy được dị vật ra khỏi mũi.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.985946257909139,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18152043"
+    },
+    {
+      "claim": "Ngày xảy ra vụ việc được biết là 2 tuần sau khi bệnh nhân thực hiện nghiên cứu nấm, đồng thời các nhà nghiên cứu cho biết không có bằng chứng cho thấy có loại nấm nào có thể lây sang người trừ khi chúng bị đột biến để có thể tồn tại trên cơ thể người.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9539628028869629,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18378070"
+    },
+    {
+      "claim": "Các bệnh nấm đột biến mới có thể xuất hiện do tình trạng nóng lên toàn cầu ngày càng nghiêm trọng, và người dân thế giới cảm thấy lo sợ trước thông tin công bố này.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9283179640769958,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18500132"
+    },
+    {
+      "claim": "Ung thư gan có mối liên hệ chặt chẽ với tình trạng nhiễm virus viêm gan B, C; bệnh lý xơ gan.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.616353452205658,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18981326"
+    },
+    {
+      "claim": "Sau 3 ngày điều trị, bệnh nhân nữ Trần Thị Kim 40 tuổi ngụ tại Long An đã tử vong, 4 ca còn lại tình trạng hiện tại tạm ổn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9951032400131226,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18626281"
+    },
+    {
+      "claim": "Sau khi ăn quả cây ngô đồng vào ngày 23/3, 15 học sinh có triệu chứng rối loạn tiêu hóa, nhà trường cùng gia đình đã đưa các em đến cơ sở y tế để điều trị.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9961767196655273,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18520725"
+    },
+    {
+      "claim": "Hồng đau đớn vì cô không ngờ chồng lợi dụng việc không biết chăm con để đi gái gú, ngoại tình.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.967699408531189,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18876642"
+    },
+    {
+      "claim": "Các bác sĩ bệnh viện Chợ Rẫy đã kích hoạt hệ thống báo động đỏ và cứu sống nạn nhân sau 15 ca phẫu thuật.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9982103109359741,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18855523"
+    },
+    {
+      "claim": "Ông T.Q.T (77 tuổi, Hải Dương) được chẩn đoán là u dị dạng mạch máu ngày càng lớn dần với kích thước 18x8cm, ranh giới rõ, mật độ mềm Tại Trung tâm Phẫu thuật Sọ mặt và Tạo hình.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9818214774131775,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19087842"
+    },
+    {
+      "claim": "Tại Đồng Nai, 6 người nhập viện cấp cứu nghi bị ngộ độc chất gây nghiện.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9917100071907043,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19639800"
+    },
+    {
+      "claim": "Bệnh viện Nhi đồng 1 vừa tiếp nhận một bệnh nhi nữ trong tình trạng quấy khóc vì đau nhức mũi, chảy dịch vàng pha máu bên mũi phải, kiểm tra sơ thì phát hiện có pin điện tử trong mũi.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8055231869220734,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18152043"
+    },
+    {
+      "claim": "Các nhà nghiên cứu cảnh bảo sự nguy hiểm cũng như tính nghiêm trọng của vấn đề vì nó thể hiện rằng tất cả mọi người đều có thể bị lây nhiễm nấm kí sinh.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9988930821418762,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18378070"
+    },
+    {
+      "claim": "Ông NVH (43 tuổi, ở Long An) cho biết nguyên nhân khiến hai cẳng tay bị cắt lìa là do đồng nghiệp khởi động máy cắt sắt trong lúc ông loay hoay sửa máy.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7822491824626923,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18774207"
+    },
+    {
+      "claim": "Một trong những khó khăn khi triển khai tiêm vaccine là con số thống kê đàn chó, mèo chưa chính xác vì nhiều đối tượng khai gian và làm giả sổ sách.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.726492254063487,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18605497"
+    },
+    {
+      "claim": "Dịch vụ thăm khám và chăm sóc hiện đang có rất nhiều gói ưu đãi dành cho các nhóm đối tượng khác nhau ví dụ giảm 20% phí chụp chiếu, xét nghiệm.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8824824681505561,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18396498"
+    },
+    {
+      "claim": "Kết quả chụp X-quang ngực cho thấy kết quả bình thường, nhưng kết quả chụp CT cho thấy áp xe cạnh khí quản ở cổ, có thể gây tử vong nếu không được phát hiện và chữ trị kịp thời.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9674195200204849,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18500132"
+    },
+    {
+      "claim": "CPACC - là một phân tử nhỏ hoạt động bằng cách gia tăng sự hấp thu magie của ty thể trong tế bào, giúp giảm nguy cơ mắc bệnh tim, đột quỵ và bệnh gan nhiễm mỡ.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9491201639175415,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19442448"
+    },
+    {
+      "claim": "Vết thương của bệnh nhân chủ yếu tập trung ở ngực trái và bụng phải.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8875340223312378,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_19732291"
+    },
+    {
+      "claim": "Ngày 15/3 số ca nhiễm có dấu hiệu tăng so với ngày 14/3.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9191771149635315,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18809110"
+    },
+    {
+      "claim": "Tuấn lấy lý do là tổ chức tiệc, đồng nghiệp xin ở nhờ một đêm do trời quá muộn, không tiện về nhà.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7889349460601807,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18876642"
+    },
+    {
+      "claim": "Bác sĩ nhận định là pin điện tử dạng trụ dài thông qua hình ảnh chụp X-quang.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9147281249364217,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18150825"
+    },
+    {
+      "claim": "Các vấn đề về tâm lý và giới tính của trẻ được giải quyết hoàn toàn sau phẫu thuật.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8324231058359146,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19808369"
+    },
+    {
+      "claim": "Theo bác sĩ, trẻ nhỏ hay bị mắc dị vật vào các hốc tự nhiên của cơ thể do các hoạt động khám phá thế giới xung quanh, tuy nhiên điều này thường xảy ra nên không đáng lo ngại.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8188713192939758,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18199706"
+    },
+    {
+      "claim": "Học sinh tự mang theo đồ ăn vặt, nước uống ở nhà và sử dụng nước uống đóng chai 19 lít của trang trại Cánh Buồm Xanh, nhưng đến ngày hôm sau, một số học sinh có dấu hiệu đau bụng, nôn và nhiều em phải nhập viện.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7150523463884989,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18522478"
+    },
+    {
+      "claim": "Cơ quan chức năng cũng đã xác định nguyên nhân dẫn đến ngộ độc ở 14 em học sinh, hiện chỉ có 13 em bình phục và đi học bình thường, 1 em vẫn còn trong giai đoạn nguy kịch.",
+      "label_gold": "SAI",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7951980531215668,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18520725"
+    },
+    {
+      "claim": "Những người có tiền sử gia đình mắc bệnh ung thư gan sẽ có nguy cơ mắc bệnh thấp hơn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9823295076688131,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18981326"
+    },
+    {
+      "claim": "Bệnh viện đa khoa Apollo (Ấn Độ) cho biết đã tiếp nhận một bệnh nhân 61 tuổi bị nhiễm một loại bệnh nấm có khả năng gây chết người.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9409058094024658,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18345278"
+    },
+    {
+      "claim": "Kết quả chụp X - quang tại bệnh viện cho thấy dị vật là cục pin tiểu dài bị mắc kẹt trong lỗ mũi phải.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.5075070858001709,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18199706"
+    },
+    {
+      "claim": "BV Chấn thương chỉnh hình TP.HCM cho biết chiều ngày 26/2 vừa phẫu thuật nối hai cái chân bị đứt lìa cho bệnh nhân nam tên NVH, 43 tuổi, ngụ tại Long An.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9901122450828552,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18774207"
+    },
+    {
+      "claim": "Nội dung trong các bài quảng cáo của MB về thuốc giải độc gan hoàn toàn phù hợp với quy định của Cục An toàn thực phẩm.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9920980930328369,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18399058"
+    },
+    {
+      "claim": "Bộ Y tế cho biết từ 16 giờ ngày 19-3 đến 16 giờ ngày 20-3, cả nước ghi nhận 7 ca nhiễm COVID-19, giảm so với ngày trước đó, hiện chỉ còn 2 ca nặng đang thở ôxy.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9980674386024475,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19824583"
+    },
+    {
+      "claim": "Cerave phát triển nhiều sản phẩm chăm sóc da mặt và body dịu nhẹ, không gây kích ứng và phát huy tối đa tác dụng của sản phẩm trên da.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9273576140403748,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18750959"
+    },
+    {
+      "claim": "Với các bệnh lý xương khớp thường chụp x - quang trước vì giá thành rẻ, sau đó mới tiến hành chụp MRI nếu cần.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9976310431957245,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18418964"
+    },
+    {
+      "claim": "Ông H tiếp tục được truyền dịch, khách sinh, theo dõi nhiễm trùng, hoại tử cơ,... ngoài ra còn được bệnh viện hỗ trợ 50% tiền viện phí do hoàn cảnh khó khăn.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9967765808105469,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18774207"
+    },
+    {
+      "claim": "Ngoài các website, đường link bị cảnh báo, Cục An toàn thực phẩm cũng cấm sóng các đối tượng livestream bán các mặt hàng này.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.9991183876991272,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18419134"
+    },
+    {
+      "claim": "Bệnh viện Trung ương Quân đội 108 và Trung tâm Phẫu thuật Sọ mặt và Tạo hình tiếp nhận từ 40-70 ca u dị dạng mạch máu, u huyết quản mỗi năm.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9895117878913879,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19087842"
+    },
+    {
+      "claim": "Đồ ăn trưa của học sinh bao gồm các món như cơm rang, gà phi lê chiên xù, khoai tây chiên,.. và được nấu tại trường rồi vận chuyển đến địa điểm trải nghiệm.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9197880029678345,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_19591411"
+    },
+    {
+      "claim": "Đã có thêm 14 bệnh nhân khỏi bệnh, đây là tin đáng mừng.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9913522005081177,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18864596"
+    },
+    {
+      "claim": "Những bệnh nhân phải cấp cứu do nghi ngộ độc chất kích thích không ai được xuất viện vì tình trạng khá nặng.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9990082383155823,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_19639800"
+    },
+    {
+      "claim": "Tình hình bệnh dại tại Đồng Nai diễn ra bất thường vì có 1 người tử vong do bệnh và 2 ổ dịch chó dại được phát hiện.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8238608613610268,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18605497"
+    },
+    {
+      "claim": "Chị em tuổi 40 - 45 khi quan hệ hay bị đau rát, khí hư nhiều do toàn bộ cơ quan sinh dục bị thiểu dưỡng, các đường ống sinh dục bị trầy, xước, dẫn đến ung thư đường tiết niệu.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.759690135717392,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_18900849"
+    },
+    {
+      "claim": "Ngày 30.3, bệnh viện Nhi đồng 1 tiếp nhận một bé trai 3 tuổi đang trong tình trạng quấy khóc vì có dị vật kẹt trong mũi.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.6322799324989319,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18241348"
+    },
+    {
+      "claim": "Theo Dự án 585, BS Hải sẽ ở lại BVĐK Như Xuân ba năm từ 2023-2025, anh đang ấp ủ nhiều dự định để nâng cao hơn nữa chất lượng khám chữa bệnh cho người dân nơi này.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "SAI",
+      "score": 0.9180059432983398,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19088868"
+    },
+    {
+      "claim": "Sau khi kiểm tra bệnh nhân có các triệu chứng như cúm nhưng sau khi chụp CT thì thấy áp xe cạnh khí quản ở cổ, sau khi rút mũ ở áp xe và xét nghiệm thì phát hiện đây là một loài nấm gây bệnh ở thực vật.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9340236186981201,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_18378070"
+    },
+    {
+      "claim": "Bác sĩ khuyến cáo hãy trông trẻ cẩn thận hơn, tránh để trẻ chơi các vật nhỏ, gọn vừa tầm tay hay những vật mà trẻ dễ dàng bỏ vào miệng hay mũi, đặc biệt là pin điện tử dạng cúc áo.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9583391547203064,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18195555"
+    },
+    {
+      "claim": "Nghị định sửa đổi một số điều của Nghị định số 98/2021/NĐ-CP về quản lý trang thiết bị y tế (Nghị định sửa đổi) với 20 nội dung sửa đổi, ãnh đạo Bộ Y tế cho biết đã lấy ý kiến các bộ, ngành, hoàn thiện nội dung dự thảo.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.9967430233955383,
+      "num_chunks": 6,
+      "claim_id": "vifactcheck_19028868"
+    },
+    {
+      "claim": "20 học sinh tại một trường tiểu học nghỉ ốm bất thường tại quận 10, tối 22-3, Trung tâm Kiểm soát bệnh tật TP.HCM cho hay thành phố vừa phát hiện chùm ca bệnh H1N1.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7272438017651439,
+      "num_chunks": 5,
+      "claim_id": "vifactcheck_19241975"
+    },
+    {
+      "claim": "Thoái hóa cột sống với các biểu hiện không đặc trưng ngày càng phổ biến và gây ảnh hưởng đến cuộc sống người bệnh.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "SAI",
+      "score": 0.9388420581817627,
+      "num_chunks": 8,
+      "claim_id": "vifactcheck_18418964"
+    },
+    {
+      "claim": "Gần đây báo chí không mấy đưa tin về các vụ ẻ gian tung tin gia đình có trẻ em hoặc người thân bị tai nạn phải vào BV cấp cứu nhằm mục đích lừa đảo, chiếm đoạt tài sản.",
+      "label_gold": "SAI",
+      "label_pred": "SAI",
+      "score": 0.947411835193634,
+      "num_chunks": 2,
+      "claim_id": "vifactcheck_18569663"
+    },
+    {
+      "claim": "Năm 2020, Khoa Xét nghiệm của Bệnh viện Hùng Vương đã đạt được một thành tựu đáng tự hào khi được công nhận đạt tiêu chuẩn ISO 15189:2012 cho 10 xét nghiệm sinh hoá quan trọng, đã rất thành hành công và được công bố bởi Tổ chức đánh giá công nhận chất lượng phòng thí nghiệm y tế châu Á-Thái Bình Dương (AOSC).",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.7731398791074753,
+      "num_chunks": 4,
+      "claim_id": "vifactcheck_19488283"
+    },
+    {
+      "claim": "Bác sĩ Nguyễn Minh Trung, Bệnh viện Nhi đồng 1, cho biết ở độ tuổi khám phá thế giới xung quanh, trẻ nhỏ có thể nuốt hay sặc vào đường thở hoặc nhét bất cứ dị vật nào vào các hốc tự nhiên của cơ thể.",
+      "label_gold": "ĐÚNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.9632506370544434,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18212087"
+    },
+    {
+      "claim": "Cô Hạnh cảm thấy hoang mang, lo lắng nên đã bắt đầu chủ động tìm hiểu thông tin bệnh lý, tham gia vào các nhóm chia sẻ trên Facebook để hỏi mọi người xung quanh, sau đó cô mới phát hiện mình đã mắc nhiều sai lầm và chủ quan trong điều trị.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "score": 0.8479815934385572,
+      "num_chunks": 7,
+      "claim_id": "vifactcheck_19655115"
+    },
+    {
+      "claim": "Cần thông tin với người dân về kiến thức an toàn thực phẩm, phòng chống ngộ độc từ các độc tố có trong các loại cây, hoa, quả lạ hoang dại, nhà trường cần chú ý theo dõi tình hình sức khỏe của các em học sinh để kịp thời ứng phó trước các vấn đề bất thường về sức khỏe học sinh do nghi ngờ ăn phải các loại này, tránh phải có trường hợp tử vong đáng tiếc xảy ra lần nữa ở những năm trước.",
+      "label_gold": "KHÔNG ĐỦ BẰNG CHỨNG",
+      "label_pred": "ĐÚNG",
+      "score": 0.950145959854126,
+      "num_chunks": 3,
+      "claim_id": "vifactcheck_18520725"
+    }
+  ]
+}

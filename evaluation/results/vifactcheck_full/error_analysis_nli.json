@@ -1,0 +1,104 @@
+{
+  "nli": {
+    "total_errors": 168,
+    "error_breakdown": {
+      "other": 38,
+      "nli_too_conservative": 29,
+      "db_missing_or_weak_evidence": 62,
+      "nli_overconfident": 36,
+      "double_negation": 3
+    },
+    "examples": [
+      {
+        "claim": "Các em học sinh của Trường tiểu học Birkdale mừng rỡ khi nhìn thấy thầy giáo bị ngưng tim vài tháng trước quay trở lại lớp học.",
+        "label_gold": "ĐÚNG",
+        "label_pred": "SAI",
+        "score": 0.9626392722129822,
+        "num_chunks": 3,
+        "claim_id": "vifactcheck_18854146",
+        "error_type": "other"
+      },
+      {
+        "claim": "Bác sĩ trực khoa Tai mũi họng sau khi thăm khám đã nhận định dị vật là pin điện tử nguy hiểm, cần lấy khỏi mũi từ từ, chậm rãi để ngăn dị vật làm tắt đường thở, đường ăn gây hoại tử.",
+        "label_gold": "SAI",
+        "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+        "score": 0.959600826104482,
+        "num_chunks": 3,
+        "claim_id": "vifactcheck_18265759",
+        "error_type": "nli_too_conservative"
+      },
+      {
+        "claim": "Trẻ em dưới 5 tuổi dễ mắc bệnh lao nặng và phức tạp hơn.",
+        "label_gold": "ĐÚNG",
+        "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+        "score": 0.8410288742743433,
+        "num_chunks": 8,
+        "claim_id": "vifactcheck_19021637",
+        "error_type": "db_missing_or_weak_evidence"
+      },
+      {
+        "claim": "Bị đau đầu, tê tay, chị Đ.T.T.P đi khám và được chẩn đoán là thoái hóa đốt sống cổ C5,C6.",
+        "label_gold": "ĐÚNG",
+        "label_pred": "SAI",
+        "score": 0.7784566283226013,
+        "num_chunks": 8,
+        "claim_id": "vifactcheck_18418964",
+        "error_type": "other"
+      },
+      {
+        "claim": "Các nhà khoa học Mỹ đang phát minh một loại thuốc là \"thần dược\" có thể giúp tránh tăng cân trong nghiên cứu mới nhất, được công bố trên tập san học thuật Cell Reports.",
+        "label_gold": "ĐÚNG",
+        "label_pred": "SAI",
+        "score": 0.9784592390060425,
+        "num_chunks": 4,
+        "claim_id": "vifactcheck_19442448",
+        "error_type": "other"
+      },
+      {
+        "claim": "Bệnh viện Chợ Rẫy, TP.HCM đã cứu sống thành công bệnh nhân bị container cán qua người, đa chấn thương nặng sau 11 lần phẫu thuật.",
+        "label_gold": "ĐÚNG",
+        "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+        "score": 0.5791689356168112,
+        "num_chunks": 3,
+        "claim_id": "vifactcheck_19623871",
+        "error_type": "db_missing_or_weak_evidence"
+      },
+      {
+        "claim": "Phó Thủ tướng Trần Hồng Hà đã làm việc với lãnh đạo Bộ Y tế, Bộ Tài chính, Bộ KH&ĐT và một số bệnh viện trong ngày 25-2 liên quan đến những vướng mắc trong mua sắm trang thiết bị y tế, hoá chất xét nghiệm, sinh phẩm y tế...",
+        "label_gold": "ĐÚNG",
+        "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+        "score": 0.8426672418912252,
+        "num_chunks": 6,
+        "claim_id": "vifactcheck_19028868",
+        "error_type": "db_missing_or_weak_evidence"
+      },
+      {
+        "claim": "Chính phủ đã chủ trì nhiều cuộc họp với các bệnh viện về vấn đề đảm bảo đầy đủ thuốc và trang thiết bị cho việc chữa bệnh.",
+        "label_gold": "SAI",
+        "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+        "score": 0.9783411622047424,
+        "num_chunks": 4,
+        "claim_id": "vifactcheck_18446899",
+        "error_type": "nli_too_conservative"
+      },
+      {
+        "claim": "Các bác sĩ nghĩ rằng ông bị nhiễm bệnh khi làm công việc nghiên cứu nấm học thực vật và đã làm việc với vật liệu thối rữa, nấm và nhiều loại nấm thực vật trong thời gian dài.",
+        "label_gold": "ĐÚNG",
+        "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+        "score": 0.943298727273941,
+        "num_chunks": 4,
+        "claim_id": "vifactcheck_18323468",
+        "error_type": "db_missing_or_weak_evidence"
+      },
+      {
+        "claim": "Để phát hiện các bệnh lý di truyền từ sớm và chính xác sẽ hạn chế rất nhiều các trường hợp phải chọc ối không cần thiết đó là một trong những điểm nổi trội của xét nghiệm di truyền, Khoa Giải phẫu bệnh – Tế bào và Khoa Di truyền học, Bệnh viện Hùng Vương TP HCM đã đón nhận chứng chỉ ISO 15189:2012 vào ngày 15-3.",
+        "label_gold": "ĐÚNG",
+        "label_pred": "KHÔNG ĐỦ BẰNG CHỨNG",
+        "score": 0.6375388279557228,
+        "num_chunks": 4,
+        "claim_id": "vifactcheck_19488283",
+        "error_type": "db_missing_or_weak_evidence"
+      }
+    ]
+  }
+}
