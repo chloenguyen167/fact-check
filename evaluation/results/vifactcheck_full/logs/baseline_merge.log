@@ -1,0 +1,6 @@
+Phương pháp                Accuracy   F1-Macro   Latency(s)
+LLM-only                     0.3721     0.3166         0.47
+RAG + LLM                    0.4338     0.3475         1.26
+RAG + NLI                    0.5708     0.5757         1.10
+RAG + NLI + LLM              0.5708     0.5757         4.85
+Đã lưu -> evaluation/results/vifactcheck_full/baseline_comparison_vifactcheck.json

@@ -23,3 +23,6 @@ evaluation/data/pubhealth_cache/
 
 # Build tài liệu
 docs/build/node_modules/
+
+# Trạng thái nội bộ của scripts/run_vifactcheck_full.sh (chỉ để resume)
+evaluation/results/vifactcheck_full/.state/

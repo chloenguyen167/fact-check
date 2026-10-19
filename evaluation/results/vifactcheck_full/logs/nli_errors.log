@@ -1,0 +1,8 @@
+Đã lưu phân tích lỗi -> evaluation/results/vifactcheck_full/error_analysis_nli.json
+
+[nli] Tổng lỗi: 168
+  - other: 38
+  - nli_too_conservative: 29
+  - db_missing_or_weak_evidence: 62
+  - nli_overconfident: 36
+  - double_negation: 3

@@ -1,0 +1,464 @@
+Input: /workspace/fact-check/evaluation/data/vifactcheck_health.jsonl
+Đánh giá LLM explanation:   0%|          | 0/438 [00:00<?, ?it/s][nli] Loading model: MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7 (device=cuda)
+/workspace/fact-check/.venv/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s][A
+Loading weights:  63%|██████▎   | 127/202 [00:00<00:00, 1257.37it/s][ALoading weights: 100%|██████████| 202/202 [00:00<00:00, 1383.29it/s]
+[llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   0%|          | 1/438 [00:08<59:57,  8.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   0%|          | 2/438 [00:10<35:44,  4.92s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   1%|          | 3/438 [00:14<29:55,  4.13s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   1%|          | 4/438 [00:17<28:57,  4.00s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   1%|          | 5/438 [00:21<27:55,  3.87s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   1%|▏         | 6/438 [00:25<27:19,  3.80s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   2%|▏         | 7/438 [00:28<27:18,  3.80s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   2%|▏         | 8/438 [00:32<25:50,  3.61s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   2%|▏         | 9/438 [00:36<27:48,  3.89s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   2%|▏         | 10/438 [00:39<25:51,  3.63s/it][transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+[llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   3%|▎         | 11/438 [00:43<25:27,  3.58s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   3%|▎         | 12/438 [00:46<24:34,  3.46s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   3%|▎         | 13/438 [00:49<23:17,  3.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   3%|▎         | 14/438 [00:53<25:53,  3.66s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   3%|▎         | 15/438 [00:57<26:43,  3.79s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   4%|▎         | 16/438 [01:00<24:31,  3.49s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   4%|▍         | 17/438 [01:04<24:33,  3.50s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   4%|▍         | 18/438 [01:07<24:15,  3.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   4%|▍         | 19/438 [01:11<25:44,  3.69s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   5%|▍         | 20/438 [01:14<24:14,  3.48s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   5%|▍         | 21/438 [01:17<22:46,  3.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   5%|▌         | 22/438 [01:22<25:51,  3.73s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   5%|▌         | 23/438 [01:27<28:02,  4.05s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   5%|▌         | 24/438 [01:30<25:35,  3.71s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   6%|▌         | 25/438 [01:34<26:06,  3.79s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   6%|▌         | 26/438 [01:37<24:52,  3.62s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   6%|▌         | 27/438 [01:42<27:47,  4.06s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   6%|▋         | 28/438 [01:45<26:50,  3.93s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   7%|▋         | 29/438 [01:48<23:27,  3.44s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   7%|▋         | 30/438 [01:52<24:52,  3.66s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   7%|▋         | 31/438 [01:56<25:32,  3.77s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   7%|▋         | 32/438 [01:59<23:47,  3.52s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   8%|▊         | 33/438 [02:03<24:16,  3.60s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   8%|▊         | 34/438 [02:08<27:59,  4.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   8%|▊         | 35/438 [02:12<28:00,  4.17s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   8%|▊         | 36/438 [02:16<26:01,  3.88s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   8%|▊         | 37/438 [02:19<24:57,  3.73s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   9%|▊         | 38/438 [02:24<26:53,  4.03s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   9%|▉         | 39/438 [02:28<26:29,  3.98s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   9%|▉         | 40/438 [02:32<27:05,  4.08s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:   9%|▉         | 41/438 [02:36<27:38,  4.18s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  10%|▉         | 42/438 [02:39<25:04,  3.80s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  10%|▉         | 43/438 [02:44<26:33,  4.03s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  10%|█         | 44/438 [02:47<25:36,  3.90s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  10%|█         | 45/438 [02:51<24:51,  3.79s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  11%|█         | 46/438 [02:54<23:33,  3.61s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  11%|█         | 47/438 [02:58<23:42,  3.64s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  11%|█         | 48/438 [03:03<27:15,  4.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  11%|█         | 49/438 [03:07<25:26,  3.92s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  11%|█▏        | 50/438 [03:10<24:19,  3.76s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  12%|█▏        | 51/438 [03:14<25:30,  3.95s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  12%|█▏        | 52/438 [03:18<24:35,  3.82s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  12%|█▏        | 53/438 [03:21<23:21,  3.64s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  12%|█▏        | 54/438 [03:25<23:09,  3.62s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  13%|█▎        | 55/438 [03:29<25:02,  3.92s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  13%|█▎        | 56/438 [03:33<23:45,  3.73s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  13%|█▎        | 57/438 [03:36<23:03,  3.63s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  13%|█▎        | 58/438 [03:41<25:26,  4.02s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  13%|█▎        | 59/438 [03:44<23:13,  3.68s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  14%|█▎        | 60/438 [03:46<20:01,  3.18s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  14%|█▍        | 61/438 [03:50<22:14,  3.54s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  14%|█▍        | 62/438 [03:56<26:23,  4.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  14%|█▍        | 63/438 [03:59<24:59,  4.00s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  15%|█▍        | 64/438 [04:03<23:26,  3.76s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  15%|█▍        | 65/438 [04:07<25:13,  4.06s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  15%|█▌        | 66/438 [04:11<24:14,  3.91s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  15%|█▌        | 67/438 [04:14<23:00,  3.72s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  16%|█▌        | 68/438 [04:18<22:58,  3.73s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  16%|█▌        | 69/438 [04:22<23:43,  3.86s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  16%|█▌        | 70/438 [04:26<22:52,  3.73s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  16%|█▌        | 71/438 [04:30<23:27,  3.84s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  16%|█▋        | 72/438 [04:33<21:39,  3.55s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  17%|█▋        | 73/438 [04:35<20:02,  3.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  17%|█▋        | 74/438 [04:40<22:00,  3.63s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  17%|█▋        | 75/438 [04:44<23:31,  3.89s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  17%|█▋        | 76/438 [04:49<25:55,  4.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  18%|█▊        | 77/438 [04:54<26:18,  4.37s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  18%|█▊        | 78/438 [04:58<26:09,  4.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  18%|█▊        | 79/438 [05:02<24:52,  4.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  18%|█▊        | 80/438 [05:05<22:44,  3.81s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  18%|█▊        | 81/438 [05:08<21:36,  3.63s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  19%|█▊        | 82/438 [05:12<21:38,  3.65s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  19%|█▉        | 83/438 [05:14<19:36,  3.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  19%|█▉        | 84/438 [05:18<20:29,  3.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  19%|█▉        | 85/438 [05:21<19:20,  3.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  20%|█▉        | 86/438 [05:26<22:16,  3.80s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  20%|█▉        | 87/438 [05:31<24:29,  4.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  20%|██        | 88/438 [05:35<23:53,  4.10s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  20%|██        | 89/438 [05:39<24:12,  4.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  21%|██        | 90/438 [05:45<25:55,  4.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  21%|██        | 91/438 [05:49<25:15,  4.37s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  21%|██        | 92/438 [05:52<24:00,  4.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  21%|██        | 93/438 [05:57<24:18,  4.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  21%|██▏       | 94/438 [06:01<24:41,  4.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  22%|██▏       | 95/438 [06:05<23:06,  4.04s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  22%|██▏       | 96/438 [06:09<23:37,  4.15s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  22%|██▏       | 97/438 [06:14<25:01,  4.40s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  22%|██▏       | 98/438 [06:18<24:15,  4.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  23%|██▎       | 99/438 [06:21<22:12,  3.93s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  23%|██▎       | 100/438 [06:25<21:11,  3.76s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  23%|██▎       | 101/438 [06:27<19:42,  3.51s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  23%|██▎       | 102/438 [06:30<18:47,  3.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  24%|██▎       | 103/438 [06:34<19:50,  3.55s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  24%|██▎       | 104/438 [06:39<20:41,  3.72s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  24%|██▍       | 105/438 [06:43<22:14,  4.01s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  24%|██▍       | 106/438 [06:47<21:29,  3.89s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  24%|██▍       | 107/438 [06:49<19:08,  3.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  25%|██▍       | 108/438 [06:52<18:10,  3.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  25%|██▍       | 109/438 [06:56<18:27,  3.37s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  25%|██▌       | 110/438 [06:59<18:37,  3.41s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  25%|██▌       | 111/438 [07:03<18:30,  3.39s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  26%|██▌       | 112/438 [07:06<18:17,  3.37s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  26%|██▌       | 113/438 [07:10<18:35,  3.43s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  26%|██▌       | 114/438 [07:14<19:26,  3.60s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  26%|██▋       | 115/438 [07:18<20:15,  3.76s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  26%|██▋       | 116/438 [07:22<21:53,  4.08s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  27%|██▋       | 117/438 [07:26<20:51,  3.90s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  27%|██▋       | 118/438 [07:30<21:32,  4.04s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  27%|██▋       | 119/438 [07:34<20:56,  3.94s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  27%|██▋       | 120/438 [07:37<19:45,  3.73s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  28%|██▊       | 121/438 [07:41<18:59,  3.59s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  28%|██▊       | 122/438 [07:45<20:12,  3.84s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  28%|██▊       | 123/438 [07:48<19:16,  3.67s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  28%|██▊       | 124/438 [07:51<17:55,  3.42s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  29%|██▊       | 125/438 [07:54<17:16,  3.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  29%|██▉       | 126/438 [07:57<16:53,  3.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  29%|██▉       | 127/438 [08:00<16:22,  3.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  29%|██▉       | 128/438 [08:04<17:06,  3.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  29%|██▉       | 129/438 [08:07<16:51,  3.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  30%|██▉       | 130/438 [08:11<17:46,  3.46s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  30%|██▉       | 131/438 [08:15<18:33,  3.63s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  30%|███       | 132/438 [08:18<17:53,  3.51s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  30%|███       | 133/438 [08:22<18:25,  3.63s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  31%|███       | 134/438 [08:25<17:22,  3.43s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  31%|███       | 135/438 [08:29<17:43,  3.51s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  31%|███       | 136/438 [08:32<17:05,  3.40s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  31%|███▏      | 137/438 [08:36<18:03,  3.60s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  32%|███▏      | 138/438 [08:39<17:51,  3.57s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  32%|███▏      | 139/438 [08:45<20:29,  4.11s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  32%|███▏      | 140/438 [08:48<18:41,  3.76s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  32%|███▏      | 141/438 [08:51<17:34,  3.55s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  32%|███▏      | 142/438 [08:56<19:39,  3.98s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  33%|███▎      | 143/438 [08:59<19:01,  3.87s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  33%|███▎      | 144/438 [09:03<18:20,  3.74s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  33%|███▎      | 145/438 [09:07<18:21,  3.76s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  33%|███▎      | 146/438 [09:09<16:49,  3.46s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  34%|███▎      | 147/438 [09:14<17:52,  3.69s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  34%|███▍      | 148/438 [09:17<17:49,  3.69s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  34%|███▍      | 149/438 [09:21<18:07,  3.76s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  34%|███▍      | 150/438 [09:25<17:28,  3.64s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  34%|███▍      | 151/438 [09:28<16:49,  3.52s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  35%|███▍      | 152/438 [09:32<17:41,  3.71s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  35%|███▍      | 153/438 [09:36<17:28,  3.68s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  35%|███▌      | 154/438 [09:39<16:29,  3.48s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  35%|███▌      | 155/438 [09:44<19:31,  4.14s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  36%|███▌      | 156/438 [09:50<21:50,  4.65s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  36%|███▌      | 157/438 [09:53<19:52,  4.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  36%|███▌      | 158/438 [09:58<19:43,  4.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  36%|███▋      | 159/438 [10:01<18:21,  3.95s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  37%|███▋      | 160/438 [10:04<17:09,  3.70s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  37%|███▋      | 161/438 [10:08<17:19,  3.75s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  37%|███▋      | 162/438 [10:11<16:53,  3.67s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  37%|███▋      | 163/438 [10:14<15:54,  3.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  37%|███▋      | 164/438 [10:18<16:20,  3.58s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  38%|███▊      | 165/438 [10:22<16:40,  3.67s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  38%|███▊      | 166/438 [10:27<17:54,  3.95s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  38%|███▊      | 167/438 [10:30<16:32,  3.66s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  38%|███▊      | 168/438 [10:33<16:07,  3.58s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  39%|███▊      | 169/438 [10:36<15:19,  3.42s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  39%|███▉      | 170/438 [10:41<17:24,  3.90s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  39%|███▉      | 171/438 [10:46<18:04,  4.06s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  39%|███▉      | 172/438 [10:50<18:21,  4.14s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  39%|███▉      | 173/438 [10:55<19:35,  4.44s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  40%|███▉      | 174/438 [10:59<18:45,  4.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  40%|███▉      | 175/438 [11:04<19:49,  4.52s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  40%|████      | 176/438 [11:10<21:07,  4.84s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  40%|████      | 177/438 [11:13<18:56,  4.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  41%|████      | 178/438 [11:17<18:32,  4.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  41%|████      | 179/438 [11:21<17:34,  4.07s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  41%|████      | 180/438 [11:23<15:11,  3.53s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  41%|████▏     | 181/438 [11:28<16:39,  3.89s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  42%|████▏     | 182/438 [11:31<15:37,  3.66s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  42%|████▏     | 183/438 [11:35<15:55,  3.75s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  42%|████▏     | 184/438 [11:38<15:48,  3.73s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  42%|████▏     | 185/438 [11:42<15:11,  3.60s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  42%|████▏     | 186/438 [11:45<15:17,  3.64s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  43%|████▎     | 187/438 [11:49<15:23,  3.68s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  43%|████▎     | 188/438 [11:54<16:21,  3.93s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  43%|████▎     | 189/438 [11:58<16:30,  3.98s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  43%|████▎     | 190/438 [12:01<15:28,  3.74s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  44%|████▎     | 191/438 [12:06<17:06,  4.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  44%|████▍     | 192/438 [12:09<15:14,  3.72s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  44%|████▍     | 193/438 [12:12<14:46,  3.62s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  44%|████▍     | 194/438 [12:16<14:51,  3.65s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  45%|████▍     | 195/438 [12:20<15:19,  3.78s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  45%|████▍     | 196/438 [12:24<16:02,  3.98s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  45%|████▍     | 197/438 [12:28<15:13,  3.79s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  45%|████▌     | 198/438 [12:33<17:26,  4.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  45%|████▌     | 199/438 [12:38<17:19,  4.35s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  46%|████▌     | 200/438 [12:42<17:03,  4.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  46%|████▌     | 201/438 [12:46<16:32,  4.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  46%|████▌     | 202/438 [12:49<15:44,  4.00s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  46%|████▋     | 203/438 [12:53<14:58,  3.82s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  47%|████▋     | 204/438 [12:57<15:20,  3.94s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  47%|████▋     | 205/438 [13:01<14:56,  3.85s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  47%|████▋     | 206/438 [13:05<14:56,  3.86s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  47%|████▋     | 207/438 [13:09<15:02,  3.91s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  47%|████▋     | 208/438 [13:13<15:30,  4.04s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  48%|████▊     | 209/438 [13:18<16:17,  4.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  48%|████▊     | 210/438 [13:21<15:01,  3.95s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  48%|████▊     | 211/438 [13:25<14:45,  3.90s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  48%|████▊     | 212/438 [13:29<14:56,  3.97s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  49%|████▊     | 213/438 [13:33<14:34,  3.89s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  49%|████▉     | 214/438 [13:37<14:59,  4.02s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  49%|████▉     | 215/438 [13:42<15:53,  4.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  49%|████▉     | 216/438 [13:45<14:25,  3.90s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  50%|████▉     | 217/438 [13:48<13:13,  3.59s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  50%|████▉     | 218/438 [13:51<13:16,  3.62s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  50%|█████     | 219/438 [13:54<12:40,  3.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  50%|█████     | 220/438 [14:00<14:49,  4.08s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  50%|█████     | 221/438 [14:03<13:59,  3.87s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  51%|█████     | 222/438 [14:07<14:03,  3.90s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  51%|█████     | 223/438 [14:10<13:08,  3.67s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  51%|█████     | 224/438 [14:14<13:15,  3.72s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  51%|█████▏    | 225/438 [14:17<12:22,  3.49s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  52%|█████▏    | 226/438 [14:21<12:39,  3.58s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  52%|█████▏    | 227/438 [14:24<12:05,  3.44s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  52%|█████▏    | 228/438 [14:28<12:38,  3.61s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  52%|█████▏    | 229/438 [14:31<11:49,  3.39s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  53%|█████▎    | 230/438 [14:35<12:39,  3.65s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  53%|█████▎    | 231/438 [14:39<12:54,  3.74s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  53%|█████▎    | 232/438 [14:44<13:49,  4.03s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  53%|█████▎    | 233/438 [14:47<13:00,  3.81s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  53%|█████▎    | 234/438 [14:51<12:33,  3.69s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  54%|█████▎    | 235/438 [14:54<12:25,  3.67s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  54%|█████▍    | 236/438 [14:59<13:00,  3.86s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  54%|█████▍    | 237/438 [15:02<12:56,  3.86s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  54%|█████▍    | 238/438 [15:06<12:54,  3.87s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  55%|█████▍    | 239/438 [15:09<11:16,  3.40s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  55%|█████▍    | 240/438 [15:13<11:50,  3.59s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  55%|█████▌    | 241/438 [15:16<11:24,  3.48s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  55%|█████▌    | 242/438 [15:19<11:10,  3.42s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  55%|█████▌    | 243/438 [15:23<11:09,  3.43s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  56%|█████▌    | 244/438 [15:27<12:13,  3.78s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  56%|█████▌    | 245/438 [15:30<10:51,  3.38s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  56%|█████▌    | 246/438 [15:35<12:49,  4.01s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  56%|█████▋    | 247/438 [15:39<12:15,  3.85s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  57%|█████▋    | 248/438 [15:44<13:34,  4.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  57%|█████▋    | 249/438 [15:49<14:04,  4.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  57%|█████▋    | 250/438 [15:53<13:33,  4.33s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  57%|█████▋    | 251/438 [15:57<12:55,  4.15s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  58%|█████▊    | 252/438 [15:59<11:37,  3.75s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  58%|█████▊    | 253/438 [16:03<11:09,  3.62s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  58%|█████▊    | 254/438 [16:06<10:58,  3.58s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  58%|█████▊    | 255/438 [16:09<10:18,  3.38s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  58%|█████▊    | 256/438 [16:13<10:47,  3.56s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  59%|█████▊    | 257/438 [16:17<11:29,  3.81s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  59%|█████▉    | 258/438 [16:21<11:12,  3.74s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  59%|█████▉    | 259/438 [16:25<11:09,  3.74s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  59%|█████▉    | 260/438 [16:28<10:21,  3.49s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  60%|█████▉    | 261/438 [16:31<10:10,  3.45s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  60%|█████▉    | 262/438 [16:36<11:07,  3.79s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  60%|██████    | 263/438 [16:39<10:44,  3.68s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  60%|██████    | 264/438 [16:42<10:11,  3.52s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  61%|██████    | 265/438 [16:45<09:54,  3.44s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  61%|██████    | 266/438 [16:48<09:20,  3.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  61%|██████    | 267/438 [16:52<09:28,  3.33s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  61%|██████    | 268/438 [16:56<10:36,  3.74s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  61%|██████▏   | 269/438 [16:59<09:43,  3.45s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  62%|██████▏   | 270/438 [17:03<10:16,  3.67s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  62%|██████▏   | 271/438 [17:07<10:14,  3.68s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  62%|██████▏   | 272/438 [17:12<11:27,  4.14s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  62%|██████▏   | 273/438 [17:15<10:32,  3.83s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  63%|██████▎   | 274/438 [17:19<10:36,  3.88s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  63%|██████▎   | 275/438 [17:24<11:16,  4.15s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  63%|██████▎   | 276/438 [17:29<11:24,  4.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  63%|██████▎   | 277/438 [17:33<11:04,  4.13s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  63%|██████▎   | 278/438 [17:36<10:12,  3.83s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  64%|██████▎   | 279/438 [17:39<10:05,  3.81s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  64%|██████▍   | 280/438 [17:43<09:42,  3.69s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  64%|██████▍   | 281/438 [17:46<09:30,  3.63s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  64%|██████▍   | 282/438 [17:50<09:46,  3.76s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  65%|██████▍   | 283/438 [17:54<09:16,  3.59s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  65%|██████▍   | 284/438 [17:57<09:02,  3.52s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  65%|██████▌   | 285/438 [18:01<09:29,  3.72s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  65%|██████▌   | 286/438 [18:04<09:02,  3.57s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  66%|██████▌   | 287/438 [18:08<08:43,  3.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  66%|██████▌   | 288/438 [18:11<08:58,  3.59s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  66%|██████▌   | 289/438 [18:14<08:20,  3.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  66%|██████▌   | 290/438 [18:17<08:06,  3.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  66%|██████▋   | 291/438 [18:21<07:56,  3.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  67%|██████▋   | 292/438 [18:24<08:10,  3.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  67%|██████▋   | 293/438 [18:28<08:22,  3.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  67%|██████▋   | 294/438 [18:32<09:02,  3.77s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  67%|██████▋   | 295/438 [18:37<09:17,  3.90s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  68%|██████▊   | 296/438 [18:39<08:27,  3.57s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  68%|██████▊   | 297/438 [18:43<08:27,  3.60s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  68%|██████▊   | 298/438 [18:47<08:21,  3.58s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  68%|██████▊   | 299/438 [18:51<08:42,  3.76s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  68%|██████▊   | 300/438 [18:54<08:15,  3.59s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  69%|██████▊   | 301/438 [18:57<08:07,  3.56s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  69%|██████▉   | 302/438 [19:01<07:55,  3.50s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  69%|██████▉   | 303/438 [19:05<08:04,  3.59s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  69%|██████▉   | 304/438 [19:09<08:27,  3.79s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  70%|██████▉   | 305/438 [19:12<08:12,  3.71s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  70%|██████▉   | 306/438 [19:15<07:33,  3.43s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  70%|███████   | 307/438 [19:19<07:59,  3.66s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  70%|███████   | 308/438 [19:23<07:49,  3.61s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  71%|███████   | 309/438 [19:26<07:26,  3.46s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  71%|███████   | 310/438 [19:30<07:32,  3.54s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  71%|███████   | 311/438 [19:33<07:30,  3.55s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  71%|███████   | 312/438 [19:37<07:52,  3.75s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  71%|███████▏  | 313/438 [19:41<07:36,  3.65s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  72%|███████▏  | 314/438 [19:44<07:29,  3.62s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  72%|███████▏  | 315/438 [19:48<07:29,  3.66s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  72%|███████▏  | 316/438 [19:52<07:16,  3.58s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  72%|███████▏  | 317/438 [19:55<07:05,  3.52s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  73%|███████▎  | 318/438 [20:00<07:45,  3.88s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  73%|███████▎  | 319/438 [20:03<07:13,  3.64s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  73%|███████▎  | 320/438 [20:05<06:21,  3.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  73%|███████▎  | 321/438 [20:10<07:02,  3.61s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  74%|███████▎  | 322/438 [20:13<06:42,  3.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  74%|███████▎  | 323/438 [20:16<06:26,  3.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  74%|███████▍  | 324/438 [20:20<06:45,  3.56s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  74%|███████▍  | 325/438 [20:23<06:28,  3.43s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  74%|███████▍  | 326/438 [20:29<07:48,  4.18s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  75%|███████▍  | 327/438 [20:33<07:38,  4.13s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  75%|███████▍  | 328/438 [20:37<07:32,  4.11s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  75%|███████▌  | 329/438 [20:42<08:07,  4.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  75%|███████▌  | 330/438 [20:45<07:11,  4.00s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  76%|███████▌  | 331/438 [20:48<06:42,  3.76s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  76%|███████▌  | 332/438 [20:52<06:31,  3.69s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  76%|███████▌  | 333/438 [20:55<06:13,  3.56s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  76%|███████▋  | 334/438 [20:59<06:31,  3.76s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  76%|███████▋  | 335/438 [21:05<07:23,  4.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  77%|███████▋  | 336/438 [21:09<07:12,  4.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  77%|███████▋  | 337/438 [21:14<07:38,  4.54s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  77%|███████▋  | 338/438 [21:17<06:50,  4.10s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  77%|███████▋  | 339/438 [21:20<06:10,  3.75s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  78%|███████▊  | 340/438 [21:25<06:22,  3.90s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  78%|███████▊  | 341/438 [21:29<06:33,  4.05s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  78%|███████▊  | 342/438 [21:33<06:39,  4.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  78%|███████▊  | 343/438 [21:37<06:07,  3.87s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  79%|███████▊  | 344/438 [21:40<06:02,  3.85s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  79%|███████▉  | 345/438 [21:43<05:36,  3.62s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  79%|███████▉  | 346/438 [21:47<05:40,  3.71s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  79%|███████▉  | 347/438 [21:52<06:12,  4.09s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  79%|███████▉  | 348/438 [21:55<05:34,  3.72s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  80%|███████▉  | 349/438 [21:58<05:03,  3.41s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  80%|███████▉  | 350/438 [22:01<04:54,  3.35s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  80%|████████  | 351/438 [22:05<05:08,  3.55s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  80%|████████  | 352/438 [22:08<04:57,  3.46s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  81%|████████  | 353/438 [22:11<04:45,  3.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  81%|████████  | 354/438 [22:14<04:33,  3.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  81%|████████  | 355/438 [22:17<04:16,  3.09s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  81%|████████▏ | 356/438 [22:20<04:08,  3.02s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  82%|████████▏ | 357/438 [22:23<03:56,  2.92s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  82%|████████▏ | 358/438 [22:27<04:15,  3.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  82%|████████▏ | 359/438 [22:29<04:01,  3.05s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  82%|████████▏ | 360/438 [22:33<04:12,  3.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  82%|████████▏ | 361/438 [22:36<04:06,  3.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  83%|████████▎ | 362/438 [22:40<04:25,  3.49s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  83%|████████▎ | 363/438 [22:44<04:29,  3.59s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  83%|████████▎ | 364/438 [22:48<04:32,  3.69s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  83%|████████▎ | 365/438 [22:52<04:31,  3.72s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  84%|████████▎ | 366/438 [22:55<04:21,  3.63s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  84%|████████▍ | 367/438 [22:58<04:04,  3.44s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  84%|████████▍ | 368/438 [23:01<03:56,  3.39s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  84%|████████▍ | 369/438 [23:05<03:55,  3.42s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  84%|████████▍ | 370/438 [23:09<04:01,  3.55s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  85%|████████▍ | 371/438 [23:12<03:48,  3.40s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  85%|████████▍ | 372/438 [23:17<04:28,  4.06s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  85%|████████▌ | 373/438 [23:21<04:22,  4.04s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  85%|████████▌ | 374/438 [23:24<03:51,  3.61s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  86%|████████▌ | 375/438 [23:28<03:51,  3.67s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  86%|████████▌ | 376/438 [23:32<03:51,  3.74s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  86%|████████▌ | 377/438 [23:35<03:43,  3.66s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  86%|████████▋ | 378/438 [23:40<03:51,  3.85s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  87%|████████▋ | 379/438 [23:43<03:44,  3.81s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  87%|████████▋ | 380/438 [23:48<04:01,  4.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  87%|████████▋ | 381/438 [23:53<04:02,  4.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  87%|████████▋ | 382/438 [23:57<03:54,  4.18s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  87%|████████▋ | 383/438 [24:00<03:39,  3.99s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  88%|████████▊ | 384/438 [24:03<03:14,  3.61s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  88%|████████▊ | 385/438 [24:07<03:13,  3.65s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  88%|████████▊ | 386/438 [24:10<03:03,  3.53s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  88%|████████▊ | 387/438 [24:14<03:08,  3.70s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  89%|████████▊ | 388/438 [24:17<02:51,  3.43s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  89%|████████▉ | 389/438 [24:20<02:43,  3.35s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  89%|████████▉ | 390/438 [24:26<03:14,  4.05s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  89%|████████▉ | 391/438 [24:29<02:57,  3.77s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  89%|████████▉ | 392/438 [24:33<02:56,  3.84s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  90%|████████▉ | 393/438 [24:37<02:50,  3.80s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  90%|████████▉ | 394/438 [24:39<02:34,  3.51s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  90%|█████████ | 395/438 [24:42<02:22,  3.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  90%|█████████ | 396/438 [24:46<02:21,  3.37s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  91%|█████████ | 397/438 [24:49<02:17,  3.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  91%|█████████ | 398/438 [24:53<02:16,  3.42s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  91%|█████████ | 399/438 [24:55<02:05,  3.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  91%|█████████▏| 400/438 [24:59<02:07,  3.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  92%|█████████▏| 401/438 [25:03<02:09,  3.51s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  92%|█████████▏| 402/438 [25:06<02:00,  3.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  92%|█████████▏| 403/438 [25:10<02:08,  3.68s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  92%|█████████▏| 404/438 [25:14<02:02,  3.62s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  92%|█████████▏| 405/438 [25:17<01:59,  3.63s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  93%|█████████▎| 406/438 [25:21<01:52,  3.51s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  93%|█████████▎| 407/438 [25:25<01:51,  3.60s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  93%|█████████▎| 408/438 [25:28<01:47,  3.57s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  93%|█████████▎| 409/438 [25:32<01:45,  3.64s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  94%|█████████▎| 410/438 [25:35<01:39,  3.54s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  94%|█████████▍| 411/438 [25:39<01:35,  3.54s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  94%|█████████▍| 412/438 [25:43<01:36,  3.70s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  94%|█████████▍| 413/438 [25:46<01:30,  3.61s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  95%|█████████▍| 414/438 [25:49<01:20,  3.33s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  95%|█████████▍| 415/438 [25:51<01:11,  3.12s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  95%|█████████▍| 416/438 [25:55<01:09,  3.14s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  95%|█████████▌| 417/438 [25:59<01:14,  3.55s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  95%|█████████▌| 418/438 [26:03<01:14,  3.71s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  96%|█████████▌| 419/438 [26:06<01:05,  3.47s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  96%|█████████▌| 420/438 [26:10<01:02,  3.45s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  96%|█████████▌| 421/438 [26:13<00:59,  3.52s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  96%|█████████▋| 422/438 [26:17<00:55,  3.49s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  97%|█████████▋| 423/438 [26:19<00:49,  3.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  97%|█████████▋| 424/438 [26:22<00:44,  3.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  97%|█████████▋| 425/438 [26:25<00:40,  3.15s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  97%|█████████▋| 426/438 [26:29<00:39,  3.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  97%|█████████▋| 427/438 [26:32<00:34,  3.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  98%|█████████▊| 428/438 [26:36<00:34,  3.46s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  98%|█████████▊| 429/438 [26:40<00:32,  3.64s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  98%|█████████▊| 430/438 [26:44<00:28,  3.60s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  98%|█████████▊| 431/438 [26:48<00:25,  3.71s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  99%|█████████▊| 432/438 [26:51<00:22,  3.68s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  99%|█████████▉| 433/438 [26:55<00:17,  3.60s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  99%|█████████▉| 434/438 [26:57<00:13,  3.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation:  99%|█████████▉| 435/438 [27:01<00:10,  3.44s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation: 100%|█████████▉| 436/438 [27:05<00:07,  3.53s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation: 100%|█████████▉| 437/438 [27:10<00:03,  3.91s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá LLM explanation: 100%|██████████| 438/438 [27:14<00:00,  4.06s/it]Đánh giá LLM explanation: 100%|██████████| 438/438 [27:14<00:00,  3.73s/it]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  87%|████████▋ | 174/199 [00:00<00:00, 1724.28it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1881.12it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-multilingual-cased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+ROUGE-L: 0.3214
+BERTScore F1: 0.7233
+Đã lưu -> evaluation/results/vifactcheck_full/llm_results.json

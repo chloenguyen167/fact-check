@@ -1,0 +1,454 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 9185.00it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:  80%|███████▉  | 314/393 [00:00<00:00, 3127.11it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 3155.58it/s]
+Dataset: vifactcheck (438 mẫu)
+ViFactCheck RAG index: vifactcheck_health_bge_m3 (212 chunks)
+
+[rag_llm] Qdrant collection: vifactcheck_health_bge_m3
+Đánh giá RAG + LLM:   0%|          | 0/438 [00:00<?, ?it/s][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   0%|          | 1/438 [00:01<09:33,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   0%|          | 2/438 [00:02<09:27,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   1%|          | 3/438 [00:03<09:06,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   1%|          | 4/438 [00:05<08:55,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   1%|          | 5/438 [00:06<09:04,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   1%|▏         | 6/438 [00:07<08:55,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   2%|▏         | 7/438 [00:08<08:47,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   2%|▏         | 8/438 [00:10<08:57,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   2%|▏         | 9/438 [00:11<08:54,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   2%|▏         | 10/438 [00:12<08:41,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   3%|▎         | 11/438 [00:13<09:17,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   3%|▎         | 12/438 [00:15<09:04,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   3%|▎         | 13/438 [00:16<08:26,  1.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   3%|▎         | 14/438 [00:17<08:37,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   3%|▎         | 15/438 [00:18<08:37,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   4%|▎         | 16/438 [00:19<08:29,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   4%|▍         | 17/438 [00:21<08:27,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   4%|▍         | 18/438 [00:22<08:25,  1.20s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   4%|▍         | 19/438 [00:23<08:23,  1.20s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   5%|▍         | 20/438 [00:24<08:24,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   5%|▍         | 21/438 [00:26<08:57,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   5%|▌         | 22/438 [00:27<08:57,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   5%|▌         | 23/438 [00:28<08:44,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   5%|▌         | 24/438 [00:29<08:23,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   6%|▌         | 25/438 [00:30<08:19,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   6%|▌         | 26/438 [00:32<08:21,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   6%|▌         | 27/438 [00:33<08:38,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   6%|▋         | 28/438 [00:34<08:29,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   7%|▋         | 29/438 [00:35<08:23,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   7%|▋         | 30/438 [00:37<08:18,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   7%|▋         | 31/438 [00:38<08:14,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   7%|▋         | 32/438 [00:39<08:13,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   8%|▊         | 33/438 [00:41<08:56,  1.33s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   8%|▊         | 34/438 [00:42<08:28,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   8%|▊         | 35/438 [00:43<08:31,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   8%|▊         | 36/438 [00:44<08:22,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   8%|▊         | 37/438 [00:45<08:15,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   9%|▊         | 38/438 [00:47<08:13,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   9%|▉         | 39/438 [00:48<08:20,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   9%|▉         | 40/438 [00:49<08:20,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:   9%|▉         | 41/438 [00:51<08:24,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  10%|▉         | 42/438 [00:52<08:28,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  10%|▉         | 43/438 [00:54<09:30,  1.44s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  10%|█         | 44/438 [00:55<08:48,  1.34s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  10%|█         | 45/438 [00:56<08:49,  1.35s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  11%|█         | 46/438 [00:57<08:42,  1.33s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  11%|█         | 47/438 [00:59<08:49,  1.35s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  11%|█         | 48/438 [01:00<08:53,  1.37s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  11%|█         | 49/438 [01:01<08:33,  1.32s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  11%|█▏        | 50/438 [01:03<08:19,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  12%|█▏        | 51/438 [01:04<08:28,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  12%|█▏        | 52/438 [01:05<08:14,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  12%|█▏        | 53/438 [01:06<07:54,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  12%|█▏        | 54/438 [01:07<07:17,  1.14s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  13%|█▎        | 55/438 [01:09<07:29,  1.17s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  13%|█▎        | 56/438 [01:10<07:43,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  13%|█▎        | 57/438 [01:11<07:40,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  13%|█▎        | 58/438 [01:12<07:49,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  13%|█▎        | 59/438 [01:14<08:07,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  14%|█▎        | 60/438 [01:15<08:07,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  14%|█▍        | 61/438 [01:16<07:56,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  14%|█▍        | 62/438 [01:18<07:58,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  14%|█▍        | 63/438 [01:19<07:51,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  15%|█▍        | 64/438 [01:20<07:41,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  15%|█▍        | 65/438 [01:21<07:58,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  15%|█▌        | 66/438 [01:23<07:48,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  15%|█▌        | 67/438 [01:24<07:40,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  16%|█▌        | 68/438 [01:25<07:34,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  16%|█▌        | 69/438 [01:26<07:09,  1.17s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  16%|█▌        | 70/438 [01:27<07:03,  1.15s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  16%|█▌        | 71/438 [01:28<07:06,  1.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  16%|█▋        | 72/438 [01:29<07:10,  1.18s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  17%|█▋        | 73/438 [01:31<07:19,  1.20s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  17%|█▋        | 74/438 [01:32<07:10,  1.18s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  17%|█▋        | 75/438 [01:33<07:40,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  17%|█▋        | 76/438 [01:35<07:53,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  18%|█▊        | 77/438 [01:36<07:51,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  18%|█▊        | 78/438 [01:37<07:40,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  18%|█▊        | 79/438 [01:38<07:28,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  18%|█▊        | 80/438 [01:40<07:12,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  18%|█▊        | 81/438 [01:41<07:30,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  19%|█▊        | 82/438 [01:42<07:24,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  19%|█▉        | 83/438 [01:43<07:27,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  19%|█▉        | 84/438 [01:45<07:21,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  19%|█▉        | 85/438 [01:46<07:13,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  20%|█▉        | 86/438 [01:47<07:09,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  20%|█▉        | 87/438 [01:48<07:05,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  20%|██        | 88/438 [01:50<08:16,  1.42s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  20%|██        | 89/438 [01:52<08:13,  1.41s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  21%|██        | 90/438 [01:53<07:49,  1.35s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  21%|██        | 91/438 [01:54<07:34,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  21%|██        | 92/438 [01:55<06:59,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  21%|██        | 93/438 [01:56<06:56,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  21%|██▏       | 94/438 [01:57<07:05,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  22%|██▏       | 95/438 [01:59<07:10,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  22%|██▏       | 96/438 [02:00<07:05,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  22%|██▏       | 97/438 [02:01<07:08,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  22%|██▏       | 98/438 [02:02<07:01,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  23%|██▎       | 99/438 [02:04<06:55,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  23%|██▎       | 100/438 [02:05<07:13,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  23%|██▎       | 101/438 [02:06<06:52,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  23%|██▎       | 102/438 [02:07<06:59,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  24%|██▎       | 103/438 [02:09<06:44,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  24%|██▎       | 104/438 [02:10<07:12,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  24%|██▍       | 105/438 [02:11<07:00,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  24%|██▍       | 106/438 [02:13<07:02,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  24%|██▍       | 107/438 [02:14<06:45,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  25%|██▍       | 108/438 [02:15<06:50,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  25%|██▍       | 109/438 [02:16<06:44,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  25%|██▌       | 110/438 [02:17<06:44,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  25%|██▌       | 111/438 [02:19<07:07,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  26%|██▌       | 112/438 [02:20<06:44,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  26%|██▌       | 113/438 [02:21<06:48,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  26%|██▌       | 114/438 [02:23<06:51,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  26%|██▋       | 115/438 [02:24<06:43,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  26%|██▋       | 116/438 [02:25<06:56,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  27%|██▋       | 117/438 [02:26<06:48,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  27%|██▋       | 118/438 [02:28<06:38,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  27%|██▋       | 119/438 [02:29<06:32,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  27%|██▋       | 120/438 [02:30<06:30,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  28%|██▊       | 121/438 [02:31<06:34,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  28%|██▊       | 122/438 [02:32<06:28,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  28%|██▊       | 123/438 [02:34<06:16,  1.20s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  28%|██▊       | 124/438 [02:34<05:47,  1.11s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  29%|██▊       | 125/438 [02:36<06:03,  1.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  29%|██▉       | 126/438 [02:37<05:41,  1.09s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  29%|██▉       | 127/438 [02:38<06:25,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  29%|██▉       | 128/438 [02:40<06:28,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  29%|██▉       | 129/438 [02:41<06:31,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  30%|██▉       | 130/438 [02:42<06:23,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  30%|██▉       | 131/438 [02:43<06:21,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  30%|███       | 132/438 [02:45<06:31,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  30%|███       | 133/438 [02:46<06:32,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  31%|███       | 134/438 [02:47<06:32,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  31%|███       | 135/438 [02:49<06:34,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  31%|███       | 136/438 [02:50<06:49,  1.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  31%|███▏      | 137/438 [02:51<06:17,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  32%|███▏      | 138/438 [02:52<06:17,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  32%|███▏      | 139/438 [02:54<06:11,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  32%|███▏      | 140/438 [02:55<06:06,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  32%|███▏      | 141/438 [02:56<06:22,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  32%|███▏      | 142/438 [02:58<06:28,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  33%|███▎      | 143/438 [02:59<06:43,  1.37s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  33%|███▎      | 144/438 [03:00<06:21,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  33%|███▎      | 145/438 [03:02<06:27,  1.32s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  33%|███▎      | 146/438 [03:03<06:00,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  34%|███▎      | 147/438 [03:04<06:01,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  34%|███▍      | 148/438 [03:05<06:05,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  34%|███▍      | 149/438 [03:07<06:15,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  34%|███▍      | 150/438 [03:08<06:14,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  34%|███▍      | 151/438 [03:09<06:14,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  35%|███▍      | 152/438 [03:10<06:12,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  35%|███▍      | 153/438 [03:12<06:01,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  35%|███▌      | 154/438 [03:13<05:54,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  35%|███▌      | 155/438 [03:14<05:49,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  36%|███▌      | 156/438 [03:15<05:53,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  36%|███▌      | 157/438 [03:17<05:48,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  36%|███▌      | 158/438 [03:18<05:25,  1.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  36%|███▋      | 159/438 [03:19<05:31,  1.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  37%|███▋      | 160/438 [03:20<05:33,  1.20s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  37%|███▋      | 161/438 [03:21<05:09,  1.12s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  37%|███▋      | 162/438 [03:22<05:24,  1.17s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  37%|███▋      | 163/438 [03:24<05:32,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  37%|███▋      | 164/438 [03:25<05:56,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  38%|███▊      | 165/438 [03:26<05:29,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  38%|███▊      | 166/438 [03:27<05:29,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  38%|███▊      | 167/438 [03:29<05:33,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  38%|███▊      | 168/438 [03:30<05:47,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  39%|███▊      | 169/438 [03:31<05:29,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  39%|███▉      | 170/438 [03:32<05:34,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  39%|███▉      | 171/438 [03:33<05:24,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  39%|███▉      | 172/438 [03:35<05:27,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  39%|███▉      | 173/438 [03:36<05:31,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  40%|███▉      | 174/438 [03:37<05:27,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  40%|███▉      | 175/438 [03:39<05:29,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  40%|████      | 176/438 [03:40<05:24,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  40%|████      | 177/438 [03:41<05:15,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  41%|████      | 178/438 [03:42<04:54,  1.13s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  41%|████      | 179/438 [03:43<05:29,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  41%|████      | 180/438 [03:45<05:22,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  41%|████▏     | 181/438 [03:46<05:26,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  42%|████▏     | 182/438 [03:47<05:21,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  42%|████▏     | 183/438 [03:48<05:14,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  42%|████▏     | 184/438 [03:50<05:33,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  42%|████▏     | 185/438 [03:51<05:30,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  42%|████▏     | 186/438 [03:52<05:24,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  43%|████▎     | 187/438 [03:53<04:50,  1.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  43%|████▎     | 188/438 [03:54<04:52,  1.17s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  43%|████▎     | 189/438 [03:56<05:00,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  43%|████▎     | 190/438 [03:57<04:54,  1.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  44%|████▎     | 191/438 [03:58<05:00,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  44%|████▍     | 192/438 [03:59<05:04,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  44%|████▍     | 193/438 [04:01<05:02,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  44%|████▍     | 194/438 [04:02<05:03,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  45%|████▍     | 195/438 [04:03<05:06,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  45%|████▍     | 196/438 [04:05<05:23,  1.34s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  45%|████▍     | 197/438 [04:06<05:11,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  45%|████▌     | 198/438 [04:07<05:11,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  45%|████▌     | 199/438 [04:09<05:09,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  46%|████▌     | 200/438 [04:10<05:09,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  46%|████▌     | 201/438 [04:11<05:07,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  46%|████▌     | 202/438 [04:12<05:00,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  46%|████▋     | 203/438 [04:14<05:00,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  47%|████▋     | 204/438 [04:15<04:38,  1.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  47%|████▋     | 205/438 [04:16<04:53,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  47%|████▋     | 206/438 [04:17<04:33,  1.18s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  47%|████▋     | 207/438 [04:18<04:40,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  47%|████▋     | 208/438 [04:20<04:45,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  48%|████▊     | 209/438 [04:21<04:54,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  48%|████▊     | 210/438 [04:22<04:53,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  48%|████▊     | 211/438 [04:24<04:48,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  48%|████▊     | 212/438 [04:25<04:54,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  49%|████▊     | 213/438 [04:26<04:53,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  49%|████▉     | 214/438 [04:27<04:44,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  49%|████▉     | 215/438 [04:29<04:45,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  49%|████▉     | 216/438 [04:30<04:58,  1.35s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  50%|████▉     | 217/438 [04:32<05:01,  1.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  50%|████▉     | 218/438 [04:33<04:48,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  50%|█████     | 219/438 [04:34<04:40,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  50%|█████     | 220/438 [04:35<04:40,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  50%|█████     | 221/438 [04:37<04:46,  1.32s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  51%|█████     | 222/438 [04:38<04:30,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  51%|█████     | 223/438 [04:39<04:28,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  51%|█████     | 224/438 [04:40<04:24,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  51%|█████▏    | 225/438 [04:42<04:24,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  52%|█████▏    | 226/438 [04:43<04:15,  1.20s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  52%|█████▏    | 227/438 [04:44<04:13,  1.20s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  52%|█████▏    | 228/438 [04:45<04:17,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  52%|█████▏    | 229/438 [04:46<04:14,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  53%|█████▎    | 230/438 [04:48<04:20,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  53%|█████▎    | 231/438 [04:49<04:26,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  53%|█████▎    | 232/438 [04:50<04:19,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  53%|█████▎    | 233/438 [04:52<04:28,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  53%|█████▎    | 234/438 [04:53<04:13,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  54%|█████▎    | 235/438 [04:54<04:05,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  54%|█████▍    | 236/438 [04:55<03:50,  1.14s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  54%|█████▍    | 237/438 [04:56<03:57,  1.18s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  54%|█████▍    | 238/438 [04:57<03:59,  1.20s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  55%|█████▍    | 239/438 [04:59<04:02,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  55%|█████▍    | 240/438 [05:00<03:58,  1.20s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  55%|█████▌    | 241/438 [05:01<03:48,  1.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  55%|█████▌    | 242/438 [05:02<04:00,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  55%|█████▌    | 243/438 [05:04<04:14,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  56%|█████▌    | 244/438 [05:05<04:30,  1.40s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  56%|█████▌    | 245/438 [05:07<04:23,  1.37s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  56%|█████▌    | 246/438 [05:08<04:30,  1.41s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  56%|█████▋    | 247/438 [05:09<04:16,  1.34s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  57%|█████▋    | 248/438 [05:11<04:19,  1.37s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  57%|█████▋    | 249/438 [05:12<03:56,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  57%|█████▋    | 250/438 [05:13<03:58,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  57%|█████▋    | 251/438 [05:14<04:04,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  58%|█████▊    | 252/438 [05:16<04:02,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  58%|█████▊    | 253/438 [05:17<04:01,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  58%|█████▊    | 254/438 [05:18<03:48,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  58%|█████▊    | 255/438 [05:19<03:50,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  58%|█████▊    | 256/438 [05:21<03:51,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  59%|█████▊    | 257/438 [05:22<03:46,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  59%|█████▉    | 258/438 [05:23<03:47,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  59%|█████▉    | 259/438 [05:25<03:49,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  59%|█████▉    | 260/438 [05:26<03:43,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  60%|█████▉    | 261/438 [05:27<03:43,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  60%|█████▉    | 262/438 [05:28<03:35,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  60%|██████    | 263/438 [05:29<03:36,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  60%|██████    | 264/438 [05:31<03:38,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  61%|██████    | 265/438 [05:32<03:39,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  61%|██████    | 266/438 [05:33<03:40,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  61%|██████    | 267/438 [05:35<03:39,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  61%|██████    | 268/438 [05:36<03:39,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  61%|██████▏   | 269/438 [05:37<03:38,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  62%|██████▏   | 270/438 [05:38<03:33,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  62%|██████▏   | 271/438 [05:40<03:34,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  62%|██████▏   | 272/438 [05:41<03:37,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  62%|██████▏   | 273/438 [05:42<03:35,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  63%|██████▎   | 274/438 [05:44<03:33,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  63%|██████▎   | 275/438 [05:45<03:27,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  63%|██████▎   | 276/438 [05:46<03:24,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  63%|██████▎   | 277/438 [05:48<03:33,  1.33s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  63%|██████▎   | 278/438 [05:49<03:25,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  64%|██████▎   | 279/438 [05:50<03:24,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  64%|██████▍   | 280/438 [05:51<03:21,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  64%|██████▍   | 281/438 [05:53<03:24,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  64%|██████▍   | 282/438 [05:54<03:24,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  65%|██████▍   | 283/438 [05:55<03:21,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  65%|██████▍   | 284/438 [05:57<03:34,  1.39s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  65%|██████▌   | 285/438 [05:58<03:15,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  65%|██████▌   | 286/438 [05:59<03:14,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  66%|██████▌   | 287/438 [06:01<03:14,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  66%|██████▌   | 288/438 [06:02<03:17,  1.32s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  66%|██████▌   | 289/438 [06:03<03:07,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  66%|██████▌   | 290/438 [06:05<03:16,  1.32s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  66%|██████▋   | 291/438 [06:06<03:09,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  67%|██████▋   | 292/438 [06:07<03:03,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  67%|██████▋   | 293/438 [06:08<03:04,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  67%|██████▋   | 294/438 [06:09<03:00,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  67%|██████▋   | 295/438 [06:10<02:44,  1.15s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  68%|██████▊   | 296/438 [06:11<02:36,  1.10s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  68%|██████▊   | 297/438 [06:13<02:43,  1.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  68%|██████▊   | 298/438 [06:14<02:43,  1.17s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  68%|██████▊   | 299/438 [06:15<02:40,  1.15s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  68%|██████▊   | 300/438 [06:16<02:40,  1.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  69%|██████▊   | 301/438 [06:18<02:49,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  69%|██████▉   | 302/438 [06:19<02:47,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  69%|██████▉   | 303/438 [06:20<02:52,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  69%|██████▉   | 304/438 [06:21<02:51,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  70%|██████▉   | 305/438 [06:23<02:47,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  70%|██████▉   | 306/438 [06:24<02:51,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  70%|███████   | 307/438 [06:25<02:46,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  70%|███████   | 308/438 [06:26<02:42,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  71%|███████   | 309/438 [06:28<02:44,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  71%|███████   | 310/438 [06:29<02:46,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  71%|███████   | 311/438 [06:30<02:45,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  71%|███████   | 312/438 [06:32<02:43,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  71%|███████▏  | 313/438 [06:33<02:50,  1.37s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  72%|███████▏  | 314/438 [06:34<02:35,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  72%|███████▏  | 315/438 [06:36<02:39,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  72%|███████▏  | 316/438 [06:37<02:23,  1.18s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  72%|███████▏  | 317/438 [06:38<02:26,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  73%|███████▎  | 318/438 [06:39<02:28,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  73%|███████▎  | 319/438 [06:40<02:29,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  73%|███████▎  | 320/438 [06:42<02:27,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  73%|███████▎  | 321/438 [06:43<02:27,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  74%|███████▎  | 322/438 [06:44<02:27,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  74%|███████▎  | 323/438 [06:46<02:26,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  74%|███████▍  | 324/438 [06:47<02:23,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  74%|███████▍  | 325/438 [06:48<02:19,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  74%|███████▍  | 326/438 [06:49<02:18,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  75%|███████▍  | 327/438 [06:50<02:18,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  75%|███████▍  | 328/438 [06:52<02:15,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  75%|███████▌  | 329/438 [06:53<02:13,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  75%|███████▌  | 330/438 [06:54<02:24,  1.34s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  76%|███████▌  | 331/438 [06:56<02:16,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  76%|███████▌  | 332/438 [06:57<02:11,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  76%|███████▌  | 333/438 [06:58<02:18,  1.32s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  76%|███████▋  | 334/438 [06:59<02:13,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  76%|███████▋  | 335/438 [07:01<02:12,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  77%|███████▋  | 336/438 [07:02<02:05,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  77%|███████▋  | 337/438 [07:03<02:06,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  77%|███████▋  | 338/438 [07:04<02:04,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  77%|███████▋  | 339/438 [07:06<02:04,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  78%|███████▊  | 340/438 [07:07<01:59,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  78%|███████▊  | 341/438 [07:08<02:02,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  78%|███████▊  | 342/438 [07:09<01:59,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  78%|███████▊  | 343/438 [07:11<01:57,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  79%|███████▊  | 344/438 [07:12<01:57,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  79%|███████▉  | 345/438 [07:13<01:57,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  79%|███████▉  | 346/438 [07:14<01:54,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  79%|███████▉  | 347/438 [07:15<01:46,  1.17s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  79%|███████▉  | 348/438 [07:17<01:47,  1.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  80%|███████▉  | 349/438 [07:18<01:53,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  80%|███████▉  | 350/438 [07:19<01:44,  1.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  80%|████████  | 351/438 [07:20<01:46,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  80%|████████  | 352/438 [07:22<01:52,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  81%|████████  | 353/438 [07:23<01:50,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  81%|████████  | 354/438 [07:24<01:49,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  81%|████████  | 355/438 [07:26<01:48,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  81%|████████▏ | 356/438 [07:27<01:46,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  82%|████████▏ | 357/438 [07:28<01:42,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  82%|████████▏ | 358/438 [07:30<01:42,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  82%|████████▏ | 359/438 [07:31<01:41,  1.29s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  82%|████████▏ | 360/438 [07:32<01:45,  1.35s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  82%|████████▏ | 361/438 [07:33<01:38,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  83%|████████▎ | 362/438 [07:35<01:35,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  83%|████████▎ | 363/438 [07:36<01:32,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  83%|████████▎ | 364/438 [07:37<01:30,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  83%|████████▎ | 365/438 [07:38<01:31,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  84%|████████▎ | 366/438 [07:40<01:30,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  84%|████████▍ | 367/438 [07:41<01:26,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  84%|████████▍ | 368/438 [07:42<01:24,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  84%|████████▍ | 369/438 [07:43<01:27,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  84%|████████▍ | 370/438 [07:45<01:28,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  85%|████████▍ | 371/438 [07:46<01:27,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  85%|████████▍ | 372/438 [07:47<01:26,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  85%|████████▌ | 373/438 [07:49<01:28,  1.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  85%|████████▌ | 374/438 [07:50<01:20,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  86%|████████▌ | 375/438 [07:51<01:14,  1.18s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  86%|████████▌ | 376/438 [07:52<01:09,  1.12s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  86%|████████▌ | 377/438 [07:53<01:10,  1.15s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  86%|████████▋ | 378/438 [07:55<01:17,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  87%|████████▋ | 379/438 [07:56<01:12,  1.23s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  87%|████████▋ | 380/438 [07:57<01:12,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  87%|████████▋ | 381/438 [07:59<01:15,  1.32s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  87%|████████▋ | 382/438 [08:00<01:17,  1.38s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  87%|████████▋ | 383/438 [08:01<01:14,  1.35s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  88%|████████▊ | 384/438 [08:03<01:13,  1.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  88%|████████▊ | 385/438 [08:04<01:11,  1.34s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  88%|████████▊ | 386/438 [08:05<01:10,  1.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  88%|████████▊ | 387/438 [08:07<01:14,  1.46s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  89%|████████▊ | 388/438 [08:08<01:11,  1.42s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  89%|████████▉ | 389/438 [08:10<01:07,  1.38s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  89%|████████▉ | 390/438 [08:11<01:06,  1.39s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  89%|████████▉ | 391/438 [08:12<01:00,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  89%|████████▉ | 392/438 [08:14<01:01,  1.33s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  90%|████████▉ | 393/438 [08:15<00:59,  1.32s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  90%|████████▉ | 394/438 [08:16<00:59,  1.34s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  90%|█████████ | 395/438 [08:18<00:55,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  90%|█████████ | 396/438 [08:19<00:54,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  91%|█████████ | 397/438 [08:20<00:53,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  91%|█████████ | 398/438 [08:21<00:52,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  91%|█████████ | 399/438 [08:23<00:49,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  91%|█████████▏| 400/438 [08:24<00:47,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  92%|█████████▏| 401/438 [08:25<00:46,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  92%|█████████▏| 402/438 [08:26<00:45,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  92%|█████████▏| 403/438 [08:27<00:41,  1.18s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  92%|█████████▏| 404/438 [08:29<00:41,  1.21s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  92%|█████████▏| 405/438 [08:30<00:42,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  93%|█████████▎| 406/438 [08:31<00:41,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  93%|█████████▎| 407/438 [08:33<00:42,  1.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  93%|█████████▎| 408/438 [08:35<00:42,  1.43s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  93%|█████████▎| 409/438 [08:36<00:41,  1.42s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  94%|█████████▎| 410/438 [08:37<00:39,  1.41s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  94%|█████████▍| 411/438 [08:39<00:40,  1.50s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  94%|█████████▍| 412/438 [08:40<00:37,  1.44s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  94%|█████████▍| 413/438 [08:42<00:35,  1.43s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  95%|█████████▍| 414/438 [08:43<00:34,  1.42s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  95%|█████████▍| 415/438 [08:44<00:31,  1.38s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  95%|█████████▍| 416/438 [08:46<00:29,  1.33s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  95%|█████████▌| 417/438 [08:47<00:26,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  95%|█████████▌| 418/438 [08:48<00:25,  1.28s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  96%|█████████▌| 419/438 [08:49<00:23,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  96%|█████████▌| 420/438 [08:50<00:22,  1.24s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  96%|█████████▌| 421/438 [08:52<00:21,  1.26s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  96%|█████████▋| 422/438 [08:53<00:20,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  97%|█████████▋| 423/438 [08:54<00:19,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  97%|█████████▋| 424/438 [08:55<00:17,  1.22s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  97%|█████████▋| 425/438 [08:56<00:15,  1.16s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  97%|█████████▋| 426/438 [08:58<00:14,  1.20s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  97%|█████████▋| 427/438 [08:59<00:13,  1.19s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  98%|█████████▊| 428/438 [09:00<00:12,  1.25s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  98%|█████████▊| 429/438 [09:02<00:11,  1.30s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  98%|█████████▊| 430/438 [09:03<00:10,  1.27s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  98%|█████████▊| 431/438 [09:04<00:09,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  99%|█████████▊| 432/438 [09:06<00:08,  1.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  99%|█████████▉| 433/438 [09:07<00:06,  1.32s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  99%|█████████▉| 434/438 [09:08<00:05,  1.32s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM:  99%|█████████▉| 435/438 [09:10<00:03,  1.31s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM: 100%|█████████▉| 436/438 [09:11<00:02,  1.33s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM: 100%|█████████▉| 437/438 [09:12<00:01,  1.36s/it][llm_utils] Ollama local: qwen3:8b
+Đánh giá RAG + LLM: 100%|██████████| 438/438 [09:14<00:00,  1.39s/it]Đánh giá RAG + LLM: 100%|██████████| 438/438 [09:14<00:00,  1.27s/it]
+  Đã lưu tạm -> evaluation/results/vifactcheck_full/baseline_rag_llm.json (rag_llm)
+
+=== So sánh phương pháp ===
+Phương pháp                Accuracy   F1-Macro   Latency(s)
+------------------------------------------------------------
+RAG + LLM                    0.4338     0.3475         1.26
+
+Đã lưu -> evaluation/results/vifactcheck_full/baseline_rag_llm.json

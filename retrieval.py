@@ -1,5 +1,6 @@
 import re
 
+import torch
 from sentence_transformers import SentenceTransformer
 
 from config import *
@@ -27,9 +28,10 @@ def get_active_collection_name():
 
 collection_name = get_collection_name()
 
+# CUDA nếu có (nhanh hơn ~50 lần); MPS giữ CPU như cũ
 embedder = SentenceTransformer(
     EMBEDDING_MODEL,
-    device="cpu"
+    device="cuda" if torch.cuda.is_available() else "cpu"
 )
 
 def retrieve(claim, limit=None):
